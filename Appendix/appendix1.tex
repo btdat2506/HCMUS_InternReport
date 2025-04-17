@@ -1,0 +1,810 @@
+\appendix
+
+\chapter{MÃ NGUỒN CỦA THIẾT KẾ}
+\label{Appendix1}
+
+\section{Mã Verilog Top-Level cho DMANiosV}
+\label{app:verilog_top} % Changed label for clarity
+\begin{lstlisting}[language=Verilog, caption={DMANiosV.v - Top Level Module}, label=lst:verilog_top]
+module DMANiosV(input CLOCK_50, input [0:0] KEY);
+  system Nios_system (
+    .clk_clk      (CLOCK_50),
+    .reset_reset_n(KEY[0])
+  );
+endmodule
+\end{lstlisting}
+
+\section{Mã Verilog DMA Controller}
+\label{app:verilog_dmac}
+\begin{lstlisting}[language=Verilog, caption={DMAController.v - DMA Controller Top Module}, label=lst:verilog_dmacontroller]
+module DMAController (
+    input          iClk,
+    input          iReset_n,
+    // Avalon Slave Interface
+    input          iChipselect,
+    input          iRead,
+    input          iWrite,
+    input  [2:0]   iAddress,
+    input  [31:0]  iWritedata,
+    output [31:0]  oReaddata,
+    // Avalon Read Master Interface
+    output         oRM_read,
+    output [31:0]  oRM_readaddress,
+    input          iRM_readdatavalid,
+    input          iRM_waitrequest,
+    input  [31:0]  iRM_readdata,
+    // Avalon Write Master Interface
+    output         oWM_write,
+    output [31:0]  oWM_writeaddress,
+    output [31:0]  oWM_writedata,
+    output [3:0]   oWM_byteenable, // <<< ADDED PORT
+    input          iWM_waitrequest
+);
+    // Internal Signals
+    wire           Start;
+    wire [31:0]    Length;
+    wire [31:0]    RM_startaddress;
+    wire [31:0]    WM_startaddress;
+    wire           WM_done;
+    // FIFO Signals
+    wire           FF_almostfull;
+    wire           FF_writerequest;
+    wire [31:0]    FF_data;
+    wire           FF_empty;
+    wire [31:0]    FF_q;
+    wire           FF_readrequest;
+
+    // Instantiate CONTROL_SLAVE
+    CONTROL_SLAVE u_CONTROL_SLAVE (
+        .iClk(iClk),
+        .iReset_n(iReset_n),
+        .iChipselect(iChipselect),
+        .iRead(iRead),
+        .iWrite(iWrite),
+        .iAddress(iAddress),
+        .iWritedata(iWritedata),
+        .oReaddata(oReaddata),
+        .RM_startaddress(RM_startaddress),
+        .WM_startaddress(WM_startaddress),
+        .Length(Length),
+        .Start(Start),
+        .WM_done(WM_done)
+    );
+
+    // Instantiate READ_MASTER (Use revised version)
+    READ_MASTER u_READ_MASTER (
+        .iClk(iClk),
+        .iReset_n(iReset_n),
+        .Start(Start),
+        .Length(Length),
+        .RM_startaddress(RM_startaddress),
+        .FF_almostfull(FF_almostfull),
+        .FF_writerequest(FF_writerequest),
+        .FF_data(FF_data),
+        .oRM_read(oRM_read),
+        .oRM_readaddress(oRM_readaddress),
+        .iRM_readdatavalid(iRM_readdatavalid),
+        .iRM_waitrequest(iRM_waitrequest),
+        .iRM_readdata(iRM_readdata)
+    );
+
+    // Instantiate WRITE_MASTER (Use revised version with byteenable)
+    WRITE_MASTER u_WRITE_MASTER (
+        .iClk(iClk),
+        .iReset_n(iReset_n),
+        .Start(Start),
+        .Length(Length),
+        .WM_startaddress(WM_startaddress),
+        .FF_empty(FF_empty),
+        .FF_readrequest(FF_readrequest),
+        .FF_q(FF_q),
+        .oWM_write(oWM_write),
+        .oWM_writeaddress(oWM_writeaddress),
+        .oWM_writedata(oWM_writedata),
+        .oWM_byteenable(oWM_byteenable), // <<< CONNECTED PORT
+        .iWM_waitrequest(iWM_waitrequest),
+        .WM_done(WM_done)
+    );
+
+    // Instantiate FIFO
+    wire FF_full;
+    FIFO_IP	FIFO_IP_inst (
+        .aclr (~iReset_n),
+        .clock ( iClk ),
+        .data ( FF_data ),
+        .rdreq ( FF_readrequest ),
+        .wrreq ( FF_writerequest ),
+        .almost_full ( FF_almostfull ),
+        .empty ( FF_empty ),
+        .full ( FF_full ),
+        .q ( FF_q )
+	);
+
+endmodule
+\end{lstlisting}
+
+\section{Mã Verilog Control Slave}
+\label{app:verilog_control_slave}
+\begin{lstlisting}[language=Verilog, caption={CONTROL\_SLAVE.v - Avalon Slave for Control/Status}, label=lst:verilog_controlslave]
+module CONTROL_SLAVE (
+    input          iClk,
+    input          iReset_n,
+    // Avalon Slave Interface
+    input          iChipselect,
+    input          iRead,
+    input          iWrite,
+    input  [2:0]   iAddress,
+    input  [31:0]  iWritedata,
+    output [31:0]  oReaddata,
+    // DMA Configuration/Control Outputs
+    output [31:0]  RM_startaddress,
+    output [31:0]  WM_startaddress,
+    output [31:0]  Length,
+    output         Start,
+    // DMA Status Input
+    input          WM_done
+);
+    // Parameter Definitions for Addresses
+    localparam ADDR_READADDRESS  = 3'd0;
+    localparam ADDR_WRITEADDRESS = 3'd1;
+    localparam ADDR_LENGTH       = 3'd2;
+    // Address 3'd3 is unused
+    localparam ADDR_CONTROL      = 3'd4;
+    localparam ADDR_STATUS       = 3'd5;
+    // Addresses 3'd6, 3'd7 are unused
+
+    // Register Definitions
+    reg [31:0] readaddress_reg;
+    reg [31:0] writeaddress_reg;
+    reg [31:0] length_reg;
+    reg        control_go;      // Internal GO signal, latched
+    reg        status_busy;
+    reg        status_done;
+
+    // Output Assignments
+    assign RM_startaddress = readaddress_reg;
+    assign WM_startaddress = writeaddress_reg;
+    assign Length          = length_reg;
+    assign Start           = control_go; // Start signal follows the latched GO bit
+
+    // Read Data Output Logic (Combinatorial)
+    reg [31:0] readdata_reg;
+    assign oReaddata = readdata_reg;
+
+    // Combinatorial block for read data multiplexing
+    always @(*) begin
+        // Default read data to 0
+        readdata_reg = 32'd0;
+        if (iChipselect && iRead) begin
+            case (iAddress)
+                ADDR_READADDRESS:  readdata_reg = readaddress_reg;
+                ADDR_WRITEADDRESS: readdata_reg = writeaddress_reg;
+                ADDR_LENGTH:       readdata_reg = length_reg;
+                ADDR_CONTROL:      readdata_reg = {31'd0, control_go};      // Return current GO bit status
+                ADDR_STATUS:       readdata_reg = {30'd0, status_busy, status_done}; // Return Busy and Done status
+                default:           readdata_reg = 32'd0; // Reads from unused addresses return 0
+            endcase
+        end
+    end
+
+    // Register Write and State Logic (Sequential)
+    always @(posedge iClk or negedge iReset_n) begin
+        if (!iReset_n) begin
+            readaddress_reg  <= 32'd0;
+            writeaddress_reg <= 32'd0;
+            length_reg       <= 32'd0;
+            control_go       <= 1'b0;
+            status_busy      <= 1'b0;
+            status_done      <= 1'b0;
+        end else begin
+            // Handle register writes from CPU
+            if (iChipselect && iWrite) begin
+                case (iAddress)
+                    ADDR_READADDRESS:  readaddress_reg  <= iWritedata;
+                    ADDR_WRITEADDRESS: writeaddress_reg <= iWritedata;
+                    ADDR_LENGTH:       length_reg       <= iWritedata;
+                    ADDR_CONTROL:      control_go       <= iWritedata[0]; // Latch the GO bit from CPU
+                    ADDR_STATUS: begin
+                        // Bit 0: Write 1 to clear Done status
+                        if (iWritedata[0]) begin
+                            status_done <= 1'b0;
+                        end
+                        // Other bits are read-only or unused
+                    end
+                    default: ; // No action for unused addresses
+                endcase
+            end
+
+            if (control_go && !status_busy && !status_done) begin
+                status_busy <= 1'b1;
+                status_done <= 1'b0;
+            end
+
+            // If the Write Master signals completion THIS cycle
+            if (WM_done) begin
+                status_busy <= 1'b0;
+                status_done <= 1'b1;
+                control_go  <= 1'b0; // <<< Clear GO bit automatically on completion
+            end
+
+            // If CPU clears GO bit while busy, we might need an abort mechanism (currently ignored)
+        end
+    end
+
+endmodule
+\end{lstlisting}
+
+\section{Mã Verilog Read Master}
+\label{app:verilog_read_master}
+\begin{lstlisting}[language=Verilog, caption={READ\_MASTER.v - Avalon Read Master Module}, label=lst:verilog_readmaster]
+module READ_MASTER (
+    input          iClk,
+    input          iReset_n,
+    input          Start,
+    input  [31:0]  Length,
+    input  [31:0]  RM_startaddress,
+    input          FF_almostfull,
+    output reg     FF_writerequest,
+    output reg [31:0] FF_data,
+    output reg     oRM_read,
+    output reg [31:0] oRM_readaddress,
+    input          iRM_readdatavalid,
+    input          iRM_waitrequest,
+    input  [31:0]  iRM_readdata
+);
+    // State Machine States
+    parameter IDLE = 3'b000, CHECK_FIFO = 3'b01, REQUEST = 3'b010, WAIT_DATA = 3'b011, WRITE_FIFO = 3'b100, WAIT_FIFO = 3'b101;
+    reg [2:0] current_state, next_state;
+
+    // Internal Registers
+    reg [31:0] bytes_remaining;
+    reg [31:0] total_bytes;
+
+    // Initialization
+    always @(posedge iClk or negedge iReset_n) begin
+        if (!iReset_n) begin
+            current_state    <= IDLE;
+            oRM_read         <= 1'b0;
+            oRM_readaddress  <= 32'd0;
+            FF_writerequest  <= 1'b0;
+            FF_data          <= 32'd0;
+            bytes_remaining  <= 32'd0;
+            total_bytes      <= 32'd0;
+        end else begin
+            current_state <= next_state;
+            FF_writerequest <= 1'b0;            
+
+            case (current_state)
+                IDLE: begin
+                    oRM_read        <= 1'b0;
+                    FF_writerequest <= 1'b0;
+                    if (Start && oRM_readaddress < RM_startaddress + Length) begin
+                        bytes_remaining <= Length;
+                        oRM_readaddress <= RM_startaddress;
+                        total_bytes     <= Length;
+                    end
+                end
+                CHECK_FIFO: begin
+                    if (!FF_almostfull) begin
+                        oRM_read <= 1'b1;
+                    end else begin
+                        oRM_read <= 1'b0;
+                    end
+                end
+                REQUEST, WAIT_DATA: begin
+                    
+                    //oRM_read <= 1'b0;
+                end
+                WRITE_FIFO: begin
+                    if (iRM_readdatavalid) begin
+                        //oRM_read        <= 1'b0;
+                        FF_writerequest <= 1'b1;
+                        FF_data         <= iRM_readdata;
+                    end else begin
+                        FF_writerequest <= 1'b0;
+                    end
+                end
+                WAIT_FIFO: begin
+                    oRM_readaddress <= oRM_readaddress + 4;
+                    bytes_remaining <= bytes_remaining - 4;
+                end
+            endcase
+        end
+    end
+
+    // Next State Logic
+    always @(*) begin
+        case (current_state)
+            IDLE: begin
+                if (Start && oRM_readaddress < RM_startaddress + Length && !FF_almostfull)
+                    next_state = CHECK_FIFO;
+                else
+                    next_state = IDLE;
+            end
+            CHECK_FIFO: begin
+                if (!FF_almostfull)
+                    next_state = REQUEST;
+                else
+                    next_state = CHECK_FIFO;
+            end
+            REQUEST: begin
+                if (iRM_waitrequest)
+                    next_state = REQUEST;
+                else
+                    next_state = WAIT_DATA;
+            end
+            WAIT_DATA: begin
+                if (iRM_readdatavalid)
+                    next_state = WRITE_FIFO;
+                else
+                    next_state = WAIT_DATA;
+            end
+            WRITE_FIFO: begin
+                if (iRM_readdatavalid) begin
+                    next_state = WAIT_FIFO;
+                end else begin
+                    next_state = WRITE_FIFO;
+                end
+                /* if (bytes_remaining == 32'd0 || oRM_readaddress == RM_startaddress + Length || FF_almostfull)
+                    next_state = IDLE;
+                else
+                    next_state = REQUEST; */
+                //next_state = WAIT_FIFO;
+            end
+            WAIT_FIFO: begin
+                if (bytes_remaining == 32'd0 || oRM_readaddress == RM_startaddress + Length || FF_almostfull)
+                    next_state = IDLE;
+                else
+                    next_state = REQUEST;
+            end
+            default: next_state = IDLE;
+        endcase
+    end
+endmodule
+\end{lstlisting}
+
+\section{Mã Verilog Write Master}
+\label{app:verilog_write_master}
+\begin{lstlisting}[language=Verilog, caption={WRITE\_MASTER.v - Avalon Write Master Module}, label=lst:verilog_writemaster]
+module WRITE_MASTER (
+    input          iClk,
+    input          iReset_n,
+    // Control Inputs
+    input          Start,           // From CONTROL_SLAVE
+    input  [31:0]  Length,          // Total bytes to write
+    input  [31:0]  WM_startaddress, // Start address for writing
+    // FIFO Interface
+    input          FF_empty,        // FIFO empty signal
+    output reg     FF_readrequest,  // Request to read from FIFO
+    input  [31:0]  FF_q,            // Data read from FIFO
+    // Avalon Write Master Interface
+    output reg     oWM_write,       // Avalon write signal
+    output reg [31:0] oWM_writeaddress, // Avalon write address
+    output reg [31:0] oWM_writedata,   // Avalon write data
+    output reg [3:0]  oWM_byteenable, // Avalon byte enable
+    input          iWM_waitrequest, // Avalon wait request
+    // Status Output
+    output reg     WM_done          // DMA Write Master Done
+);
+    // State Machine States
+    parameter IDLE           = 3'b000;
+    parameter CHECK_FIFO     = 3'b001; // Check if data is available in FIFO
+    parameter READ_FIFO      = 3'b010; // Request data from FIFO
+    parameter WAIT_FIFO_DATA = 3'b011; // Wait for FIFO data (usually available next cycle)
+    parameter START_WRITE    = 3'b100; // Assert write, address, data, byteenable
+    parameter WAIT_WRITE_ACK = 3'b101; // Wait for waitrequest=0 first time
+    parameter UPDATE_CNT     = 3'b111; // Update counters, check completion
+
+    reg [2:0] current_state, next_state;
+
+    // Internal Registers
+    reg [31:0] bytes_remaining;
+    reg [31:0] current_address;
+    reg [31:0] data_to_write; // Register to hold data from FIFO
+
+    // Initialization and State Register
+    always @(posedge iClk or negedge iReset_n) begin
+        if (!iReset_n) begin
+            current_state   <= IDLE;
+            bytes_remaining <= 32'd0;
+            current_address <= 32'd0;
+            WM_done         <= 1'b0;
+            // *** ADD RESET FOR data_to_write ***
+            data_to_write   <= 32'd0;
+            // *** Outputs are reset below ***
+        end else begin
+            current_state <= next_state;
+            // Update counters in UPDATE_CNT state
+            if (current_state == UPDATE_CNT) begin
+                current_address <= current_address + 4;
+                bytes_remaining <= bytes_remaining - 4;
+            end
+            // Latch configuration in IDLE state when starting
+            if (next_state == CHECK_FIFO && current_state == IDLE) begin
+                bytes_remaining <= Length;
+                current_address <= WM_startaddress;
+                WM_done         <= 1'b0; // Clear done when starting a new transfer
+            end
+            // Set WM_done when transitioning to IDLE from UPDATE_CNT (last word processed)
+            if (current_state == UPDATE_CNT && bytes_remaining <= 4) begin
+                 WM_done <= 1'b1;
+            end
+            // Latch data from FIFO in WAIT_FIFO_DATA state (uses state *before* edge)
+            // Moved this inside the 'else' block for clarity, happens concurrently
+            if (current_state == READ_FIFO) begin
+                 data_to_write <= FF_q;
+            end
+        end
+    end
+
+    // Output Logic (Registered Outputs)
+    always @(posedge iClk or negedge iReset_n) begin
+        if (!iReset_n) begin
+            FF_readrequest   <= 1'b0;
+            oWM_write        <= 1'b0;
+            oWM_writeaddress <= 32'd0;
+            oWM_writedata    <= 32'd0;
+            oWM_byteenable   <= 4'b0000;
+        end else begin
+            // Default assignments for next cycle (registered outputs)
+            FF_readrequest <= 1'b0;
+            oWM_write      <= 1'b0;
+            oWM_byteenable <= 4'b0000;
+            // oWM_writeaddress and oWM_writedata hold previous value unless changed
+
+            // Drive outputs based on state (using state *before* edge)
+            case (current_state)
+                READ_FIFO: begin // State 2
+                    FF_readrequest <= 1'b1; // Request data for next cycle
+                end
+                START_WRITE: begin // State 4
+                    oWM_write        <= 1'b1;
+                    oWM_writeaddress <= current_address;
+                    oWM_writedata    <= FF_q; // Use value latched on *previous* edge
+                    oWM_byteenable   <= 4'b1111;
+                end
+                WAIT_WRITE_ACK: begin // State 5
+                    oWM_write        <= 1'b1;          // Keep write asserted
+                    oWM_writeaddress <= current_address; // Keep address stable
+                    oWM_writedata    <= FF_q;   // Keep data stable
+                    oWM_byteenable   <= 4'b1111;      // Keep byteenable asserted
+                end
+                // In other states, outputs driven low/inactive by defaults above
+                default: begin
+                end
+            endcase
+        end
+    end
+
+    // Next State Logic (Combinatorial)
+    always @(*) begin
+        next_state = current_state; // Default to stay in current state
+        if (!Start) begin
+            next_state = IDLE; // Reset to IDLE if Start is deasserted
+        end else
+        case (current_state)
+            IDLE: begin // State 0
+                if (Start && Length > 0) begin
+                    next_state = CHECK_FIFO; // -> 1
+                end else begin
+                    next_state = IDLE; // -> 0
+                end
+            end
+            CHECK_FIFO: begin // State 1
+                if (!FF_empty) begin
+                    next_state = READ_FIFO; // -> 2
+                end else begin
+                    if (bytes_remaining > 0 && Start) begin
+                       next_state = CHECK_FIFO; // -> 1
+                    end else begin
+                       next_state = IDLE; // -> 0
+                    end
+                end
+            end
+            READ_FIFO: begin // State 2
+                next_state = WAIT_FIFO_DATA; // -> 3
+            end
+            WAIT_FIFO_DATA: begin // State 3
+                 next_state = START_WRITE; // -> 4
+            end
+            START_WRITE: begin // State 4
+                // Immediately move to wait if write is asserted
+                next_state = WAIT_WRITE_ACK; // -> 5
+            end
+            WAIT_WRITE_ACK: begin // State 5
+                if (!iWM_waitrequest) begin
+                    next_state = UPDATE_CNT; // -> 6 (Write accepted)
+                end else begin
+                    next_state = WAIT_WRITE_ACK; // -> 5 (Keep waiting)
+                end
+            end
+            UPDATE_CNT: begin // State 6
+                if (bytes_remaining <= 4) begin // Check before decrement
+                    next_state = IDLE; // -> 0 (Transfer complete)
+                end else begin
+                    next_state = CHECK_FIFO; // -> 1 (More data to write)
+                end
+            end
+            default: next_state = IDLE;
+        endcase
+
+    end
+
+endmodule
+\end{lstlisting}
+
+\section{Mã nguồn C kiểm thử DMA}
+\label{app:c_code}
+\begin{lstlisting}[language=C, caption={hello\_world.c - Nios V DMA Test Application}, label=lst:c_helloworld]
+#include <stdio.h>
+#include <stdint.h>
+#include <stdbool.h>
+#include "system.h"        // System-specific definitions
+#include "io.h"            // I/O functions (if needed)
+#include "sys/alt_cache.h" // <<< Cache management functions
+#include "alt_types.h"     // <<< For alt_u32
+
+#define DMA_REG_READADDRESS 0  // Offset 0 (Byte Address 0x00)
+#define DMA_REG_WRITEADDRESS 1 // Offset 1 (Byte Address 0x04)
+#define DMA_REG_LENGTH 2       // Offset 2 (Byte Address 0x08)
+// Offset 3 is unused
+#define DMA_REG_CONTROL 4 // Offset 4 (Byte Address 0x10)
+#define DMA_REG_STATUS 5  // Offset 5 (Byte Address 0x14)
+
+// Control Register Bits
+#define DMA_CONTROL_GO (1 << 0)
+
+// Status Register Bits
+#define DMA_STATUS_DONE (1 << 0)
+#define DMA_STATUS_BUSY (1 << 1)
+
+// Reset Timeout (number of status polls)
+#define DMA_RESET_TIMEOUT 10000
+
+// Buffer size
+#define BUFFER_SIZE 32
+
+#define arg_simulation 1 // Set to 0 for simulation, 1 for hardware
+
+// Source data buffer (likely placed in onchip_memory2_0 by linker)
+// Initialized with values 2 to 33
+alt_u32 pdata0[BUFFER_SIZE] = {
+    2, 3, 4, 5, 6, 7, 8, 9,
+    10, 11, 12, 13, 14, 15, 16, 17,
+    18, 19, 20, 21, 22, 23, 24, 25,
+    26, 27, 28, 29, 30, 31, 32, 33};
+
+// Destination data buffer pointer - explicitly placed in onchip_memory2_1
+// Adding an offset within the memory for clarity/safety
+volatile alt_u32 *pdata1 = (alt_u32*) (ONCHIP_MEMORY2_1_BASE + 0x200); // Offset 0x100 within mem 1
+
+// Write to DMA register (using word offset for IOWR)
+static inline void dma_write_reg(alt_u32 reg_offset, alt_u32 value)
+{
+    IOWR(DMA_CONTROLLER_0_BASE, reg_offset, value);
+}
+
+// Read from DMA register (using word offset for IORD)
+static inline alt_u32 dma_read_reg(alt_u32 reg_offset)
+{
+    return IORD(DMA_CONTROLLER_0_BASE, reg_offset);
+}
+
+// --- NEW FUNCTION: Reset DMA Controller ---
+// Attempts to reset the DMA state via software writes
+bool reset_dma()
+{
+    printf("Resetting DMA Controller...\n");
+
+    // 1. Clear the GO bit in the Control Register to stop new transfers
+    printf("  Clearing GO bit (Reg %d)...\n", DMA_REG_CONTROL);
+    dma_write_reg(DMA_REG_CONTROL, 0);
+
+    // 2. Clear configuration registers
+    printf("  Clearing Address/Length Regs (%d, %d, %d)...\n",
+           DMA_REG_READADDRESS, DMA_REG_WRITEADDRESS, DMA_REG_LENGTH);
+    dma_write_reg(DMA_REG_READADDRESS, 0);
+    dma_write_reg(DMA_REG_WRITEADDRESS, 0);
+    dma_write_reg(DMA_REG_LENGTH, 0);
+
+    // 3. Clear the DONE status bit (Write-1-to-clear)
+    // Check if DONE is already set before clearing
+    if (dma_read_reg(DMA_REG_STATUS) & DMA_STATUS_DONE)
+    {
+        printf("  Clearing DONE status bit (Reg %d)...\n", DMA_REG_STATUS);
+        dma_write_reg(DMA_REG_STATUS, DMA_STATUS_DONE); // Write 1 to DONE bit
+    }
+
+    // 4. Wait for the BUSY flag to clear (optional but recommended)
+    printf("  Waiting for BUSY bit to clear (Reg %d)...\n", DMA_REG_STATUS);
+    int timeout = DMA_RESET_TIMEOUT;
+    while ((dma_read_reg(DMA_REG_STATUS) & DMA_STATUS_BUSY) && (timeout > 0))
+    {
+        timeout--;
+        // Optional delay
+        // for(volatile int d=0; d<10; d++);
+    }
+
+    if (timeout == 0)
+    {
+        printf("  Error: DMA reset timeout - BUSY bit did not clear!\n");
+        return false;
+    }
+
+    printf("DMA Reset complete. Final Status: 0x%lx\n", dma_read_reg(DMA_REG_STATUS));
+    return true;
+}
+// --- End of reset_dma function ---
+
+// Start DMA transfer
+void start_dma_transfer(alt_u32 src_addr, alt_u32 dst_addr, alt_u32 length_bytes)
+{
+    printf("Configuring DMA Regs:\n");
+    printf("  Reg %d (Read Addr) : 0x%08lx\n", DMA_REG_READADDRESS, src_addr);
+    printf("  Reg %d (Write Addr): 0x%08lx\n", DMA_REG_WRITEADDRESS, dst_addr);
+    printf("  Reg %d (Length)    : %lu bytes\n", DMA_REG_LENGTH, length_bytes);
+    printf("  Reg %d (Control)   : 0x%08X\n", DMA_REG_CONTROL, (alt_u32)DMA_CONTROL_GO);
+
+    // Write the source and destination addresses
+    dma_write_reg(DMA_REG_READADDRESS, src_addr);
+    dma_write_reg(DMA_REG_WRITEADDRESS, dst_addr);
+
+    // Write the length (number of bytes to transfer)
+    dma_write_reg(DMA_REG_LENGTH, length_bytes);
+    dma_write_reg(DMA_REG_CONTROL, DMA_CONTROL_GO);
+    printf("DMA GO bit set.\n");
+}
+
+// Wait for DMA to complete
+bool wait_for_dma_done()
+{
+    alt_u32 status;
+    printf("Polling DMA Status (Reg %d)...\n", DMA_REG_STATUS);
+    // Add a timeout to prevent infinite loops
+    int timeout = 1000000; // Adjust as needed
+    while (timeout > 0)
+    {
+        status = dma_read_reg(DMA_REG_STATUS);
+        // printf("Status: 0x%08lx\n", status); // Debug print
+        if (status & DMA_STATUS_DONE)
+        {
+            printf("DMA DONE bit detected.\n");
+            // Optional: Clear the DONE bit after detecting it by writing 1 to it
+            // dma_write_reg(DMA_REG_STATUS, DMA_STATUS_DONE);
+            return true;
+        }
+        timeout--;
+    }
+    printf("Error: Timeout waiting for DMA DONE bit. Final Status: 0x%lx\n", status);
+    return false;
+}
+
+// Verify DMA transfer
+bool verify_dma_transfer(alt_u32 *src, alt_u32 *dst, alt_u32 num_words)
+{
+    bool success = true;
+    printf("Verifying %lu words...\n", num_words);
+    for (int i = 0; i < num_words; i++)
+    {
+        // Use volatile pointers for reading destination to bypass cache optimization if needed,
+        // although cache flush is the proper method.
+        volatile alt_u32 read_data = dst[i];
+        if (read_data != src[i])
+        {
+            printf("Mismatch at index %d: expected 0x%08lX, got 0x%08lX\n",
+                   i, (alt_u32)src[i], (alt_u32)read_data);
+            success = false;
+            // return false; // Optionally exit on first mismatch
+        }
+        else
+        	printf("index %d = %d\n", i, *(dst + i));
+    }
+    return success;
+}
+
+int main()
+{
+    alt_u32 src_address = (alt_u32)pdata0;
+    alt_u32 dst_address = (alt_u32)pdata1;
+
+    // Transfer size in bytes
+    alt_u32 length_bytes = BUFFER_SIZE * sizeof(alt_u32);
+
+    if (arg_simulation)
+    {
+        printf("=====================================================\n");
+        printf("= 21207001 - Bui Thanh Dat - HCMUS - FETEL - CESLAB =\n");
+        printf("= Nios V DMA Example =\n");
+        printf("=====================================================\n");
+        // --- Reset DMA at the start ---
+        if (!reset_dma())
+        {
+            printf("DMA failed to reset. Halting.\n");
+            return -1;
+        }
+        // --- DMA should be idle now ---
+
+        // Ensure source data is flushed from cache *before* DMA reads it
+        alt_dcache_flush((void *)pdata0, sizeof(pdata0));
+
+        printf("\nSystem Base Addresses:\n");
+        printf("  ONCHIP_MEMORY2_0_BASE: 0x%08lx\n", (alt_u32)ONCHIP_MEMORY2_0_BASE);
+        printf("  ONCHIP_MEMORY2_1_BASE: 0x%08lx\n", (alt_u32)ONCHIP_MEMORY2_1_BASE);
+        printf("  DMA_CONTROLLER_0_BASE:   0x%08lx\n", (alt_u32)DMA_CONTROLLER_0_BASE);
+        printf("Actual pdata0 address: %p\n", pdata0); // Verify source location
+        printf("Actual pdata1 address: %p\n", pdata1); // Verify destination location
+
+        // Check if DMA is busy before starting a new transfer (shouldn't be after reset)
+        if (dma_read_reg(DMA_REG_STATUS) & DMA_STATUS_BUSY)
+        {
+            printf("Error: DMA is busy even after reset! Status: 0x%lx\n", dma_read_reg(DMA_REG_STATUS));
+            return -1;
+        }
+
+        // Start DMA transfer
+        printf("\nStarting DMA transfer...\n");
+        printf("Source Address: 0x%08lx (pdata0)\n", src_address);
+        printf("Destination Address: 0x%08lx (pdata1)\n", dst_address);
+        printf("Length: %lu bytes (%d words)\n", length_bytes, BUFFER_SIZE);
+
+        // Print destination buffer content *before* clearing and transfer
+        // Note: This read might be from cache if previously accessed
+        printf("\nDestination Buffer Before Clearing (potentially cached):\n");
+        for (int i = 0; i < BUFFER_SIZE; i++)
+        {
+            printf("  index %2d: 0x%08lx\n", i, (alt_u32)pdata1[i]);
+            if ((i + 1) % 8 == 0)
+                printf("\n"); // Formatting
+        }
+
+        // Reset the destination buffer using CPU writes
+        printf("\nResetting destination buffer via CPU...\n");
+        for (int i = 0; i < BUFFER_SIZE; i++)
+        {
+            pdata1[i] = 0;
+        }
+        // Flush the cache *after* CPU writes zeros to ensure zeros are in memory
+        alt_dcache_flush((void *)dst_address, length_bytes);
+        printf("Destination buffer cleared and cache flushed.\n");
+
+        // Optional: Read back immediately after flush to confirm zeros
+        printf("\nDestination Buffer After Reset & Flush (read back):\n");
+        for (int i = 0; i < BUFFER_SIZE; i++)
+        {
+            printf("  index %2d: 0x%08lx\n", i, (alt_u32)pdata1[i]);
+            if ((i + 1) % 8 == 0)
+                printf("\n"); // Formatting
+        }
+    }
+
+    // Start the actual DMA
+    start_dma_transfer(src_address, dst_address, length_bytes);
+
+    // Wait for DMA to complete
+    if (!wait_for_dma_done())
+    {
+        printf("DMA transfer failed or timed out!\n");
+        // Optional: Attempt another reset here?
+        // reset_dma();
+        return -1;
+    }
+
+    // !!! Crucial: Flush cache for destination region BEFORE verification !!!
+    printf("\nFlushing D-Cache for destination buffer...\n");
+    alt_dcache_flush((void *)dst_address, length_bytes);
+    printf("D-Cache flushed.\n");
+
+    // Verify DMA transfer by reading memory (now hopefully coherent)
+    printf("\nVerifying DMA transfer...\n");
+    if (verify_dma_transfer(pdata0, pdata1, BUFFER_SIZE))
+    {
+        printf("DMA Transfer Verification Successful!\n");
+    }
+    else
+    {
+        printf("DMA Transfer Verification Failed!\n");
+    }
+
+    return 0;
+}
+\end{lstlisting}
