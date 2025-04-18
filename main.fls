@@ -402,6 +402,27 @@ INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\booktabs\booktabs.sty
 INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\booktabs\booktabs.sty
 INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\caption\subcaption.sty
 INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\caption\subcaption.sty
+INPUT .\main.aux
+INPUT .\main.aux
+INPUT main.aux
+INPUT .\chapter1.aux
+INPUT .\chapter1.aux
+INPUT chapter1.aux
+INPUT .\chapter2.aux
+INPUT .\chapter2.aux
+INPUT chapter2.aux
+INPUT .\chapter3.aux
+INPUT .\chapter3.aux
+INPUT chapter3.aux
+INPUT .\chapter4.aux
+INPUT .\chapter4.aux
+INPUT chapter4.aux
+INPUT .\Appendix\appendix1.aux
+INPUT .\Appendix\appendix1.aux
+INPUT Appendix\appendix1.aux
+INPUT .\Appendix\appendix2.aux
+INPUT .\Appendix\appendix2.aux
+INPUT Appendix\appendix2.aux
 OUTPUT main.aux
 INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\biblatex\lbx\english.lbx
 INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\biblatex\lbx\english.lbx
@@ -412,8 +433,14 @@ INPUT .\main.bbl
 INPUT .\main.bbl
 INPUT .\main.bbl
 INPUT main.bbl
-OUTPUT main.out
+INPUT .\main.out
+INPUT .\main.out
+INPUT main.out
+INPUT main.out
 OUTPUT main.pdf
+INPUT .\main.out
+INPUT .\main.out
+OUTPUT main.out
 INPUT D:\Program Files\MikTex\texmfs\install\tex\context\base\mkii\supp-pdf.mkii
 INPUT D:\Program Files\MikTex\texmfs\install\tex\context\base\mkii\supp-pdf.mkii
 INPUT D:\Program Files\MikTex\texmfs\install\tex\context\base\mkii\supp-pdf.mkii
@@ -434,20 +461,9 @@ INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vnr17.tfm
 OUTPUT main.ist
 INPUT D:\Program Files\MikTex\texmfs\data\fonts\map\pdftex\pdftex.map
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vnbx12.tfm
-OUTPUT main.toc
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vnr12.tfm
-OUTPUT main.lof
-OUTPUT main.lot
-INPUT .\chapter1.tex
-INPUT .\chapter1.tex
-OUTPUT chapter1.aux
-INPUT .\chapter1.tex
-INPUT .\chapter1.tex
-INPUT chapter1.tex
-INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\vntex\t5cmtt.fd
-INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\vntex\t5cmtt.fd
-INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\vntex\t5cmtt.fd
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vntt12.tfm
+INPUT .\main.toc
+INPUT .\main.toc
+INPUT main.toc
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmr9.tfm
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmr6.tfm
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmmi12.tfm
@@ -459,8 +475,28 @@ INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmsy6.tfm
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmex10.tfm
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\amsfonts\cmextra\cmex9.tfm
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vnbxti10.tfm
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\vntex\t5cmtt.fd
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\vntex\t5cmtt.fd
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\vntex\t5cmtt.fd
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vntt12.tfm
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vnr12.tfm
+OUTPUT main.toc
+INPUT .\main.lof
+INPUT .\main.lof
+INPUT main.lof
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\jknappen\ec\tcrm1200.tfm
+OUTPUT main.lof
+INPUT .\main.lot
+INPUT .\main.lot
+INPUT main.lot
+OUTPUT main.lot
+INPUT .\chapter1.tex
+INPUT .\chapter1.tex
+OUTPUT chapter1.aux
+INPUT .\chapter1.tex
+INPUT .\chapter1.tex
+INPUT chapter1.tex
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vnbxti10.tfm
 INPUT .\chapter2.tex
 INPUT .\chapter2.tex
 OUTPUT chapter2.aux
@@ -479,6 +515,31 @@ INPUT .\Images\02_01_Avalon_MM_Transfers.pdf
 INPUT .\Images\02_01_Avalon_MM_Transfers.pdf
 INPUT .\Images\02_01_Avalon_MM_Transfers.pdf
 INPUT .\Images\02_01_Avalon_MM_Transfers.pdf
+INPUT .\Images\02_03_AvalonSlave_ReadWaveform.pdf
+INPUT .\Images\02_03_AvalonSlave_ReadWaveform.pdf
+INPUT .\Images\02_03_AvalonSlave_ReadWaveform.pdf
+INPUT .\Images\02_03_AvalonSlave_ReadWaveform.pdf
+INPUT .\Images\02_03_AvalonSlave_ReadWaveform.pdf
+INPUT .\Images\02_03_AvalonSlave_ReadWaveform.pdf
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vnr12.tfm
+INPUT .\Images\02_04_AvalonSlave_WriteWaveform.pdf
+INPUT .\Images\02_04_AvalonSlave_WriteWaveform.pdf
+INPUT .\Images\02_04_AvalonSlave_WriteWaveform.pdf
+INPUT .\Images\02_04_AvalonSlave_WriteWaveform.pdf
+INPUT .\Images\02_04_AvalonSlave_WriteWaveform.pdf
+INPUT .\Images\02_04_AvalonSlave_WriteWaveform.pdf
+INPUT .\Images\02_05_AvalonMaster_ReadWaveform.pdf
+INPUT .\Images\02_05_AvalonMaster_ReadWaveform.pdf
+INPUT .\Images\02_05_AvalonMaster_ReadWaveform.pdf
+INPUT .\Images\02_05_AvalonMaster_ReadWaveform.pdf
+INPUT .\Images\02_05_AvalonMaster_ReadWaveform.pdf
+INPUT .\Images\02_05_AvalonMaster_ReadWaveform.pdf
+INPUT .\Images\02_06_AvalonMaster_WriteWaveform.pdf
+INPUT .\Images\02_06_AvalonMaster_WriteWaveform.pdf
+INPUT .\Images\02_06_AvalonMaster_WriteWaveform.pdf
+INPUT .\Images\02_06_AvalonMaster_WriteWaveform.pdf
+INPUT .\Images\02_06_AvalonMaster_WriteWaveform.pdf
+INPUT .\Images\02_06_AvalonMaster_WriteWaveform.pdf
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vnti12.tfm
 INPUT .\Images\02_02_Memory_ByteEnable.pdf
 INPUT .\Images\02_02_Memory_ByteEnable.pdf
@@ -486,6 +547,18 @@ INPUT .\Images\02_02_Memory_ByteEnable.pdf
 INPUT .\Images\02_02_Memory_ByteEnable.pdf
 INPUT .\Images\02_02_Memory_ByteEnable.pdf
 INPUT .\Images\02_02_Memory_ByteEnable.pdf
+INPUT .\Images\02_07_Memory_ReadWaveform.pdf
+INPUT .\Images\02_07_Memory_ReadWaveform.pdf
+INPUT .\Images\02_07_Memory_ReadWaveform.pdf
+INPUT .\Images\02_07_Memory_ReadWaveform.pdf
+INPUT .\Images\02_07_Memory_ReadWaveform.pdf
+INPUT .\Images\02_07_Memory_ReadWaveform.pdf
+INPUT .\Images\02_08_Memory_WriteWaveform.pdf
+INPUT .\Images\02_08_Memory_WriteWaveform.pdf
+INPUT .\Images\02_08_Memory_WriteWaveform.pdf
+INPUT .\Images\02_08_Memory_WriteWaveform.pdf
+INPUT .\Images\02_08_Memory_WriteWaveform.pdf
+INPUT .\Images\02_08_Memory_WriteWaveform.pdf
 INPUT .\Images\02_09_DMABlockDiagram.pdf
 INPUT .\Images\02_09_DMABlockDiagram.pdf
 INPUT .\Images\02_09_DMABlockDiagram.pdf
@@ -507,7 +580,6 @@ INPUT .\Images\02_12_StateDiagram_ReadMaster.pdf
 INPUT .\Images\02_12_StateDiagram_ReadMaster.pdf
 INPUT .\Images\02_12_StateDiagram_ReadMaster.pdf
 INPUT .\Images\02_12_StateDiagram_ReadMaster.pdf
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vnr12.tfm
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vntt12.tfm
 INPUT .\Images\02_13_StateDiagram_WriteMaster.pdf
 INPUT .\Images\02_13_StateDiagram_WriteMaster.pdf
@@ -515,3 +587,445 @@ INPUT .\Images\02_13_StateDiagram_WriteMaster.pdf
 INPUT .\Images\02_13_StateDiagram_WriteMaster.pdf
 INPUT .\Images\02_13_StateDiagram_WriteMaster.pdf
 INPUT .\Images\02_13_StateDiagram_WriteMaster.pdf
+INPUT .\chapter3.tex
+INPUT .\chapter3.tex
+OUTPUT chapter3.aux
+INPUT .\chapter3.tex
+INPUT .\chapter3.tex
+INPUT chapter3.tex
+INPUT .\Images\03_11_QuartusNewProjectWizard1.png
+INPUT .\Images\03_11_QuartusNewProjectWizard1.png
+INPUT .\Images\03_11_QuartusNewProjectWizard1.png
+INPUT .\Images\03_11_QuartusNewProjectWizard1.png
+INPUT .\Images\03_11_QuartusNewProjectWizard1.png
+INPUT .\Images\03_11_QuartusNewProjectWizard1.png
+INPUT .\Images\03_12_QuartusNewProjectWizard2.png
+INPUT .\Images\03_12_QuartusNewProjectWizard2.png
+INPUT .\Images\03_12_QuartusNewProjectWizard2.png
+INPUT .\Images\03_12_QuartusNewProjectWizard2.png
+INPUT .\Images\03_12_QuartusNewProjectWizard2.png
+INPUT .\Images\03_12_QuartusNewProjectWizard2.png
+INPUT .\Images\03_13_ProjectFilesDMA.png
+INPUT .\Images\03_13_ProjectFilesDMA.png
+INPUT .\Images\03_13_ProjectFilesDMA.png
+INPUT .\Images\03_13_ProjectFilesDMA.png
+INPUT .\Images\03_13_ProjectFilesDMA.png
+INPUT .\Images\03_13_ProjectFilesDMA.png
+INPUT .\Images\03_15_NiosVIPConfig1.png
+INPUT .\Images\03_15_NiosVIPConfig1.png
+INPUT .\Images\03_15_NiosVIPConfig1.png
+INPUT .\Images\03_15_NiosVIPConfig1.png
+INPUT .\Images\03_15_NiosVIPConfig1.png
+INPUT .\Images\03_15_NiosVIPConfig1.png
+INPUT .\Images\03_16_OnChipMemoryIPConfig.png
+INPUT .\Images\03_16_OnChipMemoryIPConfig.png
+INPUT .\Images\03_16_OnChipMemoryIPConfig.png
+INPUT .\Images\03_16_OnChipMemoryIPConfig.png
+INPUT .\Images\03_16_OnChipMemoryIPConfig.png
+INPUT .\Images\03_16_OnChipMemoryIPConfig.png
+INPUT .\Images\03_17_JTAGUARTIPConfig.png
+INPUT .\Images\03_17_JTAGUARTIPConfig.png
+INPUT .\Images\03_17_JTAGUARTIPConfig.png
+INPUT .\Images\03_17_JTAGUARTIPConfig.png
+INPUT .\Images\03_17_JTAGUARTIPConfig.png
+INPUT .\Images\03_17_JTAGUARTIPConfig.png
+INPUT .\Images\03_21_ComponentEditorFilesAnalyzed.png
+INPUT .\Images\03_21_ComponentEditorFilesAnalyzed.png
+INPUT .\Images\03_21_ComponentEditorFilesAnalyzed.png
+INPUT .\Images\03_21_ComponentEditorFilesAnalyzed.png
+INPUT .\Images\03_21_ComponentEditorFilesAnalyzed.png
+INPUT .\Images\03_21_ComponentEditorFilesAnalyzed.png
+INPUT .\Images\03_23_ComponentEditorSignals_DMAC.png
+INPUT .\Images\03_23_ComponentEditorSignals_DMAC.png
+INPUT .\Images\03_23_ComponentEditorSignals_DMAC.png
+INPUT .\Images\03_23_ComponentEditorSignals_DMAC.png
+INPUT .\Images\03_23_ComponentEditorSignals_DMAC.png
+INPUT .\Images\03_23_ComponentEditorSignals_DMAC.png
+INPUT .\Images\03_26_ComponentEditorInterfaces3.png
+INPUT .\Images\03_26_ComponentEditorInterfaces3.png
+INPUT .\Images\03_26_ComponentEditorInterfaces3.png
+INPUT .\Images\03_26_ComponentEditorInterfaces3.png
+INPUT .\Images\03_26_ComponentEditorInterfaces3.png
+INPUT .\Images\03_26_ComponentEditorInterfaces3.png
+INPUT .\Images\03_27_ComponentEditorInterfaces4.png
+INPUT .\Images\03_27_ComponentEditorInterfaces4.png
+INPUT .\Images\03_27_ComponentEditorInterfaces4.png
+INPUT .\Images\03_27_ComponentEditorInterfaces4.png
+INPUT .\Images\03_27_ComponentEditorInterfaces4.png
+INPUT .\Images\03_27_ComponentEditorInterfaces4.png
+INPUT .\Images\03_28_PlatformDesignerSystemView1.png
+INPUT .\Images\03_28_PlatformDesignerSystemView1.png
+INPUT .\Images\03_28_PlatformDesignerSystemView1.png
+INPUT .\Images\03_28_PlatformDesignerSystemView1.png
+INPUT .\Images\03_28_PlatformDesignerSystemView1.png
+INPUT .\Images\03_28_PlatformDesignerSystemView1.png
+INPUT .\Images\03_29_PlatformDesignerAssignBaseAddr.png
+INPUT .\Images\03_29_PlatformDesignerAssignBaseAddr.png
+INPUT .\Images\03_29_PlatformDesignerAssignBaseAddr.png
+INPUT .\Images\03_29_PlatformDesignerAssignBaseAddr.png
+INPUT .\Images\03_29_PlatformDesignerAssignBaseAddr.png
+INPUT .\Images\03_29_PlatformDesignerAssignBaseAddr.png
+INPUT .\Images\03_30_PlatformDesignerSystemView_FinalDMAC.png
+INPUT .\Images\03_30_PlatformDesignerSystemView_FinalDMAC.png
+INPUT .\Images\03_30_PlatformDesignerSystemView_FinalDMAC.png
+INPUT .\Images\03_30_PlatformDesignerSystemView_FinalDMAC.png
+INPUT .\Images\03_30_PlatformDesignerSystemView_FinalDMAC.png
+INPUT .\Images\03_30_PlatformDesignerSystemView_FinalDMAC.png
+INPUT .\Images\03_31_NiosVVectorConfig.png
+INPUT .\Images\03_31_NiosVVectorConfig.png
+INPUT .\Images\03_31_NiosVVectorConfig.png
+INPUT .\Images\03_31_NiosVVectorConfig.png
+INPUT .\Images\03_31_NiosVVectorConfig.png
+INPUT .\Images\03_31_NiosVVectorConfig.png
+INPUT .\Images\03_34_PlatformDesignerGenerateHDL.png
+INPUT .\Images\03_34_PlatformDesignerGenerateHDL.png
+INPUT .\Images\03_34_PlatformDesignerGenerateHDL.png
+INPUT .\Images\03_34_PlatformDesignerGenerateHDL.png
+INPUT .\Images\03_34_PlatformDesignerGenerateHDL.png
+INPUT .\Images\03_34_PlatformDesignerGenerateHDL.png
+INPUT .\Images\03_37_QuartusAddFilesToProjectMenu.png
+INPUT .\Images\03_37_QuartusAddFilesToProjectMenu.png
+INPUT .\Images\03_37_QuartusAddFilesToProjectMenu.png
+INPUT .\Images\03_37_QuartusAddFilesToProjectMenu.png
+INPUT .\Images\03_37_QuartusAddFilesToProjectMenu.png
+INPUT .\Images\03_37_QuartusAddFilesToProjectMenu.png
+INPUT .\Images\03_38_QuartusProjectFilesSettings.png
+INPUT .\Images\03_38_QuartusProjectFilesSettings.png
+INPUT .\Images\03_38_QuartusProjectFilesSettings.png
+INPUT .\Images\03_38_QuartusProjectFilesSettings.png
+INPUT .\Images\03_38_QuartusProjectFilesSettings.png
+INPUT .\Images\03_38_QuartusProjectFilesSettings.png
+INPUT .\Images\03_39_QuartusImportAssignmentsMenu.png
+INPUT .\Images\03_39_QuartusImportAssignmentsMenu.png
+INPUT .\Images\03_39_QuartusImportAssignmentsMenu.png
+INPUT .\Images\03_39_QuartusImportAssignmentsMenu.png
+INPUT .\Images\03_39_QuartusImportAssignmentsMenu.png
+INPUT .\Images\03_39_QuartusImportAssignmentsMenu.png
+INPUT .\Images\03_40_QuartusImportAssignmentsDialog.png
+INPUT .\Images\03_40_QuartusImportAssignmentsDialog.png
+INPUT .\Images\03_40_QuartusImportAssignmentsDialog.png
+INPUT .\Images\03_40_QuartusImportAssignmentsDialog.png
+INPUT .\Images\03_40_QuartusImportAssignmentsDialog.png
+INPUT .\Images\03_40_QuartusImportAssignmentsDialog.png
+INPUT .\Images\03_41_QuartusCompilationTasks.png
+INPUT .\Images\03_41_QuartusCompilationTasks.png
+INPUT .\Images\03_41_QuartusCompilationTasks.png
+INPUT .\Images\03_41_QuartusCompilationTasks.png
+INPUT .\Images\03_41_QuartusCompilationTasks.png
+INPUT .\Images\03_41_QuartusCompilationTasks.png
+INPUT .\Images\03_42_QuartusAssignmentEditor.png
+INPUT .\Images\03_42_QuartusAssignmentEditor.png
+INPUT .\Images\03_42_QuartusAssignmentEditor.png
+INPUT .\Images\03_42_QuartusAssignmentEditor.png
+INPUT .\Images\03_42_QuartusAssignmentEditor.png
+INPUT .\Images\03_42_QuartusAssignmentEditor.png
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\listings\lstlang1.sty
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\listings\lstlang1.sty
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\listings\lstlang1.sty
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\listings\lstlang1.sty
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\listings\lstlang1.sty
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\listings\lstlang1.sty
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vnr10.tfm
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vnr7.tfm
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\jknappen\ec\tcrm1095.tfm
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\jknappen\ec\tcbx1200.tfm
+INPUT .\Images\03_43_SoftwareFoldersAppBSP.png
+INPUT .\Images\03_43_SoftwareFoldersAppBSP.png
+INPUT .\Images\03_43_SoftwareFoldersAppBSP.png
+INPUT .\Images\03_43_SoftwareFoldersAppBSP.png
+INPUT .\Images\03_43_SoftwareFoldersAppBSP.png
+INPUT .\Images\03_43_SoftwareFoldersAppBSP.png
+INPUT .\Images\03_45_SoftwareAppFolderSourceC.png
+INPUT .\Images\03_45_SoftwareAppFolderSourceC.png
+INPUT .\Images\03_45_SoftwareAppFolderSourceC.png
+INPUT .\Images\03_45_SoftwareAppFolderSourceC.png
+INPUT .\Images\03_45_SoftwareAppFolderSourceC.png
+INPUT .\Images\03_45_SoftwareAppFolderSourceC.png
+INPUT .\Images\03_46_NiosVShellLocation.png
+INPUT .\Images\03_46_NiosVShellLocation.png
+INPUT .\Images\03_46_NiosVShellLocation.png
+INPUT .\Images\03_46_NiosVShellLocation.png
+INPUT .\Images\03_46_NiosVShellLocation.png
+INPUT .\Images\03_46_NiosVShellLocation.png
+INPUT .\Images\03_47_NiosVShellCommands.png
+INPUT .\Images\03_47_NiosVShellCommands.png
+INPUT .\Images\03_47_NiosVShellCommands.png
+INPUT .\Images\03_47_NiosVShellCommands.png
+INPUT .\Images\03_47_NiosVShellCommands.png
+INPUT .\Images\03_47_NiosVShellCommands.png
+INPUT .\Images\03_48_NiosVShellBSPOutput.png
+INPUT .\Images\03_48_NiosVShellBSPOutput.png
+INPUT .\Images\03_48_NiosVShellBSPOutput.png
+INPUT .\Images\03_48_NiosVShellBSPOutput.png
+INPUT .\Images\03_48_NiosVShellBSPOutput.png
+INPUT .\Images\03_48_NiosVShellBSPOutput.png
+INPUT .\Images\03_49_NiosVShellAppOutput.png
+INPUT .\Images\03_49_NiosVShellAppOutput.png
+INPUT .\Images\03_49_NiosVShellAppOutput.png
+INPUT .\Images\03_49_NiosVShellAppOutput.png
+INPUT .\Images\03_49_NiosVShellAppOutput.png
+INPUT .\Images\03_49_NiosVShellAppOutput.png
+INPUT .\Images\03_50_AshlingRiscFreefromNiosVShell.png
+INPUT .\Images\03_50_AshlingRiscFreefromNiosVShell.png
+INPUT .\Images\03_50_AshlingRiscFreefromNiosVShell.png
+INPUT .\Images\03_50_AshlingRiscFreefromNiosVShell.png
+INPUT .\Images\03_50_AshlingRiscFreefromNiosVShell.png
+INPUT .\Images\03_50_AshlingRiscFreefromNiosVShell.png
+INPUT .\Images\03_51_AshlingRiscFreeLauncher2.png
+INPUT .\Images\03_51_AshlingRiscFreeLauncher2.png
+INPUT .\Images\03_51_AshlingRiscFreeLauncher2.png
+INPUT .\Images\03_51_AshlingRiscFreeLauncher2.png
+INPUT .\Images\03_51_AshlingRiscFreeLauncher2.png
+INPUT .\Images\03_51_AshlingRiscFreeLauncher2.png
+INPUT .\Images\03_52_AshlingIDEWelcome.png
+INPUT .\Images\03_52_AshlingIDEWelcome.png
+INPUT .\Images\03_52_AshlingIDEWelcome.png
+INPUT .\Images\03_52_AshlingIDEWelcome.png
+INPUT .\Images\03_52_AshlingIDEWelcome.png
+INPUT .\Images\03_52_AshlingIDEWelcome.png
+INPUT .\Images\03_53_AshlingIDENewProjectWizard1.png
+INPUT .\Images\03_53_AshlingIDENewProjectWizard1.png
+INPUT .\Images\03_53_AshlingIDENewProjectWizard1.png
+INPUT .\Images\03_53_AshlingIDENewProjectWizard1.png
+INPUT .\Images\03_53_AshlingIDENewProjectWizard1.png
+INPUT .\Images\03_53_AshlingIDENewProjectWizard1.png
+INPUT .\Images\03_54_AshlingIDENewProjectWizard2.png
+INPUT .\Images\03_54_AshlingIDENewProjectWizard2.png
+INPUT .\Images\03_54_AshlingIDENewProjectWizard2.png
+INPUT .\Images\03_54_AshlingIDENewProjectWizard2.png
+INPUT .\Images\03_54_AshlingIDENewProjectWizard2.png
+INPUT .\Images\03_54_AshlingIDENewProjectWizard2.png
+INPUT .\Images\03_55_AshlingIDEProjectExplorer.png
+INPUT .\Images\03_55_AshlingIDEProjectExplorer.png
+INPUT .\Images\03_55_AshlingIDEProjectExplorer.png
+INPUT .\Images\03_55_AshlingIDEProjectExplorer.png
+INPUT .\Images\03_55_AshlingIDEProjectExplorer.png
+INPUT .\Images\03_55_AshlingIDEProjectExplorer.png
+INPUT .\Images\03_56_AshlingIDEBuildMenu.png
+INPUT .\Images\03_56_AshlingIDEBuildMenu.png
+INPUT .\Images\03_56_AshlingIDEBuildMenu.png
+INPUT .\Images\03_56_AshlingIDEBuildMenu.png
+INPUT .\Images\03_56_AshlingIDEBuildMenu.png
+INPUT .\Images\03_56_AshlingIDEBuildMenu.png
+INPUT .\Images\03_59_QuartusProgrammerWindow.png
+INPUT .\Images\03_59_QuartusProgrammerWindow.png
+INPUT .\Images\03_59_QuartusProgrammerWindow.png
+INPUT .\Images\03_59_QuartusProgrammerWindow.png
+INPUT .\Images\03_59_QuartusProgrammerWindow.png
+INPUT .\Images\03_59_QuartusProgrammerWindow.png
+INPUT .\Images\03_60_AshlingIDEDebugMenu.png
+INPUT .\Images\03_60_AshlingIDEDebugMenu.png
+INPUT .\Images\03_60_AshlingIDEDebugMenu.png
+INPUT .\Images\03_60_AshlingIDEDebugMenu.png
+INPUT .\Images\03_60_AshlingIDEDebugMenu.png
+INPUT .\Images\03_60_AshlingIDEDebugMenu.png
+INPUT .\Images\03_61_AshlingIDERunConfigELF.png
+INPUT .\Images\03_61_AshlingIDERunConfigELF.png
+INPUT .\Images\03_61_AshlingIDERunConfigELF.png
+INPUT .\Images\03_61_AshlingIDERunConfigELF.png
+INPUT .\Images\03_61_AshlingIDERunConfigELF.png
+INPUT .\Images\03_61_AshlingIDERunConfigELF.png
+INPUT .\Images\03_62_AshlingIDEDebugConfig.png
+INPUT .\Images\03_62_AshlingIDEDebugConfig.png
+INPUT .\Images\03_62_AshlingIDEDebugConfig.png
+INPUT .\Images\03_62_AshlingIDEDebugConfig.png
+INPUT .\Images\03_62_AshlingIDEDebugConfig.png
+INPUT .\Images\03_62_AshlingIDEDebugConfig.png
+INPUT .\Images\03_63_AshlingIDEDebugConsole.png
+INPUT .\Images\03_63_AshlingIDEDebugConsole.png
+INPUT .\Images\03_63_AshlingIDEDebugConsole.png
+INPUT .\Images\03_63_AshlingIDEDebugConsole.png
+INPUT .\Images\03_63_AshlingIDEDebugConsole.png
+INPUT .\Images\03_63_AshlingIDEDebugConsole.png
+INPUT .\Images\03_64_JUARTTerminalOutput1.png
+INPUT .\Images\03_64_JUARTTerminalOutput1.png
+INPUT .\Images\03_64_JUARTTerminalOutput1.png
+INPUT .\Images\03_64_JUARTTerminalOutput1.png
+INPUT .\Images\03_64_JUARTTerminalOutput1.png
+INPUT .\Images\03_64_JUARTTerminalOutput1.png
+INPUT .\Images\03_65_JUARTTerminalOutput2.png
+INPUT .\Images\03_65_JUARTTerminalOutput2.png
+INPUT .\Images\03_65_JUARTTerminalOutput2.png
+INPUT .\Images\03_65_JUARTTerminalOutput2.png
+INPUT .\Images\03_65_JUARTTerminalOutput2.png
+INPUT .\Images\03_65_JUARTTerminalOutput2.png
+INPUT .\Images\03_66_JUARTTerminalOutput3.png
+INPUT .\Images\03_66_JUARTTerminalOutput3.png
+INPUT .\Images\03_66_JUARTTerminalOutput3.png
+INPUT .\Images\03_66_JUARTTerminalOutput3.png
+INPUT .\Images\03_66_JUARTTerminalOutput3.png
+INPUT .\Images\03_66_JUARTTerminalOutput3.png
+INPUT .\chapter4.tex
+INPUT .\chapter4.tex
+OUTPUT chapter4.aux
+INPUT .\chapter4.tex
+INPUT .\chapter4.tex
+INPUT chapter4.tex
+INPUT .\Images\04_01_UbuntuGenerateTestbenchSystem.png
+INPUT .\Images\04_01_UbuntuGenerateTestbenchSystem.png
+INPUT .\Images\04_01_UbuntuGenerateTestbenchSystem.png
+INPUT .\Images\04_01_UbuntuGenerateTestbenchSystem.png
+INPUT .\Images\04_01_UbuntuGenerateTestbenchSystem.png
+INPUT .\Images\04_01_UbuntuGenerateTestbenchSystem.png
+INPUT .\Images\04_01_UbuntuGenerateTestbenchSystem.png
+INPUT .\Images\04_03_QuestaSimWaveform_argsimulationzero.png
+INPUT .\Images\04_03_QuestaSimWaveform_argsimulationzero.png
+INPUT .\Images\04_03_QuestaSimWaveform_argsimulationzero.png
+INPUT .\Images\04_03_QuestaSimWaveform_argsimulationzero.png
+INPUT .\Images\04_03_QuestaSimWaveform_argsimulationzero.png
+INPUT .\Images\04_03_QuestaSimWaveform_argsimulationzero.png
+INPUT .\Images\04_03_QuestaSimWaveform_argsimulationzero.png
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\jknappen\ec\tcti1200.tfm
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vncsc10.tfm
+INPUT .\Appendix\appendix1.tex
+INPUT .\Appendix\appendix1.tex
+OUTPUT Appendix\appendix1.aux
+INPUT .\Appendix\appendix1.tex
+INPUT .\Appendix\appendix1.tex
+INPUT Appendix\appendix1.tex
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\listings\lstlang1.sty
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\listings\lstlang1.sty
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\listings\lstlang1.sty
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\listings\lstlang2.sty
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\listings\lstlang2.sty
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\listings\lstlang2.sty
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\listings\lstlang3.sty
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\listings\lstlang3.sty
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\listings\lstlang3.sty
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\listings\lstlang1.sty
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\listings\lstlang1.sty
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\listings\lstlang1.sty
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\listings\lstmisc.sty
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\listings\lstmisc.sty
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\listings\lstmisc.sty
+INPUT .\Appendix\appendix2.tex
+INPUT .\Appendix\appendix2.tex
+OUTPUT Appendix\appendix2.aux
+INPUT .\Appendix\appendix2.tex
+INPUT .\Appendix\appendix2.tex
+INPUT Appendix\appendix2.tex
+INPUT .\Images\03_67_AppendixTroubleshootingBSPError.png
+INPUT .\Images\03_67_AppendixTroubleshootingBSPError.png
+INPUT .\Images\03_67_AppendixTroubleshootingBSPError.png
+INPUT .\Images\03_67_AppendixTroubleshootingBSPError.png
+INPUT .\Images\03_67_AppendixTroubleshootingBSPError.png
+INPUT .\Images\03_67_AppendixTroubleshootingBSPError.png
+INPUT .\Images\03_67_AppendixTroubleshootingBSPError.png
+INPUT .\Images\03_69_AppendixRestartJTAGServer.png
+INPUT .\Images\03_69_AppendixRestartJTAGServer.png
+INPUT .\Images\03_69_AppendixRestartJTAGServer.png
+INPUT .\Images\03_69_AppendixRestartJTAGServer.png
+INPUT .\Images\03_69_AppendixRestartJTAGServer.png
+INPUT .\Images\03_69_AppendixRestartJTAGServer.png
+INPUT .\Images\03_69_AppendixRestartJTAGServer.png
+INPUT .\Images\03_01_IntelLicensingPortalSignIn.png
+INPUT .\Images\03_01_IntelLicensingPortalSignIn.png
+INPUT .\Images\03_01_IntelLicensingPortalSignIn.png
+INPUT .\Images\03_01_IntelLicensingPortalSignIn.png
+INPUT .\Images\03_01_IntelLicensingPortalSignIn.png
+INPUT .\Images\03_01_IntelLicensingPortalSignIn.png
+INPUT .\Images\03_02_IntelLicensingWelcome.png
+INPUT .\Images\03_02_IntelLicensingWelcome.png
+INPUT .\Images\03_02_IntelLicensingWelcome.png
+INPUT .\Images\03_02_IntelLicensingWelcome.png
+INPUT .\Images\03_02_IntelLicensingWelcome.png
+INPUT .\Images\03_02_IntelLicensingWelcome.png
+INPUT .\Images\03_03_IntelLicensingEvalSelection.png
+INPUT .\Images\03_03_IntelLicensingEvalSelection.png
+INPUT .\Images\03_03_IntelLicensingEvalSelection.png
+INPUT .\Images\03_03_IntelLicensingEvalSelection.png
+INPUT .\Images\03_03_IntelLicensingEvalSelection.png
+INPUT .\Images\03_03_IntelLicensingEvalSelection.png
+INPUT .\Images\03_04_IntelLicensingNiosVSelection.png
+INPUT .\Images\03_04_IntelLicensingNiosVSelection.png
+INPUT .\Images\03_04_IntelLicensingNiosVSelection.png
+INPUT .\Images\03_04_IntelLicensingNiosVSelection.png
+INPUT .\Images\03_04_IntelLicensingNiosVSelection.png
+INPUT .\Images\03_04_IntelLicensingNiosVSelection.png
+INPUT .\Images\03_05_IntelLicensingNICConfig.png
+INPUT .\Images\03_05_IntelLicensingNICConfig.png
+INPUT .\Images\03_05_IntelLicensingNICConfig.png
+INPUT .\Images\03_05_IntelLicensingNICConfig.png
+INPUT .\Images\03_05_IntelLicensingNICConfig.png
+INPUT .\Images\03_05_IntelLicensingNICConfig.png
+INPUT .\Images\03_06_IntelLicensingComputerInfo.png
+INPUT .\Images\03_06_IntelLicensingComputerInfo.png
+INPUT .\Images\03_06_IntelLicensingComputerInfo.png
+INPUT .\Images\03_06_IntelLicensingComputerInfo.png
+INPUT .\Images\03_06_IntelLicensingComputerInfo.png
+INPUT .\Images\03_06_IntelLicensingComputerInfo.png
+INPUT .\Images\03_07_IntelLicensingGenerate.png
+INPUT .\Images\03_07_IntelLicensingGenerate.png
+INPUT .\Images\03_07_IntelLicensingGenerate.png
+INPUT .\Images\03_07_IntelLicensingGenerate.png
+INPUT .\Images\03_07_IntelLicensingGenerate.png
+INPUT .\Images\03_07_IntelLicensingGenerate.png
+INPUT .\Images\03_08_IntelLicenseEmailConfirmation.png
+INPUT .\Images\03_08_IntelLicenseEmailConfirmation.png
+INPUT .\Images\03_08_IntelLicenseEmailConfirmation.png
+INPUT .\Images\03_08_IntelLicenseEmailConfirmation.png
+INPUT .\Images\03_08_IntelLicenseEmailConfirmation.png
+INPUT .\Images\03_08_IntelLicenseEmailConfirmation.png
+INPUT .\Images\03_09_QuartusToolsMenu.png
+INPUT .\Images\03_09_QuartusToolsMenu.png
+INPUT .\Images\03_09_QuartusToolsMenu.png
+INPUT .\Images\03_09_QuartusToolsMenu.png
+INPUT .\Images\03_09_QuartusToolsMenu.png
+INPUT .\Images\03_09_QuartusToolsMenu.png
+INPUT .\Images\03_10_QuartusLicenseSetup.png
+INPUT .\Images\03_10_QuartusLicenseSetup.png
+INPUT .\Images\03_10_QuartusLicenseSetup.png
+INPUT .\Images\03_10_QuartusLicenseSetup.png
+INPUT .\Images\03_10_QuartusLicenseSetup.png
+INPUT .\Images\03_10_QuartusLicenseSetup.png
+INPUT main.aux
+INPUT .\chapter1.aux
+INPUT .\chapter1.aux
+INPUT chapter1.aux
+INPUT .\chapter2.aux
+INPUT .\chapter2.aux
+INPUT chapter2.aux
+INPUT .\chapter3.aux
+INPUT .\chapter3.aux
+INPUT chapter3.aux
+INPUT .\chapter4.aux
+INPUT .\chapter4.aux
+INPUT chapter4.aux
+INPUT .\Appendix\appendix1.aux
+INPUT .\Appendix\appendix1.aux
+INPUT Appendix\appendix1.aux
+INPUT .\Appendix\appendix2.aux
+INPUT .\Appendix\appendix2.aux
+INPUT Appendix\appendix2.aux
+INPUT .\main.out
+INPUT .\main.out
+INPUT main.run.xml
+OUTPUT main.run.xml
+INPUT D:\Program Files\MikTex\texmfs\data\fonts\pk\ljfour\jknappen\ec\dpi600\tcti1200.pk
+INPUT D:\Program Files\MikTex\texmfs\data\fonts\pk\ljfour\jknappen\ec\dpi600\tcti1200.pk
+INPUT D:\Program Files\MikTex\texmfs\data\fonts\pk\ljfour\jknappen\ec\dpi600\tcbx1200.pk
+INPUT D:\Program Files\MikTex\texmfs\data\fonts\pk\ljfour\jknappen\ec\dpi600\tcbx1200.pk
+INPUT D:\Program Files\MikTex\texmfs\data\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1095.pk
+INPUT D:\Program Files\MikTex\texmfs\data\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1095.pk
+INPUT D:\Program Files\MikTex\texmfs\data\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
+INPUT D:\Program Files\MikTex\texmfs\data\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnbx12.pfb
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnbx12.pfb
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnbxti10.pfb
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnbxti10.pfb
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vncsc10.pfb
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vncsc10.pfb
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnr10.pfb
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnr10.pfb
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnr12.pfb
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnr12.pfb
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnr17.pfb
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnr17.pfb
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnr7.pfb
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnr7.pfb
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnti12.pfb
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnti12.pfb
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vntt12.pfb
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vntt12.pfb

@@ -1,0 +1,72 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Kiến trúc Nios V/m \blx@tocontentsinit {0}\cite {niosv_architecture}.}}{4}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Các giao dịch đọc và ghi Avalon-MM điển hình với tín hiệu waitrequest \blx@tocontentsinit {0}\cite {avalon_mm_transfer}.}}{6}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Giản đồ sóng đọc và ghi của giao tiếp Avalon-MM Slave.}}{6}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Giản đồ sóng đọc và ghi của giao tiếp Avalon-MM Slave.}}{7}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Giản đồ sóng chức năng của Byte Enable. Hình này minh họa ảnh hưởng của byte enable lên dữ liệu được ghi vào và đọc ra từ bộ nhớ \blx@tocontentsinit {0}\cite {memory_byteenable}.}}{8}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Giản đồ sóng đọc và ghi bộ nhớ Memory qua giao tiếp Avalon-MM.}}{8}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Sơ đồ khối tổng thể của bộ điều khiển DMA.}}{10}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Sơ đồ tuần tự hoạt động của DMA.}}{14}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Sơ đồ trạng thái của module \texttt {CONTROL\_SLAVE}.}}{17}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Sơ đồ trạng thái các module.}}{18}{figure.caption.17}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Quartus: New Project Wizard: Chỉ định đường dẫn thư mục và tên Project.}}{22}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Quartus: New Project Wizard: Device Selector}}{22}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Thư mục dự án hiển thị các tệp Verilog DMA tùy chỉnh đã sao chép.}}{23}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Cấu hình IP Nios V/m: Bật "Enable Reset from Debug Module".}}{23}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Cấu hình IP Bộ nhớ Trên Chip: Đặt kích thước thành 128 KB.}}{24}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Cấu hình IP JTAG UART.}}{25}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Component Editor: Các tệp sau khi Phân tích và Sao chép từ Tổng hợp.}}{26}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Component Editor: Các loại tín hiệu clock và reset đã được sửa.}}{27}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Component Editor: Chế độ xem sơ đồ khối giao diện Avalon Slave.}}{28}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Component Editor: Chế độ xem giao diện Reset và Clock sink.}}{28}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Platform Designer: Hệ thống có kết nối giữa \texttt {instruction\_master} với s1 (của \texttt {onchip\_memory2\_1}).}}{29}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Platform Designer: Gán Địa chỉ Cơ sở (Assign Base Addresses).}}{29}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Platform Designer: Mô hình hệ thống hoàn chỉnh (sau khi ngắt kết nối \texttt {instruction\_master} với \texttt {s1} trên \texttt {onchip\_memory2\_1}).}}{30}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Cấu hình IP Nios V/m: Đặt Bộ nhớ Vector Reset (Reset Vector Memory).}}{30}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Platform Designer: Hộp thoại Tạo HDL (Generate HDL).}}{31}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Quartus: Menu Project -> Add/Remove Files in Project...}}{31}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Quartus: Cài đặt Dự án - Cửa sổ Tệp hiển thị tệp .qip đã thêm.}}{32}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Quartus: Menu Assignments -> Import Assignments...}}{32}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Quartus: Hộp thoại Nhập Gán chân (Import Assignments) để chọn tệp .qsf.}}{32}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Quartus: Compile Design thành công.}}{33}{figure.caption.37}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Quartus: Trình chỉnh sửa Gán chân (Assignment Editor) hiển thị các gán chân đã nhập.}}{33}{figure.caption.38}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Cấu trúc thư mục Software gồm các thư mục con \texttt {app} và \texttt {bsp}.}}{36}{figure.caption.39}%
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Thư mục \texttt {software/app} chứa tệp mã nguồn \texttt {source.c}.}}{36}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Vị trí của \texttt {niosv-shell.exe}.}}{36}{figure.caption.41}%
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Cửa sổ Nios V Shell.}}{36}{figure.caption.42}%
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Đầu ra từ việc thực thi lệnh \texttt {niosv-bsp}.}}{37}{figure.caption.43}%
+\contentsline {figure}{\numberline {3.27}{\ignorespaces Đầu ra từ việc thực thi lệnh \texttt {niosv-app}.}}{37}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.28}{\ignorespaces Khởi chạy Ashling RiscFree™ IDE từ Nios V Shell, chọn đường dẫn Workspace.}}{37}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.29}{\ignorespaces Màn hình chào mừng Ashling RiscFree™ IDE: Chọn "Create a project...".}}{38}{figure.caption.46}%
+\contentsline {figure}{\numberline {3.30}{\ignorespaces Ashling IDE: Chọn C/C++ $\DOTSB \relbar \joinrel \rightarrow $ C Project.}}{38}{figure.caption.47}%
+\contentsline {figure}{\numberline {3.31}{\ignorespaces Ashling IDE: Chọn CMake driven $\DOTSB \relbar \joinrel \rightarrow $ Empty Project.}}{39}{figure.caption.48}%
+\contentsline {figure}{\numberline {3.32}{\ignorespaces Ashling IDE: Project Explorer hiển thị dự án 'app'.}}{39}{figure.caption.49}%
+\contentsline {figure}{\numberline {3.33}{\ignorespaces Ashling IDE: nhấp chuột phải 'app' $\DOTSB \relbar \joinrel \rightarrow $ Build Project.}}{40}{figure.caption.50}%
+\contentsline {figure}{\numberline {3.34}{\ignorespaces Ashling IDE: Console thông báo Build thành công.}}{40}{figure.caption.51}%
+\contentsline {figure}{\numberline {3.35}{\ignorespaces Quartus Programmer: Nạp tệp .sof xuống board thành công.}}{41}{figure.caption.52}%
+\contentsline {figure}{\numberline {3.36}{\ignorespaces Ashling IDE: Nạp Firmware xuống lõi Nios V (Run As $\DOTSB \relbar \joinrel \rightarrow $ Ashling RISC-V Hardware Debugging.}}{41}{figure.caption.53}%
+\contentsline {figure}{\numberline {3.37}{\ignorespaces Ashling IDE: Cấu hình Gỡ lỗi - Chỉ định ứng dụng C/C++ (.elf).}}{42}{figure.caption.54}%
+\contentsline {figure}{\numberline {3.38}{\ignorespaces Ashling IDE: Cấu hình Gỡ lỗi - Cài đặt tab Debugger.}}{43}{figure.caption.55}%
+\contentsline {figure}{\numberline {3.39}{\ignorespaces Ashling IDE: Debug Console cho biết đang chờ kết nối (Nhấn nút đỏ để ngừng chạy).}}{43}{figure.caption.56}%
+\contentsline {figure}{\numberline {3.40}{\ignorespaces Đầu ra JTAG UART Terminal: Thông báo ban đầu và reset DMA.}}{44}{figure.caption.57}%
+\contentsline {figure}{\numberline {3.41}{\ignorespaces Đầu ra JTAG UART Terminal: Trạng thái bộ đệm và cấu hình DMA.}}{45}{figure.caption.58}%
+\contentsline {figure}{\numberline {3.42}{\ignorespaces Đầu ra JTAG UART Terminal: Xác minh truyền DMA thành công.}}{46}{figure.caption.59}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Generate Testbench System trong Platform Designer trên Ubuntu 22.04.5 thành công.}}{48}{figure.caption.60}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Dạng sóng mô phỏng cho các tín hiệu DMA và giao dịch Avalon-MM.}}{51}{figure.caption.61}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Lỗi niosv-app báo đường dẫn hoặc tệp source code không tồn tại.}}{77}{figure.caption.65}%
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Khởi động lại Altera JTAG Server trong Services của Windows.}}{78}{figure.caption.66}%
+\contentsline {figure}{\numberline {B.3}{\ignorespaces Trang đăng nhập Cổng Intel Licensing Portal.}}{81}{figure.caption.67}%
+\contentsline {figure}{\numberline {B.4}{\ignorespaces Email thông báo tài khoản Intel FPGA Self-Service Licensing đã được tạo thành công.}}{82}{figure.caption.68}%
+\contentsline {figure}{\numberline {B.5}{\ignorespaces Chọn "Sign up for Evaluation or No-Cost Licenses".}}{83}{figure.caption.69}%
+\contentsline {figure}{\numberline {B.6}{\ignorespaces Chọn bộ xử lý Nios V/m để cấp phép License.}}{83}{figure.caption.70}%
+\contentsline {figure}{\numberline {B.7}{\ignorespaces Tìm ID Card Giao diện Mạng (Network Interface Card - NIC ID) (Địa chỉ Vật lý).}}{84}{figure.caption.71}%
+\contentsline {figure}{\numberline {B.8}{\ignorespaces Nhập thông tin máy tính (Tên, Loại, NIC ID) cho giấy phép.}}{84}{figure.caption.72}%
+\contentsline {figure}{\numberline {B.9}{\ignorespaces Tạo giấy phép cố định (fixed license) dựa trên chi tiết máy tính.}}{84}{figure.caption.73}%
+\contentsline {figure}{\numberline {B.10}{\ignorespaces Email xác nhận chứa tệp giấy phép đính kèm.}}{85}{figure.caption.74}%
+\contentsline {figure}{\numberline {B.11}{\ignorespaces Truy cập Cài đặt Giấy phép (License Setup) từ menu Công cụ (Tools) của Quartus.}}{86}{figure.caption.75}%
+\contentsline {figure}{\numberline {B.12}{\ignorespaces Cửa sổ Cài đặt Giấy phép Quartus (Quartus License Setup) hiển thị tệp giấy phép Nios V/m đã thêm.}}{86}{figure.caption.76}%

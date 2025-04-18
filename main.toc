@@ -1,0 +1,43 @@
+\contentsline {chapter}{MỤC LỤC}{i}{section*.1}%
+\contentsline {chapter}{DANH SÁCH CÁC HÌNH}{iii}{section*.3}%
+\contentsline {chapter}{DANH SÁCH CÁC BẢNG}{vii}{section*.5}%
+\contentsline {chapter}{\numberline {1}GIỚI THIỆU VỀ ĐƠN VỊ THỰC TẬP}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Giới thiệu chung}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Lĩnh vực hoạt động và Nghiên cứu}{1}{section.1.2}%
+\contentsline {chapter}{\numberline {2}KIẾN TRÚC HỆ THỐNG VÀ LÝ THUYẾT CƠ SỞ}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Tổng quan về Hệ thống trên Chip (SoC)}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Bộ xử lý mềm Intel Nios V/m}{3}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Truy cập Bộ nhớ Trực tiếp (DMA)}{4}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Giao tiếp Hệ thống: Bus Avalon}{5}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Giao tiếp Bus Avalon Memory Mapped Interface (Avalon-MM)}{5}{subsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.1.1}Đặc tả và Yêu cầu Giao thức}{5}{subsubsection.2.4.1.1}%
+\contentsline {section}{\numberline {2.5}Thiết kế và Kiến trúc Bộ điều khiển DMA Tùy chỉnh}{9}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Mục tiêu và Bối cảnh: Truyền dữ liệu giữa Bộ nhớ On-Chip}{9}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Kiến trúc Tổng thể và Luồng Dữ liệu}{9}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Thiết kế Module Điều khiển (`CONTROL\_SLAVE`)}{11}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}Thiết kế Module Master Đọc (\texttt {READ\_MASTER})}{12}{subsection.2.5.4}%
+\contentsline {subsection}{\numberline {2.5.5}Thiết kế Module Master Ghi (\texttt {WRITE\_MASTER})}{12}{subsection.2.5.5}%
+\contentsline {subsection}{\numberline {2.5.6}Tích hợp và Tín hiệu Giao tiếp}{13}{subsection.2.5.6}%
+\contentsline {subsection}{\numberline {2.5.7}Tín hiệu giao tiếp của DMA Controller}{13}{subsection.2.5.7}%
+\contentsline {subsection}{\numberline {2.5.8}Hiện thực hóa Giao diện Avalon-MM trong DMA Controller}{16}{subsection.2.5.8}%
+\contentsline {chapter}{\numberline {3}TRIỂN KHAI VÀ KIỂM THỬ HỆ THỐNG NIOS V VỚI DMA}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Xây dựng Hệ thống Phần cứng trên Quartus Prime}{19}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Phát triển Ứng dụng Phần mềm Nios V}{33}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Mô phỏng Hệ thống Nios V và DMA}{47}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Công cụ Mô phỏng và Yêu cầu Môi trường}{47}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Quy trình Thiết lập và Chạy Mô phỏng}{48}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Gỡ lỗi Phần cứng với Signal Tap}{51}{section.4.3}%
+\contentsline {chapter}{TÀI LIỆU THAM KHẢO}{53}{section*.63}%
+\contentsline {chapter}{\numberline {A}MÃ NGUỒN CỦA THIẾT KẾ}{55}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Mã Verilog Top-Level cho DMANiosV}{55}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Mã Verilog DMA Controller}{55}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Mã Verilog Control Slave}{57}{section.A.3}%
+\contentsline {section}{\numberline {A.4}Mã Verilog Read Master}{60}{section.A.4}%
+\contentsline {section}{\numberline {A.5}Mã Verilog Write Master}{63}{section.A.5}%
+\contentsline {section}{\numberline {A.6}Mã nguồn C kiểm thử DMA}{68}{section.A.6}%
+\contentsline {chapter}{\numberline {B}MỘT SỐ LỖI THƯỜNG GẶP}{77}{appendix.A}%
+\contentsline {section}{\numberline {B.1}Lỗi Tạo BSP hoặc Biên dịch Ứng dụng}{77}{section.A.1}%
+\contentsline {section}{\numberline {B.2}Sự cố Kết nối JTAG và Debug}{77}{section.A.2}%
+\contentsline {section}{\numberline {B.3}Không có file `.sof` để nạp xuống board}{78}{section.A.3}%
+\contentsline {section}{\numberline {B.4}Nên sử dụng bản Quartus nào khi xây dựng hệ thống Nios V}{79}{section.A.4}%
+\contentsline {section}{\numberline {B.5}Lấy Giấy phép (License) \acrshort {niosv}/m}{79}{section.A.5}%

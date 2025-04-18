@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3 Portable) (preloaded format=pdflatex 2025.4.11)  18 APR 2025 15:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3 Portable) (preloaded format=pdflatex 2025.4.11)  18 APR 2025 18:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1222,8 +1222,7 @@ Package caption Info: New subtype `subtable' on input line 238.
 )
 \@quotelevel=\count517
 \@quotereset=\count518
-
-No file main.aux.
+ (main.aux (chapter1.aux) (chapter2.aux) (chapter3.aux) (chapter4.aux) (Appendix/appendix1.aux) (Appendix/appendix2.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 168.
@@ -1248,7 +1247,7 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 168.
 LaTeX Font Info:    ... okay on input line 168.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
-(D:\Program Files\MikTex\texmfs\install\tex/latex/biblatex/lbx\english.lbx
+ (D:\Program Files\MikTex\texmfs\install\tex/latex/biblatex/lbx\english.lbx
 File: english.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
@@ -1264,6 +1263,11 @@ Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl
 
 Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'niosv-embedded-history':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'intelNiosVHandbook':
 (biblatex)                - Invalid format of field 'month'.
 
@@ -1271,6 +1275,7 @@ Package biblatex Warning: BibTeX reported the following issues
 Package biblatex Info: Reference section=0 on input line 168.
 Package biblatex Info: Reference segment=0 on input line 168.
 Package hyperref Info: Link coloring OFF on input line 168.
+ (main.out) (main.out)
 \@outlinefile=\write8
 \openout8 = `main.out'.
 
@@ -1354,52 +1359,93 @@ Package hyperref Info: Option `pageanchor' set `false' on input line 2.
 
 [4]
 Package hyperref Info: Option `pageanchor' set `true' on input line 83.
+) (main.toc
+LaTeX Font Info:    Calculating math sizes for size <13> on input line 5.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.5> not available
+(Font)              size <6> substituted on input line 5.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <13> not available
+(Font)              size <12> substituted on input line 5.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <6.5> not available
+(Font)              size <6> substituted on input line 5.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 5.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
+(Font)              size <6> substituted on input line 5.
+
+
+LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 5.
+
+LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 18.
+(D:\Program Files\MikTex\texmfs\install\tex/latex/vntex\t5cmtt.fd
+File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-No file main.toc.
-\tf@toc=\write9
-\openout9 = `main.toc'.
-
-No file main.acr.
-
 
 [1
 
 
 
 
+])
+\tf@toc=\write9
+\openout9 = `main.toc'.
+
+
+No file main.acr.
+
+
+[2] (main.lof
+
+[3
+
+
+
+
 ]
 
-[2
+LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 41.
 
 
-]
-No file main.lof.
+Overfull \hbox (11.44046pt too wide) in paragraph at lines 57--57
+ [][] [][]\T5/cmr/m/n/13 Generate Test-bench Sys-tem trong Plat-form De-signer tr∂n Ubuntu 22.04.5 
+ []
+
+
+
+[4])
 \tf@lof=\write10
 \openout10 = `main.lof'.
 
 
 
-[3
+[5]
+
+[6
 
 
-]
-
-[4
-
-
-]
-No file main.lot.
+] (main.lot)
 \tf@lot=\write11
 \openout11 = `main.lot'.
 
 
 
-[5
+[7
 
 
 ]
 
-[6
+[8
 
 
 ]
@@ -1407,69 +1453,19 @@ No file main.lot.
 
  (chapter1.tex
 CH∆Ø∆†NG 1.
-LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 19.
-(D:\Program Files\MikTex\texmfs\install\tex/latex/vntex\t5cmtt.fd
-File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Calculating math sizes for size <13> on input line 19.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 19.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <13> not available
-(Font)              size <12> substituted on input line 19.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <6.5> not available
-(Font)              size <6> substituted on input line 19.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 19.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 19.
-
-
-LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 19.
-
 
 
 [1
 
 
 
-]
-
-LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 47.
-
-)
+])
 
 [2]
 \openout2 = `chapter2.aux'.
 
  (chapter2.tex
 CH∆Ø∆†NG 2.
-
-LaTeX Warning: Reference `Chapter2' on page 3 undefined on input line 5.
-
-
-chapter2.tex:23: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.23 ¬†¬†¬† \item \textbf
-                         {Nios V/m (Microcontroller):} Phi√™n b·∫£n ƒë∆∞·ª£c...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 
 
 [3
@@ -1479,7 +1475,7 @@ If that doesn't work, type  X <return>  to quit.
 
 
 ]
-<Images/02_00_NiosVm_Architecture.pdf, id=141, 505.89pt x 380.42125pt>
+<Images/02_00_NiosVm_Architecture.pdf, id=501, 505.89pt x 380.42125pt>
 File: Images/02_00_NiosVm_Architecture.pdf Graphic file (type pdf)
 <use Images/02_00_NiosVm_Architecture.pdf>
 Package pdftex.def Info: Images/02_00_NiosVm_Architecture.pdf  used on input line 27.
@@ -1494,7 +1490,7 @@ LaTeX Warning: Citation 'niosv_architecture' on page 4 undefined on input line 2
 
 
 [4 <./Images/02_00_NiosVm_Architecture.pdf>]
-<Images/02_01_Avalon_MM_Transfers.pdf, id=165, 374.39874pt x 176.66pt>
+<Images/02_01_Avalon_MM_Transfers.pdf, id=522, 374.39874pt x 176.66pt>
 File: Images/02_01_Avalon_MM_Transfers.pdf Graphic file (type pdf)
 <use Images/02_01_Avalon_MM_Transfers.pdf>
 Package pdftex.def Info: Images/02_01_Avalon_MM_Transfers.pdf  used on input line 56.
@@ -1502,1139 +1498,933 @@ Package pdftex.def Info: Images/02_01_Avalon_MM_Transfers.pdf  used on input lin
 
 
 [5]
-
-chapter2.tex:70: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.70 ¬†¬†¬†¬†¬†¬†¬†¬†¬†¬†¬† \item M
-                                   aster k√≠ch ho·∫°t t√≠n hi·ªáu \texttt{re...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<Images/02_03_AvalonSlave_ReadWaveform.pdf, id=530, 210.7875pt x 135.50626pt>
+File: Images/02_03_AvalonSlave_ReadWaveform.pdf Graphic file (type pdf)
+<use Images/02_03_AvalonSlave_ReadWaveform.pdf>
+Package pdftex.def Info: Images/02_03_AvalonSlave_ReadWaveform.pdf  used on input line 73.
+(pdftex.def)             Requested size: 225.34383pt x 144.86618pt.
+<Images/02_04_AvalonSlave_WriteWaveform.pdf, id=531, 210.7875pt x 135.50626pt>
+File: Images/02_04_AvalonSlave_WriteWaveform.pdf Graphic file (type pdf)
+<use Images/02_04_AvalonSlave_WriteWaveform.pdf>
+Package pdftex.def Info: Images/02_04_AvalonSlave_WriteWaveform.pdf  used on input line 80.
+(pdftex.def)             Requested size: 225.34383pt x 144.86618pt.
+<Images/02_05_AvalonMaster_ReadWaveform.pdf, id=532, 346.29375pt x 135.50626pt>
+File: Images/02_05_AvalonMaster_ReadWaveform.pdf Graphic file (type pdf)
+<use Images/02_05_AvalonMaster_ReadWaveform.pdf>
+Package pdftex.def Info: Images/02_05_AvalonMaster_ReadWaveform.pdf  used on input line 92.
+(pdftex.def)             Requested size: 328.6279pt x 128.5958pt.
+<Images/02_06_AvalonMaster_WriteWaveform.pdf, id=533, 331.2375pt x 113.42375pt>
+File: Images/02_06_AvalonMaster_WriteWaveform.pdf Graphic file (type pdf)
+<use Images/02_06_AvalonMaster_WriteWaveform.pdf>
+Package pdftex.def Info: Images/02_06_AvalonMaster_WriteWaveform.pdf  used on input line 99.
+(pdftex.def)             Requested size: 328.6279pt x 112.5356pt.
 LaTeX Font Info:    Font shape `T5/cmtt/bx/n' in size <13> not available
-(Font)              Font shape `T5/cmtt/m/n' tried instead on input line 72.
-
-LaTeX Warning: Reference `fig:02_01_avalon_mm_transfer' on page 6 undefined on input line 74.
+(Font)              Font shape `T5/cmtt/m/n' tried instead on input line 125.
 
 
-LaTeX Warning: Reference `fig:avalon_slave_waveforms' on page 6 undefined on input line 74.
+[6 <./Images/02_01_Avalon_MM_Transfers.pdf> <./Images/02_03_AvalonSlave_ReadWaveform.pdf
 
+pdfTeX warning: pdflatex (file ./Images/02_03_AvalonSlave_ReadWaveform.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./Images/02_04_AvalonSlave_WriteWaveform.pdf
 
-LaTeX Warning: Reference `fig:02_05_avalon_master_read' on page 6 undefined on input line 74.
+pdfTeX warning: pdflatex (file ./Images/02_04_AvalonSlave_WriteWaveform.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
 
+[7 <./Images/02_05_AvalonMaster_ReadWaveform.pdf> <./Images/02_06_AvalonMaster_WriteWaveform.pdf
 
-LaTeX Warning: Reference `fig:memory_waveforms' on page 6 undefined on input line 74.
-
-
-
-[6 <./Images/02_01_Avalon_MM_Transfers.pdf>]
-
-chapter2.tex:78: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.78 ¬†¬†¬†¬†¬†¬†¬†¬†¬†¬†¬† \item M
-                                   aster k√≠ch ho·∫°t \texttt{write=1}, ƒë∆∞...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `fig:02_02_memory_byteenable' on page 7 undefined on input line 80.
-
-
-LaTeX Warning: Reference `fig:02_01_avalon_mm_transfer' on page 7 undefined on input line 81.
-
-
-LaTeX Warning: Reference `fig:avalon_slave_waveforms' on page 7 undefined on input line 81.
-
-
-LaTeX Warning: Reference `fig:02_06_avalon_master_write' on page 7 undefined on input line 81.
-
-
-LaTeX Warning: Reference `fig:memory_waveforms' on page 7 undefined on input line 81.
-
-<Images/02_02_Memory_ByteEnable.pdf, id=190, 427.5975pt x 272.01625pt>
+pdfTeX warning: pdflatex (file ./Images/02_06_AvalonMaster_WriteWaveform.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<Images/02_02_Memory_ByteEnable.pdf, id=590, 427.5975pt x 272.01625pt>
 File: Images/02_02_Memory_ByteEnable.pdf Graphic file (type pdf)
 <use Images/02_02_Memory_ByteEnable.pdf>
-Package pdftex.def Info: Images/02_02_Memory_ByteEnable.pdf  used on input line 89.
-(pdftex.def)             Requested size: 469.47049pt x 298.6543pt.
+Package pdftex.def Info: Images/02_02_Memory_ByteEnable.pdf  used on input line 142.
+(pdftex.def)             Requested size: 375.57782pt x 238.9226pt.
+<Images/02_07_Memory_ReadWaveform.pdf, id=593, 210.7875pt x 135.50626pt>
+File: Images/02_07_Memory_ReadWaveform.pdf Graphic file (type pdf)
+<use Images/02_07_Memory_ReadWaveform.pdf>
+Package pdftex.def Info: Images/02_07_Memory_ReadWaveform.pdf  used on input line 152.
+(pdftex.def)             Requested size: 225.34383pt x 144.86618pt.
+<Images/02_08_Memory_WriteWaveform.pdf, id=594, 210.7875pt x 135.50626pt>
+File: Images/02_08_Memory_WriteWaveform.pdf Graphic file (type pdf)
+<use Images/02_08_Memory_WriteWaveform.pdf>
+Package pdftex.def Info: Images/02_08_Memory_WriteWaveform.pdf  used on input line 159.
+(pdftex.def)             Requested size: 225.34383pt x 144.86618pt.
 
 
-[7 <./Images/02_02_Memory_ByteEnable.pdf>]
+[8 <./Images/02_02_Memory_ByteEnable.pdf> <./Images/02_07_Memory_ReadWaveform.pdf
 
-LaTeX Warning: Reference `sec:avalon_bus' on page 8 undefined on input line 99.
+pdfTeX warning: pdflatex (file ./Images/02_07_Memory_ReadWaveform.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./Images/02_08_Memory_WriteWaveform.pdf
 
-
-LaTeX Warning: Reference `fig:memory_waveforms' on page 8 undefined on input line 107.
-
-
-Underfull \vbox (badness 4569) has occurred while \output is active []
-
-
-
-[8]
-
-chapter2.tex:124: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.124 ¬†¬†¬†¬†¬†¬†¬†¬†¬†¬†¬† \item \textbf
-                                          {Thanh ghi √°nh x·∫° b·ªô nh·ªõ:} ...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
+pdfTeX warning: pdflatex (file ./Images/02_08_Memory_WriteWaveform.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
 
 [9]
+<Images/02_09_DMABlockDiagram.pdf, id=627, 435.6275pt x 402.50375pt>
+File: Images/02_09_DMABlockDiagram.pdf Graphic file (type pdf)
+<use Images/02_09_DMABlockDiagram.pdf>
+Package pdftex.def Info: Images/02_09_DMABlockDiagram.pdf  used on input line 193.
+(pdftex.def)             Requested size: 469.47049pt x 433.77017pt.
 
-LaTeX Warning: Reference `app:verilog_control_slave' on page 10 undefined on input line 129.
-
-
-chapter2.tex:137: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.137 ¬†¬†¬†¬†¬†¬†¬†¬†¬†¬†¬† \item \textbf
-                                          {Giao di·ªán Avalon-MM Master:} Mo...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (16.38628pt too wide) in paragraph at lines 198--199
+[]\T5/cmr/m/n/13 LuÁng d˙ liªu cÏ b£n diπn ra nh˜ sau: CPU cßu hºnh DMA thÊng qua \T5/cmtt/m/n/13 CONTROL_SLAVE
+ []
 
 
-Overfull \hbox (66.70114pt too wide) in paragraph at lines 137--138
+
+[10 <./Images/02_09_DMABlockDiagram.pdf>]
+
+[11]
+Overfull \hbox (66.70114pt too wide) in paragraph at lines 218--219
 []\T5/cmr/bx/n/13 Giao diªn Avalon-MM Mas-ter: \T5/cmr/m/n/13 Mod-ule t§o tΩn hiªu \T5/cmtt/m/n/13 oRM_read\T5/cmr/m/n/13 , \T5/cmtt/m/n/13 oRM_readaddress\T5/cmr/m/n/13 .
  []
 
 
-Overfull \hbox (32.28072pt too wide) in paragraph at lines 139--140
+Overfull \hbox (32.28072pt too wide) in paragraph at lines 220--221
 \T5/cmr/m/n/13 nh™t ^^_‡a chø/bÎ ^^_∏m v† quay l§i ki∫m tra FI-FO/g˚i y∂u c¶u mÓi (WAIT_FIFO),
  []
 
 
-
-[10]
-
-LaTeX Warning: Reference `app:verilog_read_master' on page 11 undefined on input line 141.
-
-
-chapter2.tex:146: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.146 ¬†¬†¬† \item \textbf
-                          {Y√™u c·∫ßu:} ƒê·ªçc d·ªØ li·ªáu t·ª´ FIFO (khi \t...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-chapter2.tex:149: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.149 ¬†¬†¬†¬†¬†¬†¬†¬†¬†¬†¬† \item \textbf
-                                          {Giao di·ªán FIFO:} Module ki·ªÉm ...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (1.6268pt too wide) in paragraph at lines 150--151
+Overfull \hbox (1.6268pt too wide) in paragraph at lines 231--232
 \T5/cmr/m/n/13 thanh ghi nÎi bÎ ch˘a d˙ liªu ^^_Âc t¯ FIFO), v† \T5/cmtt/m/n/13 oWM_byteenable=4'b1111\T5/cmr/m/n/13 .
  []
 
 
-Overfull \hbox (66.69969pt too wide) in paragraph at lines 151--152
+
+[12]
+Overfull \hbox (66.69969pt too wide) in paragraph at lines 232--233
 \T5/cmr/m/n/13 y∂u c¶u ghi Avalon (START_WRITE), chÌ \T5/cmtt/m/n/13 waitrequest=0 \T5/cmr/m/n/13 (WAIT_WRITE_ACK),
  []
 
 
-Overfull \hbox (16.69205pt too wide) in paragraph at lines 151--152
+Overfull \hbox (16.69205pt too wide) in paragraph at lines 232--233
 \T5/cmr/m/n/13 Khi ho†n th†nh (\T5/cmtt/m/n/13 bytes_remaining <= 4 \T5/cmr/m/n/13 trong tr§ng th°i UP-DATE_CNT),
  []
 
-
-LaTeX Warning: Reference `app:verilog_write_master' on page 11 undefined on input line 153.
-
-
-LaTeX Warning: Reference `app:verilog_dmac' on page 11 undefined on input line 157.
-
-
-LaTeX Warning: Reference `tab:dma_signals' on page 11 undefined on input line 157.
-
-
-
-[11]
-<Images/02_09_DMABlockDiagram.pdf, id=231, 435.6275pt x 402.50375pt>
-File: Images/02_09_DMABlockDiagram.pdf Graphic file (type pdf)
-<use Images/02_09_DMABlockDiagram.pdf>
-Package pdftex.def Info: Images/02_09_DMABlockDiagram.pdf  used on input line 161.
-(pdftex.def)             Requested size: 469.47049pt x 433.77017pt.
-<Images/02_10_SystemSequenceDiagram.pdf, id=232, 590.205pt x 548.0475pt>
+<Images/02_10_SystemSequenceDiagram.pdf, id=2446, 590.205pt x 548.0475pt>
 File: Images/02_10_SystemSequenceDiagram.pdf Graphic file (type pdf)
 <use Images/02_10_SystemSequenceDiagram.pdf>
-Package pdftex.def Info: Images/02_10_SystemSequenceDiagram.pdf  used on input line 168.
+Package pdftex.def Info: Images/02_10_SystemSequenceDiagram.pdf  used on input line 242.
 (pdftex.def)             Requested size: 469.47049pt x 435.94656pt.
-<Images/02_11_StateDiagram_ControlSlave.pdf, id=233, 292.09125pt x 440.64626pt>
-File: Images/02_11_StateDiagram_ControlSlave.pdf Graphic file (type pdf)
-<use Images/02_11_StateDiagram_ControlSlave.pdf>
-Package pdftex.def Info: Images/02_11_StateDiagram_ControlSlave.pdf  used on input line 175.
-(pdftex.def)             Requested size: 234.73524pt x 354.13116pt.
-<Images/02_12_StateDiagram_ReadMaster.pdf, id=234, 286.06876pt x 513.92pt>
-File: Images/02_12_StateDiagram_ReadMaster.pdf Graphic file (type pdf)
-<use Images/02_12_StateDiagram_ReadMaster.pdf>
-Package pdftex.def Info: Images/02_12_StateDiagram_ReadMaster.pdf  used on input line 185.
-(pdftex.def)             Requested size: 225.34383pt x 404.83176pt.
-<Images/02_13_StateDiagram_WriteMaster.pdf, id=235, 293.095pt x 579.16376pt>
-File: Images/02_13_StateDiagram_WriteMaster.pdf Graphic file (type pdf)
-<use Images/02_13_StateDiagram_WriteMaster.pdf>
-Package pdftex.def Info: Images/02_13_StateDiagram_WriteMaster.pdf  used on input line 193.
-(pdftex.def)             Requested size: 225.34383pt x 445.28583pt.
 
-
-LaTeX Warning: Reference `tab:dma_signals' on page 12 undefined on input line 202.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[12 <./Images/02_09_DMABlockDiagram.pdf>]
-
-[13 <./Images/02_10_SystemSequenceDiagram.pdf>]
-
-[14 <./Images/02_11_StateDiagram_ControlSlave.pdf>]
-
-[15 <./Images/02_12_StateDiagram_ReadMaster.pdf> <./Images/02_13_StateDiagram_WriteMaster.pdf
-
-pdfTeX warning: pdflatex (file ./Images/02_13_StateDiagram_WriteMaster.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-Underfull \hbox (badness 4242) in paragraph at lines 229--230
+Underfull \hbox (badness 4242) in paragraph at lines 275--276
 []|\T5/cmtt/m/n/13 =1\T5/cmr/m/n/13 : y∂u c¶u ^^_Âc d˙ liªu t¯
  []
 
 
-Underfull \hbox (badness 3281) in paragraph at lines 236--237
+Underfull \hbox (badness 3281) in paragraph at lines 282--283
 []|\T5/cmtt/m/n/13 =1\T5/cmr/m/n/13 : y∂u c¶u ghi d˙ liªu v†o
  []
 
-chapter2.tex:240: Misplaced \noalign.
-\bottomrule ->\noalign 
-                       {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
-l.240 ¬†¬†¬†¬†¬†¬†¬† \bottomrule
-                                
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-chapter2.tex:241: Missing } inserted.
-<inserted text> 
-                }
-l.241     \end
-              {tabular}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-chapter2.tex:241: Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.241     \end
-              {tabular}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-chapter2.tex:241: Missing } inserted.
-<inserted text> 
-                }
-l.241     \end
-              {tabular}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Missing } inserted.
-<inserted text> 
-                }
-l.241     \end
-              {tabular}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-chapter2.tex:241: Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.241     \end
-              {tabular}
-I'm guessing that you meant to end an alignment here.
-
-chapter2.tex:241: Misplaced \cr.
-<inserted text> \cr 
-                    
-l.241     \end
-              {tabular}
-(That makes 100 errors; please try again.) 
+
+Overfull \hbox (30.67348pt too wide) in paragraph at lines 255--288
+ [][] 
+ []
+
+
+
+[13]
+
+[14 <./Images/02_10_SystemSequenceDiagram.pdf>]
+
+[15]
+Overfull \hbox (7.85597pt too wide) in paragraph at lines 296--297
+\T5/cmr/m/n/13 ^^_Ïn gi£n, khÊng s˚ dˆng \T5/cmtt/m/n/13 waitrequest\T5/cmr/m/n/13 . N‚ gi£i m¢ \T5/cmtt/m/n/13 iAddress \T5/cmr/m/n/13 khi \T5/cmtt/m/n/13 iChipselect=1
+ []
+
+<Images/02_11_StateDiagram_ControlSlave.pdf, id=2708, 292.09125pt x 440.64626pt>
+File: Images/02_11_StateDiagram_ControlSlave.pdf Graphic file (type pdf)
+<use Images/02_11_StateDiagram_ControlSlave.pdf>
+Package pdftex.def Info: Images/02_11_StateDiagram_ControlSlave.pdf  used on input line 323.
+(pdftex.def)             Requested size: 234.73524pt x 354.13116pt.
+<Images/02_12_StateDiagram_ReadMaster.pdf, id=2709, 286.06876pt x 513.92pt>
+File: Images/02_12_StateDiagram_ReadMaster.pdf Graphic file (type pdf)
+<use Images/02_12_StateDiagram_ReadMaster.pdf>
+Package pdftex.def Info: Images/02_12_StateDiagram_ReadMaster.pdf  used on input line 333.
+(pdftex.def)             Requested size: 225.34383pt x 404.83176pt.
+<Images/02_13_StateDiagram_WriteMaster.pdf, id=2710, 293.095pt x 579.16376pt>
+File: Images/02_13_StateDiagram_WriteMaster.pdf Graphic file (type pdf)
+<use Images/02_13_StateDiagram_WriteMaster.pdf>
+Package pdftex.def Info: Images/02_13_StateDiagram_WriteMaster.pdf  used on input line 341.
+(pdftex.def)             Requested size: 225.34383pt x 445.28583pt.
+)
+
+[16]
+
+[17 <./Images/02_11_StateDiagram_ControlSlave.pdf>]
+
+[18 <./Images/02_12_StateDiagram_ReadMaster.pdf> <./Images/02_13_StateDiagram_WriteMaster.pdf
+
+pdfTeX warning: pdflatex (file ./Images/02_13_StateDiagram_WriteMaster.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+\openout2 = `chapter3.aux'.
+
+ (chapter3.tex
+CH∆Ø∆†NG 3.
+
+Overfull \hbox (15.77751pt too wide) in paragraph at lines 16--17
+\T5/cmr/m/n/13 name) (vΩ dˆ: \T5/cmtt/m/n/13 D:\FETEL_WorkDir\Y4S2_DMANiosVIntern\T5/cmr/m/n/13 , \T5/cmtt/m/n/13 DMANiosV\T5/cmr/m/n/13 ) (Hºnh
+ []
+
+
+
+[19
+
+
+
+
+
+]
+Overfull \hbox (7.85863pt too wide) in paragraph at lines 24--25
+\T5/cmr/m/n/13 byte (128 KB) (Cßu hºnh vΩ dˆ Hºnh []3.5[]). MÎt bÎ nhÓ (\T5/cmtt/m/n/13 onchip_memory2_0\T5/cmr/m/n/13 )
+ []
+
+
+
+[20]
+Overfull \hbox (7.14899pt too wide) in paragraph at lines 55--56
+[]\T5/cmr/m/n/13 Trong Quar-tus, th∂m tªp `.qip` ^^_˜Òc t§o (\T5/cmtt/m/n/13 system/synthesis/system.qip\T5/cmr/m/n/13 )
+ []
+
+<Images/03_11_QuartusNewProjectWizard1.png, id=2957, 807.015pt x 696.6025pt>
+File: Images/03_11_QuartusNewProjectWizard1.png Graphic file (type png)
+<use Images/03_11_QuartusNewProjectWizard1.png>
+Package pdftex.def Info: Images/03_11_QuartusNewProjectWizard1.png  used on input line 63.
+(pdftex.def)             Requested size: 328.6279pt x 283.66371pt.
+<Images/03_12_QuartusNewProjectWizard2.png, id=2958, 1217.54875pt x 874.26625pt>
+File: Images/03_12_QuartusNewProjectWizard2.png Graphic file (type png)
+<use Images/03_12_QuartusNewProjectWizard2.png>
+Package pdftex.def Info: Images/03_12_QuartusNewProjectWizard2.png  used on input line 64.
+(pdftex.def)             Requested size: 422.52057pt x 303.38309pt.
+<Images/03_13_ProjectFilesDMA.png, id=2959, 1092.08pt x 494.84875pt>
+File: Images/03_13_ProjectFilesDMA.png Graphic file (type png)
+<use Images/03_13_ProjectFilesDMA.png>
+Package pdftex.def Info: Images/03_13_ProjectFilesDMA.png  used on input line 65.
+(pdftex.def)             Requested size: 422.52057pt x 191.44987pt.
+<Images/03_15_NiosVIPConfig1.png, id=2960, 1276.77pt x 1052.93375pt>
+File: Images/03_15_NiosVIPConfig1.png Graphic file (type png)
+<use Images/03_15_NiosVIPConfig1.png>
+Package pdftex.def Info: Images/03_15_NiosVIPConfig1.png  used on input line 67.
+(pdftex.def)             Requested size: 422.52057pt x 348.44926pt.
+<Images/03_16_OnChipMemoryIPConfig.png, id=2961, 1133.23375pt x 1177.39874pt>
+File: Images/03_16_OnChipMemoryIPConfig.png Graphic file (type png)
+<use Images/03_16_OnChipMemoryIPConfig.png>
+Package pdftex.def Info: Images/03_16_OnChipMemoryIPConfig.png  used on input line 68.
+(pdftex.def)             Requested size: 422.52057pt x 438.9903pt.
+<Images/03_17_JTAGUARTIPConfig.png, id=2962, 448.67625pt x 361.35pt>
+File: Images/03_17_JTAGUARTIPConfig.png Graphic file (type png)
+<use Images/03_17_JTAGUARTIPConfig.png>
+Package pdftex.def Info: Images/03_17_JTAGUARTIPConfig.png  used on input line 69.
+(pdftex.def)             Requested size: 422.52057pt x 340.29762pt.
+<Images/03_21_ComponentEditorFilesAnalyzed.png, id=2964, 840.13875pt x 1218.5525pt>
+File: Images/03_21_ComponentEditorFilesAnalyzed.png Graphic file (type png)
+<use Images/03_21_ComponentEditorFilesAnalyzed.png>
+Package pdftex.def Info: Images/03_21_ComponentEditorFilesAnalyzed.png  used on input line 73.
+(pdftex.def)             Requested size: 422.52057pt x 612.82613pt.
+<Images/03_23_ComponentEditorSignals_DMAC.png, id=2965, 420.06938pt x 492.33937pt>
+File: Images/03_23_ComponentEditorSignals_DMAC.png Graphic file (type png)
+<use Images/03_23_ComponentEditorSignals_DMAC.png>
+Package pdftex.def Info: Images/03_23_ComponentEditorSignals_DMAC.png  used on input line 75.
+(pdftex.def)             Requested size: 422.52057pt x 495.21542pt.
+<Images/03_26_ComponentEditorInterfaces3.png, id=2966, 840.13875pt x 984.67876pt>
+File: Images/03_26_ComponentEditorInterfaces3.png Graphic file (type png)
+<use Images/03_26_ComponentEditorInterfaces3.png>
+Package pdftex.def Info: Images/03_26_ComponentEditorInterfaces3.png  used on input line 78.
+(pdftex.def)             Requested size: 234.73524pt x 275.1222pt.
+<Images/03_27_ComponentEditorInterfaces4.png, id=2967, 840.13875pt x 984.67876pt>
+File: Images/03_27_ComponentEditorInterfaces4.png Graphic file (type png)
+<use Images/03_27_ComponentEditorInterfaces4.png>
+Package pdftex.def Info: Images/03_27_ComponentEditorInterfaces4.png  used on input line 79.
+(pdftex.def)             Requested size: 234.73524pt x 275.1222pt.
+<Images/03_28_PlatformDesignerSystemView1.png, id=2968, 1178.4025pt x 762.85pt>
+File: Images/03_28_PlatformDesignerSystemView1.png Graphic file (type png)
+<use Images/03_28_PlatformDesignerSystemView1.png>
+Package pdftex.def Info: Images/03_28_PlatformDesignerSystemView1.png  used on input line 80.
+(pdftex.def)             Requested size: 469.47049pt x 303.91238pt.
+<Images/03_29_PlatformDesignerAssignBaseAddr.png, id=2969, 1036.87375pt x 395.4775pt>
+File: Images/03_29_PlatformDesignerAssignBaseAddr.png Graphic file (type png)
+<use Images/03_29_PlatformDesignerAssignBaseAddr.png>
+Package pdftex.def Info: Images/03_29_PlatformDesignerAssignBaseAddr.png  used on input line 81.
+(pdftex.def)             Requested size: 469.47049pt x 179.06151pt.
+<Images/03_30_PlatformDesignerSystemView_FinalDMAC.png, id=2970, 1178.4025pt x 757.83125pt>
+File: Images/03_30_PlatformDesignerSystemView_FinalDMAC.png Graphic file (type png)
+<use Images/03_30_PlatformDesignerSystemView_FinalDMAC.png>
+Package pdftex.def Info: Images/03_30_PlatformDesignerSystemView_FinalDMAC.png  used on input line 82.
+(pdftex.def)             Requested size: 469.47049pt x 301.91295pt.
+<Images/03_31_NiosVVectorConfig.png, id=2971, 2041.6275pt x 1268.74pt>
+File: Images/03_31_NiosVVectorConfig.png Graphic file (type png)
+<use Images/03_31_NiosVVectorConfig.png>
+Package pdftex.def Info: Images/03_31_NiosVVectorConfig.png  used on input line 84.
+(pdftex.def)             Requested size: 469.47049pt x 291.74599pt.
+<Images/03_34_PlatformDesignerGenerateHDL.png, id=2972, 884.30376pt x 637.38126pt>
+File: Images/03_34_PlatformDesignerGenerateHDL.png Graphic file (type png)
+<use Images/03_34_PlatformDesignerGenerateHDL.png>
+Package pdftex.def Info: Images/03_34_PlatformDesignerGenerateHDL.png  used on input line 87.
+(pdftex.def)             Requested size: 328.6279pt x 236.86801pt.
+<Images/03_37_QuartusAddFilesToProjectMenu.png, id=2973, 808.01875pt x 161.60374pt>
+File: Images/03_37_QuartusAddFilesToProjectMenu.png Graphic file (type png)
+<use Images/03_37_QuartusAddFilesToProjectMenu.png>
+Package pdftex.def Info: Images/03_37_QuartusAddFilesToProjectMenu.png  used on input line 90.
+(pdftex.def)             Requested size: 375.57782pt x 75.11537pt.
+<Images/03_38_QuartusProjectFilesSettings.png, id=2974, 1190.4475pt x 1020.81375pt>
+File: Images/03_38_QuartusProjectFilesSettings.png Graphic file (type png)
+<use Images/03_38_QuartusProjectFilesSettings.png>
+Package pdftex.def Info: Images/03_38_QuartusProjectFilesSettings.png  used on input line 91.
+(pdftex.def)             Requested size: 328.6279pt x 281.79163pt.
+<Images/03_39_QuartusImportAssignmentsMenu.png, id=2975, 507.8975pt x 401.5pt>
+File: Images/03_39_QuartusImportAssignmentsMenu.png Graphic file (type png)
+<use Images/03_39_QuartusImportAssignmentsMenu.png>
+Package pdftex.def Info: Images/03_39_QuartusImportAssignmentsMenu.png  used on input line 92.
+(pdftex.def)             Requested size: 234.73524pt x 185.56218pt.
+<Images/03_40_QuartusImportAssignmentsDialog.png, id=2976, 724.7075pt x 234.8775pt>
+File: Images/03_40_QuartusImportAssignmentsDialog.png Graphic file (type png)
+<use Images/03_40_QuartusImportAssignmentsDialog.png>
+Package pdftex.def Info: Images/03_40_QuartusImportAssignmentsDialog.png  used on input line 93.
+(pdftex.def)             Requested size: 234.73524pt x 76.07623pt.
+<Images/03_41_QuartusCompilationTasks.png, id=2977, 620.3175pt x 326.21875pt>
+File: Images/03_41_QuartusCompilationTasks.png Graphic file (type png)
+<use Images/03_41_QuartusCompilationTasks.png>
+Package pdftex.def Info: Images/03_41_QuartusCompilationTasks.png  used on input line 94.
+(pdftex.def)             Requested size: 281.68515pt x 148.13606pt.
+<Images/03_42_QuartusAssignmentEditor.png, id=2978, 930.47626pt x 227.34938pt>
+File: Images/03_42_QuartusAssignmentEditor.png Graphic file (type png)
+<use Images/03_42_QuartusAssignmentEditor.png>
+Package pdftex.def Info: Images/03_42_QuartusAssignmentEditor.png  used on input line 95.
+(pdftex.def)             Requested size: 469.47049pt x 114.70818pt.
+
+
+[21]
+
+[22 <./Images/03_11_QuartusNewProjectWizard1.png (PNG copy)> <./Images/03_12_QuartusNewProjectWizard2.png (PNG copy)>]
+
+[23 <./Images/03_13_ProjectFilesDMA.png (PNG copy)> <./Images/03_15_NiosVIPConfig1.png (PNG copy)>]
+
+[24 <./Images/03_16_OnChipMemoryIPConfig.png (PNG copy)>]
+
+[25 <./Images/03_17_JTAGUARTIPConfig.png>]
+
+[26 <./Images/03_21_ComponentEditorFilesAnalyzed.png (PNG copy)>]
+
+[27 <./Images/03_23_ComponentEditorSignals_DMAC.png>]
+
+[28 <./Images/03_26_ComponentEditorInterfaces3.png (PNG copy)> <./Images/03_27_ComponentEditorInterfaces4.png (PNG copy)>]
+
+[29 <./Images/03_28_PlatformDesignerSystemView1.png (PNG copy)> <./Images/03_29_PlatformDesignerAssignBaseAddr.png (PNG copy)>]
+
+[30 <./Images/03_30_PlatformDesignerSystemView_FinalDMAC.png (PNG copy)> <./Images/03_31_NiosVVectorConfig.png (PNG copy)>]
+
+[31 <./Images/03_34_PlatformDesignerGenerateHDL.png (PNG copy)> <./Images/03_37_QuartusAddFilesToProjectMenu.png (PNG copy)>]
+
+[32 <./Images/03_38_QuartusProjectFilesSettings.png (PNG copy)> <./Images/03_39_QuartusImportAssignmentsMenu.png (PNG copy)> <./Images/03_40_QuartusImportAssignmentsDialog.png (PNG copy)>] (D:\Program Files\MikTex\texmfs\install\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+) (D:\Program Files\MikTex\texmfs\install\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 110.
+
+
+[33 <./Images/03_41_QuartusCompilationTasks.png (PNG copy)> <./Images/03_42_QuartusAssignmentEditor.png>]
+
+LaTeX Font Warning: Font shape `TS1/cmr/bx/n' in size <13> not available
+(Font)              size <12> substituted on input line 122.
+
+
+
+[34]
+<Images/03_43_SoftwareFoldersAppBSP.png, id=3093, 1050.92625pt x 276.03125pt>
+File: Images/03_43_SoftwareFoldersAppBSP.png Graphic file (type png)
+<use Images/03_43_SoftwareFoldersAppBSP.png>
+Package pdftex.def Info: Images/03_43_SoftwareFoldersAppBSP.png  used on input line 144.
+(pdftex.def)             Requested size: 375.57782pt x 98.64671pt.
+<Images/03_45_SoftwareAppFolderSourceC.png, id=3094, 1064.97874pt x 245.91875pt>
+File: Images/03_45_SoftwareAppFolderSourceC.png Graphic file (type png)
+<use Images/03_45_SoftwareAppFolderSourceC.png>
+Package pdftex.def Info: Images/03_45_SoftwareAppFolderSourceC.png  used on input line 145.
+(pdftex.def)             Requested size: 375.57782pt x 86.72575pt.
+<Images/03_46_NiosVShellLocation.png, id=3095, 1073.00874pt x 750.805pt>
+File: Images/03_46_NiosVShellLocation.png Graphic file (type png)
+<use Images/03_46_NiosVShellLocation.png>
+Package pdftex.def Info: Images/03_46_NiosVShellLocation.png  used on input line 146.
+(pdftex.def)             Requested size: 375.57782pt x 262.79713pt.
+<Images/03_47_NiosVShellCommands.png, id=3096, 1302.36563pt x 203.25937pt>
+File: Images/03_47_NiosVShellCommands.png Graphic file (type png)
+<use Images/03_47_NiosVShellCommands.png>
+Package pdftex.def Info: Images/03_47_NiosVShellCommands.png  used on input line 147.
+(pdftex.def)             Requested size: 469.47049pt x 73.26945pt.
+<Images/03_48_NiosVShellBSPOutput.png, id=3097, 1871.99374pt x 868.24374pt>
+File: Images/03_48_NiosVShellBSPOutput.png Graphic file (type png)
+<use Images/03_48_NiosVShellBSPOutput.png>
+Package pdftex.def Info: Images/03_48_NiosVShellBSPOutput.png  used on input line 148.
+(pdftex.def)             Requested size: 469.47049pt x 217.73607pt.
+<Images/03_49_NiosVShellAppOutput.png, id=3098, 1560.83125pt x 106.3975pt>
+File: Images/03_49_NiosVShellAppOutput.png Graphic file (type png)
+<use Images/03_49_NiosVShellAppOutput.png>
+Package pdftex.def Info: Images/03_49_NiosVShellAppOutput.png  used on input line 148.
+(pdftex.def)             Requested size: 422.52057pt x 28.80075pt.
+<Images/03_50_AshlingRiscFreefromNiosVShell.png, id=3099, 870.25125pt x 366.36874pt>
+File: Images/03_50_AshlingRiscFreefromNiosVShell.png Graphic file (type png)
+<use Images/03_50_AshlingRiscFreefromNiosVShell.png>
+Package pdftex.def Info: Images/03_50_AshlingRiscFreefromNiosVShell.png  used on input line 149.
+(pdftex.def)             Requested size: 469.47049pt x 197.6461pt.
+<Images/03_51_AshlingRiscFreeLauncher2.png, id=3100, 593.96906pt x 349.305pt>
+File: Images/03_51_AshlingRiscFreeLauncher2.png Graphic file (type png)
+<use Images/03_51_AshlingRiscFreeLauncher2.png>
+Package pdftex.def Info: Images/03_51_AshlingRiscFreeLauncher2.png  used on input line 150.
+(pdftex.def)             Requested size: 375.57782pt x 220.87878pt.
+<Images/03_52_AshlingIDEWelcome.png, id=3101, 850.17625pt x 613.29124pt>
+File: Images/03_52_AshlingIDEWelcome.png Graphic file (type png)
+<use Images/03_52_AshlingIDEWelcome.png>
+Package pdftex.def Info: Images/03_52_AshlingIDEWelcome.png  used on input line 151.
+(pdftex.def)             Requested size: 375.57782pt x 270.93451pt.
+<Images/03_53_AshlingIDENewProjectWizard1.png, id=3102, 850.17625pt x 768.8725pt>
+File: Images/03_53_AshlingIDENewProjectWizard1.png Graphic file (type png)
+<use Images/03_53_AshlingIDENewProjectWizard1.png>
+Package pdftex.def Info: Images/03_53_AshlingIDENewProjectWizard1.png  used on input line 152.
+(pdftex.def)             Requested size: 375.57782pt x 339.66586pt.
+<Images/03_54_AshlingIDENewProjectWizard2.png, id=3103, 636.12656pt x 252.945pt>
+File: Images/03_54_AshlingIDENewProjectWizard2.png Graphic file (type png)
+<use Images/03_54_AshlingIDENewProjectWizard2.png>
+Package pdftex.def Info: Images/03_54_AshlingIDENewProjectWizard2.png  used on input line 153.
+(pdftex.def)             Requested size: 375.57782pt x 149.34045pt.
+<Images/03_55_AshlingIDEProjectExplorer.png, id=3104, 512.91624pt x 1096.095pt>
+File: Images/03_55_AshlingIDEProjectExplorer.png Graphic file (type png)
+<use Images/03_55_AshlingIDEProjectExplorer.png>
+Package pdftex.def Info: Images/03_55_AshlingIDEProjectExplorer.png  used on input line 154.
+(pdftex.def)             Requested size: 187.78532pt x 401.30064pt.
+<Images/03_56_AshlingIDEBuildMenu.png, id=3105, 1341.01pt x 397.485pt>
+File: Images/03_56_AshlingIDEBuildMenu.png Graphic file (type png)
+<use Images/03_56_AshlingIDEBuildMenu.png>
+Package pdftex.def Info: Images/03_56_AshlingIDEBuildMenu.png  used on input line 155.
+(pdftex.def)             Requested size: 469.47049pt x 139.15215pt.
+<Images/03_59_QuartusProgrammerWindow.png, id=3106, 668.4975pt x 358.84062pt>
+File: Images/03_59_QuartusProgrammerWindow.png Graphic file (type png)
+<use Images/03_59_QuartusProgrammerWindow.png>
+Package pdftex.def Info: Images/03_59_QuartusProgrammerWindow.png  used on input line 158.
+(pdftex.def)             Requested size: 328.6279pt x 176.40836pt.
+<Images/03_60_AshlingIDEDebugMenu.png, id=3107, 1098.1025pt x 1110.1475pt>
+File: Images/03_60_AshlingIDEDebugMenu.png Graphic file (type png)
+<use Images/03_60_AshlingIDEDebugMenu.png>
+Package pdftex.def Info: Images/03_60_AshlingIDEDebugMenu.png  used on input line 159.
+(pdftex.def)             Requested size: 375.57782pt x 379.6981pt.
+<Images/03_61_AshlingIDERunConfigELF.png, id=3108, 286.06876pt x 436.63126pt>
+File: Images/03_61_AshlingIDERunConfigELF.png Graphic file (type png)
+<use Images/03_61_AshlingIDERunConfigELF.png>
+Package pdftex.def Info: Images/03_61_AshlingIDERunConfigELF.png  used on input line 160.
+(pdftex.def)             Requested size: 187.78532pt x 286.62517pt.
+<Images/03_62_AshlingIDEDebugConfig.png, id=3109, 1141.26375pt x 1075.01625pt>
+File: Images/03_62_AshlingIDEDebugConfig.png Graphic file (type png)
+<use Images/03_62_AshlingIDEDebugConfig.png>
+Package pdftex.def Info: Images/03_62_AshlingIDEDebugConfig.png  used on input line 161.
+(pdftex.def)             Requested size: 469.47049pt x 442.21942pt.
+<Images/03_63_AshlingIDEDebugConsole.png, id=3110, 1585.925pt x 409.53pt>
+File: Images/03_63_AshlingIDEDebugConsole.png Graphic file (type png)
+<use Images/03_63_AshlingIDEDebugConsole.png>
+Package pdftex.def Info: Images/03_63_AshlingIDEDebugConsole.png  used on input line 162.
+(pdftex.def)             Requested size: 469.47049pt x 121.22897pt.
+<Images/03_64_JUARTTerminalOutput1.png, id=3111, 604.75937pt x 1047.915pt>
+File: Images/03_64_JUARTTerminalOutput1.png Graphic file (type png)
+<use Images/03_64_JUARTTerminalOutput1.png>
+Package pdftex.def Info: Images/03_64_JUARTTerminalOutput1.png  used on input line 163.
+(pdftex.def)             Requested size: 375.57782pt x 650.78789pt.
+<Images/03_65_JUARTTerminalOutput2.png, id=3112, 604.75937pt x 1047.915pt>
+File: Images/03_65_JUARTTerminalOutput2.png Graphic file (type png)
+<use Images/03_65_JUARTTerminalOutput2.png>
+Package pdftex.def Info: Images/03_65_JUARTTerminalOutput2.png  used on input line 164.
+(pdftex.def)             Requested size: 375.57782pt x 650.78789pt.
+<Images/03_66_JUARTTerminalOutput3.png, id=3113, 474.77374pt x 973.6375pt>
+File: Images/03_66_JUARTTerminalOutput3.png Graphic file (type png)
+<use Images/03_66_JUARTTerminalOutput3.png>
+Package pdftex.def Info: Images/03_66_JUARTTerminalOutput3.png  used on input line 165.
+(pdftex.def)             Requested size: 328.6279pt x 673.94994pt.
+
+
+LaTeX Warning: Float too large for page by 11.54475pt on input line 165.
+
+
+
+[35]
+
+[36 <./Images/03_43_SoftwareFoldersAppBSP.png (PNG copy)> <./Images/03_45_SoftwareAppFolderSourceC.png (PNG copy)> <./Images/03_46_NiosVShellLocation.png (PNG copy)> <./Images/03_47_NiosVShellCommands.png>]
+
+[37 <./Images/03_48_NiosVShellBSPOutput.png (PNG copy)> <./Images/03_49_NiosVShellAppOutput.png (PNG copy)> <./Images/03_50_AshlingRiscFreefromNiosVShell.png>]
+
+[38 <./Images/03_51_AshlingRiscFreeLauncher2.png> <./Images/03_52_AshlingIDEWelcome.png (PNG copy)>]
+
+[39 <./Images/03_53_AshlingIDENewProjectWizard1.png (PNG copy)> <./Images/03_54_AshlingIDENewProjectWizard2.png>]
+
+[40 <./Images/03_55_AshlingIDEProjectExplorer.png (PNG copy)> <./Images/03_56_AshlingIDEBuildMenu.png (PNG copy)>]
+
+[41 <./Images/03_59_QuartusProgrammerWindow.png> <./Images/03_60_AshlingIDEDebugMenu.png (PNG copy)>]
+
+[42 <./Images/03_61_AshlingIDERunConfigELF.png>]
+
+[43 <./Images/03_62_AshlingIDEDebugConfig.png (PNG copy)> <./Images/03_63_AshlingIDEDebugConsole.png (PNG copy)>]
+
+[44 <./Images/03_64_JUARTTerminalOutput1.png>]
+
+[45 <./Images/03_65_JUARTTerminalOutput2.png>]
+
+[46 <./Images/03_66_JUARTTerminalOutput3.png>])
+\openout2 = `chapter4.aux'.
+
+ (chapter4.tex
+CH∆Ø∆†NG 4.
+<Images/04_01_UbuntuGenerateTestbenchSystem.png, id=3182, 1927.2pt x 1084.05pt>
+File: Images/04_01_UbuntuGenerateTestbenchSystem.png Graphic file (type png)
+<use Images/04_01_UbuntuGenerateTestbenchSystem.png>
+Package pdftex.def Info: Images/04_01_UbuntuGenerateTestbenchSystem.png  used on input line 19.
+(pdftex.def)             Requested size: 469.47049pt x 264.06451pt.
+
+
+[47
+
+
+
+
+
+
+]
+Overfull \hbox (66.66058pt too wide) in paragraph at lines 34--35
+[]\T5/cmr/m/n/13 T§o mÎt th˜ mˆc cho mÊ ph‰ng tr∂n Win-dows (vΩ dˆ: \T5/cmtt/m/n/13 D:\...\DMANiosVIntern_Sim\T5/cmr/m/n/13 ). 
+ []
+
+
+
+[48 <./Images/04_01_UbuntuGenerateTestbenchSystem.png (PNG copy)>]
+Overfull \hbox (83.09308pt too wide) in paragraph at lines 54--55
+[]\T5/cmr/m/n/13 M tªp \T5/cmtt/m/n/13 <project_dir>/system/testbench/system_tb/simulation/msim_setup.tcl\T5/cmr/m/n/13 . 
+ []
+
+
+Overfull \hbox (55.94669pt too wide) in paragraph at lines 55--56
+\T5/cmr/m/n/13 sang ^^_‡nh d§ng Win-dows (\T5/cmtt/m/n/13 \\ \T5/cmr/m/n/13 ho∞c \T5/cmtt/m/n/13 /\T5/cmr/m/n/13 ). VΩ dˆ: Thay ^^_Íi \T5/cmtt/m/n/13 D:/intelFPGA/23.1std/...
+ []
+
+
+Overfull \hbox (13.00813pt too wide) in paragraph at lines 61--62
+[]\T5/cmr/m/n/13 Trong c˚a sÍ Tran-script, thay ^^_Íi th˜ mˆc l†m viªc ^^_∏n th˜ mˆc \T5/cmtt/m/n/13 simulation
+ []
+
+
+
+[49]
+
+[50]
+<Images/04_03_QuestaSimWaveform_argsimulationzero.png, id=3244, 3854.4pt x 1862.96pt>
+File: Images/04_03_QuestaSimWaveform_argsimulationzero.png Graphic file (type png)
+<use Images/04_03_QuestaSimWaveform_argsimulationzero.png>
+Package pdftex.def Info: Images/04_03_QuestaSimWaveform_argsimulationzero.png  used on input line 98.
+(pdftex.def)             Requested size: 469.47049pt x 226.89987pt.
+
+
+[51 <./Images/04_03_QuestaSimWaveform_argsimulationzero.png (PNG copy)>])
+
+[52]
+
+Package biblatex Warning: Keyword 'Viet' not found on input line 243.
+
+
+LaTeX Warning: Empty bibliography on input line 243.
+
+
+LaTeX Font Warning: Font shape `TS1/cmr/m/it' in size <13> not available
+(Font)              size <12> substituted on input line 248.
+
+
+Overfull \hbox (8.28893pt too wide) in paragraph at lines 248--248
+[]\T5/cmr/m/it/13 Avalon\TS1/cmr/m/it/12 Æ \T5/cmr/m/it/13 In-ter-face Spec-i-fi-ca-tions\T5/cmr/m/n/13 . 22.3. In-tel Cor-po-ra-tion. Sept. 2022. \T5/cmr/m/sc/13 url\T5/cmr/m/n/13 : []$\T5/cmtt/m/n/13 https :
+ []
+
+
+Overfull \hbox (0.61116pt too wide) in paragraph at lines 248--248
+[]\T5/cmr/m/it/13 Embedded Mem-ory (RAM: 1-PORT, RAM: 2-PORT, ROM: 1-PORT, and ROM:
+ []
+
+
+Overfull \hbox (8.81357pt too wide) in paragraph at lines 248--248
+[]\T5/cmr/m/n/13 FPGAcademy. \T5/cmr/m/it/13 DE10-Standard Quar-tus Set-tings File\T5/cmr/m/n/13 . \T5/cmr/m/sc/13 url\T5/cmr/m/n/13 : []$\T5/cmtt/m/n/13 https : / / fpgacademy .
+ []
+
+
+Overfull \hbox (6.62672pt too wide) in paragraph at lines 248--248
+\T5/cmr/m/n/13 2024. \T5/cmr/m/sc/13 url\T5/cmr/m/n/13 : []$\T5/cmtt/m/n/13 https : / / www . intel . com / content / www / us / en / docs / programmable /
+ []
+
+
+
+[53
+
+
+
+
+
+
+
+
+]
+\openout2 = `Appendix/appendix1.aux'.
+
+ (Appendix/appendix1.tex
+
+[54
+
+
+
+]
+PH·ª§ L·ª§C A.
+(D:\Program Files\MikTex\texmfs\install\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+) (D:\Program Files\MikTex\texmfs\install\tex/latex/listings\lstlang2.sty
+File: lstlang2.sty 2024/09/23 1.10c listings language file
+) (D:\Program Files\MikTex\texmfs\install\tex/latex/listings\lstlang3.sty
+File: lstlang3.sty 2024/09/23 1.10c listings language file
+)
+
+[55]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[56]
+
+[57]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[58]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[59]
+
+[60]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[61]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[62]
+
+[63]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[64]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[65]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[66]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[67] (D:\Program Files\MikTex\texmfs\install\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+) (D:\Program Files\MikTex\texmfs\install\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+)
+
+[68]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[69]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[70]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[71]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[72]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[73]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[74])
+
+[75]
+\openout2 = `Appendix/appendix2.aux'.
+
+ (Appendix/appendix2.tex
+
+[76
+
+
+
+
+
+]
+pdfTeX warning (ext4): destination with the same identifier (name{appendix.A}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4 \chapter{M·ªòT S·ªê L·ªñI TH∆Ø·ªúNG G·∫∂P}
+                                              
+PH·ª§ L·ª§C B.
+
+pdfTeX warning (ext4): destination with the same identifier (name{section.A.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.9 ...T·∫°o BSP ho·∫∑c Bi√™n d·ªãch ·ª®ng d·ª•ng}
+                                                  
+Overfull \hbox (23.95296pt too wide) in paragraph at lines 15--16
+[]\T5/cmr/bx/n/13 Kh≠c phˆc: \T5/cmr/m/n/13 ^^^£m b£o ^^_¢ \T5/cmtt/m/n/13 cd \T5/cmr/m/n/13 v†o th˜ mˆc gËc cıa d¸ °n Quar-tus (\T5/cmtt/m/n/13 DMANiosVIntern\T5/cmr/m/n/13 )
+ []
+
+
+Overfull \hbox (32.73874pt too wide) in paragraph at lines 15--16
+\T5/cmr/m/n/13 tr˜Óc khi ch§y lªnh \T5/cmtt/m/n/13 niosv-app\T5/cmr/m/n/13 . Ki∫m tra l§i c°c ^^_˜Ìng d®n t˜Ïng ^^_Ëi (\T5/cmtt/m/n/13 software/app\T5/cmr/m/n/13 ,
+ []
+
+<Images/03_67_AppendixTroubleshootingBSPError.png, id=4164, 1570.86874pt x 65.24374pt>
+File: Images/03_67_AppendixTroubleshootingBSPError.png Graphic file (type png)
+<use Images/03_67_AppendixTroubleshootingBSPError.png>
+Package pdftex.def Info: Images/03_67_AppendixTroubleshootingBSPError.png  used on input line 20.
+(pdftex.def)             Requested size: 469.47049pt x 19.4986pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{section.A.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.25 ...tion{S·ª± c·ªë K·∫øt n·ªëi JTAG v√† Debug}
+                                                  
+
+[77 <./Images/03_67_AppendixTroubleshootingBSPError.png (PNG copy)>]
+<Images/03_69_AppendixRestartJTAGServer.png, id=4173, 781.92125pt x 474.27188pt>
+File: Images/03_69_AppendixRestartJTAGServer.png Graphic file (type png)
+<use Images/03_69_AppendixRestartJTAGServer.png>
+Package pdftex.def Info: Images/03_69_AppendixRestartJTAGServer.png  used on input line 45.
+(pdftex.def)             Requested size: 469.47049pt x 284.75348pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{section.A.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.50 ...c√≥ file `.sof` ƒë·ªÉ n·∫°p xu·ªëng board}
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{section.A.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.53 ... n√†o khi x√¢y d·ª±ng h·ªá th·ªëng Nios V}
+                                                  
+
+[78 <./Images/03_69_AppendixRestartJTAGServer.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{section.A.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.65 ...exorpdfstring{\acrshort{niosv}}{Nios V}/m}
+                                                  
+
+[79]
+Overfull \hbox (0.88359pt too wide) in paragraph at lines 76--77
+[]\T5/cmr/bx/n/13 Nh™n v† L˜u Gißy ph≤p: \T5/cmr/m/n/13 Tªp gißy ph≤p (vΩ dˆ: \T5/cmtt/m/n/13 LR-XXXXXXXX_License.dat\T5/cmr/m/n/13 )
+ []
+
+<Images/03_01_IntelLicensingPortalSignIn.png, id=4211, 2211.26125pt x 1065.9825pt>
+File: Images/03_01_IntelLicensingPortalSignIn.png Graphic file (type png)
+<use Images/03_01_IntelLicensingPortalSignIn.png>
+Package pdftex.def Info: Images/03_01_IntelLicensingPortalSignIn.png  used on input line 81.
+(pdftex.def)             Requested size: 469.47049pt x 226.30276pt.
+<Images/03_02_IntelLicensingWelcome.png, id=4212, 1199.48125pt x 1249.66875pt>
+File: Images/03_02_IntelLicensingWelcome.png Graphic file (type png)
+<use Images/03_02_IntelLicensingWelcome.png>
+Package pdftex.def Info: Images/03_02_IntelLicensingWelcome.png  used on input line 82.
+(pdftex.def)             Requested size: 469.47049pt x 489.10408pt.
+<Images/03_03_IntelLicensingEvalSelection.png, id=4213, 2204.235pt x 1219.55624pt>
+File: Images/03_03_IntelLicensingEvalSelection.png Graphic file (type png)
+<use Images/03_03_IntelLicensingEvalSelection.png>
+Package pdftex.def Info: Images/03_03_IntelLicensingEvalSelection.png  used on input line 83.
+(pdftex.def)             Requested size: 422.52057pt x 233.76508pt.
+<Images/03_04_IntelLicensingNiosVSelection.png, id=4214, 2121.9275pt x 1708.3825pt>
+File: Images/03_04_IntelLicensingNiosVSelection.png Graphic file (type png)
+<use Images/03_04_IntelLicensingNiosVSelection.png>
+Package pdftex.def Info: Images/03_04_IntelLicensingNiosVSelection.png  used on input line 84.
+(pdftex.def)             Requested size: 469.47049pt x 377.9568pt.
+<Images/03_05_IntelLicensingNICConfig.png, id=4215, 1268.74pt x 477.785pt>
+File: Images/03_05_IntelLicensingNICConfig.png Graphic file (type png)
+<use Images/03_05_IntelLicensingNICConfig.png>
+Package pdftex.def Info: Images/03_05_IntelLicensingNICConfig.png  used on input line 85.
+(pdftex.def)             Requested size: 375.57782pt x 141.4338pt.
+<Images/03_06_IntelLicensingComputerInfo.png, id=4216, 1516.66624pt x 640.3925pt>
+File: Images/03_06_IntelLicensingComputerInfo.png Graphic file (type png)
+<use Images/03_06_IntelLicensingComputerInfo.png>
+Package pdftex.def Info: Images/03_06_IntelLicensingComputerInfo.png  used on input line 86.
+(pdftex.def)             Requested size: 375.57782pt x 158.58313pt.
+<Images/03_07_IntelLicensingGenerate.png, id=4217, 1667.22874pt x 1179.40625pt>
+File: Images/03_07_IntelLicensingGenerate.png Graphic file (type png)
+<use Images/03_07_IntelLicensingGenerate.png>
+Package pdftex.def Info: Images/03_07_IntelLicensingGenerate.png  used on input line 87.
+(pdftex.def)             Requested size: 375.57782pt x 265.6789pt.
+<Images/03_08_IntelLicenseEmailConfirmation.png, id=4218, 1720.4275pt x 1589.94pt>
+File: Images/03_08_IntelLicenseEmailConfirmation.png Graphic file (type png)
+<use Images/03_08_IntelLicenseEmailConfirmation.png>
+Package pdftex.def Info: Images/03_08_IntelLicenseEmailConfirmation.png  used on input line 88.
+(pdftex.def)             Requested size: 469.47049pt x 433.85051pt.
+<Images/03_09_QuartusToolsMenu.png, id=4219, 907.39pt x 889.3225pt>
+File: Images/03_09_QuartusToolsMenu.png Graphic file (type png)
+<use Images/03_09_QuartusToolsMenu.png>
+Package pdftex.def Info: Images/03_09_QuartusToolsMenu.png  used on input line 89.
+(pdftex.def)             Requested size: 305.15294pt x 299.06815pt.
+<Images/03_10_QuartusLicenseSetup.png, id=4220, 1029.8475pt x 982.67125pt>
+File: Images/03_10_QuartusLicenseSetup.png Graphic file (type png)
+<use Images/03_10_QuartusLicenseSetup.png>
+Package pdftex.def Info: Images/03_10_QuartusLicenseSetup.png  used on input line 90.
+(pdftex.def)             Requested size: 305.15294pt x 291.16002pt.
+)
+
+[80]
+
+[81 <./Images/03_01_IntelLicensingPortalSignIn.png (PNG copy)>]
+
+[82 <./Images/03_02_IntelLicensingWelcome.png (PNG copy)>]
+
+[83 <./Images/03_03_IntelLicensingEvalSelection.png (PNG copy)> <./Images/03_04_IntelLicensingNiosVSelection.png (PNG copy)>]
+
+[84 <./Images/03_05_IntelLicensingNICConfig.png (PNG copy)> <./Images/03_06_IntelLicensingComputerInfo.png (PNG copy)> <./Images/03_07_IntelLicensingGenerate.png (PNG copy)>]
+
+[85 <./Images/03_08_IntelLicenseEmailConfirmation.png (PNG copy)>]
+
+[86 <./Images/03_09_QuartusToolsMenu.png (PNG copy)> <./Images/03_10_QuartusLicenseSetup.png (PNG copy)>] (main.aux (chapter1.aux) (chapter2.aux) (chapter3.aux) (chapter4.aux) (Appendix/appendix1.aux) (Appendix/appendix2.aux))
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.0pt have occurred.
+
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 5CD6E8A29044E473E185D24315E3BB12;10612.
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ ) 
 Here is how much of TeX's memory you used:
- 43831 strings out of 473523
- 858944 string characters out of 5717480
- 1714794 words of memory out of 5000000
- 66354 multiletter control sequences out of 15000+600000
- 572968 words of font info for 62 fonts, out of 8000000 for 9000
+ 46646 strings out of 473523
+ 919805 string characters out of 5717480
+ 2211470 words of memory out of 5000000
+ 68074 multiletter control sequences out of 15000+600000
+ 576780 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,12n,107p,2402b,1674s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,12n,107p,2402b,2237s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-chapter2.tex:241:  ==> Fatal error occurred, no output PDF file produced!
+pdfTeX warning (dest): name{glo:nic} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:mac} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:ip} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:sslc} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:elf} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:nios2} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:bsp} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:jtag} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:ide} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:usb} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:uart} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:rom} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:ram} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:dma} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:ai} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:dsp} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:iot} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:rtos} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:asic} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:fpga} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:soc} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:ic} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:hcmus} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:fetel} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:vnu-hcm} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:ceslab} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:niosv} has been referenced but does not exist, replaced by a fixed one
+
+ <D:\Program Files\MikTex\texmfs/data\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1200.pk> <D:\Program Files\MikTex\texmfs/data\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1200.pk> <D:\Program Files\MikTex\texmfs/data\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <D:\Program Files\MikTex\texmfs/data\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><D:/Program Files/MikTex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files/MikTex/texmfs/install/fonts/type1/vntex/vnr/vnbx12.pfb><D:/Program Files/MikTex/texmfs/install/fonts/type1/vntex/vnr/vnbxti10.pfb><D:/Program Files/MikTex/texmfs/install/fonts/type1/vntex/vnr/vncsc10.pfb><D:/Program Files/MikTex/texmfs/install/fonts/type1/vntex/vnr/vnr10.pfb><D:/Program Files/MikTex/texmfs/install/fonts/type1/vntex/vnr/vnr12.pfb><D:/Program Files/MikTex/texmfs/install/fonts/type1/vntex/vnr/vnr17.pfb><D:/Program Files/MikTex/texmfs/install/fonts/type1/vntex/vnr/vnr7.pfb><D:/Program Files/MikTex/texmfs/install/fonts/type1/vntex/vnr/vnti12.pfb><D:/Program Files/MikTex/texmfs/install/fonts/type1/vntex/vnr/vntt12.pfb>
+Output written on main.pdf (98 pages, 11152647 bytes).
+PDF statistics:
+ 4546 PDF objects out of 5155 (max. 8388607)
+ 1098 named destinations out of 1200 (max. 500000)
+ 699 words of extra memory for PDF output out of 10000 (max. 10000000)
+

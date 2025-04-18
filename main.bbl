@@ -34,6 +34,24 @@
     \field{year}{2022}
   \endentry
 
+  \entry{niosv-embedded-history}{manual}{}{}
+    \list{organization}{1}{%
+      {{Altera Corporation, An Intel Company}}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{edition}{24.3.1}
+    \field{title}{Document Revision History for the Nios\textregistered{} V
+  Processor Reference Manual - Nios V Embedded Processor Design Handbook}
+    \verb{url}
+    \verb https://www.intel.com/content/www/us/en/docs/programmable/683632/24
+    \verb -3-1/document-revision-history-for-the-processor.html
+    \endverb
+    \field{year}{2025}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{memory_byteenable}{manual}{}{}
     \list{organization}{1}{%
       {Intel Corporation}%
@@ -52,6 +70,93 @@
     \field{year}{2021}
   \endentry
 
+  \entry{fpgacademy-qsf}{online}{}{}
+    \name{author}{1}{}{%
+      {{hash=F}{%
+         family={{FPGAcademy}},
+         familyi={F\bibinitperiod},
+      }}%
+    }
+    \keyw{Eng}
+    \strng{namehash}{F1}
+    \strng{fullhash}{F1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{title}{DE10-Standard Quartus Settings File}
+    \verb{url}
+    \verb https://fpgacademy.org/Downloads/DE10_Standard.qsf
+    \endverb
+  \endentry
+
+  \entry{fpgacademy-boards}{online}{}{}
+    \name{author}{1}{}{%
+      {{hash=F}{%
+         family={{FPGAcademy}},
+         familyi={F\bibinitperiod},
+      }}%
+    }
+    \keyw{Eng}
+    \strng{namehash}{F1}
+    \strng{fullhash}{F1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{title}{FPGAcademy Boards Information}
+    \verb{url}
+    \verb https://fpgacademy.org/boards.html
+    \endverb
+  \endentry
+
+  \entry{intel-forum-simulation}{online}{}{}
+    \name{author}{1}{}{%
+      {{hash=I}{%
+         family={{Intel Community}},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \keyw{Eng}
+    \strng{namehash}{I1}
+    \strng{fullhash}{I1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{title}{Error while generating Nios V/g simulation model in Platform
+  Designer}
+    \verb{url}
+    \verb https://community.intel.com/t5/Intel-Quartus-Prime-Software/Error-w
+    \verb hile-generating-Nios-V-g-simulation-model-in-Platform/m-p/1613181/h
+    \verb ighlight/true?profile.language=pt
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{intel-forum-license}{online}{}{}
+    \name{author}{1}{}{%
+      {{hash=I}{%
+         family={{Intel Community}},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \keyw{Eng}
+    \strng{namehash}{I1}
+    \strng{fullhash}{I1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{title}{Questa license cannot create an account in FPGA Self Service}
+    \verb{url}
+    \verb https://community.intel.com/t5/Intel-FPGA-Software-Installation/Que
+    \verb sta-license-cannot-create-an-account-in-FPGA-Self-Service/td-p/1456
+    \verb 416
+    \endverb
+    \field{year}{2022}
+  \endentry
+
   \entry{intelNiosVHandbook}{manual}{}{}
     \name{author}{1}{}{%
       {{hash=I}{%
@@ -60,8 +165,8 @@
       }}%
     }
     \keyw{Eng}
-    \strng{namehash}{I1}
-    \strng{fullhash}{I1}
+    \strng{namehash}{I2}
+    \strng{fullhash}{I2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{I}
