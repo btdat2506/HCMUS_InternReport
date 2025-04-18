@@ -1,0 +1,37 @@
+---
+config:
+  layout: elk
+  darkMode: false
+  theme: default
+  themeVariables:
+    fontSize: 12px  # Adjust this value as needed
+---
+stateDiagram-v2
+    direction TB
+    %% CONTROL_SLAVE STATE TRACKING
+    state "CONTROL_SLAVE" as CS {
+        direction LR
+        
+        [*] --> CS_IDLE
+
+        state "IDLE" as CS_IDLE
+        state "BUSY" as CS_BUSY
+        state "DONE" as CS_DONE
+        
+        CS_IDLE --> CS_BUSY: control_go &&<br>!status_busy && <br>!status_done
+        CS_BUSY --> CS_DONE: WM_done
+        CS_DONE --> CS_IDLE: CPU ghi 1 vào status_done<br>để reset
+        
+        note right of CS_BUSY
+          Trong trạng thái BUSY:
+          - status_busy = 1
+          - status_done = 0
+        end note
+        
+        note right of CS_DONE
+          Trong trạng thái Done:
+          - status_busy = 0
+          - status_done = 1
+          - control_go = 0 (tự xóa)
+        end note
+    }

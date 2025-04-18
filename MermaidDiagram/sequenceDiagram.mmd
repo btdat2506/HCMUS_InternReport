@@ -1,0 +1,57 @@
+---
+config:
+  theme: redux-color
+  look: neo
+---
+sequenceDiagram
+    participant CPU
+    participant CS as Control Slave
+    participant RM as Read Master
+    participant FIFO
+    participant WM as Write Master
+    participant SrcMem as Source Memory
+    participant DstMem as Destination Memory
+    Note over CPU,DstMem: DMA Controller Configuration Phase
+    CPU->>CS: Write RM_startaddress
+    CPU->>CS: Write WM_startaddress
+    CPU->>CS: Write Length
+    CPU->>CS: Write control_go=1
+    Note over CS,DstMem: DMA Execution Phase
+    CS->>CS: Set status_busy=1
+    CS->>RM: Assert Start signal
+    CS->>WM: Assert Start signal
+    Note over RM,SrcMem: Read Master begins operation
+    activate RM
+    RM->>SrcMem: Read Request (oRM_read=1, oRM_readaddress=RM_startaddress)
+    SrcMem-->>RM: Data Ready (iRM_readdatavalid=1, iRM_readdata=Data1)
+    RM->>FIFO: Write Request (FF_writerequest=1, FF_data=Data1)
+    deactivate RM
+    Note over WM,DstMem: Write Master begins operation when data available
+    activate WM
+    WM->>FIFO: Read Request (FF_readrequest=1)
+    FIFO-->>WM: Data (FF_q=Data1)
+    WM->>DstMem: Write Request (oWM_write=1, oWM_writeaddress=WM_startaddress, oWM_writedata=Data1)
+    DstMem-->>WM: Write Acknowledge (iWM_waitrequest=0)
+    deactivate WM
+    Note over RM,SrcMem: Read Master continues with next word
+    activate RM
+    RM->>SrcMem: Read Request (oRM_read=1, oRM_readaddress=RM_startaddress+4)
+    SrcMem-->>RM: Data Ready (iRM_readdatavalid=1, iRM_readdata=Data2)
+    RM->>FIFO: Write Request (FF_writerequest=1, FF_data=Data2)
+    deactivate RM
+    Note over WM,DstMem: Write Master continues with next word
+    activate WM
+    WM->>FIFO: Read Request (FF_readrequest=1)
+    FIFO-->>WM: Data (FF_q=Data2)
+    WM->>DstMem: Write Request (oWM_write=1, oWM_writeaddress=WM_startaddress+4, oWM_writedata=Data2)
+    DstMem-->>WM: Write Acknowledge (iWM_waitrequest=0)
+    deactivate WM
+    Note over RM,WM: Process continues until all data is transferred
+    Note over WM,CS: Completion Phase
+    WM->>CS: Assert WM_done signal
+    CS->>CS: Set status_done=1, Clear status_busy=0, Clear control_go=0
+    Note over CPU,CS: CPU checks for completion
+    CPU->>CS: Read status register
+    CS-->>CPU: Return status (status_done=1)
+    CPU->>CS: Write status register (clear done bit)
+    CS->>CS: Clear status_done=0

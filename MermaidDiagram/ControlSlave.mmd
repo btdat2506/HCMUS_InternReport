@@ -1,0 +1,23 @@
+
+graph TB
+    subgraph Trạng thái DMA
+        direction LR
+        IDLE[IDLE<br>status_busy=0<br>status_done=0]
+        BUSY[BUSY<br>status_busy=1<br>status_done=0]
+        DONE[DONE<br>status_busy=0<br>status_done=1]
+    end
+
+    IDLE --> C1{control_go=1?};
+    C1 -- Có --> BUSY;
+    C1 -- Không --> IDLE;
+
+    BUSY --> C2{WM_done=1?};
+    C2 -- Có --> DONE_ACTION[Xóa control_go<br>Set status_done=1<br>Xóa status_busy=0];
+    DONE_ACTION --> DONE;
+    C2 -- Không --> BUSY;
+
+    DONE --> C3{CPU ghi 1<br>để xóa Done?};
+    C3 -- Có --> IDLE_ACTION[Xóa status_done=0];
+    IDLE_ACTION --> IDLE;
+    C3 -- Không --> DONE;
+

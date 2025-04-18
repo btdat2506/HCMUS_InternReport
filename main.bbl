@@ -1,0 +1,79 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global/global}
+  \entry{avalon_mm_transfer}{manual}{}{}
+    \list{organization}{1}{%
+      {Intel Corporation}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{edition}{22.3}
+    \field{title}{Avalon\textregistered{} Interface Specifications}
+    \verb{url}
+    \verb https://www.intel.com/content/www/us/en/docs/programmable/683091/22
+    \verb -3/typical-read-and-write-transfers.html
+    \endverb
+    \field{month}{09}
+    \field{year}{2022}
+  \endentry
+
+  \entry{memory_byteenable}{manual}{}{}
+    \list{organization}{1}{%
+      {Intel Corporation}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{edition}{17.0}
+    \field{title}{Embedded Memory (RAM: 1-PORT, RAM: 2-PORT, ROM: 1-PORT, and
+  ROM: 2-PORT) User Guide}
+    \verb{url}
+    \verb https://www.intel.com/content/www/us/en/docs/programmable/683240/17
+    \verb -0/byte-enable.html
+    \endverb
+    \field{month}{09}
+    \field{year}{2021}
+  \endentry
+
+  \entry{intelNiosVHandbook}{manual}{}{}
+    \name{author}{1}{}{%
+      {{hash=I}{%
+         family={{Intel Corporation}},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \keyw{Eng}
+    \strng{namehash}{I1}
+    \strng{fullhash}{I1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{note}{Version 24.3.1.}
+    \field{title}{Nios V Embedded Processor Design Handbook}
+    \verb{url}
+    \verb https://www.intel.com/content/www/us/en/docs/programmable/726952/24
+    \verb -3-1/about-the-embedded-processor.html
+    \endverb
+    \field{year}{2024}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+\enddatalist
+\endinput

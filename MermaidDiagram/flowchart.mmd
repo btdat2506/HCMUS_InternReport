@@ -1,0 +1,98 @@
+flowchart TB
+    subgraph CPU_Operation
+        CPUStart[Start]
+        CPUConfig[Configure DMA Registers]
+        CPUWrite[Write GO Bit]
+        CPUEnd[End]
+        
+        CPUStart --> CPUConfig
+        CPUConfig --> CPUWrite
+        CPUWrite --> CPUEnd
+    end
+    
+    subgraph DMA_Controller
+        ControlStart[Control Slave Start]
+        ControlIdle[Idle]
+        ControlDetect[Detect GO Bit]
+        ControlBusy[Set BUSY Status]
+        
+        subgraph Read_Master
+            RMStart[RM Start]
+            RMIdle[IDLE]
+            RMCheckFIFO[CHECK_FIFO]
+            RMRequest[REQUEST]
+            RMWaitData[WAIT_DATA]
+            RMWriteFIFO[WRITE_FIFO]
+            RMWaitFIFO[WAIT_FIFO]
+            RMDone[Read Complete]
+            
+            RMStart --> RMIdle
+            RMIdle -->|Start & !FF_almostfull| RMCheckFIFO
+            RMCheckFIFO -->|!FF_almostfull| RMRequest
+            RMCheckFIFO -->|FF_almostfull| RMCheckFIFO
+            RMRequest -->|!iRM_waitrequest| RMWaitData
+            RMRequest -->|iRM_waitrequest| RMRequest
+            RMWaitData -->|iRM_readdatavalid| RMWriteFIFO
+            RMWaitData -->|!iRM_readdatavalid| RMWaitData
+            RMWriteFIFO --> RMWaitFIFO
+            RMWaitFIFO -->|bytes_remaining > 0| RMCheckFIFO
+            RMWaitFIFO -->|bytes_remaining = 0| RMDone
+        end
+        
+        subgraph FIFO
+            FIFOBuffer[FIFO Buffer]
+        end
+        
+        subgraph Write_Master
+            WMStart[WM Start]
+            WMIdle[IDLE]
+            WMCheckFIFO[CHECK_FIFO]
+            WMReadFIFO[READ_FIFO]
+            WMWaitFIFOData[WAIT_FIFO_DATA]
+            WMStartWrite[START_WRITE]
+            WMWaitWriteAck[WAIT_WRITE_ACK]
+            WMUpdateCnt[UPDATE_CNT]
+            WMDone[Write Complete]
+            
+            WMStart --> WMIdle
+            WMIdle -->|Start & Length > 0| WMCheckFIFO
+            WMCheckFIFO -->|!FF_empty| WMReadFIFO
+            WMCheckFIFO -->|FF_empty| WMCheckFIFO
+            WMReadFIFO --> WMWaitFIFOData
+            WMWaitFIFOData --> WMStartWrite
+            WMStartWrite --> WMWaitWriteAck
+            WMWaitWriteAck -->|!iWM_waitrequest| WMUpdateCnt
+            WMWaitWriteAck -->|iWM_waitrequest| WMWaitWriteAck
+            WMUpdateCnt -->|bytes_remaining > 4| WMCheckFIFO
+            WMUpdateCnt -->|bytes_remaining <= 4| WMDone
+        end
+        
+        ControlSetDone[Set DONE Status]
+        ControlClearGo[Clear GO Bit]
+        ControlEnd[Control Slave End]
+        
+        ControlStart --> ControlIdle
+        ControlIdle --> ControlDetect
+        ControlDetect -->|GO=1| ControlBusy
+        ControlBusy --> RMStart
+        ControlBusy --> WMStart
+        RMDone --> FIFOBuffer
+        FIFOBuffer --> WMStart
+        WMDone --> ControlSetDone
+        ControlSetDone --> ControlClearGo
+        ControlClearGo --> ControlEnd
+    end
+    
+    CPUWrite -.-> ControlDetect
+    
+    class CPUStart,CPUConfig,CPUWrite,CPUEnd cpu
+    class ControlStart,ControlIdle,ControlDetect,ControlBusy,ControlSetDone,ControlClearGo,ControlEnd control
+    class RMStart,RMIdle,RMCheckFIFO,RMRequest,RMWaitData,RMWriteFIFO,RMWaitFIFO,RMDone readmaster
+    class FIFOBuffer fifo
+    class WMStart,WMIdle,WMCheckFIFO,WMReadFIFO,WMWaitFIFOData,WMStartWrite,WMWaitWriteAck,WMUpdateCnt,WMDone writemaster
+    
+    classDef cpu fill:#f96,stroke:#333,stroke-width:2px
+    classDef control fill:#bbf,stroke:#333,stroke-width:2px
+    classDef readmaster fill:#bfb,stroke:#333,stroke-width:2px
+    classDef fifo fill:#fcf,stroke:#333,stroke-width:2px
+    classDef writemaster fill:#fbb,stroke:#333,stroke-width:2px

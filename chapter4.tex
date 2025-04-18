@@ -7,7 +7,7 @@ Mô phỏng (Simulation) là một bước quan trọng trong quy trình thiết
 
 Công cụ chính được sử dụng để mô phỏng hệ thống trong dự án này là \textbf{Questa Advanced Simulator} (trước đây là ModelSim-Intel FPGA Edition), một trình mô phỏng mạnh mẽ được cung cấp bởi Siemens.
 
-Khác với \acrshort{niosii}, hệ thống \acrshort{niosv} không hỗ trợ Generate Testbench System với các phiên bản Quartus Prime Lite và Standard trên hệ điều hành Windows (và Intel cũng đã thông báo sẽ không hỗ trợ cho việc này trên hệ điều hành Windows \cite{intel-forum-simulation}). Có 2 cách để tạo testbench cho hệ thống \acrshort{niosv}:
+Khác với \acrshort{nios2}, hệ thống \acrshort{niosv} không hỗ trợ Generate Testbench System với các phiên bản Quartus Prime Lite và Standard trên hệ điều hành Windows (và Intel cũng đã thông báo sẽ không hỗ trợ cho việc này trên hệ điều hành Windows \cite{intel-forum-simulation}). Có 2 cách để tạo testbench cho hệ thống \acrshort{niosv}:
 
 \begin{enumerate}
     \item \textbf{Sử dụng Quartus Prime Pro:} Phiên bản Pro này có nhiều tính năng hơn, tuy nhiên phiên bản này tốn dung lượng ổ cứng từ 40-145 GB.
@@ -23,9 +23,9 @@ Khác với \acrshort{niosii}, hệ thống \acrshort{niosv} không hỗ trợ G
 
 Ngoài ra, để mô phỏng hoạt động của bộ xử lý \acrshort{niosv} chạy mã phần mềm, tệp chương trình thực thi (\texttt{.elf}) cần được biên dịch và chuyển đổi thành định dạng bộ nhớ (\texttt{.hex}) để nạp vào mô hình bộ nhớ trong quá trình mô phỏng.
 
-\section{Quy trình Thiết lập và Chạy Mô phỏng}
+\FloatBarrier
 
-Dựa trên các ghi chú thực hiện và các tệp được tạo bởi Platform Designer (trên Linux), quy trình mô phỏng trên Windows (sử dụng QuestaSim) bao gồm các bước sau:
+\section{Quy trình Thiết lập và Chạy Mô phỏng}
 
 \begin{enumerate}
     \item \textbf{Tạo Testbench System:} Như đã đề cập, bước này cần thực hiện trên Linux dùng Platform Designer. Chọn File -> Generate Testbench System...

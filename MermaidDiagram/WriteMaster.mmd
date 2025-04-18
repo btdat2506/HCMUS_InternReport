@@ -1,0 +1,37 @@
+---
+config:
+  layout: elk
+  darkMode: false
+  theme: default
+  themeVariables:
+    fontSize: 12px  # Adjust this value as needed
+---
+stateDiagram-v2
+    state "WRITE_MASTER" as RM {
+        direction TB
+        [*] --> IDLE
+
+        IDLE: Chờ tín hiệu Start<br>Khởi tạo counters
+        IDLE --> CHECK_FIFO: Start=1 & Length>0
+
+        CHECK_FIFO: Kiểm tra FIFO rỗng?
+        CHECK_FIFO --> READ_FIFO: !FF_empty
+        CHECK_FIFO --> CHECK_FIFO: FF_empty
+
+        READ_FIFO: Yêu cầu đọc FIFO<br>(FF_readrequest=1)
+        READ_FIFO --> WAIT_FIFO_DATA
+
+        WAIT_FIFO_DATA: Chờ dữ liệu từ FIFO
+        WAIT_FIFO_DATA --> START_WRITE: Dữ liệu FF_q được latch
+
+        START_WRITE: Ghi dữ liệu lên bus Avalon <br> oWM_write=1, <br>address, data, byteEnable
+        START_WRITE --> WAIT_WRITE_ACK: 
+
+        WAIT_WRITE_ACK: Chờ bộ nhớ đích sẵn sàng<br>(iWM_waitrequest==0)
+        WAIT_WRITE_ACK --> UPDATE_CNT: !iWM_waitrequest
+        WAIT_WRITE_ACK --> WAIT_WRITE_ACK: iWM_waitrequest == 1
+
+        UPDATE_CNT: Cập nhật địa chỉ ghi<br>Giảm số byte còn lại
+        UPDATE_CNT --> IDLE: bytes_remaining <= 4<br>(Hoàn thành, set WM_done)
+        UPDATE_CNT --> CHECK_FIFO: bytes_remaining > 4
+    }

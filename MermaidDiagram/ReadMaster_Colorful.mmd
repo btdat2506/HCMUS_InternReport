@@ -1,0 +1,45 @@
+---
+config:
+  layout: elk
+  darkMode: false
+  theme: default
+  themeVariables:
+    fontSize: 12px  # Adjust this value as needed
+---
+stateDiagram-v2
+    direction TB
+
+    %% Define styles for different states
+    classDef idleStyle fill:#f9f
+    classDef checkStyle fill:#ccf
+    classDef requestStyle fill:#add
+    classDef waitStyle fill:#fec
+    classDef writeStyle fill:#dfd
+
+    %% Define states with descriptions
+    IDLE : Chờ tín hiệu Start<br>Khởi tạo counters
+    CHECK_FIFO : Kiểm tra FIFO gần đầy?
+    REQUEST : Gửi yêu cầu đọc<br>(oRM_read=1)
+    WAIT_DATA : Chờ dữ liệu hợp lệ
+    WRITE_FIFO : Ghi dữ liệu iRM_readdata vào FIFO<br>(FF_writerequest=1)
+    WAIT_FIFO : Cập nhật địa chỉ đọc còn lại
+
+    %% Define transitions
+    [*] --> IDLE
+    IDLE --> CHECK_FIFO:Start=1 & Length>0
+    CHECK_FIFO --> REQUEST:!FF_almostfull
+    CHECK_FIFO --> CHECK_FIFO:FF_almostfull
+    REQUEST --> WAIT_DATA:!iRM_waitrequest
+    REQUEST --> REQUEST:iRM_waitrequest
+    WAIT_DATA --> WRITE_FIFO:iRM_readdatavalid==1
+    WAIT_DATA --> WAIT_DATA:iRM_readdatavalid==0
+    WRITE_FIFO --> WAIT_FIFO:Ghi xong 1 word
+    WAIT_FIFO --> IDLE:bytes_remaining <= 0
+    WAIT_FIFO --> CHECK_FIFO:bytes_remaining > 0
+
+    %% Apply styles to states using class statement
+    class IDLE idleStyle
+    class CHECK_FIFO, WAIT_FIFO checkStyle
+    class REQUEST requestStyle
+    class WAIT_DATA waitStyle
+    class WRITE_FIFO writeStyle

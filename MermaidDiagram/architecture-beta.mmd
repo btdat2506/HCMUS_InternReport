@@ -1,0 +1,28 @@
+architecture-beta
+    group soc(mdi:integrated-circuit-chip)[Hệ thống SoC]
+
+        service cpu(mdi:cpu-64-bit)[CPU Nios V/m] in soc
+        service mem_src(mdi:database)[Memory Nguồn (e.g., On-Chip RAM)] in soc
+        service mem_dst(mdi:database)[Memory Đích (e.g., On-Chip RAM)] in soc
+
+        group dmac(mdi:chip)[DMA Controller (DMAController.v)] in soc
+
+            service cs(mdi:controller)[CONTROL_SLAVE (Avalon Slave)] in dmac
+            service rm(mdi:arrow-down-bold-box-outline)[READ_MASTER (Avalon Read Master)] in dmac
+            service wm(mdi:arrow-up-bold-box-outline)[WRITE_MASTER (Avalon Write Master)] in dmac
+            service fifo(mdi:pipe)[FIFO_IP (256x32)] in dmac
+
+            // Connections within DMAC
+            wm:T --> B:cs // WM_done
+            rm:R --> L:fifo // FF_data, FF_writerequest
+            fifo:T --> B:rm // FF_almostfull
+            fifo:R --> L:wm // FF_q
+            wm:B --> T:fifo // FF_readrequest
+            fifo:B --> T:wm // FF_empty
+
+        // Connections between SoC components and DMAC/Memory
+        // Note: Using {group} to route edges from/to the DMAC group boundary
+        cpu:R --> L:cs{group} // Avalon-MM Slave (Control/Status)
+        rm{group}:L --> R:mem_src // Avalon-MM Read Master
+        mem_src:L --> R:rm{group} // Read Data
+        wm{group}:R --> L:mem_dst // Avalon-MM Write Master
