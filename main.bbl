@@ -17,6 +17,42 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global/global}
+  \entry{altera_nios_v_2024}{manual}{}{}
+    \list{organization}{1}{%
+      {{Altera Corporation, An Intel Company}}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{number}{784468}
+    \field{title}{{AN 985: Nios\textregistered{} V Processor Tutorial}}
+    \verb{url}
+    \verb https://www.intel.com/content/www/us/en/docs/programmable/784468/cu
+    \verb rrent/an-985-processor-tutorial.html
+    \endverb
+    \field{month}{07}
+    \field{year}{2024}
+  \endentry
+
+  \entry{ashling_riscfree_guide}{manual}{}{}
+    \list{organization}{1}{%
+      {Intel Corporation}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{edition}{25.1}
+    \field{number}{730783}
+    \field{title}{{Ashling* RiscFree* Integrated Development Environment (IDE)
+  for Altera\textregistered{} FPGAs User Guide}}
+    \verb{url}
+    \verb https://www.intel.com/content/www/us/en/docs/programmable/730783/25
+    \verb -1/about-this-document.html
+    \endverb
+    \field{year}{2025}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{avalon_mm_transfer}{manual}{}{}
     \list{organization}{1}{%
       {Intel Corporation}%
@@ -32,24 +68,6 @@
     \endverb
     \field{month}{09}
     \field{year}{2022}
-  \endentry
-
-  \entry{niosv-embedded-history}{manual}{}{}
-    \list{organization}{1}{%
-      {{Altera Corporation, An Intel Company}}%
-    }
-    \field{labeltitlesource}{title}
-    \field{sortinit}{D}
-    \field{sortinithash}{D}
-    \field{edition}{24.3.1}
-    \field{title}{Document Revision History for the Nios\textregistered{} V
-  Processor Reference Manual - Nios V Embedded Processor Design Handbook}
-    \verb{url}
-    \verb https://www.intel.com/content/www/us/en/docs/programmable/683632/24
-    \verb -3-1/document-revision-history-for-the-processor.html
-    \endverb
-    \field{year}{2025}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{memory_byteenable}{manual}{}{}
@@ -171,14 +189,71 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{I}
     \field{sortinithash}{I}
-    \field{note}{Version 24.3.1.}
+    \field{edition}{24.3.1}
     \field{title}{Nios V Embedded Processor Design Handbook}
     \verb{url}
     \verb https://www.intel.com/content/www/us/en/docs/programmable/726952/24
     \verb -3-1/about-the-embedded-processor.html
     \endverb
-    \field{year}{2024}
+    \field{year}{2025}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{niosv-reference-manual}{manual}{}{}
+    \list{organization}{1}{%
+      {{Altera Corporation, An Intel Company}}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{edition}{24.3.1}
+    \field{title}{Nios\textregistered{} V Processor Reference Manual}
+    \verb{url}
+    \verb https://www.intel.com/content/www/us/en/docs/programmable/683632/24
+    \verb -3-1/overview.html
+    \endverb
+    \field{year}{2025}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{intelNiosVSoftwareDevHandbook}{manual}{}{}
+    \list{organization}{1}{%
+      {Intel Corporation}%
+    }
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{edition}{25.1}
+    \field{number}{743810}
+    \field{title}{{Nios\textregistered{} V Processor Software Developer
+  Handbook}}
+    \verb{url}
+    \verb https://www.intel.com/content/www/us/en/docs/programmable/743810/25
+    \verb -1/overview-of-embedded-processor-development.html
+    \endverb
+    \field{year}{2025}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{terasicDE10Std}{online}{}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={{Terasic Inc.}},
+         familyi={T\bibinitperiod},
+      }}%
+    }
+    \keyw{Eng}
+    \strng{namehash}{T1}
+    \strng{fullhash}{T1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{DE10-Standard Development Kit}
+    \verb{url}
+    \verb https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English
+    \verb &CategoryNo=165&No=1081
+    \endverb
   \endentry
 \enddatalist
 \endinput

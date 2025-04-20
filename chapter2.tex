@@ -15,41 +15,37 @@ Chương \ref{Chapter2} trình bày các khái niệm lý thuyết cơ bản li�
     \item Các bộ chuyển đổi tương tự-số (ADC) và số-tương tự (DAC).
     \item Hệ thống kết nối nội bộ (interconnect) như bus (ví dụ: AMBA AXI, Avalon).
 \end{itemize}
+
 Trong bối cảnh \acrshort{fpga}, \acrshort{soc} thường đề cập đến việc tích hợp một hoặc nhiều lõi xử lý mềm (soft-core) hoặc cứng (hard-core) cùng với các ngoại vi và bộ nhớ trên cùng một cấu trúc \acrshort{fpga}, sử dụng các công cụ như Intel Platform Designer.
 
 \section{Bộ xử lý mềm Intel Nios V/m}
-Nios V là thế hệ bộ xử lý mềm (soft-core processor) mới nhất của Intel dựa trên kiến trúc tập lệnh (ISA) RISC-V mã nguồn mở \cite{intelNiosVHandbook}. Là một bộ xử lý mềm, Nios V được triển khai hoàn toàn bằng logic \acrshort{fpga}, mang lại sự linh hoạt cao trong việc cấu hình và tích hợp vào các thiết kế \acrshort{soc}.
-\begin{itemize}
-    \item \textbf{Nios V/m (Microcontroller):} Phiên bản được sử dụng trong báo cáo này là \acrshort{niosv}/m (RV32IMAZicsr), được tối ưu hóa cho các ứng dụng vi điều khiển, nhấn mạnh vào diện tích logic nhỏ và hiệu quả năng lượng. Nó phù hợp cho các nhiệm vụ điều khiển, quản lý ngoại vi và xử lý cơ bản trong hệ thống nhúng, đáp ứng nhu cầu của một bộ vi xử lý cơ bản.
-    \item \textbf{Kiến trúc RISC-V:} Dựa trên ISA RISC-V mã nguồn mở, cung cấp một kiến trúc hiện đại, module hóa và không ràng buộc về bản quyền. Nios V/m triển khai tập lệnh cơ sở RV32I cùng với các mở rộng tiêu chuẩn như M (Integer Multiplication and Division), A (Atomic Instructions), Zicsr (Control and Status Register Access).
-    \begin{figure}[htbp]
-        \centering
-        \includegraphics[width=0.6\linewidth]{Images/02_00_NiosVm_Architecture.pdf}
-        \caption{Kiến trúc Nios V/m \cite{niosv_architecture}.}
-        \label{fig:niosv_architecture}
-    \end{figure}
-    \item \textbf{Pipeline (Tùy chọn):} Nios V/m có thể được cấu hình với pipeline 5 tầng kinh điển (Fetch, Decode, Execute, Memory, Write back) để tăng hiệu suất hoặc không có pipeline (non-pipelined) để tối ưu diện tích. Khi sử dụng pipeline, có thể xảy ra hiện tượng stall (trì hoãn) do phụ thuộc dữ liệu (data dependency) hoặc tranh chấp tài nguyên (resource stall).
-\end{itemize}
+Nios V là thế hệ bộ xử lý mềm (soft-core processor) mới nhất của Intel dựa trên kiến trúc tập lệnh (ISA) RISC-V mã nguồn mở \cite{intelNiosVHandbook, niosv-reference-manual, altera_nios_v_2024}. Là một bộ xử lý mềm, Nios V được triển khai hoàn toàn bằng logic \acrshort{fpga}, mang lại sự linh hoạt cao trong việc cấu hình và tích hợp vào các thiết kế \acrshort{soc}.
+
+Phiên bản được sử dụng trong báo cáo này là \acrlong{niosv} (RV32IMAZicsr), được tối ưu hóa cho các ứng dụng vi điều khiển. Nó phù hợp cho các nhiệm vụ điều khiển, quản lý ngoại vi và xử lý cũng như nhu cầu debug cơ bản trong hệ thống nhúng, đáp ứng nhu cầu của một bộ vi xử lý cơ bản. \acrlong{niosv} có thể được cấu hình với pipeline 5-stage kinh điển (Fetch, Decode, Execute, Memory, Write back) để tăng hiệu suất (hoặc non-pipelined để tối ưu diện tích) \cite{niosv-reference-manual}.
+    
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Images/02_00_NiosVm_Architecture.pdf}
+    \caption{Kiến trúc Nios V/m \cite{niosv-reference-manual}.}
+    \label{fig:02_00_NiosVm_Architecture}
+\end{figure}
 
 \section{Truy cập Bộ nhớ Trực tiếp (DMA)}
-\acrfull{dma} là một tính năng của hệ thống máy tính cho phép một số hệ thống con phần cứng nhất định truy cập bộ nhớ hệ thống chính (\acrshort{ram}) để đọc và/hoặc ghi một cách độc lập với bộ xử lý trung tâm (CPU).
+
+\acrfull{dma} thường được biết đến là một phần cứng của hệ thống máy tính cho phép một số hệ thống con phần cứng nhất định truy cập bộ nhớ hệ thống chính (\acrshort{ram}) để đọc và/hoặc ghi một cách độc lập với bộ xử lý trung tâm (CPU).
+
 \begin{itemize}
     \item \textbf{Mục đích:} Giảm tải cho CPU trong các tác vụ truyền dữ liệu khối lượng lớn giữa bộ nhớ và các thiết bị ngoại vi (hoặc giữa các vùng nhớ khác nhau). Khi CPU khởi tạo một hoạt động DMA, nó có thể thực hiện các công việc khác trong khi bộ điều khiển DMA (DMA Controller - DMAC) thực hiện việc truyền dữ liệu.
     \item \textbf{Hoạt động:} CPU cấu hình DMAC với địa chỉ nguồn, địa chỉ đích, và số lượng dữ liệu cần truyền. Sau đó, CPU ra lệnh cho DMAC bắt đầu. DMAC chiếm quyền điều khiển bus hệ thống (hoặc sử dụng một bus riêng) để thực hiện việc truyền dữ liệu trực tiếp. Khi hoàn tất, DMAC thường thông báo cho CPU thông qua một ngắt (interrupt) hoặc bằng cách đặt một cờ trạng thái.
-    \item \textbf{Lợi ích:} Tăng thông lượng dữ liệu, giải phóng CPU cho các tác vụ tính toán khác, cải thiện hiệu suất hệ thống tổng thể, đặc biệt quan trọng trong các hệ thống xử lý dữ liệu lớn hoặc thời gian thực.
+    \item \textbf{Lợi ích:} Tăng throughput dữ liệu, giải phóng CPU cho các tác vụ tính toán khác, cải thiện hiệu suất hệ thống tổng thể, đặc biệt quan trọng trong các hệ thống xử lý dữ liệu lớn hoặc thời gian thực.
 \end{itemize}
 
 % --- Section 4: Avalon Bus (Đã di chuyển từ Section 6 cũ) ---
 \section{Giao tiếp Hệ thống: Bus Avalon}
 \label{sec:avalon_bus}
-Trong các hệ thống SoC được thiết kế trên nền tảng FPGA của Intel bằng công cụ Platform Designer, Giao tiếp Bus Avalon đóng vai trò là chuẩn kết nối (interconnect) nền tảng. 
+Trong các hệ thống SoC được thiết kế trên nền tảng FPGA của Intel bằng công cụ Platform Designer, Giao tiếp Bus Avalon đóng vai trò là chuẩn kết nối (interconnect) nền tảng \cite{avalon_mm_transfer}. 
 
-Đặc tả Avalon bao gồm nhiều loại giao diện con, trong đó Avalon Memory-Mapped (Avalon-MM) là giao diện được sử dụng chủ yếu trong thiết kế bộ điều khiển DMA này để truy cập bộ nhớ và thanh ghi điều khiển.
-
-\FloatBarrier
-
-\subsection{Giao tiếp Bus Avalon Memory Mapped Interface (Avalon-MM)}
-Avalon-MM là một giao diện dựa trên địa chỉ, được thiết kế theo kiến trúc Master-Slave cho các giao dịch truy cập vào không gian bộ nhớ hoặc thanh ghi.
+Đặc tả Avalon bao gồm nhiều loại giao tiếp con, trong đó Avalon Memory-Mapped (Avalon-MM) là giao tiếp được sử dụng chủ yếu trong thiết kế bộ điều khiển DMA này để truy cập bộ nhớ và thanh ghi điều khiển \cite{avalon_mm_transfer}.
 
 \begin{figure}[htbp]
     \centering
@@ -58,9 +54,12 @@ Avalon-MM là một giao diện dựa trên địa chỉ, được thiết kế 
     \label{fig:02_01_avalon_mm_transfer}
 \end{figure}
 
+\subsection{Giao tiếp Bus Avalon Memory Mapped Interface (Avalon-MM)}
+Avalon-MM là một giao diện dựa trên địa chỉ, được thiết kế theo kiến trúc Master-Slave cho các giao dịch truy cập vào không gian bộ nhớ hoặc thanh ghi \cite{avalon_mm_transfer}.
+
 \subsubsection{Đặc tả và Yêu cầu Giao thức}
 \begin{itemize}
-    \item \textbf{Vai trò Master/Slave:} 
+    \item \textbf{Vai trò Master/Slave:}
     \begin{itemize}
         \item Một giao dịch luôn được khởi tạo bởi Master (ví dụ: CPU, DMA Master) và được phản hồi bởi Slave (ví dụ: Bộ nhớ, Thanh ghi DMA).
         \item Master chịu trách nhiệm cung cấp địa chỉ và tín hiệu điều khiển (\texttt{read}, \texttt{write}, \texttt{byteenable}), trong khi Slave giải mã địa chỉ, phản hồi bằng dữ liệu (\texttt{readdata}) hoặc chấp nhận ghi dữ liệu (\texttt{writedata}), và có thể sử dụng tín hiệu điều khiển luồng (\texttt{waitrequest}, \texttt{readdatavalid}).
@@ -68,21 +67,22 @@ Avalon-MM là một giao diện dựa trên địa chỉ, được thiết kế 
 
     \begin{figure}[htbp]
         \centering
+        % Subfigure for Memory Read
         \begin{subfigure}[b]{0.48\textwidth}
             \centering
-            \includegraphics[width=\linewidth]{Images/02_03_AvalonSlave_ReadWaveform.pdf}
-            \caption{Giản đồ sóng đọc Slave.}
-            \label{fig:02_03_avalon_slave_read_sub}
+            \includegraphics[width=\linewidth]{Images/02_07_Memory_ReadWaveform.pdf}
+            \caption{Giản đồ sóng đọc Memory.}
+            \label{fig:02_07_memory_read_sub}
         \end{subfigure}
         \hfill
         \begin{subfigure}[b]{0.48\textwidth}
             \centering
-            \includegraphics[width=\linewidth]{Images/02_04_AvalonSlave_WriteWaveform.pdf}
-            \caption{Giản đồ sóng ghi Slave.}
-            \label{fig:02_04_avalon_slave_write_sub}
+            \includegraphics[width=\linewidth]{Images/02_08_Memory_WriteWaveform.pdf}
+            \caption{Giản đồ sóng ghi Memory.}
+            \label{fig:02_08_memory_write_sub}
         \end{subfigure}
-        \caption{Giản đồ sóng đọc và ghi của giao tiếp Avalon-MM Slave.}
-        \label{fig:avalon_slave_waveforms}
+        \caption{Giản đồ sóng đọc và ghi bộ nhớ Memory qua giao tiếp Avalon-MM.}
+        \label{fig:memory_waveforms}
     \end{figure}
 
     \begin{figure}[htbp]
@@ -90,17 +90,17 @@ Avalon-MM là một giao diện dựa trên địa chỉ, được thiết kế 
         \begin{subfigure}[b]{0.7\textwidth}
             \centering
             \includegraphics[width=\linewidth]{Images/02_05_AvalonMaster_ReadWaveform.pdf}
-            \caption{Giản đồ sóng đọc của giao tiếp Avalon-MM Master.}
+            \caption{Giản đồ sóng đọc.}
             \label{fig:02_05_avalon_master_read}
         \end{subfigure}
-        \vfill
+        \hfill
         \begin{subfigure}[b]{0.7\textwidth}
             \centering
             \includegraphics[width=\linewidth]{Images/02_06_AvalonMaster_WriteWaveform.pdf}
-            \caption{Giản đồ sóng ghi của giao tiếp Avalon-MM Master.}
+            \caption{Giản đồ sóng ghi.}
             \label{fig:02_06_avalon_master_write}
         \end{subfigure}
-        \caption{Giản đồ sóng đọc và ghi của giao tiếp Avalon-MM Slave.}
+        \caption{Giản đồ sóng đọc và ghi của giao tiếp Avalon-MM Master.}
         \label{fig:avalon_master_waveforms}
     \end{figure}
 
@@ -122,7 +122,7 @@ Avalon-MM là một giao diện dựa trên địa chỉ, được thiết kế 
         \begin{itemize}
             \item Master kích hoạt tín hiệu \texttt{read=1} và đưa ra \texttt{address}.
             \item Slave, sau khi giải mã địa chỉ và sẵn sàng dữ liệu, sẽ đặt dữ liệu lên \texttt{readdata}.
-            \item \textbf{Điều khiển luồng (\texttt{waitrequest}):} Nếu Slave cần thêm thời gian (ví dụ: bộ nhớ chậm), nó sẽ kích hoạt \texttt{waitrequest=1}. Master \textit{phải} giữ nguyên \texttt{address} và \texttt{read} cho đến khi \texttt{waitrequest} bị hủy kích hoạt (\texttt{=0}). Slave trả về \texttt{readdata} trong chu kỳ clock mà \texttt{read=1} và \texttt{waitrequest=0}.
+            \item \textbf{Điều khiển luồng (\texttt{waitrequest}):} Nếu Slave cần thêm thời gian (ví dụ: bộ nhớ chậm), nó sẽ kích hoạt \texttt{waitrequest=1}. Master \textit{phải} giữ nguyên \texttt{address} và \texttt{read} cho đến khi \texttt{waitrequest=0}. 
             \item \textbf{Tính hợp lệ dữ liệu (\texttt{readdatavalid}):} Trong các giao dịch đọc có độ trễ thay đổi (variable-latency reads, thường là pipelined), Slave sẽ kích hoạt \texttt{readdatavalid=1} cùng lúc với \texttt{readdata} để báo hiệu dữ liệu hợp lệ. Master \textit{phải} chỉ lấy dữ liệu khi \texttt{readdatavalid=1} (và \texttt{waitrequest=0}). Giao diện Read Master của DMA này (\texttt{READ\_MASTER}) được thiết kế để hỗ trợ \texttt{readdatavalid}.
             \item Giản đồ sóng đọc điển hình được minh họa trong Hình \ref{fig:02_01_avalon_mm_transfer} (phần Read), Hình \ref{fig:avalon_slave_waveforms}(a), \ref{fig:02_05_avalon_master_read}, và \ref{fig:memory_waveforms}(a).
         \end{itemize}
@@ -144,25 +144,7 @@ Avalon-MM là một giao diện dựa trên địa chỉ, được thiết kế 
     \label{fig:02_02_memory_byteenable} % Fixed duplicate label
 \end{figure}
 
-\begin{figure}[htbp]
-    \centering
-    % Subfigure for Memory Read
-    \begin{subfigure}[b]{0.48\textwidth}
-        \centering
-        \includegraphics[width=\linewidth]{Images/02_07_Memory_ReadWaveform.pdf}
-        \caption{Giản đồ sóng đọc Memory.}
-        \label{fig:02_07_memory_read_sub}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.48\textwidth}
-        \centering
-        \includegraphics[width=\linewidth]{Images/02_08_Memory_WriteWaveform.pdf}
-        \caption{Giản đồ sóng ghi Memory.}
-        \label{fig:02_08_memory_write_sub}
-    \end{subfigure}
-    \caption{Giản đồ sóng đọc và ghi bộ nhớ Memory qua giao tiếp Avalon-MM.}
-    \label{fig:memory_waveforms}
-\end{figure}
+
 
 Việc hiểu rõ và tuân thủ các yêu cầu về thời gian và hành vi của các tín hiệu này là cực kỳ quan trọng khi thiết kế một thành phần IP tương thích Avalon-MM.
 
@@ -175,9 +157,9 @@ Dựa trên yêu cầu về khả năng truyền dữ liệu tốc độ cao và
 
 \subsection{Mục tiêu và Bối cảnh: Truyền dữ liệu giữa Bộ nhớ On-Chip}
 \label{subsec:dma_context_onchip}
-Một trong những ứng dụng ban đầu và quan trọng thúc đẩy việc thiết kế bộ điều khiển DMA này là nhu cầu truyền dữ liệu nhanh chóng và hiệu quả giữa các khối bộ nhớ trong chip (On-chip Memory - OCM) trên FPGA. Bộ nhớ on-chip, thường được hiện thực hóa bằng các khối RAM tích hợp sẵn trong cấu trúc FPGA, cung cấp tốc độ truy cập rất cao so với bộ nhớ ngoài (off-chip). Việc sử dụng DMA để di chuyển dữ liệu giữa các khối OCM (ví dụ: từ một vùng RAM chứa dữ liệu thô sang một vùng RAM khác để xử lý) giúp giải phóng CPU Nios V/m khỏi các vòng lặp sao chép bộ nhớ (\texttt{memcpy}) tốn thời gian, cho phép CPU tập trung vào các nhiệm vụ tính toán hoặc điều khiển khác.
+Một trong những ứng dụng ban đầu và quan trọng thúc đẩy việc thiết kế bộ điều khiển DMA này là nhu cầu truyền dữ liệu nhanh chóng và hiệu quả giữa các khối bộ nhớ trong chip (On-chip Memory - OCM) trên FPGA. Bộ nhớ on-chip, thường được hiện thực hóa bằng các khối RAM tích hợp sẵn trong cấu trúc FPGA \cite{memory_byteenable}, cung cấp tốc độ truy cập rất cao so với bộ nhớ ngoài (off-chip). Việc sử dụng DMA để di chuyển dữ liệu giữa các khối OCM (ví dụ: từ một vùng RAM chứa dữ liệu thô sang một vùng RAM khác để xử lý) giúp giải phóng CPU Nios V/m khỏi các vòng lặp sao chép bộ nhớ (\texttt{memcpy}) tốn thời gian, cho phép CPU tập trung vào các nhiệm vụ tính toán hoặc điều khiển khác.
 
-Do đó, các giao diện Avalon-MM Master của \texttt{READ\_MASTER} và \texttt{WRITE\_MASTER} được thiết kế với giả định ban đầu là tương tác với các Slave là bộ nhớ on-chip. Điều này có nghĩa là chúng được tối ưu cho các giao dịch truy cập bộ nhớ có độ trễ tương đối thấp và ổn định, như được minh họa trong các giản đồ sóng đọc/ghi bộ nhớ (Hình \ref{fig:memory_waveforms}). Mặc dù vậy, thiết kế vẫn tuân thủ đầy đủ đặc tả Avalon-MM, cho phép DMA hoạt động với các loại bộ nhớ hoặc ngoại vi khác có hành vi thời gian khác nhau, miễn là chúng cũng tuân thủ chuẩn Avalon-MM.
+Do đó, các giao diện Avalon-MM Master của \texttt{READ\_MASTER} và \texttt{WRITE\_MASTER} được thiết kế với giả định ban đầu là tương tác với các Slave là bộ nhớ on-chip. Điều này có nghĩa là chúng được tối ưu cho các giao dịch truy cập bộ nhớ có độ trễ tương đối thấp và ổn định \cite{memory_byteenable}, như được minh họa trong các giản đồ sóng đọc/ghi bộ nhớ (Hình \ref{fig:memory_waveforms}). Mặc dù vậy, thiết kế vẫn tuân thủ đầy đủ đặc tả Avalon-MM \cite{avalon_mm_transfer}, cho phép DMA hoạt động với các loại bộ nhớ hoặc ngoại vi khác có hành vi thời gian khác nhau, miễn là chúng cũng tuân thủ chuẩn Avalon-MM.
 
 \subsection{Kiến trúc Tổng thể và Luồng Dữ liệu}
 Kiến trúc DMA được chọn dựa trên mô hình tách biệt luồng đọc và ghi dữ liệu để tối đa hóa thông lượng, bao gồm các khối chính sau:
@@ -200,25 +182,67 @@ Luồng dữ liệu cơ bản diễn ra như sau: CPU cấu hình DMA thông qua
 \subsection{Thiết kế Module Điều khiển (`CONTROL\_SLAVE`)}
 \begin{itemize}
     \item \textbf{Yêu cầu:} Cung cấp giao diện để CPU cấu hình (địa chỉ nguồn/đích, độ dài), khởi động và kiểm tra trạng thái DMA.
+    
+    \begin{figure}[htbp]
+        \centering
+        \begin{subfigure}[b]{0.48\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{Images/02_03_AvalonSlave_ReadWaveform.pdf}
+            \caption{Giản đồ sóng đọc Slave.}
+            \label{fig:02_03_avalon_slave_read_sub}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.48\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{Images/02_04_AvalonSlave_WriteWaveform.pdf}
+            \caption{Giản đồ sóng ghi Slave.}
+            \label{fig:02_04_avalon_slave_write_sub}
+        \end{subfigure}
+        \caption{Giản đồ sóng đọc và ghi của giao tiếp Avalon-MM Slave.}
+        \label{fig:avalon_slave_waveforms}
+    \end{figure}
+    
     \item \textbf{Giải pháp thiết kế (Dựa trên Avalon-MM Slave):}
         \begin{itemize}
             \item \textbf{Thanh ghi ánh xạ bộ nhớ:} Định nghĩa các thanh ghi nội bộ cho địa chỉ đọc (\texttt{readaddress\_reg}), địa chỉ ghi (\texttt{writeaddress\_reg}), độ dài (\texttt{length\_reg}), điều khiển (\texttt{control\_go}), và trạng thái (\texttt{status\_busy}, \texttt{status\_done}). Các thanh ghi này được gán các địa chỉ offset cụ thể (0, 1, 2, 4, 5) trong không gian địa chỉ 3-bit của module.
-            \item \textbf{Logic giải mã địa chỉ:} Khi \texttt{iChipselect=1}, module giải mã \texttt{iAddress} từ CPU để xác định thanh ghi nào đang được truy cập cho thao tác đọc (\texttt{iRead=1}) hoặc ghi (\texttt{iWrite=1}).
-            \item \textbf{Logic đọc/ghi:} Nếu đọc, dữ liệu từ thanh ghi được chọn sẽ được đưa ra \texttt{oReaddata}. Nếu ghi, dữ liệu từ \texttt{iWritedata} sẽ được ghi vào thanh ghi được chọn (ngoại trừ thanh ghi trạng thái chỉ có thể xóa bit Done).
-            \item \textbf{Logic điều khiển/trạng thái:} Bit \texttt{GO} (bit 0 của thanh ghi điều khiển \texttt{iWritedata[0]} tại địa chỉ 4) được CPU ghi (\texttt{iWrite=1}) để khởi động DMA; giá trị này được chốt vào thanh ghi nội bộ \texttt{control\_go}. Tín hiệu \texttt{Start} được gán bằng \texttt{control\_go}. Module cập nhật \texttt{status\_busy} và \texttt{status\_done} dựa trên \texttt{Start} và tín hiệu \texttt{WM\_done} từ \texttt{WRITE\_MASTER}. Khi \texttt{WM\_done} tích cực, \texttt{status\_busy} bị xóa, \texttt{status\_done} được đặt, và quan trọng là \texttt{control\_go} cũng tự động bị xóa để ngăn DMA tự khởi động lại. Bit \texttt{status\_done} có thể được CPU xóa bằng cách ghi 1 vào bit 0 của thanh ghi trạng thái (địa chỉ 5).
+            \item \textbf{Logic giải mã địa chỉ:} Module này hoạt động như một Slave đơn giản, không sử dụng \texttt{waitrequest}. Nó giải mã \texttt{iAddress} khi \texttt{iChipselect=1} để đọc/ghi các thanh ghi nội bộ.
+            \item \textbf{Logic đọc/ghi:} 
+            \begin{itemize}
+                \item \textbf{Khi đọc (\texttt{iRead=1}):} Dữ liệu từ thanh ghi tương ứng (địa chỉ nguồn/đích, độ dài, control, status) được đưa ra \texttt{oReaddata}.
+                \item \textbf{Khi ghi (\texttt{iWrite=1}):} Dữ liệu \texttt{iWritedata} được ghi vào thanh ghi cấu hình (địa chỉ nguồn/đích, độ dài) hoặc bit GO của thanh ghi điều khiển. Ghi 1 vào bit 0 của thanh ghi trạng thái sẽ xóa cờ Done.
+            \end{itemize}
+            \item \textbf{Logic điều khiển/trạng thái:} 
+            \begin{itemize}
+                \item Bit \texttt{GO} (bit 0 của thanh ghi điều khiển \texttt{iWritedata[0]} tại địa chỉ 4) được CPU ghi (\texttt{iWrite=1}) để khởi động DMA; giá trị này được chốt vào thanh ghi nội bộ \texttt{control\_go}. 
+                \item Tín hiệu \texttt{Start} được gán bằng \texttt{control\_go}. Module cập nhật \texttt{status\_busy} và \texttt{status\_done} dựa trên \texttt{Start} và tín hiệu \texttt{WM\_done} từ \texttt{WRITE\_MASTER}. 
+                \item Khi \texttt{WM\_done} tích cực, \texttt{status\_busy} bị xóa, \texttt{status\_done} được đặt, và quan trọng là \texttt{control\_go} cũng tự động bị xóa để ngăn DMA tự khởi động lại. Bit \texttt{status\_done} có thể được CPU xóa bằng cách ghi 1 vào bit 0 của thanh ghi trạng thái (địa chỉ 5).
+            \end{itemize}
         \end{itemize}
+    \item \textbf{Máy trạng thái hữu hạn (FSM):} Tham khảo hình \ref{fig:02_11_StateDiagram_ControlSlave}.
     \item \textbf{Mã nguồn tham khảo:} Phụ lục \ref{app:verilog_control_slave}.
 \end{itemize}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Images/02_11_StateDiagram_ControlSlave}
+    \caption{Sơ đồ trạng thái của module \texttt{CONTROL\_SLAVE}.}
+    \label{fig:02_11_StateDiagram_ControlSlave}
+\end{figure}
 
 \subsection{Thiết kế Module Master Đọc (\texttt{READ\_MASTER})}
 \begin{itemize}
     \item \textbf{Yêu cầu:} Đọc tuần tự dữ liệu từ bộ nhớ nguồn theo cấu hình và đẩy vào FIFO, tuân thủ giao thức Avalon-MM Read Master và xử lý điều khiển luồng từ FIFO.
     \item \textbf{Giải pháp thiết kế (Dựa trên Avalon-MM Master và FSM):}
         \begin{itemize}
-            \item \textbf{Giao diện Avalon-MM Master:} Module tạo tín hiệu \texttt{oRM\_read}, \texttt{oRM\_readaddress}. Nó phản hồi với \texttt{iRM\_waitrequest} bằng cách giữ nguyên trạng thái và tín hiệu yêu cầu đọc. Nó chỉ chấp nhận dữ liệu \texttt{iRM\_readdata} khi \texttt{iRM\_readdatavalid=1}.
+            \item \textbf{Giao diện Avalon-MM Master:} Module chủ động tạo giao dịch đọc, xử lý \texttt{waitrequest} và \texttt{readdatavalid}.
+            \begin{itemize}
+                \item Kích hoạt \texttt{oRM\_read=1} và đưa ra \texttt{oRM\_readaddress}.
+                \item Nếu \texttt{iRM\_waitrequest=1}, giữ nguyên tín hiệu và trạng thái.
+                \item Khi \texttt{iRM\_waitrequest=0}, chờ \texttt{iRM\_readdatavalid=1} mới lấy dữ liệu \texttt{iRM\_readdata} và ghi vào FIFO. Hình \ref{fig:02_05_avalon_master_read}.
+            \end{itemize}
             \item \textbf{Giao diện FIFO:} Module tạo tín hiệu \texttt{FF\_writerequest=1} và đưa \texttt{FF\_data} khi có dữ liệu hợp lệ từ Avalon bus và sẵn sàng ghi vào FIFO. Nó phản hồi với \texttt{FF\_almostfull} bằng cách tạm dừng gửi yêu cầu đọc Avalon mới để tránh làm đầy FIFO.
-            \item \textbf{Máy trạng thái hữu hạn (FSM):} Quản lý chu trình đọc: Chờ \texttt{Start} (IDLE), kiểm tra FIFO không gần đầy (CHECK\_FIFO), gửi yêu cầu đọc Avalon (REQUEST), chờ \texttt{waitrequest=0} và sau đó là \texttt{readdatavalid=1} (WAIT\_DATA), ghi dữ liệu vào FIFO khi hợp lệ (WRITE\_FIFO), cập nhật địa chỉ/bộ đếm và quay lại kiểm tra FIFO/gửi yêu cầu mới (WAIT\_FIFO), lặp lại cho đến khi đọc đủ \texttt{Length} byte.
         \end{itemize}
+    \item \textbf{Máy trạng thái hữu hạn (FSM):} Tham khảo hình \ref{fig:02_12_StateDiagram_ReadMaster}.
     \item \textbf{Mã nguồn tham khảo:} Phụ lục \ref{app:verilog_read_master}.
 \end{itemize}
 
@@ -228,24 +252,52 @@ Luồng dữ liệu cơ bản diễn ra như sau: CPU cấu hình DMA thông qua
     \item \textbf{Giải pháp thiết kế (Dựa trên Avalon-MM Master và FSM):}
         \begin{itemize}
             \item \textbf{Giao diện FIFO:} Module kiểm tra \texttt{FF\_empty}. Nếu không rỗng, nó tạo tín hiệu \texttt{FF\_readrequest=1} để lấy dữ liệu \texttt{FF\_q} trong chu kỳ tiếp theo.
-            \item \textbf{Giao diện Avalon-MM Master:} Module tạo tín hiệu \texttt{oWM\_write=1}, đưa ra địa chỉ ghi \texttt{oWM\_writeaddress}, dữ liệu ghi \texttt{oWM\_writedata} (lấy từ thanh ghi nội bộ chứa dữ liệu đọc từ FIFO), và \texttt{oWM\_byteenable=4'b1111}. Nó phản hồi với \texttt{iWM\_waitrequest=1} bằng cách giữ nguyên trạng thái và tất cả tín hiệu đầu ra Avalon.
-            \item \textbf{Máy trạng thái hữu hạn (FSM):} Quản lý chu trình ghi: Chờ \texttt{Start} (IDLE), kiểm tra FIFO không rỗng (CHECK\_FIFO), yêu cầu đọc FIFO (READ\_FIFO), chờ dữ liệu FIFO được chốt (WAIT\_FIFO\_DATA), gửi yêu cầu ghi Avalon (START\_WRITE), chờ \texttt{waitrequest=0} (WAIT\_WRITE\_ACK), cập nhật địa chỉ/bộ đếm (UPDATE\_CNT). Lặp lại từ CHECK\_FIFO. Khi hoàn thành (\texttt{bytes\_remaining <= 4} trong trạng thái UPDATE\_CNT), FSM chuyển về IDLE và kích hoạt \texttt{WM\_done} trong một chu kỳ.
+            \item \textbf{Giao diện Avalon-MM Master:} Module chủ động tạo giao dịch ghi, xử lý \texttt{waitrequest}.
+            \begin{itemize}
+                \item Kích hoạt \texttt{oWM\_write=1}, đưa ra \texttt{oWM\_writeaddress}, \texttt{oWM\_writedata} (lấy từ thanh ghi nội bộ chứa dữ liệu đọc từ FIFO), và \texttt{oWM\_byteenable = 4'b1111}.
+                \item Nếu \texttt{iWM\_waitrequest=1}, giữ nguyên tất cả tín hiệu đầu ra và trạng thái.
+                \item Khi \texttt{iWM\_waitrequest=0}, giao dịch ghi được xem là hoàn thành, FSM chuyển trạng thái cập nhật bộ đếm (\texttt{UPDATE\_CNT})..
+            \end{itemize}
+            \item \textbf{Máy trạng thái hữu hạn (FSM):} Tham khảo hình \ref{fig:02_13_StateDiagram_WriteMaster}.
         \end{itemize}
     \item \textbf{Mã nguồn tham khảo:} Phụ lục \ref{app:verilog_write_master}.
 \end{itemize}
 
+Việc thiết kế các giao diện \acrshort{dma} dựa trên và tuân thủ chặt chẽ đặc tả Avalon-MM \cite{avalon_mm_transfer} là yếu tố then chốt đảm bảo bộ điều khiển \acrshort{dma} tùy chỉnh có thể hoạt động chính xác và tích hợp liền mạch vào hệ thống \acrshort{soc} \acrshort{niosv} trên Platform Designer.
+
+\begin{figure}[htbp]
+    \centering
+    % Subfigure for Memory Read
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Images/02_12_StateDiagram_ReadMaster.pdf}
+        \caption{\texttt{READ\_MASTER}.}
+        \label{fig:02_12_StateDiagram_ReadMaster}
+    \end{subfigure}
+    \hfill % Thêm khoảng cách ngang
+    % Subfigure for Memory Write
+    \begin{subfigure}[b]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Images/02_13_StateDiagram_WriteMaster.pdf}
+        \caption{\texttt{WRITE\_MASTER}.}
+        \label{fig:02_13_StateDiagram_WriteMaster}
+    \end{subfigure}
+    \caption{Sơ đồ trạng thái các module Master.} % Modified caption slightly
+    \label{fig:StateDiagram_ReadWriteMaster} 
+\end{figure}
+
+\FloatBarrier
+
 \subsection{Tích hợp và Tín hiệu Giao tiếp}
-Module \texttt{DMAController.v} (Phụ lục \ref{app:verilog_dmac}) đóng vai trò kết nối các module con (\texttt{CONTROL\_SLAVE}, \texttt{READ\_MASTER}, \texttt{WRITE\_MASTER}, \texttt{FIFO\_IP}) lại với nhau và cung cấp giao diện mức cao cho hệ thống. Bảng \ref{tab:dma_signals} liệt kê chi tiết các tín hiệu vào/ra của module này, thể hiện giao diện với CPU (qua Avalon Slave) và với bộ nhớ (qua Avalon Master).
+\label{subsec:integration_signals} % Added label
+Module \texttt{DMAController.v} (Phụ lục \ref{app:verilog_dmac}) đóng vai trò kết nối các module con (\texttt{CONTROL\_SLAVE}, \texttt{READ\_MASTER}, \texttt{WRITE\_MASTER}, \texttt{FIFO\_IP}) lại với nhau và cung cấp giao diện mức cao cho hệ thống. Bảng \ref{tab:dma_signals} liệt kê chi tiết các tín hiệu vào/ra của module này, thể hiện giao tiếp với CPU (qua Avalon Slave) và với bộ nhớ (qua Avalon-MM Master). Hình \ref{fig:02_10_SystemSequenceDiagram} mô tả luồng hoạt động tuần tự của \acrshort{dma}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=\linewidth]{Images/02_10_SystemSequenceDiagram}
     \caption{Sơ đồ tuần tự hoạt động của DMA.}
-    \label{fig:dma_flowchart_pdf}
+    \label{fig:02_10_SystemSequenceDiagram}
 \end{figure}
-
-\subsection{Tín hiệu giao tiếp của DMA Controller} % Đã di chuyển bảng lên đây
-Bảng \ref{tab:dma_signals} liệt kê các tín hiệu chính của module DMA Controller tùy chỉnh ở mức cao nhất (`DMAController.v`), thể hiện giao diện kết nối với CPU và hệ thống bus Avalon.
 
 % --- Bảng tín hiệu DMA (Sử dụng định dạng gốc của người dùng) ---
 \begin{table}[htbp]
@@ -288,60 +340,3 @@ Bảng \ref{tab:dma_signals} liệt kê các tín hiệu chính của module DMA
 \end{table}
 % --- Kết thúc Bảng tín hiệu DMA ---
 
-\FloatBarrier % Ngăn bảng và hình ảnh trôi qua section tiếp theo
-
-\subsection{Hiện thực hóa Giao diện Avalon-MM trong DMA Controller}
-Dựa trên đặc tả Avalon-MM, các giao diện của bộ điều khiển DMA tùy chỉnh được thiết kế như sau:
-\begin{enumerate}
-    \item \textbf{Giao diện Slave của \texttt{CONTROL\_SLAVE}:} Module này hoạt động như một Slave đơn giản, không sử dụng \texttt{waitrequest}. Nó giải mã \texttt{iAddress} khi \texttt{iChipselect=1} để đọc/ghi các thanh ghi nội bộ.
-        \begin{itemize}
-            \item \textbf{Khi đọc (\texttt{iRead=1}):} Dữ liệu từ thanh ghi tương ứng (địa chỉ nguồn/đích, độ dài, control, status) được đưa ra \texttt{oReaddata}. Hình \ref{fig:02_03_avalon_slave_read_sub}.
-            \item \textbf{Khi ghi (\texttt{iWrite=1}):} Dữ liệu \texttt{iWritedata} được ghi vào thanh ghi cấu hình (địa chỉ nguồn/đích, độ dài) hoặc bit GO của thanh ghi điều khiển. Ghi 1 vào bit 0 của thanh ghi trạng thái sẽ xóa cờ Done. Hình \ref{fig:02_04_avalon_slave_write_sub}.
-        \end{itemize}
-
-     \item \textbf{Giao diện Master của \texttt{READ\_MASTER}:} Module chủ động tạo giao dịch đọc, xử lý \texttt{waitrequest} và \texttt{readdatavalid}.
-        \begin{itemize}
-            \item Kích hoạt \texttt{oRM\_read=1} và đưa ra \texttt{oRM\_readaddress}.
-            \item Nếu \texttt{iRM\_waitrequest=1}, giữ nguyên tín hiệu và trạng thái.
-            \item Khi \texttt{iRM\_waitrequest=0}, chờ \texttt{iRM\_readdatavalid=1} mới lấy dữ liệu \texttt{iRM\_readdata} và ghi vào FIFO. Hình \ref{fig:02_05_avalon_master_read}.
-        \end{itemize}
-
-    \item \textbf{Giao diện Master của \texttt{WRITE\_MASTER}:} Module chủ động tạo giao dịch ghi, xử lý \texttt{waitrequest}.
-        \begin{itemize}
-            \item Kích hoạt \texttt{oWM\_write=1}, đưa ra \texttt{oWM\_writeaddress}, \texttt{oWM\_writedata}, và \texttt{oWM\_byteenable = 4'b1111}.
-            \item Nếu \texttt{iWM\_waitrequest=1}, giữ nguyên tất cả tín hiệu đầu ra và trạng thái.
-            \item Khi \texttt{iWM\_waitrequest=0}, giao dịch ghi được xem là hoàn thành, FSM chuyển trạng thái. Hình: \ref{fig:02_06_avalon_master_write}.
-        \end{itemize}
-\end{enumerate}
-
-
-Việc thiết kế các giao diện DMA dựa trên và tuân thủ chặt chẽ đặc tả Avalon-MM là yếu tố then chốt đảm bảo bộ điều khiển DMA tùy chỉnh có thể hoạt động chính xác và tích hợp liền mạch vào hệ thống SoC Nios V trên Platform Designer.
-
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.5\linewidth]{Images/02_11_StateDiagram_ControlSlave}
-    \caption{Sơ đồ trạng thái của module \texttt{CONTROL\_SLAVE}.}
-    \label{fig:02_11_StateDiagram_ControlSlave}
-\end{figure}
-
-\begin{figure}[htbp]
-    \centering
-    % Subfigure for Memory Read
-    \begin{subfigure}[b]{0.48\textwidth}
-        \centering
-        \includegraphics[width=\linewidth]{Images/02_12_StateDiagram_ReadMaster.pdf}
-        \caption{\texttt{READ\_MASTER}.}
-        \label{fig:02_12_StateDiagram_ReadMaster}
-    \end{subfigure}
-    \hfill % Thêm khoảng cách ngang
-    % Subfigure for Memory Write
-    \begin{subfigure}[b]{0.48\textwidth}
-        \centering
-        \includegraphics[width=\linewidth]{Images/02_13_StateDiagram_WriteMaster.pdf}
-        \caption{\texttt{WRITE\_MASTER}.}
-        \label{fig:02_13_StateDiagram_WriteMaster}
-    \end{subfigure}
-    \caption{Sơ đồ trạng thái các module.}
-    \label{fig:StateDiagram_ReadWriteMaster} % Nhãn chung cho cả cặp hình
-\end{figure}

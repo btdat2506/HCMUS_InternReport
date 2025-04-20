@@ -1,123 +1,40 @@
-\chapter{THIẾT KẾ VẬT LÝ}
+\chapter{KẾT QUẢ ĐẠT ĐƯỢC VÀ THÁI ĐỘ} % Suggested Chapter Title
 \label{Chapter5}
 
-Chương \ref{Chapter5} trình bày quá trình thiết kế vật lý mạch dịch 8-bit với công cụ \acrlong{icc2}. Sau đó là kiểm tra cũng như đánh giá lỗi \acrshort{drc} và \acrshort{lvs}.
+\section{Về kiến thức} % Renumbered subsection
+\label{sec:knowledge_gained}
 
-\section{Thiết kế vật lý}
+Qua quá trình thực tập tại \acrshort{ceslab}, tôi đã đạt được những kiến thức chuyên môn sau:
 
-Quy trình layout khi sử dụng công cụ \acrshort{icc2} của Synopsys diễn ra như hình \ref{fig:layout-flow}. Quy trình bắt đầu với bước cài đặt thiết kế và timing (Design \& Timing Setup), sau đó khởi tạo floorplan (Floorplan Definition), sắp xếp và tối ưu các cell (Placement \& Optimization), tạo và tối ưu dây clock (\acrshort{cts} \& Optimization), định tuyến dây tín hiệu (Routing \& Optimization), cuối cùng là kiểm tra lần cuối cùng trước khi gửi cho nhà sản xuất (Signoff).
+\begin{itemize}
+    \item \textbf{Kiến thức chuyên sâu về bộ xử lý Nios II\footnote{Mặc dù dự án chính tập trung vào Nios V, quá trình tìm hiểu và so sánh có thể bao gồm cả Nios II.}}: Hiểu rõ về kiến trúc, cách thức hoạt động và các thành phần chính của bộ xử lý \acrshort{nios2}. Nắm vững cách cấu hình và tùy chỉnh bộ xử lý cho các ứng dụng cụ thể. 
+    \item \textbf{Hiểu biết về \acrshort{dma} và cơ chế truyền dữ liệu:} Hiểu rõ về cơ chế hoạt động của \acrshort{dma}, các loại truyền dữ liệu và các phương pháp tối ưu hóa hiệu suất truyền dữ liệu.
+    \item \textbf{Kiến thức về thiết kế hệ thống nhúng:} Nắm vững các nguyên tắc thiết kế hệ thống nhúng, cách tổ chức và quản lý bộ nhớ, cũng như các kỹ thuật tối ưu hóa hiệu suất.
+    \item \textbf{Hiểu biết về lập trình nhúng:} Phát triển kỹ năng lập trình cho hệ thống nhúng, bao gồm lập trình driver, lập trình giao tiếp với phần cứng và xử lý các vấn đề về đồng bộ hóa.
+    \item \textbf{Kiến thức về các công cụ phát triển:} Làm quen với các công cụ phát triển phần cứng và phần mềm cho hệ thống nhúng, bao gồm Quartus Prime, ModelSim/Questa Sim, và các công cụ phát triển phần mềm cho \acrshort{niosv} (như Ashling RiscFree™ \acrshort{ide}). 
+\end{itemize}
 
-\begin{figure}[htp]
-\centering
-\captionsetup{justification=centering,margin=2cm}
-\includegraphics[width=0.4\linewidth]{Images/layout_flow.drawio_k2opt.pdf}
-\caption{Quy trình thiết kế vật lý của ICC2 \cite{synopsys-iccompilerii}.}
-\label{fig:layout-flow}
-\end{figure}
+\section{Về kỹ năng}
+\label{sec:skills_developed}
 
-\subsection{Cài đặt thiết kế}
+Ngoài những kiến thức chuyên môn, tôi cũng đã phát triển và cải thiện nhiều kỹ năng quan trọng:
 
-Tại bước này, tất cả những tệp cần chuẩn bị sẽ được tải lên môi trường làm việc và được tổ chức như hình \ref{fig:design-setup}. Tất cả nhưng tệp cần thiết bao gồm: thư viện chứa thông tin logic và vật lý của các cell (\acrlong{clib}), tệp công nghệ (Technology File), tệp chứa model RC (RC Model Files), tệp gate-level netlist ở định dạng Verilog (Gate-Level Netlist), và tệp chứa ràng buộc thời gian (\acrshort{mcmm} Timing Constraints). Trong đó, những mũi tên nét liền thể hiện rằng dữ liệu từ những tệp đó sẽ được lưu trong khối thiết kế (design block) hoặc thư viện thiết kế (design library). Còn mũi tên nét đứt thể hiện rằng chỉ có con trỏ chứa địa chỉ của dữ liệu được lưu trong thư viện thế kế, điều này đồng nghĩa rằng những tệp này luôn phải được giữ có sẵn khi thiết kế được mở lại ở những lần sau.
+\begin{itemize}
+    \item \textbf{Kỹ năng phân tích và giải quyết vấn đề:} Học được cách phân tích các vấn đề phức tạp, xác định nguyên nhân gốc rễ và đề xuất các giải pháp hiệu quả.
+    \item \textbf{Kỹ năng lập trình và debug:} Cải thiện khả năng viết mã sạch, dễ bảo trì và có khả năng mở rộng.
+    \item \textbf{Kỹ năng thiết kế và tối ưu hóa hệ thống:} Học được cách thiết kế hệ thống đáp ứng các yêu cầu kỹ thuật và tối ưu hóa hiệu suất bằng cách điều chỉnh các tham số hệ thống (ví dụ: cấu hình \acrshort{ip} trong Platform Designer). 
+    \item \textbf{Kỹ năng trình bày và báo cáo:} Cải thiện khả năng trình bày ý tưởng và kết quả một cách rõ ràng, ngắn gọn và thuyết phục thông qua việc chuẩn bị báo cáo này. 
+\end{itemize}
 
-\begin{figure}[htp]
-\centering
-\captionsetup{justification=centering,margin=2cm}
-\includegraphics[width=0.8\linewidth]{Images/icc2_design_setup.drawio_k2opt.pdf}
-\caption{Những tệp cần thiết cho thiết kế \cite{synopsys-iccompilerii}.}
-\label{fig:design-setup}
-\end{figure}
+\section{Về thái độ} 
+\label{sec:attitude_developed}
 
-Đầu tiên là tải thư viện, công cụ \acrshort{icc2} sử dụng một thư viện các cell chuẩn trong định dạng \textit{.ndm} gọi là \acrfull{clib}s. Và mỗi cell trong một thư viện \acrshort{clib} sẽ chứa những thông tin, định nghĩa về logic/timing/năng lượng cũng như hình dạng vật lý để sử dụng cho quá trình placement, routing và tối ưu hóa \cite{synopsys-iccompilerii}. Thư viện này sẽ được tạo bằng lệnh \textit{create\_lib} với những tùy chọn \textit{-technology} và \textit{-ref\_libs} để đính kèm đường dẫn tệp công nghệ (\textit{.tf}) và tập hình dạng vật lý (\textit{.ndm}). Riêng tệp thư viện logic (\textit{.db}) sẽ sử dụng biến \textit{link\_library} như đã trình bày ở chương trước. Sau đó tệp gate-level netlist cũng được thêm vào bằng lệnh \textit{read\_verilog}. Do tệp công nghệ không chứa thông tin về hướng routing của các lớp metal, nên hướng routing sẽ được thêm thủ công bằng lệnh \textit{set\_attribute} với thông tin được cung cấp từ người bán (vendor). Cuối cùng, tệp chứa các model kí sinh sẽ được thêm vào cùng với tệp ràng buộc thời gian để thực hiện các quá trình tối ưu hóa. Nói thêm một chút về tệp \acrfull{mcmm}, công cụ \acrshort{icc2} sử dụng những kịch bản (scenarios) là tập hợp những chế độ (modes) và góc công nghệ (corners) kết hợp với nhau. Thông qua những kịch bản, \acrshort{icc2} sẽ mô phỏng tất cả các trường hợp có thể xảy ra trong thực tế để tối ưu hóa cho placement, \acrshort{cts}, và routing.
+Trong quá trình thực tập, tôi đã phát triển và thể hiện những thái độ tích cực sau:
+\begin{itemize}
+    \item \textbf{Tinh thần học hỏi và cầu tiến:} Luôn giữ tâm thế sẵn sàng học hỏi kiến thức mới, chủ động tìm hiểu thêm về các công nghệ và kỹ thuật mới liên quan đến \acrshort{fpga}, \acrshort{soc}, và RISC-V.
+    \item \textbf{Tinh thần trách nhiệm:} Luôn có trách nhiệm với công việc được giao, hoàn thành đúng thời hạn và đạt chất lượng yêu cầu.
+    \item \textbf{Sự kiên trì và kiên nhẫn:} Không nản lòng trước khó khăn, luôn kiên trì tìm hiểu và giải quyết các vấn đề phức tạp, đặc biệt là trong quá trình debug phần cứng và phần mềm.
+    \item \textbf{Thái độ cầu thị và tiếp nhận phản hồi:} Luôn sẵn sàng tiếp nhận phản hồi từ người hướng dẫn, coi đó là cơ hội để học hỏi và cải thiện bản thân.
+\end{itemize}
 
-\subsection{Định nghĩa Floorplan}
-
-Thông thường floorplan sẽ được chuẩn bị trước và được đưa vào cùng với các tệp ràng buộc. Nhưng trong phạm vi bài báo cáo này, floorplan sẽ được tạo sao khi hoàn thành cài đặt thiết kế bằng lệnh \textit{initialize\_floorplan}. Tùy chọn \textit{-core\_utilization} thể hiện tỷ lệ diện tích của các cell trên tổng diện tích toàn bộ mạch, được thể hiện như công thức \ref{equa:core-utilization}. Mặc định \acrshort{icc2} sẽ để \textit{-core\_utilization} bằng 0.7. Mạch dịch 8-bit trong bài báo cáo này sẽ đặt \textit{-core\_utilization} bằng 0.6 để việc đi dây có thể thoải mái hơn.
-\begin{equation} \label{equa:core-utilization}
-    Core\_Utilization = \frac{\sum Cell\_Area}{\sum Core\_Area}
-\end{equation}
-Đồng thời tại bước này, quá trình đi dây nguồn cũng sẽ được tiến hành. Trong bài báo cáo này, quá trình định tuyến dây nguồn (Power Planning) sẽ sử dụng cấu trúc dạng lưới (mess). Trong đó lớp metal 1 sẽ được dùng để định tuyến chiều ngang, và metal 2 sẽ được dùng để định tuyến chiều dọc. Kết quả cuối cùng sau quá trình floorplan được thể hiện như hình \ref{fig:icc2-floorplan}.
-
-\begin{figure}[htp]
-\centering
-\captionsetup{justification=centering,margin=2cm}
-\includegraphics[width=1\linewidth]{Images/icc2_floorplan.png}
-\caption{Kết quả sau khi floorplan thành công.}
-\label{fig:icc2-floorplan}
-\end{figure}
-
-Để kiểm tra kết quả định tuyến dây nguồn, các lệnh kiểm tra power planning như \textit{check\_pg\_drc}, \textit{check\_pg\_missing\_vias}, và \textit{check\_pg\_connectivity} sẽ được sử dụng để kiểm tra lỗi \textit{drc}, via, và kết nối giữa các dây.
-
-\subsection{Placement}
-
-Tại bước này, các cell sẽ được đặt vô những vị trí phù hợp và được tối ưu hóa cho timing, tắc nghẽn (congestion), năng lượng, v.v. Tất cả quá trình placement và tối ưu sẽ được thực hiện bằng một lệnh \textit{place\_opt}, lệnh này sử dụng tệp chứa những kịch bản (\acrshort{mcmm}) để tối ưu như đã được nhắc trước đó. Thông thường, lệnh sẽ mặc định ưu tiên tối ưu cho timing. Nhưng trong phạm vi bài báo cáo này, khả năng định tuyến (routability) hay còn gọi là congestion sẽ là ưu tiên lớn nhất. Do đó, mã lệnh \ref{listing:place-opt-congestion} sẽ được thêm vào trước khi placement.
-
-\begin{lstlisting}[language=tcl, caption=Ưu tiên khả năng định tuyến, label=listing:place-opt-congestion]
-set_app_options -name place_opt.place.congestion_effort -value ultra
-\end{lstlisting}
-Hình \ref{fig:icc2-placement} cho thấy quá trình placement diễn ra thành công. Trong đó, các cell đã được đặt và tối ưu tự động sao cho quá trình định tuyến dây về sau sẽ dễ dàng và ít xảy ra lỗi hơn.
-
-\begin{figure}[htp]
-\centering
-\captionsetup{justification=centering,margin=2cm}
-\includegraphics[width=1\linewidth]{Images/icc2_placement.png}
-\caption{Kết quả sau khi placement thành công.}
-\label{fig:icc2-placement}
-\end{figure}
-
-\subsection{Clock Tree Synthesis}
-
-Sau khi placement thành công với sự chấp nhận được về khả năng định tuyến, timing, và logic \acrshort{drc}s thì quá trình \acrfull{cts} sẽ diễn ra. Tại đây, mục tiêu sẽ là xây dựng một hệ thống cây clock với skew là tối thiểu. Do mạch dịch 8-bit là một mạch đơn giản với yêu cầu về clock không cao, đồng thời phân tích timing sau layout không nằm trong mục tiêu của đề tài, nên chỉ có mỗi một lệnh \textit{clock\_opt} được thực hiện. Bản thân lệnh \textit{clock\_opt} cũng sẽ đi qua ba giai đoạn là xây dựng Global Routing cho đường clock (\textit{build\_clock}), định tuyến clock (\textit{route\_clock}, và thực hiện tối ưu cũng như Global Routing cho đường tín hiệu (\textit{final\_opto}). Nhưng vì lý do đã trình bày ở trên, chỉ duy nhất lệnh \textit{clock\_opt} được thực hiện. Hình \ref{fig:icc2-cts} mô tả mạch sau khi định tuyến đường dây clock nhưng chưa thực hiện Global Routing cho đường tín hiệu (\textit{final\_opto}).
-
-\begin{figure}[htp]
-\centering
-\captionsetup{justification=centering,margin=2cm}
-\includegraphics[width=1\linewidth]{Images/icc2_cts.png}
-\caption{Kết quả sau khi định tuyến clock.}
-\label{fig:icc2-cts}
-\end{figure}
-
-\subsection{Routing}
-
-Sau khi đã placement và định tuyến clock xong, quá trình định tuyến và tối ưu dây tín hiệu sẽ diễn ra như hình \ref{fig:icc2-routing-flow} với mục đích đi dây sao cho lỗi \acrshort{drc} là nhỏ nhất, đồng thời tối ưu hóa timing. Nhưng vì kiểm tra \acrshort{sta} sau layout không nằm trong phạm vi đề tài, nên bước tối ưu hóa sẽ được bỏ qua.
-
-\begin{figure}[htp]
-\centering
-\captionsetup{justification=centering,margin=2cm}
-\includegraphics[width=0.4\linewidth]{Images/icc2_routing.drawio_flow.pdf}
-\caption{Các bước routing của công cụ ICC2 \cite{synopsys-iccompilerii}.}
-\label{fig:icc2-routing-flow}
-\end{figure}
-
-Đầu tiên, lệnh \textit{check\_routability} sẽ được thực thi nhằm xác nhận rằng thiết kế đã được sẵn sàng cho công việc routing. Sau đó lệnh \textit{route\_auto} sẽ được chạy để thực hiện quá trình đi dây. Bản thân lệnh \textit{route\_auto} sẽ bao gồm ba lệnh là \textit{route\_global}, \textit{route\_track} và \textit{route\_detail}. Mục đích tụi em chia ra như vậy nhằm thêm tùy chọn \textit{-incremental} ở lệnh \textit{route\_detail} khi routing từ lần thứ hai trở đi, để \acrshort{icc2} sẽ chỉ đi dây lại những phần bị thay đổi mà không đi dây lại từ đầu. Điều này giúp làm giảm thời gian đi dây cũng như bảo đảm những thiết kế ban đầu được nguyên vẹn.
-
-Dễ dàng nhận ra có năm lớp metal (M1, M2, M3, M4, M5) được sử dụng để định tuyến như trong hình \ref{fig:icc2-routing}, trong đó chỉ có duy nhất một dây sử dụng lớp metal M5. Thêm vào đó, góc phần tư bên trái trên cùng của mạch có mật độ đi dây thưa thớt hơn nhiều so với ba phần còn lại, điều này có thể dẫn đến có thêm nhiều lỗi \acrshort{drc} hơn. Sau khi đi dây xong, các lỗi liên quan đến \acrshort{drc} và \acrshort{lvs} sẽ được kiểm tra và đánh giá. Quá trình này sẽ được trình bày ở phần sau. Bước cuối cùng trong quy trình thiết kế là \textbf{Signoff}, nơi kiểm tra \acrshort{sta} sau layout, thêm các filler cell, kiểm tra Sign-off DRC, v.v. Nhưng vì lý do đã được trình bày ở trên, tụi em sẽ không làm qua bước này.
-
-\begin{figure}[htp]
-\centering
-\captionsetup{justification=centering,margin=2cm}
-\includegraphics[width=1\linewidth]{Images/icc2_routing.png}
-\caption{Kết quả sau khi routing.}
-\label{fig:icc2-routing}
-\end{figure}
-
-\section{Kiểm tra DRC và LVS}
-
-Quá trình kiểm tra \acrshort{drc} sẽ được thực hiện bởi lệnh \textit{check\_route} và có kết quả như hình \ref{fig:drc-check}. Trong đó, nổi bậc nhất là lỗi ngắn mạch (Short) và lỗi về khoảng cách (Diff net spacing) với lần lượt 66 và 32 lỗi. Lỗi "Double pattern hard mask space" xảy ra do lỗi ngắn mạch, nên sẽ ít được quan tâm tong quá trình sửa lỗi. Trong trường hợp này tụi em có viết một đoạn mã để tự động sửa những lỗi ngắn mạch, được trình bày trong phần phụ lục \ref{code-short-fixing}, và kết quả như trong hình là kết quả tối thiểu sau nhiều lần chạy mã đó. Trong các lỗi còn lại, một số lỗi có thể sửa thủ công bằng GUI (Graphical User Interface) của \acrshort{icc2}, số còn lại tụi em chưa tìm ra cách sửa.
-
-\begin{figure}[htp]
-\centering
-\captionsetup{justification=centering,margin=2cm}
-\includegraphics[width=0.7\linewidth]{Images/drc_check.png}
-\caption{Tổng hợp thông tin các lỗi DRC.}
-\label{fig:drc-check}
-\end{figure}
-
-Sau khi kiểm tra \acrshort{drc} xong, quá trình kiểm tra \acrshort{lvs} sẽ được thực hiện bởi lệnh \textit{check\_lvs}. Trong thiết kế vi mạch số, quá trình kiểm tra \acrshort{lvs} vẫn sẽ được thực hiện kể cả khi layout vật lý của thiết kế độc lập với tệp netlist thực tế. Lý do bởi vì quá trình này được thực hiện trên cùng một mức giống nhau là sau khi layout. Sử dụng lệnh \textit{check\_lvs} sẽ kiểm tra các lỗi liên quan đến hở mạch (open), ngắn mạch (short), và những net bị thả nổi (floating nets). Nhưng vì chưa sửa hết được lỗi \acrshort{drc} liên quan đến ngắn mạch, nên qua kiểm tra \acrshort{lvs} chắc chắn những lỗi đó sẽ tồn tại. Do đó, tại bước này tụi em chỉ quan tấm đến những lỗi liên quan đến hở mạch và ngắn mạch. Kết quả sau khi kiểm tra \acrshort{lvs} được trình bày như hình \ref{fig:lvs-check}. Trong đó, dễ dàng nhận thấy không có lỗi nào liên quan đến hở mạch và net bị thả nổi.
-
-\begin{figure}[htp]
-\centering
-\captionsetup{justification=centering,margin=2cm}
-\includegraphics[width=1\linewidth]{Images/lvs_check.png}
-\caption{Tổng hợp thông tin các lỗi LVS.}
-\label{fig:lvs-check}
-\end{figure}
+Những kết quả đạt được trong quá trình thực tập không chỉ giúp tôi hoàn thành tốt nhiệm vụ được giao mà còn là nền tảng vững chắc cho sự phát triển nghề nghiệp của tôi trong tương lai trong lĩnh vực thiết kế hệ thống nhúng và \acrshort{fpga}. 

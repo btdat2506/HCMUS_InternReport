@@ -55,7 +55,7 @@ Nếu gặp lỗi khi tạo tệp `.sof` (liên quan đến biên dịch thất 
 
 Khi làm việc trên Nios II, người dùng có xu hướng dùng bản Quartus 18.x vì tính ổn định, cũng như không cần phải cài thêm WSL1 và tự cài thủ công Eclipse cho Nios II.
 
-Tuy nhiên, trái ngược với Nios II đã ra mắt từ năm 2000, Nios V chỉ mới ra mắt từ năm 2021, và tài liệu đầu tiên của Intel cung cấp cho Nios V là cho nền tảng Quartus 21.3. Lúc này Intel chỉ cung cấp một bản Nios V/m duy nhất. Mãi đến gần giữa 2023 với sự ra mắt của Quartus 23.1 thì đây cũng là lần đầu tiên xuất hiện Nios V/g. Không lâu sau đó thì Nios V/c cũng được ra mắt trên bản Quartus 23.3. Tuy nhiên thì từ đó cho đến hiện tại Intel vẫn liên tục cập nhật các thông tin kỹ thuật, thay đổi các tập lệnh, cũng như đánh giá về mặt phần cứng của Nios V. \cite{niosv-embedded-history}
+Tuy nhiên, trái ngược với Nios II đã ra mắt từ năm 2000, Nios V chỉ mới ra mắt từ năm 2021, và tài liệu đầu tiên của Intel cung cấp cho Nios V là cho nền tảng Quartus 21.3. Lúc này Intel chỉ cung cấp một bản Nios V/m duy nhất. Mãi đến gần giữa 2023 với sự ra mắt của Quartus 23.1 thì đây cũng là lần đầu tiên xuất hiện Nios V/g. Không lâu sau đó thì Nios V/c cũng được ra mắt trên bản Quartus 23.3. Tuy nhiên thì từ đó cho đến hiện tại Intel vẫn liên tục cập nhật các thông tin kỹ thuật, thay đổi các tập lệnh, cũng như đánh giá về mặt phần cứng của Nios V. \cite{niosv-reference-manual}
 
 Chính vì vậy, cách khuyến khích tốt nhất để dùng \acrshort{niosv} đó là nên sử dụng bản Quartus mới nhất để được cập nhật đầy đủ các tính năng, cũng như sửa lỗi cho trình IDE Ashling, và ưu tiên dùng phiên bản theo thứ tự từ cao đến thấp là Pro, Standard rồi đến Lite Edition. Một số lỗi như lỗi tạo Testbench trên Platform Designer khi làm việc trên hệ điều hành Windows chỉ gặp khi sử dụng bản Lite. Có 2 giải pháp để không bị lỗi này đó là chuyển sang bản Standard hoặc Pro (vẫn dùng Windows), hoặc chuyển sang Linux (vẫn dùng bản Lite).
 
@@ -89,3 +89,110 @@ Bộ xử lý \acrshort{niosv}, cụ thể là phiên bản vi điều khiển (
 \begin{figure}[htbp] \centering \includegraphics[width=0.65\linewidth]{03_09_QuartusToolsMenu.png} \caption{Truy cập Cài đặt Giấy phép (License Setup) từ menu Công cụ (Tools) của Quartus.} \label{fig:03_09} \end{figure}
 \begin{figure}[htbp] \centering \includegraphics[width=0.65\linewidth]{03_10_QuartusLicenseSetup.png} \caption{Cửa sổ Cài đặt Giấy phép Quartus (Quartus License Setup) hiển thị tệp giấy phép Nios V/m đã thêm.} \label{fig:03_10} \end{figure}
 
+\FloatBarrier
+
+\section{Quy trình Generate Testbench System trên Linux và Chạy Mô phỏng Nios V dùng Questa Sim trên Windows}
+\label{sec:generate_tb_system}
+
+\begin{enumerate}
+    \item \textbf{Tạo Testbench System:} Như đã đề cập, bước này cần thực hiện trên Linux dùng Platform Designer. Chọn Generate -> Generate Testbench System...
+    \item \textbf{Chuẩn bị Thư mục Mô phỏng trên Windows:} Chuyển thư mục project từ Linux về Windows (giả sử đường dẫn là \\ \texttt{D:/FETEL\_WorkDir/Y4S2\_DMANiosVIntern\_Ubuntu}).
+    \item Trong đường dẫn \texttt{./system/testbench/mentor} có file msim\_setup.tcl. Ta thay đoạn code \ref{lst:msim_setup_tcl_original} thành \ref{lst:msim_setup_tcl_changepath} để thay đổi đường dẫn đến thư viện Quartus Prime.
+    \begin{lstlisting}[language=tcl, caption={msim\_setup.tcl gốc}, label={lst:msim_setup_tcl_original}]
+if ![info exists QUARTUS_INSTALL_DIR] {
+    set QUARTUS_INSTALL_DIR "/home/btdat/intelFPGA_lite/24.1std/quartus/"
+} \end{lstlisting}
+    
+    \begin{lstlisting}[language=tcl, caption={msim\_setup.tcl đã chỉnh sửa}, label={lst:msim_setup_tcl_changepath}]
+if ![info exists QUARTUS_INSTALL_DIR] {
+    set QUARTUS_INSTALL_DIR "D:/FETEL_WorkSoft/intelFPGA_lite/24.1std/quartus/"
+} \end{lstlisting}
+
+    \item \textbf{Biên dịch Phần mềm và Tạo file .hex:} Tiếp theo, ta chạy lệnh sau \ref{lst:cmake_build} để build HEX file cho 2 Memory. Việc cần build này là vì trong file CMakeLists.txt có đoạn code \ref{lst:CMakeLists_create-hex}. Đoạn code này sẽ generate ra 2 file HEX tương ứng cho 2 On-chip Memory. Lưu ý: Trước khi chạy lệnh, nếu ta muốn mô phỏng nhanh hơn, ta nên thay \texttt{\string#define arg\_simulation 1}  thành \texttt{0} trong đoạn code C. Việc thay này sẽ bỏ qua các bước kiểm tra hệ thống, từ đó mô phỏng nhanh hơn.
+    \begin{lstlisting}[language=bash, caption={Chạy CMake để build HEX file cho 2 Memory}, label={lst:cmake_build}]
+cd D:\FETEL_WorkDir\Y4S2_DMANiosVIntern_Ubuntu\software\app\build\Debug
+cmake --build . \end{lstlisting}
+
+    \begin{lstlisting}[language=tcl, caption={CMakeLists.txt}, label={lst:CMakeLists_create-hex}]
+# Generate HEX file(s) from app.elf using elf2hex tool.
+# Note : If ECC Full is enabled, width of 39 is set for NiosV TCM. Otherwise, 32.
+add_custom_command(
+    OUTPUT "onchip_memory2_1.hex"
+    DEPENDS app.elf
+    COMMAND elf2hex app.elf -o onchip_memory2_1.hex -b 0x00000000 -w 32 -e 0x0001FFFF -r 4
+    COMMENT "Creating onchip_memory2_1.hex."
+    VERBATIM
+)
+add_custom_command(
+    OUTPUT "onchip_memory2_0.hex"
+    DEPENDS app.elf
+    COMMAND elf2hex app.elf -o onchip_memory2_0.hex -b 0x00020000 -w 32 -e 0x0003FFFF -r 4
+    COMMENT "Creating onchip_memory2_0.hex."
+    VERBATIM
+)
+add_custom_target(create-hex ALL DEPENDS "onchip_memory2_0.hex" "onchip_memory2_1.hex") \end{lstlisting}
+        
+    \textit{Lưu ý:} Các địa chỉ base (\texttt{--base}) và end (\texttt{--end}) phải khớp với địa chỉ của các khối \texttt{onchip\_memory2\_0} và \texttt{onchip\_memory2\_1} trong hệ thống Platform Designer. Các tệp \texttt{.hex} này sẽ được tự động đọc bởi testbench khi mô phỏng.
+
+    \item \textbf{Sao chép Tệp HEX:} Sau khi build, ta được hai tệp \texttt{onchip\_memory2\_0.hex} và \texttt{onchip\_memory2\_1.hex} trong thư mục build. Có hai cách để xử lý các tệp này:
+
+    \textbf{Cách 1:}
+    \begin{itemize}
+        \item Xóa dòng \texttt{file\_copy} ở cuối tệp \texttt{msim\_setup.tcl}
+        \item Sao chép hai tệp HEX về thư mục \texttt{D:/FETEL\_WorkDir/Y4S2\_DMANiosVIntern\_Ubuntu/system/testbench/mentor}
+        \item Đổi tên thành \texttt{system\_onchip\_memory2\_0.hex} và \texttt{system\_onchip\_memory2\_1.hex}
+    \end{itemize}
+
+    Giải thích: Điều này hoạt động vì \texttt{msim\_setup.tcl} có đoạn lệnh sao chép tệp sau:
+    \begin{lstlisting}[language=tcl]
+alias file_copy {
+    echo "[exec] file_copy"  
+    file copy -force $QSYS_SIMDIR/system_tb/simulation/submodules/csr_mlab.mif ./
+    file copy -force $QSYS_SIMDIR/system_tb/simulation/submodules/debug_rom.mif ./  
+    file copy -force $QSYS_SIMDIR/system_tb/simulation/submodules/system_onchip_memory2_1.hex ./
+    file copy -force $QSYS_SIMDIR/system_tb/simulation/submodules/system_onchip_memory2_0.hex ./
+}
+    \end{lstlisting}
+
+    \textbf{Cách 2:}
+    \begin{itemize}
+        \item Vào thư mục \texttt{D:/FETEL\_WorkDir/Y4S2\_DMANiosVIntern\_Ubuntu\\/system/testbench/system\_tb/simulation/submodules}
+        \item Xóa hai tệp \texttt{system\_onchip\_memory2\_0.hex} và \texttt{system\_onchip\_memory2\_1.hex} hiện có
+        \item Sao chép các tệp HEX mới vào và đổi tên lại thành tên tệp gốc (có chữ \texttt{system\_} ở đầu).
+    \end{itemize}
+
+    \item \textbf{Chạy Mô phỏng bằng QuestaSim:}
+        \begin{itemize}
+            \item Mở QuestaSim.
+            \item Trong cửa sổ Transcript, thay đổi thư mục làm việc đến thư mục \texttt{simulation} của testbench, và thực thi tệp script cài đặt mô phỏng. Script này sẽ biên dịch các tệp Verilog/SystemVerilog cần thiết (bao gồm mã nguồn DMA, các IP hệ thống, và testbench) và nạp thiết kế.
+            \begin{lstlisting}[language=bash, caption={Thiết lập môi trường mô phỏng bằng QuestaSim}, label={lst:msim_setup_tcl_changepath}]
+cd D:/FETEL_WorkDir/Y4S2_DMANiosVIntern_Ubuntu/system/testbench/mentor
+do msim_setup.tcl \end{lstlisting}
+            
+            \item Nạp thiết kế và kích hoạt gỡ lỗi, và thêm các tín hiệu cần quan sát vào cửa sổ Wave, và chạy mô phỏng:
+            \begin{lstlisting}[language=tcl, caption={Biên dịch và nạp các thiết kế, thêm hiển thị dạng sóng các tín hiệu, và chạy mô phỏng}, label={lst:msim_simulation}]
+ld_debug
+
+add wave -divider "Control Slave"
+add wave -position end sim:/system_tb/system_inst/dma_controller/u_CONTROL_SLAVE/*
+add wave -divider "READ_MASTER"
+add wave -position end sim:/system_tb/system_inst/dma_controller/u_READ_MASTER/*
+add wave -divider "WRITE_MASTER"
+add wave -position end sim:/system_tb/system_inst/dma_controller/u_WRITE_MASTER/*
+add wave -divider "FIFO"
+add wave -position end sim:/system_tb/system_inst/dma_controller/FIFO_IP_inst/*
+add wave -divider "onchip_memory2_1"
+add wave -position end sim:/system_tb/system_inst/onchip_memory2_1/*
+
+run 7 ms \end{lstlisting}
+            Ghi chú: Có thể dùng lệnh sau để đặt điểm dừng (breakpoint):
+            \begin{lstlisting}[language=tcl]
+when {sim:/system_tb/system_inst/onchip_memory2_1/address = 32'h800} {stop}
+            \end{lstlisting}
+        \end{itemize}
+\end{enumerate}
+
+
+\section{Signal Tap chỉ thu thập được một phần nhỏ tín hiệu}
+
+Do tín hiệu DMA khá dài, nên khi sử dụng Signal Tap, ta cần tăng số lượng mẫu (sample) để thu thập được tín hiệu đầy đủ. Ngoài ra, cũng cần phải đặt Trigger Conditions và quan sát lần lượt từng tín hiệu. Nếu đặt quá nhiều Trigger Conditions, Signal Tap sẽ không thể thu thập được tín hiệu đầy đủ.

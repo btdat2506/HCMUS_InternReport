@@ -417,6 +417,9 @@ INPUT chapter3.aux
 INPUT .\chapter4.aux
 INPUT .\chapter4.aux
 INPUT chapter4.aux
+INPUT .\chapter5.aux
+INPUT .\chapter5.aux
+INPUT chapter5.aux
 INPUT .\Appendix\appendix1.aux
 INPUT .\Appendix\appendix1.aux
 INPUT Appendix\appendix1.aux
@@ -481,10 +484,13 @@ INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\vntex\t5cmtt.fd
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vntt12.tfm
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vnr12.tfm
 OUTPUT main.toc
+INPUT .\main.acr
+INPUT .\main.acr
+INPUT main.acr
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\jknappen\ec\tcrm1200.tfm
 INPUT .\main.lof
 INPUT .\main.lof
 INPUT main.lof
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\jknappen\ec\tcrm1200.tfm
 OUTPUT main.lof
 INPUT .\main.lot
 INPUT .\main.lot
@@ -515,19 +521,19 @@ INPUT .\Images\02_01_Avalon_MM_Transfers.pdf
 INPUT .\Images\02_01_Avalon_MM_Transfers.pdf
 INPUT .\Images\02_01_Avalon_MM_Transfers.pdf
 INPUT .\Images\02_01_Avalon_MM_Transfers.pdf
-INPUT .\Images\02_03_AvalonSlave_ReadWaveform.pdf
-INPUT .\Images\02_03_AvalonSlave_ReadWaveform.pdf
-INPUT .\Images\02_03_AvalonSlave_ReadWaveform.pdf
-INPUT .\Images\02_03_AvalonSlave_ReadWaveform.pdf
-INPUT .\Images\02_03_AvalonSlave_ReadWaveform.pdf
-INPUT .\Images\02_03_AvalonSlave_ReadWaveform.pdf
+INPUT .\Images\02_07_Memory_ReadWaveform.pdf
+INPUT .\Images\02_07_Memory_ReadWaveform.pdf
+INPUT .\Images\02_07_Memory_ReadWaveform.pdf
+INPUT .\Images\02_07_Memory_ReadWaveform.pdf
+INPUT .\Images\02_07_Memory_ReadWaveform.pdf
+INPUT .\Images\02_07_Memory_ReadWaveform.pdf
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vnr12.tfm
-INPUT .\Images\02_04_AvalonSlave_WriteWaveform.pdf
-INPUT .\Images\02_04_AvalonSlave_WriteWaveform.pdf
-INPUT .\Images\02_04_AvalonSlave_WriteWaveform.pdf
-INPUT .\Images\02_04_AvalonSlave_WriteWaveform.pdf
-INPUT .\Images\02_04_AvalonSlave_WriteWaveform.pdf
-INPUT .\Images\02_04_AvalonSlave_WriteWaveform.pdf
+INPUT .\Images\02_08_Memory_WriteWaveform.pdf
+INPUT .\Images\02_08_Memory_WriteWaveform.pdf
+INPUT .\Images\02_08_Memory_WriteWaveform.pdf
+INPUT .\Images\02_08_Memory_WriteWaveform.pdf
+INPUT .\Images\02_08_Memory_WriteWaveform.pdf
+INPUT .\Images\02_08_Memory_WriteWaveform.pdf
 INPUT .\Images\02_05_AvalonMaster_ReadWaveform.pdf
 INPUT .\Images\02_05_AvalonMaster_ReadWaveform.pdf
 INPUT .\Images\02_05_AvalonMaster_ReadWaveform.pdf
@@ -547,28 +553,23 @@ INPUT .\Images\02_02_Memory_ByteEnable.pdf
 INPUT .\Images\02_02_Memory_ByteEnable.pdf
 INPUT .\Images\02_02_Memory_ByteEnable.pdf
 INPUT .\Images\02_02_Memory_ByteEnable.pdf
-INPUT .\Images\02_07_Memory_ReadWaveform.pdf
-INPUT .\Images\02_07_Memory_ReadWaveform.pdf
-INPUT .\Images\02_07_Memory_ReadWaveform.pdf
-INPUT .\Images\02_07_Memory_ReadWaveform.pdf
-INPUT .\Images\02_07_Memory_ReadWaveform.pdf
-INPUT .\Images\02_07_Memory_ReadWaveform.pdf
-INPUT .\Images\02_08_Memory_WriteWaveform.pdf
-INPUT .\Images\02_08_Memory_WriteWaveform.pdf
-INPUT .\Images\02_08_Memory_WriteWaveform.pdf
-INPUT .\Images\02_08_Memory_WriteWaveform.pdf
-INPUT .\Images\02_08_Memory_WriteWaveform.pdf
-INPUT .\Images\02_08_Memory_WriteWaveform.pdf
 INPUT .\Images\02_09_DMABlockDiagram.pdf
 INPUT .\Images\02_09_DMABlockDiagram.pdf
 INPUT .\Images\02_09_DMABlockDiagram.pdf
 INPUT .\Images\02_09_DMABlockDiagram.pdf
 INPUT .\Images\02_09_DMABlockDiagram.pdf
-INPUT .\Images\02_10_SystemSequenceDiagram.pdf
-INPUT .\Images\02_10_SystemSequenceDiagram.pdf
-INPUT .\Images\02_10_SystemSequenceDiagram.pdf
-INPUT .\Images\02_10_SystemSequenceDiagram.pdf
-INPUT .\Images\02_10_SystemSequenceDiagram.pdf
+INPUT .\Images\02_03_AvalonSlave_ReadWaveform.pdf
+INPUT .\Images\02_03_AvalonSlave_ReadWaveform.pdf
+INPUT .\Images\02_03_AvalonSlave_ReadWaveform.pdf
+INPUT .\Images\02_03_AvalonSlave_ReadWaveform.pdf
+INPUT .\Images\02_03_AvalonSlave_ReadWaveform.pdf
+INPUT .\Images\02_03_AvalonSlave_ReadWaveform.pdf
+INPUT .\Images\02_04_AvalonSlave_WriteWaveform.pdf
+INPUT .\Images\02_04_AvalonSlave_WriteWaveform.pdf
+INPUT .\Images\02_04_AvalonSlave_WriteWaveform.pdf
+INPUT .\Images\02_04_AvalonSlave_WriteWaveform.pdf
+INPUT .\Images\02_04_AvalonSlave_WriteWaveform.pdf
+INPUT .\Images\02_04_AvalonSlave_WriteWaveform.pdf
 INPUT .\Images\02_11_StateDiagram_ControlSlave.pdf
 INPUT .\Images\02_11_StateDiagram_ControlSlave.pdf
 INPUT .\Images\02_11_StateDiagram_ControlSlave.pdf
@@ -587,6 +588,11 @@ INPUT .\Images\02_13_StateDiagram_WriteMaster.pdf
 INPUT .\Images\02_13_StateDiagram_WriteMaster.pdf
 INPUT .\Images\02_13_StateDiagram_WriteMaster.pdf
 INPUT .\Images\02_13_StateDiagram_WriteMaster.pdf
+INPUT .\Images\02_10_SystemSequenceDiagram.pdf
+INPUT .\Images\02_10_SystemSequenceDiagram.pdf
+INPUT .\Images\02_10_SystemSequenceDiagram.pdf
+INPUT .\Images\02_10_SystemSequenceDiagram.pdf
+INPUT .\Images\02_10_SystemSequenceDiagram.pdf
 INPUT .\chapter3.tex
 INPUT .\chapter3.tex
 OUTPUT chapter3.aux
@@ -861,20 +867,79 @@ OUTPUT chapter4.aux
 INPUT .\chapter4.tex
 INPUT .\chapter4.tex
 INPUT chapter4.tex
-INPUT .\Images\04_01_UbuntuGenerateTestbenchSystem.png
-INPUT .\Images\04_01_UbuntuGenerateTestbenchSystem.png
-INPUT .\Images\04_01_UbuntuGenerateTestbenchSystem.png
-INPUT .\Images\04_01_UbuntuGenerateTestbenchSystem.png
-INPUT .\Images\04_01_UbuntuGenerateTestbenchSystem.png
-INPUT .\Images\04_01_UbuntuGenerateTestbenchSystem.png
-INPUT .\Images\04_01_UbuntuGenerateTestbenchSystem.png
-INPUT .\Images\04_03_QuestaSimWaveform_argsimulationzero.png
-INPUT .\Images\04_03_QuestaSimWaveform_argsimulationzero.png
-INPUT .\Images\04_03_QuestaSimWaveform_argsimulationzero.png
-INPUT .\Images\04_03_QuestaSimWaveform_argsimulationzero.png
-INPUT .\Images\04_03_QuestaSimWaveform_argsimulationzero.png
-INPUT .\Images\04_03_QuestaSimWaveform_argsimulationzero.png
-INPUT .\Images\04_03_QuestaSimWaveform_argsimulationzero.png
+INPUT .\Images\04_00_UbuntuGenerateTestbenchSystem.png
+INPUT .\Images\04_00_UbuntuGenerateTestbenchSystem.png
+INPUT .\Images\04_00_UbuntuGenerateTestbenchSystem.png
+INPUT .\Images\04_00_UbuntuGenerateTestbenchSystem.png
+INPUT .\Images\04_00_UbuntuGenerateTestbenchSystem.png
+INPUT .\Images\04_00_UbuntuGenerateTestbenchSystem.png
+INPUT .\Images\04_00_UbuntuGenerateTestbenchSystem.png
+INPUT .\Images\04_01_ControlSlave_Write_RM_startaddress.png
+INPUT .\Images\04_01_ControlSlave_Write_RM_startaddress.png
+INPUT .\Images\04_01_ControlSlave_Write_RM_startaddress.png
+INPUT .\Images\04_01_ControlSlave_Write_RM_startaddress.png
+INPUT .\Images\04_01_ControlSlave_Write_RM_startaddress.png
+INPUT .\Images\04_01_ControlSlave_Write_RM_startaddress.png
+INPUT .\Images\04_01_ControlSlave_Write_RM_startaddress.png
+INPUT .\Images\04_02_ControlSlave_Write_WM_startaddress.png
+INPUT .\Images\04_02_ControlSlave_Write_WM_startaddress.png
+INPUT .\Images\04_02_ControlSlave_Write_WM_startaddress.png
+INPUT .\Images\04_02_ControlSlave_Write_WM_startaddress.png
+INPUT .\Images\04_02_ControlSlave_Write_WM_startaddress.png
+INPUT .\Images\04_02_ControlSlave_Write_WM_startaddress.png
+INPUT .\Images\04_02_ControlSlave_Write_WM_startaddress.png
+INPUT .\Images\04_03_ControlSlave_Write_Length.png
+INPUT .\Images\04_03_ControlSlave_Write_Length.png
+INPUT .\Images\04_03_ControlSlave_Write_Length.png
+INPUT .\Images\04_03_ControlSlave_Write_Length.png
+INPUT .\Images\04_03_ControlSlave_Write_Length.png
+INPUT .\Images\04_03_ControlSlave_Write_Length.png
+INPUT .\Images\04_03_ControlSlave_Write_Length.png
+INPUT .\Images\04_04_DMA_Start_control_go.png
+INPUT .\Images\04_04_DMA_Start_control_go.png
+INPUT .\Images\04_04_DMA_Start_control_go.png
+INPUT .\Images\04_04_DMA_Start_control_go.png
+INPUT .\Images\04_04_DMA_Start_control_go.png
+INPUT .\Images\04_04_DMA_Start_control_go.png
+INPUT .\Images\04_04_DMA_Start_control_go.png
+INPUT .\Images\04_05_RM_Done.png
+INPUT .\Images\04_05_RM_Done.png
+INPUT .\Images\04_05_RM_Done.png
+INPUT .\Images\04_05_RM_Done.png
+INPUT .\Images\04_05_RM_Done.png
+INPUT .\Images\04_05_RM_Done.png
+INPUT .\Images\04_05_RM_Done.png
+INPUT .\Images\04_06_DMA_Done.png
+INPUT .\Images\04_06_DMA_Done.png
+INPUT .\Images\04_06_DMA_Done.png
+INPUT .\Images\04_06_DMA_Done.png
+INPUT .\Images\04_06_DMA_Done.png
+INPUT .\Images\04_06_DMA_Done.png
+INPUT .\Images\04_06_DMA_Done.png
+INPUT .\Images\04_07_TranscriptSimulationOutput.png
+INPUT .\Images\04_07_TranscriptSimulationOutput.png
+INPUT .\Images\04_07_TranscriptSimulationOutput.png
+INPUT .\Images\04_07_TranscriptSimulationOutput.png
+INPUT .\Images\04_07_TranscriptSimulationOutput.png
+INPUT .\Images\04_07_TranscriptSimulationOutput.png
+INPUT .\Images\04_07_TranscriptSimulationOutput.png
+INPUT .\chapter5.tex
+INPUT .\chapter5.tex
+OUTPUT chapter5.aux
+INPUT .\chapter5.tex
+INPUT .\chapter5.tex
+INPUT chapter5.tex
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vnbx9.tfm
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmr10.tfm
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmr8.tfm
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmmi10.tfm
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmmi8.tfm
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmsy10.tfm
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmsy8.tfm
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmex10.tfm
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vnr8.tfm
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\jknappen\ec\tcti1200.tfm
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vncsc10.tfm
 INPUT .\Appendix\appendix1.tex
@@ -978,6 +1043,12 @@ INPUT .\Images\03_10_QuartusLicenseSetup.png
 INPUT .\Images\03_10_QuartusLicenseSetup.png
 INPUT .\Images\03_10_QuartusLicenseSetup.png
 INPUT .\Images\03_10_QuartusLicenseSetup.png
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\listings\lstlang1.sty
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\listings\lstlang1.sty
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\listings\lstlang1.sty
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\listings\lstlang2.sty
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\listings\lstlang2.sty
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\listings\lstlang2.sty
 INPUT main.aux
 INPUT .\chapter1.aux
 INPUT .\chapter1.aux
@@ -991,6 +1062,9 @@ INPUT chapter3.aux
 INPUT .\chapter4.aux
 INPUT .\chapter4.aux
 INPUT chapter4.aux
+INPUT .\chapter5.aux
+INPUT .\chapter5.aux
+INPUT chapter5.aux
 INPUT .\Appendix\appendix1.aux
 INPUT .\Appendix\appendix1.aux
 INPUT Appendix\appendix1.aux
@@ -1013,6 +1087,8 @@ INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\public\amsfonts\cm\cmsy
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnbx12.pfb
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnbx12.pfb
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnbx9.pfb
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnbx9.pfb
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnbxti10.pfb
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnbxti10.pfb
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vncsc10.pfb
@@ -1025,6 +1101,8 @@ INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnr17.pfb
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnr17.pfb
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnr7.pfb
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnr7.pfb
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnr8.pfb
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnr8.pfb
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnti12.pfb
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnti12.pfb
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vntt12.pfb

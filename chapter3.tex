@@ -1,7 +1,7 @@
 \chapter{TRIỂN KHAI VÀ KIỂM THỬ HỆ THỐNG NIOS V VỚI DMA}
 \label{Chapter3} % Keep label consistent if referenced elsewhere
 
-Chương này trình bày chi tiết quy trình từng bước được thực hiện để triển khai và kiểm thử một Hệ thống trên Chip (\acrshort{soc}) dựa trên bộ xử lý mềm (soft-core processor) Nios V/m của Intel, tích hợp một bộ điều khiển Truy cập Bộ nhớ Trực tiếp (\acrfull{dma}) tùy chỉnh. Nền tảng phần cứng mục tiêu là bo mạch phát triển (development board) Terasic DE10-Standard trang bị \acrshort{fpga} Intel Cyclone V \acrshort{soc}. Việc triển khai sử dụng Phần mềm Quartus Prime Lite Edition của Intel, Platform Designer (trước đây là Qsys), và \acrshort{ide} Ashling RiscFree™ cho việc phát triển và gỡ lỗi (debug) phần mềm.
+Chương này trình bày chi tiết quy trình từng bước được thực hiện để triển khai và kiểm thử một Hệ thống trên Chip (\acrshort{soc}) dựa trên bộ xử lý mềm (soft-core processor) Nios V/m của Intel, tích hợp một bộ điều khiển Truy cập Bộ nhớ Trực tiếp (\acrfull{dma}) tùy chỉnh. Nền tảng phần cứng mục tiêu là bo mạch phát triển (development board) Terasic DE10-Standard \cite{terasicDE10Std} trang bị \acrshort{fpga} Intel Cyclone V \acrshort{soc}. Việc triển khai sử dụng Phần mềm Quartus Prime Lite Edition của Intel, Platform Designer (trước đây là Qsys), và \acrshort{ide} Ashling RiscFree™ \cite{ashling_riscfree_guide} cho việc phát triển và gỡ lỗi (debug) phần mềm.
 
 \section{Xây dựng Hệ thống Phần cứng trên Quartus Prime}
 \label{sec:build_hardware}
@@ -99,7 +99,7 @@ Phần này bao gồm việc tạo dự án Quartus và thiết kế hệ thốn
 \section{Phát triển Ứng dụng Phần mềm Nios V}
 \label{sec:develop_software}
 
-Phần này mô tả việc tạo Gói Hỗ trợ Bo mạch (Board Support Package - \acrshort{bsp}) và mã ứng dụng C, sau đó biên dịch và gỡ lỗi (debug) nó bằng \acrshort{ide} Ashling RiscFree™.
+Phần này mô tả việc tạo Gói Hỗ trợ Bo mạch (Board Support Package - \acrshort{bsp}) và mã ứng dụng C, sau đó biên dịch và gỡ lỗi (debug) nó bằng \acrshort{ide} Ashling RiscFree.
 
 \begin{enumerate}
     \item \textbf{Chuẩn bị Cấu trúc Thư mục Phần mềm:} Tạo một thư mục \texttt{software} trong thư mục dự án chính (\texttt{DMANiosVIntern}). Bên trong \texttt{software}, tạo hai thư mục con: \texttt{app} và \texttt{bsp} (Hình \ref{fig:03_43}). Đặt mã nguồn ứng dụng C của bạn (ví dụ: \texttt{source.c} chứa logic kiểm thử DMA) vào bên trong thư mục \texttt{app} (Hình \ref{fig:03_45}).
@@ -109,17 +109,17 @@ Phần này mô tả việc tạo Gói Hỗ trợ Bo mạch (Board Support Packa
         \item Điều hướng Nios V Shell đến thư mục dự án (Working Directory, \ref{fig:03_11}): 
         \begin{lstlisting}[language=bash, caption={Điều hướng trong Nios V Shell}, label=lst:cd_project] 
         cd D:\FETEL_WorkDir\Y4S2_DMANiosVIntern \end{lstlisting}
-        \item Tạo \acrshort{bsp} bằng lệnh \texttt{niosv-bsp}. Lệnh này sử dụng tệp thông tin phần cứng (\texttt{.sopcinfo}) được tạo bởi Platform Designer để tạo các trình điều khiển (drivers) và các tệp tiêu đề hệ thống (system headers):
+        \item Tạo \acrshort{bsp} bằng lệnh \texttt{niosv-bsp}. Lệnh này sử dụng tệp thông tin phần cứng (\texttt{.sopcinfo}) được tạo bởi Platform Designer để tạo các trình điều khiển (drivers) và các tệp tiêu đề hệ thống (system headers) \cite{intelNiosVSoftwareDevHandbook}:
         \begin{lstlisting}[language=bash, caption={Lệnh tạo BSP Nios V}, label=lst:gen_bsp]
 # -c: create BSP, -t=hal: type HAL, --sopcinfo: path to hardware info
 niosv-bsp -c -t=hal --sopcinfo=system.sopcinfo software/bsp/settings.bsp \end{lstlisting}
-        \item Tạo các tệp xây dựng CMake cho ứng dụng bằng \texttt{niosv-app}. Lệnh này liên kết nguồn ứng dụng (\texttt{-a}) với \acrshort{bsp} đã tạo (\texttt{-b}) và chỉ định thư mục nguồn (\texttt{-s}):
+        \item Tạo các tệp xây dựng CMake cho ứng dụng bằng \texttt{niosv-app}. Lệnh này liên kết nguồn ứng dụng (\texttt{-a}) với \acrshort{bsp} đã tạo (\texttt{-b}) và chỉ định thư mục nguồn (\texttt{-s}) \cite{intelNiosVSoftwareDevHandbook}:
         \begin{lstlisting}[language=bash, caption={Lệnh tạo tệp CMake ứng dụng Nios V}, label=lst:gen_app]
 # -a: app dir, -b: bsp dir, -s: source dir (relative to app dir)
 niosv-app -a=software/app -b=software/bsp -s=software/app \end{lstlisting}
         (Xem Hình \ref{fig:03_47} cho việc thực thi lệnh và Hình \ref{fig:03_48} cho đầu ra tạo BSP). Đảm bảo không có lỗi xảy ra. Một tệp \texttt{CMakeLists.txt} bây giờ sẽ tồn tại trong thư mục \texttt{software/app}.
     \end{itemize}
-    \item \textbf{Xây dựng Ứng dụng bằng Ashling RiscFree™ IDE:}
+    \item \textbf{Xây dựng Ứng dụng bằng Ashling RiscFree™ IDE \cite{ashling_riscfree_guide}:}
     \begin{itemize}
         \item \textbf{Khởi chạy IDE:} Quan trọng là khởi chạy Ashling RiscFree™ IDE từ \texttt{ niosv-shell.exe} bằng cách gõ \texttt{riscfree}. Điều này đảm bảo các biến môi trường (environment variables) được thiết lập chính xác (Hình \ref{fig:03_49}).
         \item \textbf{Chọn Workspace:} Chọn thư mục \texttt{software} (Hình \ref{fig:03_50}).
