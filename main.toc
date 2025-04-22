@@ -5,31 +5,34 @@
 \contentsline {chapter}{\numberline {1}GIỚI THIỆU VỀ ĐƠN VỊ THỰC TẬP}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Giới thiệu chung}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Lĩnh vực hoạt động và Nghiên cứu}{1}{section.1.2}%
-\contentsline {chapter}{\numberline {2}KIẾN TRÚC HỆ THỐNG VÀ LÝ THUYẾT CƠ SỞ}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Tổng quan về Hệ thống trên Chip (SoC)}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Bộ xử lý mềm Intel Nios V/m}{3}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Truy cập Bộ nhớ Trực tiếp (DMA)}{4}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Giao tiếp Hệ thống: Bus Avalon}{5}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Giao tiếp Bus Avalon Memory Mapped Interface (Avalon-MM)}{5}{subsection.2.4.1}%
-\contentsline {subsubsection}{\numberline {2.4.1.1}Đặc tả và Yêu cầu Giao thức}{6}{subsubsection.2.4.1.1}%
-\contentsline {section}{\numberline {2.5}Thiết kế và Kiến trúc Bộ điều khiển DMA Tùy chỉnh}{8}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Mục tiêu và Bối cảnh: Truyền dữ liệu giữa Bộ nhớ On-Chip}{8}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Kiến trúc Tổng thể và Luồng Dữ liệu}{9}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Thiết kế Module Điều khiển (`CONTROL\_SLAVE`)}{11}{subsection.2.5.3}%
-\contentsline {subsection}{\numberline {2.5.4}Thiết kế Module Master Đọc (\texttt {READ\_MASTER})}{12}{subsection.2.5.4}%
-\contentsline {subsection}{\numberline {2.5.5}Thiết kế Module Master Ghi (\texttt {WRITE\_MASTER})}{13}{subsection.2.5.5}%
-\contentsline {subsection}{\numberline {2.5.6}Tích hợp và Tín hiệu Giao tiếp}{15}{subsection.2.5.6}%
-\contentsline {chapter}{\numberline {3}TRIỂN KHAI VÀ KIỂM THỬ HỆ THỐNG NIOS V VỚI DMA}{17}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Xây dựng Hệ thống Phần cứng trên Quartus Prime}{17}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Phát triển Ứng dụng Phần mềm Nios V}{31}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Mô phỏng và kiểm thử hệ thống Nios V và DMA}{45}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Công cụ Mô phỏng và Yêu cầu Môi trường}{45}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Kết quả mô phỏng và kiểm thử chức năng}{46}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Kết luận Chương 4}{54}{section.4.3}%
-\contentsline {chapter}{\numberline {5}KẾT QUẢ ĐẠT ĐƯỢC VÀ THÁI ĐỘ}{55}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Về kiến thức}{55}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Về kỹ năng}{55}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Về thái độ}{56}{section.5.3}%
+\contentsline {chapter}{\numberline {2}NỘI DUNG CÔNG VIỆC THỰC TẬP}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}KIẾN TRÚC HỆ THỐNG VÀ LÝ THUYẾT CƠ SỞ}{3}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Tổng quan về Hệ thống trên Chip (SoC)}{3}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Bộ xử lý mềm Intel Nios V/m}{3}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Truy cập Bộ nhớ Trực tiếp (DMA)}{4}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Giao tiếp Hệ thống: Bus Avalon}{5}{subsection.2.1.4}%
+\contentsline {subsubsection}{\numberline {2.1.4.1}Giao tiếp Bus Avalon Memory Mapped Interface (Avalon-MM)}{5}{subsubsection.2.1.4.1}%
+\contentsline {paragraph}{Đặc tả và Yêu cầu Giao thức}{6}{subsubsection.2.1.4.1}%
+\contentsline {subsection}{\numberline {2.1.5}Thiết kế và Kiến trúc Bộ điều khiển DMA Tùy chỉnh}{8}{subsection.2.1.5}%
+\contentsline {subsubsection}{\numberline {2.1.5.1}Mục tiêu và Bối cảnh: Truyền dữ liệu giữa Bộ nhớ On-Chip}{8}{subsubsection.2.1.5.1}%
+\contentsline {subsubsection}{\numberline {2.1.5.2}Kiến trúc Tổng thể và Luồng Dữ liệu}{9}{subsubsection.2.1.5.2}%
+\contentsline {subsubsection}{\numberline {2.1.5.3}Thiết kế Module Điều khiển (\texttt {CONTROL\_SLAVE})}{9}{subsubsection.2.1.5.3}%
+\contentsline {subsubsection}{\numberline {2.1.5.4}Thiết kế Module Master Đọc (\texttt {READ\_MASTER})}{11}{subsubsection.2.1.5.4}%
+\contentsline {subsubsection}{\numberline {2.1.5.5}Thiết kế Module Master Ghi (\texttt {WRITE\_MASTER})}{13}{subsubsection.2.1.5.5}%
+\contentsline {subsubsection}{\numberline {2.1.5.6}Tích hợp và Tín hiệu Giao tiếp}{15}{subsubsection.2.1.5.6}%
+\contentsline {section}{\numberline {2.2}TRIỂN KHAI VÀ KIỂM THỬ HỆ THỐNG NIOS V VỚI DMA}{17}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Xây dựng Hệ thống Phần cứng trên Quartus Prime}{17}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Phát triển Ứng dụng Phần mềm Nios V}{31}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}MÔ PHỎNG VÀ KIỂM THỬ HỆ THỐNG NIOS V VÀ DMA}{45}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Công cụ Mô phỏng và Yêu cầu Môi trường}{45}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Kết quả mô phỏng và kiểm thử chức năng}{46}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Kết luận Phần Mô phỏng}{54}{subsection.2.3.3}%
+\contentsline {chapter}{\numberline {3}KẾT QUẢ ĐẠT ĐƯỢC}{55}{chapter.3}%
+\contentsline {section}{\numberline {3.1}KẾT QUẢ ĐẠT ĐƯỢC VÀ THÁI ĐỘ}{55}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Về kiến thức}{55}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Về kỹ năng}{55}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Về thái độ}{56}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}KẾT LUẬN}{56}{section.3.2}%
 \contentsline {chapter}{TÀI LIỆU THAM KHẢO}{57}{section*.71}%
 \contentsline {chapter}{\numberline {A}MÃ NGUỒN CỦA THIẾT KẾ}{59}{appendix.A}%
 \contentsline {section}{\numberline {A.1}Mã Verilog Top-Level cho DMANiosV}{59}{section.A.1}%

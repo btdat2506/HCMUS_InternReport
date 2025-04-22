@@ -478,10 +478,6 @@ INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmsy6.tfm
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmex10.tfm
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\amsfonts\cmextra\cmex9.tfm
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\vntex\t5cmtt.fd
-INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\vntex\t5cmtt.fd
-INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\vntex\t5cmtt.fd
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vntt12.tfm
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vnr12.tfm
 OUTPUT main.toc
 INPUT .\main.acr
@@ -491,6 +487,10 @@ INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\jknappen\ec\tcrm1200.tfm
 INPUT .\main.lof
 INPUT .\main.lof
 INPUT main.lof
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\vntex\t5cmtt.fd
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\vntex\t5cmtt.fd
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\vntex\t5cmtt.fd
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vntt12.tfm
 OUTPUT main.lof
 INPUT .\main.lot
 INPUT .\main.lot
@@ -929,17 +929,6 @@ OUTPUT chapter5.aux
 INPUT .\chapter5.tex
 INPUT .\chapter5.tex
 INPUT chapter5.tex
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vnbx9.tfm
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmr10.tfm
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmr8.tfm
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmmi10.tfm
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmmi8.tfm
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmsy10.tfm
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmsy8.tfm
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmex10.tfm
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vnr8.tfm
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\jknappen\ec\tcti1200.tfm
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vncsc10.tfm
 INPUT .\Appendix\appendix1.tex
@@ -1087,8 +1076,6 @@ INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\public\amsfonts\cm\cmsy
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnbx12.pfb
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnbx12.pfb
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnbx9.pfb
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnbx9.pfb
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnbxti10.pfb
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnbxti10.pfb
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vncsc10.pfb
@@ -1101,8 +1088,6 @@ INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnr17.pfb
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnr17.pfb
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnr7.pfb
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnr7.pfb
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnr8.pfb
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnr8.pfb
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnti12.pfb
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vnti12.pfb
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\type1\vntex\vnr\vntt12.pfb

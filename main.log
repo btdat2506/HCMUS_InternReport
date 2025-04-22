@@ -1,17 +1,17 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3 Portable) (preloaded format=pdflatex 2025.4.11)  20 APR 2025 11:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3 Portable) (preloaded format=pdflatex 2025.4.11)  21 APR 2025 20:38
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/btdat/Desktop/InternReport/main.tex
-(c:/Users/btdat/Desktop/InternReport/main.tex
+**./main.tex
+(main.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (D:\Program Files\MikTex\texmfs\install\tex/latex/extsizes\extreport.cls
 Document Class: extreport 1996/10/08 v1.0 Non Standard LaTeX document class
 (D:\Program Files\MikTex\texmfs\install\tex/latex/extsizes\size14.clo
 File: size14.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/base\exscale.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/base\exscale.sty
 Package: exscale 2018/09/24 v2.1i Standard LaTeX package exscale
 LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
@@ -32,24 +32,35 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen142
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/koma-script\scrextend.sty
-Package: scrextend 2024/10/24 v3.43 KOMA-Script package (extend other classes with features of KOMA-Script classes)
- (D:\Program Files\MikTex\texmfs\install\tex/latex/koma-script\scrkbase.sty
-Package: scrkbase 2024/10/24 v3.43 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
- (D:\Program Files\MikTex\texmfs\install\tex/latex/koma-script\scrbase.sty
-Package: scrbase 2024/10/24 v3.43 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
- (D:\Program Files\MikTex\texmfs\install\tex/latex/koma-script\scrlfile.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/koma-script\scrextend.sty
+Package: scrextend 2024/10/24 v3.43 KOMA-Script package (extend other classes w
+ith features of KOMA-Script classes)
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/koma-script\scrkbase.sty
+Package: scrkbase 2024/10/24 v3.43 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/koma-script\scrbase.sty
+Package: scrbase 2024/10/24 v3.43 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/koma-script\scrlfile.sty
 Package: scrlfile 2024/10/24 v3.43 KOMA-Script package (file load hooks)
- (D:\Program Files\MikTex\texmfs\install\tex/latex/koma-script\scrlfile-hook.sty
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/koma-script\scrlfile-hook.sty
 Package: scrlfile-hook 2024/10/24 v3.43 KOMA-Script package (using LaTeX hooks)
- (D:\Program Files\MikTex\texmfs\install\tex/latex/koma-script\scrlogo.sty
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/koma-script\scrlogo.sty
 Package: scrlogo 2024/10/24 v3.43 KOMA-Script package (logo)
-))) (D:\Program Files\MikTex\texmfs\install\tex/latex/graphics\keyval.sty
+)))
+(D:\Program Files\MikTex\texmfs\install\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
 Applying: [2021/05/01] Usage of raw or classic option list on input line 254.
-Already applied: [0000/00/00] Usage of raw or classic option list on input line 370.
+Already applied: [0000/00/00] Usage of raw or classic option list on input line
+ 370.
 )))
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13> not available
@@ -57,11 +68,13 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13> not available
 
 (D:\Program Files\MikTex\texmfs\install\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
- (D:\Program Files\MikTex\texmfs\install\tex/latex/vntex\t5enc.def
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/vntex\t5enc.def
 File: t5enc.def 2006/11/21 v1.4 Vietnamese T5 encoding
 Now handling font encoding T5 ...
 ... processing UTF-8 mapping file for font encoding T5
- (D:\Program Files\MikTex\texmfs\install\tex/latex/vntex\t5enc.dfu
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/vntex\t5enc.dfu
 File: t5enc.dfu 2006/08/19 v1.1 UTF8 support for Vietnamese
    defining Unicode char U+00AB (decimal 171)
    defining Unicode char U+00BB (decimal 187)
@@ -215,44 +228,61 @@ File: t5enc.dfu 2006/08/19 v1.1 UTF8 support for Vietnamese
    defining Unicode char U+203A (decimal 8250)
    defining Unicode char U+2423 (decimal 9251)
 ))
-LaTeX Font Info:    Trying to load font information for T5+cmr on input line 116.
- (D:\Program Files\MikTex\texmfs\install\tex/latex/vntex\t5cmr.fd
+LaTeX Font Info:    Trying to load font information for T5+cmr on input line 11
+6.
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/vntex\t5cmr.fd
 File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)) (D:\Program Files\MikTex\texmfs\install\tex/latex/base\inputenc.sty
+))
+(D:\Program Files\MikTex\texmfs\install\tex/latex/base\inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks18
 \inpenc@posthook=\toks19
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/placeins\placeins.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/placeins\placeins.sty
 Package: placeins 2005/04/18  v 2.2
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/biblatex\biblatex.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/biblatex\biblatex.sty
 Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
- (D:\Program Files\MikTex\texmfs\install\tex/generic/pdftexcmds\pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (D:\Program Files\MikTex\texmfs\install\tex/generic/infwarerr\infwarerr.sty
+
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(D:\Program Files\MikTex\texmfs\install\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (D:\Program Files\MikTex\texmfs\install\tex/generic/iftex\iftex.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
-) (D:\Program Files\MikTex\texmfs\install\tex/generic/ltxcmds\ltxcmds.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/etoolbox\etoolbox.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count271
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/kvoptions\kvoptions.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
- (D:\Program Files\MikTex\texmfs\install\tex/latex/kvsetkeys\kvsetkeys.sty
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-)) (D:\Program Files\MikTex\texmfs\install\tex/latex/logreq\logreq.sty
+))
+(D:\Program Files\MikTex\texmfs\install\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count272
- (D:\Program Files\MikTex\texmfs\install\tex/latex/logreq\logreq.def
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-)) (D:\Program Files\MikTex\texmfs\install\tex/latex/base\ifthen.sty
+))
+(D:\Program Files\MikTex\texmfs\install\tex/latex/base\ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/url\url.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -315,7 +345,8 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \c@mincompwidth=\count318
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
- (D:\Program Files\MikTex\texmfs\install\tex/latex/biblatex\blx-dm.def
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/biblatex\blx-dm.def
 File: blx-dm.def 2024/03/21 v3.20 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
@@ -404,12 +435,14 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \localshorteditorwidth=\skip72
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
- (D:\Program Files\MikTex\texmfs\install\tex/latex/biblatex\blx-compat.def
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/biblatex\blx-compat.def
 File: blx-compat.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load BibTeX backend compatibility...
 Package biblatex Info: ... file 'blx-bibtex.def' found.
- (D:\Program Files\MikTex\texmfs\install\tex/latex/biblatex\blx-bibtex.def
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/biblatex\blx-bibtex.def
 File: blx-bibtex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
 
 
@@ -437,18 +470,21 @@ File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
- (D:\Program Files\MikTex\texmfs\install\tex/latex/biblatex/bbx\numeric.bbx
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/biblatex/bbx\numeric.bbx
 File: numeric.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
- (D:\Program Files\MikTex\texmfs\install\tex/latex/biblatex/bbx\standard.bbx
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/biblatex/bbx\standard.bbx
 File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count396
 \c@bbx:relatedtotal=\count397
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
- (D:\Program Files\MikTex\texmfs\install\tex/latex/biblatex/cbx\numeric.cbx
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/biblatex/cbx\numeric.cbx
 File: numeric.cbx 2024/03/21 v3.20 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
@@ -464,14 +500,18 @@ Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
- (D:\Program Files\MikTex\texmfs\install\tex/latex/biblatex\biblatex.cfg
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/biblatex\biblatex.cfg
 File: biblatex.cfg 
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
- (D:\Program Files\MikTex\texmfs\install\tex/latex/l3kernel\expl3.sty
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/l3kernel\expl3.sty
 Package: expl3 2025-01-18 L3 programming layer (loader) 
- (D:\Program Files\MikTex\texmfs\install\tex/latex/l3backend\l3backend-pdftex.def
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/l3backend\l3backend-pdftex.de
+f
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count398
 \l__pdf_internal_box=\box52
@@ -480,41 +520,54 @@ Package biblatex Info: ... and expl3
 (biblatex)             2025-01-18 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
- (D:\Program Files\MikTex\texmfs\install\tex/latex/biblatex\blx-case-expl3.sty (D:\Program Files\MikTex\texmfs\install\tex/latex/l3packages/xparse\xparse.sty
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/biblatex\blx-case-expl3.sty
+(D:\Program Files\MikTex\texmfs\install\tex/latex/l3packages/xparse\xparse.sty
 Package: xparse 2024-08-16 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
 )) (D:\Program Files\MikTex\texmfs\install\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
- (D:\Program Files\MikTex\texmfs\install\tex/generic/kvdefinekeys\kvdefinekeys.sty
+
+(D:\Program Files\MikTex\texmfs\install\tex/generic/kvdefinekeys\kvdefinekeys.s
+ty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 ) (D:\Program Files\MikTex\texmfs\install\tex/generic/pdfescape\pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 ) (D:\Program Files\MikTex\texmfs\install\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/hyperref\nameref.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/hyperref\nameref.sty
 Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
- (D:\Program Files\MikTex\texmfs\install\tex/latex/refcount\refcount.sty
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (D:\Program Files\MikTex\texmfs\install\tex/generic/gettitlestring\gettitlestring.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/gettitlestring\gettitlestri
+ng.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count399
-) (D:\Program Files\MikTex\texmfs\install\tex/generic/stringenc\stringenc.sty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/stringenc\stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
 )
 \@linkdim=\dimen143
 \Hy@linkcounter=\count400
 \Hy@pagecounter=\count401
- (D:\Program Files\MikTex\texmfs\install\tex/latex/hyperref\pd1enc.def
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (D:\Program Files\MikTex\texmfs\install\tex/generic/intcalc\intcalc.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count402
- (D:\Program Files\MikTex\texmfs\install\tex/latex/hyperref\puenc.def
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/hyperref\puenc.def
 File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -530,10 +583,13 @@ Package hyperref Info: Bookmarks ON on input line 4424.
 \c@Hy@tempcnt=\count403
 LaTeX Info: Redefining \url on input line 4763.
 \XeTeXLinkMargin=\dimen144
- (D:\Program Files\MikTex\texmfs\install\tex/generic/bitset\bitset.sty
+
+(D:\Program Files\MikTex\texmfs\install\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (D:\Program Files\MikTex\texmfs\install\tex/generic/bigintcalc\bigintcalc.sty
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+
+(D:\Program Files\MikTex\texmfs\install\tex/generic/bigintcalc\bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
 ))
 \Fld@menulength=\count404
 \Field@Width=\dimen145
@@ -545,7 +601,7 @@ Package hyperref Info: backreferencing OFF on input line 6057.
 Package hyperref Info: Link coloring OFF on input line 6062.
 Package hyperref Info: Link coloring with OCG OFF on input line 6067.
 Package hyperref Info: PDF/A mode OFF on input line 6072.
- (D:\Program Files\MikTex\texmfs\install\tex/latex/base\atbegshi-ltx.sty
+(D:\Program Files\MikTex\texmfs\install\tex/latex/base\atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
@@ -554,40 +610,53 @@ package with kernel methods
 \c@Hfootnote=\count407
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (D:\Program Files\MikTex\texmfs\install\tex/latex/hyperref\hpdftex.def
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2024-11-05 v7.01l Hyperref driver for pdfTeX
- (D:\Program Files\MikTex\texmfs\install\tex/latex/base\atveryend-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
 with kernel methods
 )
 \Fld@listcount=\count408
 \c@bookmark@seq@number=\count409
- (D:\Program Files\MikTex\texmfs\install\tex/latex/rerunfilecheck\rerunfilecheck.sty
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/rerunfilecheck\rerunfilecheck
+.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
- (D:\Program Files\MikTex\texmfs\install\tex/generic/uniquecounter\uniquecounter.sty
+
+(D:\Program Files\MikTex\texmfs\install\tex/generic/uniquecounter\uniquecounter
+.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
 )
 \Hy@SectionHShift=\skip73
 ) (D:\Program Files\MikTex\texmfs\install\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (D:\Program Files\MikTex\texmfs\install\tex/latex/graphics\graphics.sty
+(D:\Program Files\MikTex\texmfs\install\tex/latex/graphics\graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (D:\Program Files\MikTex\texmfs\install\tex/latex/graphics\trig.sty
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/graphics\trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/graphics-cfg\graphics.cfg
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
- (D:\Program Files\MikTex\texmfs\install\tex/latex/graphics-def\pdftex.def
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen147
 \Gin@req@width=\dimen148
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/caption\caption.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
- (D:\Program Files\MikTex\texmfs\install\tex/latex/caption\caption3.sty
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@tempdima=\dimen149
 \captionmargin=\dimen150
@@ -605,21 +674,29 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: scrextend package is loaded.
 \caption@addmargin@hsize=\dimen157
 \caption@addmargin@linewidth=\dimen158
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/adjustbox\adjustbox.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/adjustbox\adjustbox.sty
 Package: adjustbox 2025/02/26 v1.3c Adjusting TeX boxes (trim, clip, ...)
- (D:\Program Files\MikTex\texmfs\install\tex/latex/xkeyval\xkeyval.sty
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/xkeyval\xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
- (D:\Program Files\MikTex\texmfs\install\tex/generic/xkeyval\xkeyval.tex (D:\Program Files\MikTex\texmfs\install\tex/generic/xkeyval\xkvutils.tex
+
+(D:\Program Files\MikTex\texmfs\install\tex/generic/xkeyval\xkeyval.tex
+(D:\Program Files\MikTex\texmfs\install\tex/generic/xkeyval\xkvutils.tex
 \XKV@toks=\toks20
 \XKV@tempa@toks=\toks21
 )
 \XKV@depth=\count412
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (D:\Program Files\MikTex\texmfs\install\tex/latex/adjustbox\adjcalc.sty
-Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/adjustbox\trimclip.sty
+))
+(D:\Program Files\MikTex\texmfs\install\tex/latex/adjustbox\adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/adjustbox\trimclip.sty
 Package: trimclip 2025/02/21 v1.2a Trim and clip general TeX material
- (D:\Program Files\MikTex\texmfs\install\tex/latex/collectbox\collectbox.sty
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/collectbox\collectbox.sty
 Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
 \collectedbox=\box53
 )
@@ -628,7 +705,8 @@ Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
 \tc@urx=\dimen161
 \tc@ury=\dimen162
 Package trimclip Info: Using driver 'tc-pdftex.def'.
- (D:\Program Files\MikTex\texmfs\install\tex/latex/adjustbox\tc-pdftex.def
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/adjustbox\tc-pdftex.def
 File: tc-pdftex.def 2025/02/26 v2.3 Clipping driver for pdftex
 ))
 \adjbox@Width=\dimen163
@@ -639,16 +717,19 @@ File: tc-pdftex.def 2025/02/26 v2.3 Clipping driver for pdftex
 \adjbox@pheight=\dimen168
 \adjbox@pdepth=\dimen169
 \adjbox@ptotalheight=\dimen170
- (D:\Program Files\MikTex\texmfs\install\tex/latex/ifoddpage\ifoddpage.sty
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/ifoddpage\ifoddpage.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
 \c@checkoddpage=\count413
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/varwidth\varwidth.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/varwidth\varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box54
 \sift@deathcycles=\count414
 \@vwid@loff=\dimen171
 \@vwid@roff=\dimen172
-)) (D:\Program Files\MikTex\texmfs\install\tex/latex/listings\listings.sty
+))
+(D:\Program Files\MikTex\texmfs\install\tex/latex/listings\listings.sty
 \lst@mode=\count415
 \lst@gtempboxa=\box55
 \lst@token=\toks22
@@ -661,31 +742,40 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \lst@newlines=\count419
 \lst@lineno=\count420
 \lst@maxwidth=\dimen176
- (D:\Program Files\MikTex\texmfs\install\tex/latex/listings\lstpatch.sty
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/listings\lstpatch.sty
 File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/listings\lstmisc.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
 \c@lstnumber=\count421
 \lst@skipnumbers=\count422
 \lst@framebox=\box56
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/listings\listings.cfg
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/listings\listings.cfg
 File: listings.cfg 2024/09/23 1.10c listings configuration
 ))
 Package: listings 2024/09/23 1.10c (Carsten Heinz)
- (D:\Program Files\MikTex\texmfs\install\tex/latex/graphics\color.sty
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/graphics\color.sty
 Package: color 2024/06/23 v1.3e Standard LaTeX Color (DPC)
- (D:\Program Files\MikTex\texmfs\install\tex/latex/graphics-cfg\color.cfg
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
- (D:\Program Files\MikTex\texmfs\install\tex/latex/graphics\mathcolor.ltx)) (D:\Program Files\MikTex\texmfs\install\tex/latex/xcolor\xcolor.sty
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/graphics\mathcolor.ltx))
+(D:\Program Files\MikTex\texmfs\install\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
- (D:\Program Files\MikTex\texmfs\install\tex/latex/graphics-cfg\color.cfg
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
 LaTeX Info: Redefining \color on input line 762.
- (D:\Program Files\MikTex\texmfs\install\tex/latex/graphics\mathcolor.ltx)
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -695,21 +785,25 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/amsmath\amsmath.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2024/11/05 v2.17t AMS math features
 \@mathmargin=\skip74
 
 For additional information on amsmath, use the `?' option.
 (D:\Program Files\MikTex\texmfs\install\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
- (D:\Program Files\MikTex\texmfs\install\tex/latex/amsmath\amsgen.sty
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks23
 \ex@=\dimen177
-)) (D:\Program Files\MikTex\texmfs\install\tex/latex/amsmath\amsbsy.sty
+))
+(D:\Program Files\MikTex\texmfs\install\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen178
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/amsmath\amsopn.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count423
@@ -759,9 +853,12 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \mathdisplay@stack=\toks27
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/algorithms\algorithm.sty
-Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
- (D:\Program Files\MikTex\texmfs\install\tex/latex/float\float.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/algorithms\algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count435
 \float@exts=\toks28
@@ -771,11 +868,13 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 \@float@every@algorithm=\toks30
 \c@algorithm=\count436
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/algorithmicx\algpseudocode.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/algorithmicx\algpseudocode.st
+y
 Package: algpseudocode 
- (D:\Program Files\MikTex\texmfs\install\tex/latex/algorithmicx\algorithmicx.sty
-Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
+(D:\Program Files\MikTex\texmfs\install\tex/latex/algorithmicx\algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \c@ALG@line=\count437
 \c@ALG@rem=\count438
@@ -795,7 +894,8 @@ Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@cntb=\count444
 \multirow@dima=\skip81
 \bigstrutjot=\dimen186
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/tools\array.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/tools\array.sty
 Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
 \col@sep=\dimen187
 \ar@mcellbox=\box61
@@ -804,7 +904,8 @@ Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
 \extratabsurround=\skip82
 \backup@length=\skip83
 \ar@cellbox=\box62
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/titlesec\titlesec.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box63
 \beforetitleunit=\skip84
@@ -815,12 +916,16 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \titlewidth=\dimen191
 \titlewidthlast=\dimen192
 \titlewidthfirst=\dimen193
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/setspace\setspace.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/setspace\setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/tools\indentfirst.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/tools\indentfirst.sty
 Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/fancyhdr\fancyhdr.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
 \f@nch@headwidth=\skip86
 \f@nch@offset@elh=\skip87
 \f@nch@offset@erh=\skip88
@@ -836,9 +941,11 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthC=\skip98
 \f@nch@widthR=\skip99
 \@temptokenb=\toks33
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/geometry\geometry.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (D:\Program Files\MikTex\texmfs\install\tex/generic/iftex\ifvtex.sty
+
+(D:\Program Files\MikTex\texmfs\install\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
 \Gm@cnth=\count445
@@ -853,22 +960,40 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen256
 \Gm@layoutvoffset=\dimen257
 \Gm@dimlist=\toks34
- (D:\Program Files\MikTex\texmfs\install\tex/latex/geometry\geometry.cfg)) (D:\Program Files\MikTex\texmfs\install\tex/latex/pgf/frontendlayer\tikz.sty (D:\Program Files\MikTex\texmfs\install\tex/latex/pgf/basiclayer\pgf.sty (D:\Program Files\MikTex\texmfs\install\tex/latex/pgf/utilities\pgfrcs.sty (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/utilities\pgfutil-common.tex
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/geometry\geometry.cfg))
+(D:\Program Files\MikTex\texmfs\install\tex/latex/pgf/frontendlayer\tikz.sty
+(D:\Program Files\MikTex\texmfs\install\tex/latex/pgf/basiclayer\pgf.sty
+(D:\Program Files\MikTex\texmfs\install\tex/latex/pgf/utilities\pgfrcs.sty
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/utilities\pgfutil-commo
+n.tex
 \pgfutil@everybye=\toks35
 \pgfutil@tempdima=\dimen258
 \pgfutil@tempdimb=\dimen259
-) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/utilities\pgfutil-latex.def
+)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/utilities\pgfutil-latex
+.def
 \pgfutil@abb=\box64
-) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/utilities\pgfrcs.code.tex (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf\pgf.revision.tex)
+)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/utilities\pgfrcs.code.t
+ex (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf\pgf.revision.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
 Package: pgf 2023-01-15 v3.1.10 (3.1.10)
- (D:\Program Files\MikTex\texmfs\install\tex/latex/pgf/basiclayer\pgfcore.sty (D:\Program Files\MikTex\texmfs\install\tex/latex/pgf/systemlayer\pgfsys.sty (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/systemlayer\pgfsys.code.tex
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/pgf/basiclayer\pgfcore.sty
+(D:\Program Files\MikTex\texmfs\install\tex/latex/pgf/systemlayer\pgfsys.sty
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/systemlayer\pgfsys.code
+.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
- (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/utilities\pgfkeys.code.tex
+
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/utilities\pgfkeys.code.
+tex
 \pgfkeys@pathtoks=\toks36
 \pgfkeys@temptoks=\toks37
- (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
+
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/utilities\pgfkeyslibrar
+yfiltered.code.tex
 \pgfkeys@tmptoks=\toks38
 ))
 \pgf@x=\dimen260
@@ -891,32 +1016,73 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 \t@pgf@tokb=\toks40
 \t@pgf@tokc=\toks41
 \pgf@sys@id@count=\count452
- (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/systemlayer\pgf.cfg
+
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
 Driver file for pgf: pgfsys-pdftex.def
- (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
+
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/systemlayer\pgfsys-pdft
+ex.def
 File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
- (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/systemlayer\pgfsys-comm
+on-pdf.def
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
-))) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+)))
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/systemlayer\pgfsyssoftp
+ath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfsyssoftpath@smallbuffer@items=\count453
 \pgfsyssoftpath@bigbuffer@items=\count454
-) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/systemlayer\pgfsysproto
+col.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcore.code.tex
+))
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcore.code
+.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
- (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmath.code.tex (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmathutil.code.tex) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmathparser.code.tex
+
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmath.code.tex
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmathutil.code.t
+ex)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmathparser.code
+.tex
 \pgfmath@dimen=\dimen270
 \pgfmath@count=\count455
 \pgfmath@box=\box65
 \pgfmath@toks=\toks42
 \pgfmath@stack@operand=\toks43
 \pgfmath@stack@operation=\toks44
-) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmathfunctions.code.tex) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmathcalc.code.tex) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmathfloat.code.tex
+)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmathfunctions.c
+ode.tex)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmathfunctions.b
+asic.code.tex)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmathfunctions.t
+rigonometric.code.tex)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmathfunctions.r
+andom.code.tex)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmathfunctions.c
+omparison.code.tex)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmathfunctions.b
+ase.code.tex)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmathfunctions.r
+ound.code.tex)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmathfunctions.m
+isc.code.tex)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmathfunctions.i
+ntegerarithmetics.code.tex)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmathcalc.code.t
+ex)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmathfloat.code.
+tex
 \c@pgfmathroundto@lastzeros=\count456
-)) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfint.code.tex) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+))
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfint.code.tex)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcorepoint
+s.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@picminx=\dimen271
 \pgf@picmaxx=\dimen272
@@ -932,75 +1098,127 @@ File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@yy=\dimen282
 \pgf@zx=\dimen283
 \pgf@zy=\dimen284
-) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
+)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcorepathc
+onstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@path@lastx=\dimen285
 \pgf@path@lasty=\dimen286
-) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcorepathu
+sage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@shorten@end@additional=\dimen287
 \pgf@shorten@start@additional=\dimen288
-) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcorescope
+s.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box66
 \pgf@hbox=\box67
 \pgf@layerbox@main=\box68
 \pgf@picture@serial@count=\count457
-) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
+)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcoregraph
+icstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgflinewidth=\dimen289
-) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
+)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcoretrans
+formations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@pt@x=\dimen290
 \pgf@pt@y=\dimen291
 \pgf@pt@temp=\dimen292
-) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcorequick
+.code.tex
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcoreobjec
+ts.code.tex
 File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
+)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcorepathp
+rocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcorearrow
+s.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfarrowsep=\dimen293
-) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
+)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcoreshade
+.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@max=\dimen294
 \pgf@sys@shading@range@num=\count458
 \pgf@shadingcount=\count459
-) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcoreimage
+.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcoreexter
+nal.code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfexternal@startupbox=\box69
-) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcorelayer
+s.code.tex
 File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
+)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcoretrans
+parency.code.tex
 File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcorepatte
+rns.code.tex
 File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/basiclayer\pgfcorerdf.c
+ode.tex
 File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+)))
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/modules\pgfmoduleshapes
+.code.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfnodeparttextbox=\box70
-) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/modules\pgfmoduleplot.c
+ode.tex
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/pgf/compatibility\pgfcomp-ver
+sion-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
 \pgf@nodesepstart=\dimen295
 \pgf@nodesepend=\dimen296
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/pgf/compatibility\pgfcomp-ver
+sion-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
-)) (D:\Program Files\MikTex\texmfs\install\tex/latex/pgf/utilities\pgffor.sty (D:\Program Files\MikTex\texmfs\install\tex/latex/pgf/utilities\pgfkeys.sty (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/utilities\pgfkeys.code.tex)) (D:\Program Files\MikTex\texmfs\install\tex/latex/pgf/math\pgfmath.sty (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmath.code.tex)) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/utilities\pgffor.code.tex
+))
+(D:\Program Files\MikTex\texmfs\install\tex/latex/pgf/utilities\pgffor.sty
+(D:\Program Files\MikTex\texmfs\install\tex/latex/pgf/utilities\pgfkeys.sty
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/utilities\pgfkeys.code.
+tex)) (D:\Program Files\MikTex\texmfs\install\tex/latex/pgf/math\pgfmath.sty
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/math\pgfmath.code.tex))
+
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/utilities\pgffor.code.t
+ex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 \pgffor@iter=\dimen297
 \pgffor@skip=\dimen298
 \pgffor@stack=\toks45
 \pgffor@toks=\toks46
-)) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+))
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/frontendlayer/tikz\tikz
+.code.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
- (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
+
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/libraries\pgflibraryplo
+thandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@plot@mark@count=\count460
 \pgfplotmarksize=\dimen299
@@ -1021,32 +1239,45 @@ File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikznumberofchildren=\count462
 \tikznumberofcurrentchild=\count463
 \tikz@fig@count=\count464
- (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/modules\pgfmodulematrix
+.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfmatrixcurrentrow=\count465
 \pgfmatrixcurrentcolumn=\count466
 \pgf@matrix@numberofcolumns=\count467
 )
 \tikz@expandcount=\count468
- (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
+
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/frontendlayer/tikz/libr
+aries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.code.tex
+)))
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/frontendlayer/tikz/libr
+aries\tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (myacronyms.sty
 Package: myacronyms 
- (D:\Program Files\MikTex\texmfs\install\tex/latex/glossaries/base\glossaries.sty
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/glossaries/base\glossaries.st
+y
 Package: glossaries 2025/03/19 v4.58 (NLCT)
  (D:\Program Files\MikTex\texmfs\install\tex/latex/mfirstuc\mfirstuc.sty
 Package: mfirstuc 2025/04/03 v2.09 (NLCT)
 \@glsmfirst=\toks47
 \@glsmrest=\toks48
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/xfor\xfor.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/xfor\xfor.sty
 Package: xfor 2009/02/05 v1.05 (NLCT)
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/datatool\datatool-base.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/datatool\datatool-base.sty
 Package: datatool-base 2025/04/03 v3.4 (NLCT)
- (D:\Program Files\MikTex\texmfs\install\tex/latex/tracklang\tracklang.sty
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/tracklang\tracklang.sty
 Package: tracklang 2025/03/11 v1.6.6 (NLCT) Track Languages
- (D:\Program Files\MikTex\texmfs\install\tex/generic/tracklang\tracklang.tex)) (D:\Program Files\MikTex\texmfs\install\tex/latex/datatool\datatool-l3fp.def
+
+(D:\Program Files\MikTex\texmfs\install\tex/generic/tracklang\tracklang.tex))
+(D:\Program Files\MikTex\texmfs\install\tex/latex/datatool\datatool-l3fp.def
 File: datatool-l3fp.def 2025/04/03 v3.4 (NLCT)
 )
 \@dtl@toks=\toks49
@@ -1054,7 +1285,8 @@ File: datatool-l3fp.def 2025/04/03 v3.4 (NLCT)
 \dtl@tmplength=\skip100
 \l__datatool_measure_box=\box75
 \dtl@sortresult=\count470
- (D:\Program Files\MikTex\texmfs\install\tex/latex/datatool\datatool-utf8.ldf
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/datatool\datatool-utf8.ldf
 File: datatool-utf8.ldf 2025/04/03 v3.4 (NLCT)
 )
 \@dtl@datatype=\count471
@@ -1090,12 +1322,18 @@ File: datatool-utf8.ldf 2025/04/03 v3.4 (NLCT)
 \glslabeltok=\toks52
 \glsshorttok=\toks53
 \glslongtok=\toks54
- (D:\Program Files\MikTex\texmfs\install\tex/latex/glossaries/styles\glossary-hypernav.sty
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/glossaries/styles\glossary-hy
+pernav.sty
 Package: glossary-hypernav 2025/03/19 v4.58 (NLCT)
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/glossaries/styles\glossary-list.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/glossaries/styles\glossary-li
+st.sty
 Package: glossary-list 2025/03/19 v4.58 (NLCT)
 \glslistdottedwidth=\skip102
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/glossaries/styles\glossary-long.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/glossaries/styles\glossary-lo
+ng.sty
 Package: glossary-long 2025/03/19 v4.58 (NLCT)
  (D:\Program Files\MikTex\texmfs\install\tex/latex/tools\longtable.sty
 Package: longtable 2024-10-27 v4.22 Multi-page Table package (DPC)
@@ -1118,9 +1356,12 @@ Package: longtable 2024-10-27 v4.22 Multi-page Table package (DPC)
 )
 \glsdescwidth=\skip107
 \glspagelistwidth=\skip108
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/glossaries/styles\glossary-super.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/glossaries/styles\glossary-su
+per.sty
 Package: glossary-super 2025/03/19 v4.58 (NLCT)
- (D:\Program Files\MikTex\texmfs\install\tex/latex/supertabular\supertabular.sty
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/supertabular\supertabular.sty
 Package: supertabular 2024/07/20 v4.2c the supertabular environment
 \c@tracingst=\count500
 \ST@wd=\dimen311
@@ -1137,7 +1378,9 @@ Package: supertabular 2024/07/20 v4.2c the supertabular environment
 \ST@toadd=\dimen319
 \ST@dimen=\dimen320
 \ST@pbox=\box81
-)) (D:\Program Files\MikTex\texmfs\install\tex/latex/glossaries/styles\glossary-tree.sty
+))
+(D:\Program Files\MikTex\texmfs\install\tex/latex/glossaries/styles\glossary-tr
+ee.sty
 Package: glossary-tree 2025/03/19 v4.58 (NLCT)
 \glstreeindent=\skip112
 ))
@@ -1152,28 +1395,43 @@ Package glossaries Info: Writing glossary file main.glo on input line 3.
 Package glossaries Info: Writing glossary file main.acn on input line 3.
 ) (D:\Program Files\MikTex\texmfs\install\tex/latex/svg\svg.sty
 Package: svg 2020/11/26 v2.02k (include SVG pictures)
- (D:\Program Files\MikTex\texmfs\install\tex/latex/trimspaces\trimspaces.sty
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/trimspaces\trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/tools\shellesc.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/tools\shellesc.sty
 Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 77.
 )
 \c@svg@param@lastpage=\count501
 \svg@box=\box82
 \c@svg@param@currpage=\count502
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/transparent\transparent.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/transparent\transparent.sty
 Package: transparent 2022-10-27 v1.5 Transparency with color stacks
- (D:\Program Files\MikTex\texmfs\install\tex/latex/transparent\transparent-nometadata.sty
-Package: transparent-nometadata 2022-10-27 v1.5 Transparency via pdfTeX's color stack (HO)
+
+(D:\Program Files\MikTex\texmfs\install\tex/latex/transparent\transparent-nomet
+adata.sty
+Package: transparent-nometadata 2022-10-27 v1.5 Transparency via pdfTeX's color
+ stack (HO)
  (D:\Program Files\MikTex\texmfs\install\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-))) (D:\Program Files\MikTex\texmfs\install\tex/latex/tikz-timing\tikz-timing.sty
+)))
+(D:\Program Files\MikTex\texmfs\install\tex/latex/tikz-timing\tikz-timing.sty
 Package: tikz-timing 2017/12/20 v0.7f Digital Timing Diagrams using TikZ
- (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarybackgrounds.code.tex
+
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/frontendlayer/tikz/libr
+aries\tikzlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@layerbox@background=\box83
 \pgf@layerboxsaved@background=\box84
-) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.code.tex (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
+)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/frontendlayer/tikz/libr
+aries\tikzlibrarydecorations.pathmorphing.code.tex
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/frontendlayer/tikz/libr
+aries\tikzlibrarydecorations.code.tex
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/modules\pgfmoduledecora
+tions.code.tex
 \pgfdecoratedcompleteddistance=\dimen321
 \pgfdecoratedremainingdistance=\dimen322
 \pgfdecoratedinputsegmentcompleteddistance=\dimen323
@@ -1184,7 +1442,9 @@ File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfdecorationsegmentlength=\dimen327
 )
 \tikz@lib@dec@box=\box85
-) (D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathmorphing.code.tex))
+)
+(D:\Program Files\MikTex\texmfs\install\tex/generic/pgf/libraries/decorations\p
+gflibrarydecorations.pathmorphing.code.tex))
 \tikztiming@numint=\count504
 \tikztiming@numfrac=\count505
 \tikztiming@xunit=\skip113
@@ -1194,7 +1454,8 @@ File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \c@tikztimingrows=\count508
 \c@tikztimingtrans=\count509
 \c@tikztimingtranspos=\count510
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/booktabs\booktabs.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen328
 \lightrulewidth=\dimen329
@@ -1213,7 +1474,8 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count513
 \@lastruleclass=\count514
 \@thisrulewidth=\dimen340
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/caption\subcaption.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/caption\subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 Package caption Info: New subtype `subfigure' on input line 238.
 \c@subfigure=\count515
@@ -1222,33 +1484,35 @@ Package caption Info: New subtype `subtable' on input line 238.
 )
 \@quotelevel=\count517
 \@quotereset=\count518
- (main.aux (chapter1.aux) (chapter2.aux) (chapter3.aux) (chapter4.aux) (chapter5.aux) (Appendix/appendix1.aux) (Appendix/appendix2.aux
+
+(main.aux (chapter1.aux) (chapter2.aux) (chapter3.aux) (chapter4.aux)
+(chapter5.aux) (Appendix/appendix1.aux) (Appendix/appendix2.aux
 
 LaTeX Warning: Label `lst:msim_setup_tcl_changepath' multiply defined.
 
 ))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (D:\Program Files\MikTex\texmfs\install\tex/latex/biblatex/lbx\english.lbx
@@ -1264,7 +1528,8 @@ Package biblatex Info: Data encoding 'utf8' specified.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (main.bbl
+
+(main.bbl
 
 Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'ashling_riscfree_guide':
@@ -1286,14 +1551,15 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 168.
-Package biblatex Info: Reference segment=0 on input line 168.
-Package hyperref Info: Link coloring OFF on input line 168.
+Package biblatex Info: Reference section=0 on input line 169.
+Package biblatex Info: Reference segment=0 on input line 169.
+Package hyperref Info: Link coloring OFF on input line 169.
  (main.out) (main.out)
 \@outlinefile=\write8
 \openout8 = `main.out'.
 
- (D:\Program Files\MikTex\texmfs\install\tex/context/base/mkii\supp-pdf.mkii
+
+(D:\Program Files\MikTex\texmfs\install\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count519
 \scratchdimen=\dimen341
@@ -1306,9 +1572,12 @@ Package hyperref Info: Link coloring OFF on input line 168.
 \MPnumerator=\count523
 \makeMPintoPDFobject=\count524
 \everyMPtoPDFconversion=\toks57
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/epstopdf-pkg\epstopdf-base.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/epstopdf-pkg\epstopdf-base.st
+y
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
  (D:\Program Files\MikTex\texmfs\install\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
@@ -1316,7 +1585,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
- (D:\Program Files\MikTex\texmfs\install\tex/latex/caption\ltcaption.sty
+(D:\Program Files\MikTex\texmfs\install\tex/latex/caption\ltcaption.sty
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
@@ -1372,7 +1641,7 @@ Package hyperref Info: Option `pageanchor' set `false' on input line 2.
 [3]
 
 [4]
-Package hyperref Info: Option `pageanchor' set `true' on input line 86.
+Package hyperref Info: Option `pageanchor' set `true' on input line 88.
 ) (main.toc
 LaTeX Font Info:    Calculating math sizes for size <13> on input line 6.
 
@@ -1400,10 +1669,7 @@ LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <13> not available
 (Font)              size <12> substituted on input line 6.
 
-LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 19.
-(D:\Program Files\MikTex\texmfs\install\tex/latex/vntex\t5cmtt.fd
-File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
+
 
 [1
 
@@ -1419,7 +1685,7 @@ File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 [2]
 
 LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 67.
+(Font)              size <12> substituted on input line 65.
 
 
 
@@ -1431,6 +1697,11 @@ LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <13> not available
 ])
 
 [4] (main.lof
+LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 1
+0.
+ (D:\Program Files\MikTex\texmfs\install\tex/latex/vntex\t5cmtt.fd
+File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
 
 [5
 
@@ -1438,8 +1709,9 @@ LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <13> not available
 
 
 ]
-Overfull \hbox (11.44046pt too wide) in paragraph at lines 57--57
- [][] [][]\T5/cmr/m/n/13 Generate Test-bench Sys-tem trong Plat-form De-signer tr∂n Ubuntu 22.04.5 
+Overfull \hbox (11.44046pt too wide) in paragraph at lines 55--55
+ [][] [][]\T5/cmr/m/n/13 Generate Test-bench Sys-tem trong Plat-form De-signer 
+tr∂n Ubuntu 22.04.5 
  []
 
 
@@ -1496,154 +1768,188 @@ CH∆Ø∆†NG 2.
 
 
 ]
-<Images/02_00_NiosVm_Architecture.pdf, id=661, 505.89pt x 380.42125pt>
+<Images/02_00_NiosVm_Architecture.pdf, id=639, 505.89pt x 380.42125pt>
 File: Images/02_00_NiosVm_Architecture.pdf Graphic file (type pdf)
 <use Images/02_00_NiosVm_Architecture.pdf>
-Package pdftex.def Info: Images/02_00_NiosVm_Architecture.pdf  used on input line 28.
+Package pdftex.def Info: Images/02_00_NiosVm_Architecture.pdf  used on input li
+ne 29.
 (pdftex.def)             Requested size: 375.57782pt x 282.43607pt.
 
 
 [4 <./Images/02_00_NiosVm_Architecture.pdf>]
-<Images/02_01_Avalon_MM_Transfers.pdf, id=685, 374.39874pt x 176.66pt>
+<Images/02_01_Avalon_MM_Transfers.pdf, id=663, 374.39874pt x 176.66pt>
 File: Images/02_01_Avalon_MM_Transfers.pdf Graphic file (type pdf)
 <use Images/02_01_Avalon_MM_Transfers.pdf>
-Package pdftex.def Info: Images/02_01_Avalon_MM_Transfers.pdf  used on input line 52.
+Package pdftex.def Info: Images/02_01_Avalon_MM_Transfers.pdf  used on input li
+ne 53.
 (pdftex.def)             Requested size: 469.47049pt x 221.5307pt.
 
 
 [5 <./Images/02_01_Avalon_MM_Transfers.pdf>]
-<Images/02_07_Memory_ReadWaveform.pdf, id=703, 210.7875pt x 135.50626pt>
+<Images/02_07_Memory_ReadWaveform.pdf, id=681, 210.7875pt x 135.50626pt>
 File: Images/02_07_Memory_ReadWaveform.pdf Graphic file (type pdf)
 <use Images/02_07_Memory_ReadWaveform.pdf>
-Package pdftex.def Info: Images/02_07_Memory_ReadWaveform.pdf  used on input line 73.
+Package pdftex.def Info: Images/02_07_Memory_ReadWaveform.pdf  used on input li
+ne 74.
 (pdftex.def)             Requested size: 225.34383pt x 144.86618pt.
-<Images/02_08_Memory_WriteWaveform.pdf, id=704, 210.7875pt x 135.50626pt>
+<Images/02_08_Memory_WriteWaveform.pdf, id=682, 210.7875pt x 135.50626pt>
 File: Images/02_08_Memory_WriteWaveform.pdf Graphic file (type pdf)
 <use Images/02_08_Memory_WriteWaveform.pdf>
-Package pdftex.def Info: Images/02_08_Memory_WriteWaveform.pdf  used on input line 80.
+Package pdftex.def Info: Images/02_08_Memory_WriteWaveform.pdf  used on input l
+ine 81.
 (pdftex.def)             Requested size: 225.34383pt x 144.86618pt.
-<Images/02_05_AvalonMaster_ReadWaveform.pdf, id=705, 346.29375pt x 135.50626pt>
+<Images/02_05_AvalonMaster_ReadWaveform.pdf, id=683, 346.29375pt x 135.50626pt>
+
 File: Images/02_05_AvalonMaster_ReadWaveform.pdf Graphic file (type pdf)
 <use Images/02_05_AvalonMaster_ReadWaveform.pdf>
-Package pdftex.def Info: Images/02_05_AvalonMaster_ReadWaveform.pdf  used on input line 92.
+Package pdftex.def Info: Images/02_05_AvalonMaster_ReadWaveform.pdf  used on in
+put line 93.
 (pdftex.def)             Requested size: 328.6279pt x 128.5958pt.
-<Images/02_06_AvalonMaster_WriteWaveform.pdf, id=706, 331.2375pt x 113.42375pt>
+<Images/02_06_AvalonMaster_WriteWaveform.pdf, id=684, 331.2375pt x 113.42375pt>
+
 File: Images/02_06_AvalonMaster_WriteWaveform.pdf Graphic file (type pdf)
 <use Images/02_06_AvalonMaster_WriteWaveform.pdf>
-Package pdftex.def Info: Images/02_06_AvalonMaster_WriteWaveform.pdf  used on input line 99.
+Package pdftex.def Info: Images/02_06_AvalonMaster_WriteWaveform.pdf  used on i
+nput line 100.
 (pdftex.def)             Requested size: 328.6279pt x 112.5356pt.
 LaTeX Font Info:    Font shape `T5/cmtt/bx/n' in size <13> not available
-(Font)              Font shape `T5/cmtt/m/n' tried instead on input line 125.
+(Font)              Font shape `T5/cmtt/m/n' tried instead on input line 126.
 
 
-[6 <./Images/02_07_Memory_ReadWaveform.pdf> <./Images/02_08_Memory_WriteWaveform.pdf
+[6 <./Images/02_07_Memory_ReadWaveform.pdf> <./Images/02_08_Memory_WriteWavefor
+m.pdf
 
-pdfTeX warning: pdflatex (file ./Images/02_08_Memory_WriteWaveform.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./Images/02_08_Memory_WriteWaveform.pdf): PD
+F inclusion: multiple pdfs with page group included in a single page
 >]
-<Images/02_02_Memory_ByteEnable.pdf, id=736, 427.5975pt x 272.01625pt>
+<Images/02_02_Memory_ByteEnable.pdf, id=714, 427.5975pt x 272.01625pt>
 File: Images/02_02_Memory_ByteEnable.pdf Graphic file (type pdf)
 <use Images/02_02_Memory_ByteEnable.pdf>
-Package pdftex.def Info: Images/02_02_Memory_ByteEnable.pdf  used on input line 142.
+Package pdftex.def Info: Images/02_02_Memory_ByteEnable.pdf  used on input line
+ 143.
 (pdftex.def)             Requested size: 375.57782pt x 238.9226pt.
 
 
-[7 <./Images/02_05_AvalonMaster_ReadWaveform.pdf> <./Images/02_06_AvalonMaster_WriteWaveform.pdf
+[7 <./Images/02_05_AvalonMaster_ReadWaveform.pdf> <./Images/02_06_AvalonMaster_
+WriteWaveform.pdf
 
-pdfTeX warning: pdflatex (file ./Images/02_06_AvalonMaster_WriteWaveform.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./Images/02_06_AvalonMaster_WriteWaveform.pd
+f): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 
 [8 <./Images/02_02_Memory_ByteEnable.pdf>]
-<Images/02_09_DMABlockDiagram.pdf, id=775, 435.6275pt x 402.50375pt>
+<Images/02_09_DMABlockDiagram.pdf, id=754, 435.6275pt x 402.50375pt>
 File: Images/02_09_DMABlockDiagram.pdf Graphic file (type pdf)
 <use Images/02_09_DMABlockDiagram.pdf>
-Package pdftex.def Info: Images/02_09_DMABlockDiagram.pdf  used on input line 175.
+Package pdftex.def Info: Images/02_09_DMABlockDiagram.pdf  used on input line 1
+76.
 (pdftex.def)             Requested size: 469.47049pt x 433.77017pt.
 
-Overfull \hbox (16.38628pt too wide) in paragraph at lines 180--181
-[]\T5/cmr/m/n/13 LuÁng d˙ liªu cÏ b£n diπn ra nh˜ sau: CPU cßu hºnh DMA thÊng qua \T5/cmtt/m/n/13 CONTROL_SLAVE
+Overfull \hbox (16.38628pt too wide) in paragraph at lines 181--182
+[]\T5/cmr/m/n/13 LuÁng d˙ liªu cÏ b£n diπn ra nh˜ sau: CPU cßu hºnh DMA thÊng q
+ua \T5/cmtt/m/n/13 CONTROL_SLAVE
  []
 
-<Images/02_03_AvalonSlave_ReadWaveform.pdf, id=776, 210.7875pt x 135.50626pt>
+<Images/02_03_AvalonSlave_ReadWaveform.pdf, id=755, 210.7875pt x 135.50626pt>
 File: Images/02_03_AvalonSlave_ReadWaveform.pdf Graphic file (type pdf)
 <use Images/02_03_AvalonSlave_ReadWaveform.pdf>
-Package pdftex.def Info: Images/02_03_AvalonSlave_ReadWaveform.pdf  used on input line 190.
+Package pdftex.def Info: Images/02_03_AvalonSlave_ReadWaveform.pdf  used on inp
+ut line 191.
 (pdftex.def)             Requested size: 225.34383pt x 144.86618pt.
-<Images/02_04_AvalonSlave_WriteWaveform.pdf, id=777, 210.7875pt x 135.50626pt>
+<Images/02_04_AvalonSlave_WriteWaveform.pdf, id=756, 210.7875pt x 135.50626pt>
 File: Images/02_04_AvalonSlave_WriteWaveform.pdf Graphic file (type pdf)
 <use Images/02_04_AvalonSlave_WriteWaveform.pdf>
-Package pdftex.def Info: Images/02_04_AvalonSlave_WriteWaveform.pdf  used on input line 197.
+Package pdftex.def Info: Images/02_04_AvalonSlave_WriteWaveform.pdf  used on in
+put line 198.
 (pdftex.def)             Requested size: 225.34383pt x 144.86618pt.
 
 
 [9]
 
-[10 <./Images/02_09_DMABlockDiagram.pdf>]
-Overfull \hbox (33.95209pt too wide) in paragraph at lines 217--218
-[]\T5/cmr/m/n/13 TΩn hiªu \T5/cmtt/m/n/13 Start \T5/cmr/m/n/13 ^^_˜Òc g°n b¨ng \T5/cmtt/m/n/13 control_go\T5/cmr/m/n/13 . Mod-ule c™p nh™t \T5/cmtt/m/n/13 status_busy
- []
+[10 <./Images/02_09_DMABlockDiagram.pdf> <./Images/02_03_AvalonSlave_ReadWavefo
+rm.pdf
 
+pdfTeX warning: pdflatex.exe (file ./Images/02_03_AvalonSlave_ReadWaveform.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
+> <./Images/02_04_AvalonSlave_WriteWaveform.pdf
 
-Overfull \hbox (7.83488pt too wide) in paragraph at lines 217--218
-\T5/cmr/m/n/13 v† \T5/cmtt/m/n/13 status_done \T5/cmr/m/n/13 d¸a tr∂n \T5/cmtt/m/n/13 Start \T5/cmr/m/n/13 v† tΩn hiªu \T5/cmtt/m/n/13 WM_done \T5/cmr/m/n/13 t¯ \T5/cmtt/m/n/13 WRITE_MASTER\T5/cmr/m/n/13 . 
- []
-
-
-
-[11 <./Images/02_03_AvalonSlave_ReadWaveform.pdf> <./Images/02_04_AvalonSlave_WriteWaveform.pdf
-
-pdfTeX warning: pdflatex (file ./Images/02_04_AvalonSlave_WriteWaveform.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./Images/02_04_AvalonSlave_WriteWaveform.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<Images/02_11_StateDiagram_ControlSlave.pdf, id=2609, 292.09125pt x 440.64626pt>
+Overfull \hbox (33.95209pt too wide) in paragraph at lines 218--219
+[]\T5/cmr/m/n/13 TΩn hiªu \T5/cmtt/m/n/13 Start \T5/cmr/m/n/13 ^^_˜Òc g°n b¨ng 
+\T5/cmtt/m/n/13 control_go\T5/cmr/m/n/13 . Mod-ule c™p nh™t \T5/cmtt/m/n/13 sta
+tus_busy
+ []
+
+
+Overfull \hbox (7.83488pt too wide) in paragraph at lines 218--219
+\T5/cmr/m/n/13 v† \T5/cmtt/m/n/13 status_done \T5/cmr/m/n/13 d¸a tr∂n \T5/cmtt/
+m/n/13 Start \T5/cmr/m/n/13 v† tΩn hiªu \T5/cmtt/m/n/13 WM_done \T5/cmr/m/n/13 
+t¯ \T5/cmtt/m/n/13 WRITE_MASTER\T5/cmr/m/n/13 . 
+ []
+
+<Images/02_11_StateDiagram_ControlSlave.pdf, id=2584, 292.09125pt x 440.64626pt
+>
 File: Images/02_11_StateDiagram_ControlSlave.pdf Graphic file (type pdf)
 <use Images/02_11_StateDiagram_ControlSlave.pdf>
-Package pdftex.def Info: Images/02_11_StateDiagram_ControlSlave.pdf  used on input line 227.
-(pdftex.def)             Requested size: 234.73524pt x 354.13116pt.
+Package pdftex.def Info: Images/02_11_StateDiagram_ControlSlave.pdf  used on in
+put line 228.
+(pdftex.def)             Requested size: 328.6279pt x 495.80649pt.
 
+
+[11]
 
 [12 <./Images/02_11_StateDiagram_ControlSlave.pdf>]
-Overfull \hbox (9.84003pt too wide) in paragraph at lines 257--258
-\T5/cmr/m/n/13 (lßy t¯ thanh ghi nÎi bÎ ch˘a d˙ liªu ^^_Âc t¯ FIFO), v† \T5/cmtt/m/n/13 oWM_byteenable
+Overfull \hbox (9.84003pt too wide) in paragraph at lines 258--259
+\T5/cmr/m/n/13 (lßy t¯ thanh ghi nÎi bÎ ch˘a d˙ liªu ^^_Âc t¯ FIFO), v† \T5/cmt
+t/m/n/13 oWM_byteenable
  []
 
 
 
 [13]
-<Images/02_12_StateDiagram_ReadMaster.pdf, id=2683, 286.06876pt x 513.92pt>
+<Images/02_12_StateDiagram_ReadMaster.pdf, id=2665, 286.06876pt x 513.92pt>
 File: Images/02_12_StateDiagram_ReadMaster.pdf Graphic file (type pdf)
 <use Images/02_12_StateDiagram_ReadMaster.pdf>
-Package pdftex.def Info: Images/02_12_StateDiagram_ReadMaster.pdf  used on input line 273.
+Package pdftex.def Info: Images/02_12_StateDiagram_ReadMaster.pdf  used on inpu
+t line 274.
 (pdftex.def)             Requested size: 230.0431pt x 413.27734pt.
-<Images/02_13_StateDiagram_WriteMaster.pdf, id=2684, 293.095pt x 579.16376pt>
+<Images/02_13_StateDiagram_WriteMaster.pdf, id=2666, 293.095pt x 579.16376pt>
 File: Images/02_13_StateDiagram_WriteMaster.pdf Graphic file (type pdf)
 <use Images/02_13_StateDiagram_WriteMaster.pdf>
-Package pdftex.def Info: Images/02_13_StateDiagram_WriteMaster.pdf  used on input line 281.
+Package pdftex.def Info: Images/02_13_StateDiagram_WriteMaster.pdf  used on inp
+ut line 282.
 (pdftex.def)             Requested size: 230.0431pt x 454.56502pt.
 
 Underfull \vbox (badness 1769) has occurred while \output is active []
 
 
 
-[14 <./Images/02_12_StateDiagram_ReadMaster.pdf> <./Images/02_13_StateDiagram_WriteMaster.pdf
+[14 <./Images/02_12_StateDiagram_ReadMaster.pdf> <./Images/02_13_StateDiagram_W
+riteMaster.pdf
 
-pdfTeX warning: pdflatex (file ./Images/02_13_StateDiagram_WriteMaster.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./Images/02_13_StateDiagram_WriteMaster.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<Images/02_10_SystemSequenceDiagram.pdf, id=2810, 590.205pt x 548.0475pt>
+<Images/02_10_SystemSequenceDiagram.pdf, id=2793, 590.205pt x 548.0475pt>
 File: Images/02_10_SystemSequenceDiagram.pdf Graphic file (type pdf)
 <use Images/02_10_SystemSequenceDiagram.pdf>
-Package pdftex.def Info: Images/02_10_SystemSequenceDiagram.pdf  used on input line 297.
+Package pdftex.def Info: Images/02_10_SystemSequenceDiagram.pdf  used on input 
+line 298.
 (pdftex.def)             Requested size: 469.47049pt x 435.94656pt.
 
-Underfull \hbox (badness 4242) in paragraph at lines 327--328
+Underfull \hbox (badness 4242) in paragraph at lines 328--329
 []|\T5/cmtt/m/n/13 =1\T5/cmr/m/n/13 : y∂u c¶u ^^_Âc d˙ liªu t¯
  []
 
 
-Underfull \hbox (badness 3281) in paragraph at lines 334--335
+Underfull \hbox (badness 3281) in paragraph at lines 335--336
 []|\T5/cmtt/m/n/13 =1\T5/cmr/m/n/13 : y∂u c¶u ghi d˙ liªu v†o
  []
 
 
-Overfull \hbox (30.67348pt too wide) in paragraph at lines 307--340
+Overfull \hbox (30.67348pt too wide) in paragraph at lines 308--341
  [][] 
  []
 
@@ -1655,10 +1961,9 @@ Overfull \hbox (30.67348pt too wide) in paragraph at lines 307--340
 \openout2 = `chapter3.aux'.
 
  (chapter3.tex
-CH∆Ø∆†NG 3.
-
-Overfull \hbox (15.77751pt too wide) in paragraph at lines 16--17
-\T5/cmr/m/n/13 name) (vΩ dˆ: \T5/cmtt/m/n/13 D:\FETEL_WorkDir\Y4S2_DMANiosVIntern\T5/cmr/m/n/13 , \T5/cmtt/m/n/13 DMANiosV\T5/cmr/m/n/13 ) (Hºnh
+Overfull \hbox (15.77751pt too wide) in paragraph at lines 14--15
+\T5/cmr/m/n/13 name) (vΩ dˆ: \T5/cmtt/m/n/13 D:\FETEL_WorkDir\Y4S2_DMANiosVInte
+rn\T5/cmr/m/n/13 , \T5/cmtt/m/n/13 DMANiosV\T5/cmr/m/n/13 ) (Hºnh
  []
 
 
@@ -1667,132 +1972,169 @@ Overfull \hbox (15.77751pt too wide) in paragraph at lines 16--17
 
 
 
-
-
 ]
-Overfull \hbox (7.85863pt too wide) in paragraph at lines 24--25
-\T5/cmr/m/n/13 byte (128 KB) (Cßu hºnh vΩ dˆ Hºnh []3.5[]). MÎt bÎ nhÓ (\T5/cmtt/m/n/13 onchip_memory2_0\T5/cmr/m/n/13 )
+Overfull \hbox (56.21342pt too wide) in paragraph at lines 22--23
+\T5/cmr/m/n/13 (\T5/cmtt/m/n/13 onchip_memory2_0\T5/cmr/m/n/13 ) cho lªnh (in-s
+truc-tions), v† bÎ nhÓ c·n l§i (\T5/cmtt/m/n/13 onchip_memory2_1\T5/cmr/m/n/13 
+)
  []
 
 
 
 [18]
-Overfull \hbox (7.14899pt too wide) in paragraph at lines 55--56
-[]\T5/cmr/m/n/13 Trong Quar-tus, th∂m tªp `.qip` ^^_˜Òc t§o (\T5/cmtt/m/n/13 system/synthesis/system.qip\T5/cmr/m/n/13 )
+Overfull \hbox (7.14899pt too wide) in paragraph at lines 53--54
+[]\T5/cmr/m/n/13 Trong Quar-tus, th∂m tªp `.qip` ^^_˜Òc t§o (\T5/cmtt/m/n/13 sy
+stem/synthesis/system.qip\T5/cmr/m/n/13 )
  []
 
-<Images/03_11_QuartusNewProjectWizard1.png, id=3121, 807.015pt x 696.6025pt>
+<Images/03_11_QuartusNewProjectWizard1.png, id=3103, 807.015pt x 696.6025pt>
 File: Images/03_11_QuartusNewProjectWizard1.png Graphic file (type png)
 <use Images/03_11_QuartusNewProjectWizard1.png>
-Package pdftex.def Info: Images/03_11_QuartusNewProjectWizard1.png  used on input line 63.
+Package pdftex.def Info: Images/03_11_QuartusNewProjectWizard1.png  used on inp
+ut line 61.
 (pdftex.def)             Requested size: 328.6279pt x 283.66371pt.
-<Images/03_12_QuartusNewProjectWizard2.png, id=3122, 1217.54875pt x 874.26625pt>
+<Images/03_12_QuartusNewProjectWizard2.png, id=3104, 1217.54875pt x 874.26625pt
+>
 File: Images/03_12_QuartusNewProjectWizard2.png Graphic file (type png)
 <use Images/03_12_QuartusNewProjectWizard2.png>
-Package pdftex.def Info: Images/03_12_QuartusNewProjectWizard2.png  used on input line 64.
+Package pdftex.def Info: Images/03_12_QuartusNewProjectWizard2.png  used on inp
+ut line 62.
 (pdftex.def)             Requested size: 422.52057pt x 303.38309pt.
-<Images/03_13_ProjectFilesDMA.png, id=3123, 1092.08pt x 494.84875pt>
+<Images/03_13_ProjectFilesDMA.png, id=3105, 1092.08pt x 494.84875pt>
 File: Images/03_13_ProjectFilesDMA.png Graphic file (type png)
 <use Images/03_13_ProjectFilesDMA.png>
-Package pdftex.def Info: Images/03_13_ProjectFilesDMA.png  used on input line 65.
+Package pdftex.def Info: Images/03_13_ProjectFilesDMA.png  used on input line 6
+3.
 (pdftex.def)             Requested size: 422.52057pt x 191.44987pt.
-<Images/03_15_NiosVIPConfig1.png, id=3124, 1276.77pt x 1052.93375pt>
+<Images/03_15_NiosVIPConfig1.png, id=3106, 1276.77pt x 1052.93375pt>
 File: Images/03_15_NiosVIPConfig1.png Graphic file (type png)
 <use Images/03_15_NiosVIPConfig1.png>
-Package pdftex.def Info: Images/03_15_NiosVIPConfig1.png  used on input line 67.
+Package pdftex.def Info: Images/03_15_NiosVIPConfig1.png  used on input line 65
+.
 (pdftex.def)             Requested size: 422.52057pt x 348.44926pt.
-<Images/03_16_OnChipMemoryIPConfig.png, id=3125, 1133.23375pt x 1177.39874pt>
+<Images/03_16_OnChipMemoryIPConfig.png, id=3107, 1133.23375pt x 1177.39874pt>
 File: Images/03_16_OnChipMemoryIPConfig.png Graphic file (type png)
 <use Images/03_16_OnChipMemoryIPConfig.png>
-Package pdftex.def Info: Images/03_16_OnChipMemoryIPConfig.png  used on input line 68.
+Package pdftex.def Info: Images/03_16_OnChipMemoryIPConfig.png  used on input l
+ine 66.
 (pdftex.def)             Requested size: 422.52057pt x 438.9903pt.
-<Images/03_17_JTAGUARTIPConfig.png, id=3126, 448.67625pt x 361.35pt>
+<Images/03_17_JTAGUARTIPConfig.png, id=3108, 448.67625pt x 361.35pt>
 File: Images/03_17_JTAGUARTIPConfig.png Graphic file (type png)
 <use Images/03_17_JTAGUARTIPConfig.png>
-Package pdftex.def Info: Images/03_17_JTAGUARTIPConfig.png  used on input line 69.
+Package pdftex.def Info: Images/03_17_JTAGUARTIPConfig.png  used on input line 
+67.
 (pdftex.def)             Requested size: 422.52057pt x 340.29762pt.
-<Images/03_21_ComponentEditorFilesAnalyzed.png, id=3128, 840.13875pt x 1218.5525pt>
+<Images/03_21_ComponentEditorFilesAnalyzed.png, id=3110, 840.13875pt x 1218.552
+5pt>
 File: Images/03_21_ComponentEditorFilesAnalyzed.png Graphic file (type png)
 <use Images/03_21_ComponentEditorFilesAnalyzed.png>
-Package pdftex.def Info: Images/03_21_ComponentEditorFilesAnalyzed.png  used on input line 73.
+Package pdftex.def Info: Images/03_21_ComponentEditorFilesAnalyzed.png  used on
+ input line 71.
 (pdftex.def)             Requested size: 422.52057pt x 612.82613pt.
-<Images/03_23_ComponentEditorSignals_DMAC.png, id=3129, 420.06938pt x 492.33937pt>
+<Images/03_23_ComponentEditorSignals_DMAC.png, id=3111, 420.06938pt x 492.33937
+pt>
 File: Images/03_23_ComponentEditorSignals_DMAC.png Graphic file (type png)
 <use Images/03_23_ComponentEditorSignals_DMAC.png>
-Package pdftex.def Info: Images/03_23_ComponentEditorSignals_DMAC.png  used on input line 75.
+Package pdftex.def Info: Images/03_23_ComponentEditorSignals_DMAC.png  used on 
+input line 73.
 (pdftex.def)             Requested size: 422.52057pt x 495.21542pt.
-<Images/03_26_ComponentEditorInterfaces3.png, id=3130, 840.13875pt x 984.67876pt>
+<Images/03_26_ComponentEditorInterfaces3.png, id=3112, 840.13875pt x 984.67876p
+t>
 File: Images/03_26_ComponentEditorInterfaces3.png Graphic file (type png)
 <use Images/03_26_ComponentEditorInterfaces3.png>
-Package pdftex.def Info: Images/03_26_ComponentEditorInterfaces3.png  used on input line 78.
+Package pdftex.def Info: Images/03_26_ComponentEditorInterfaces3.png  used on i
+nput line 76.
 (pdftex.def)             Requested size: 234.73524pt x 275.1222pt.
-<Images/03_27_ComponentEditorInterfaces4.png, id=3131, 840.13875pt x 984.67876pt>
+<Images/03_27_ComponentEditorInterfaces4.png, id=3113, 840.13875pt x 984.67876p
+t>
 File: Images/03_27_ComponentEditorInterfaces4.png Graphic file (type png)
 <use Images/03_27_ComponentEditorInterfaces4.png>
-Package pdftex.def Info: Images/03_27_ComponentEditorInterfaces4.png  used on input line 79.
+Package pdftex.def Info: Images/03_27_ComponentEditorInterfaces4.png  used on i
+nput line 77.
 (pdftex.def)             Requested size: 234.73524pt x 275.1222pt.
-<Images/03_28_PlatformDesignerSystemView1.png, id=3132, 1178.4025pt x 762.85pt>
+<Images/03_28_PlatformDesignerSystemView1.png, id=3114, 1178.4025pt x 762.85pt>
+
 File: Images/03_28_PlatformDesignerSystemView1.png Graphic file (type png)
 <use Images/03_28_PlatformDesignerSystemView1.png>
-Package pdftex.def Info: Images/03_28_PlatformDesignerSystemView1.png  used on input line 80.
+Package pdftex.def Info: Images/03_28_PlatformDesignerSystemView1.png  used on 
+input line 78.
 (pdftex.def)             Requested size: 469.47049pt x 303.91238pt.
-<Images/03_29_PlatformDesignerAssignBaseAddr.png, id=3133, 1036.87375pt x 395.4775pt>
+<Images/03_29_PlatformDesignerAssignBaseAddr.png, id=3115, 1036.87375pt x 395.4
+775pt>
 File: Images/03_29_PlatformDesignerAssignBaseAddr.png Graphic file (type png)
 <use Images/03_29_PlatformDesignerAssignBaseAddr.png>
-Package pdftex.def Info: Images/03_29_PlatformDesignerAssignBaseAddr.png  used on input line 81.
+Package pdftex.def Info: Images/03_29_PlatformDesignerAssignBaseAddr.png  used 
+on input line 79.
 (pdftex.def)             Requested size: 469.47049pt x 179.06151pt.
-<Images/03_30_PlatformDesignerSystemView_FinalDMAC.png, id=3134, 1178.4025pt x 757.83125pt>
-File: Images/03_30_PlatformDesignerSystemView_FinalDMAC.png Graphic file (type png)
+<Images/03_30_PlatformDesignerSystemView_FinalDMAC.png, id=3116, 1178.4025pt x 
+757.83125pt>
+File: Images/03_30_PlatformDesignerSystemView_FinalDMAC.png Graphic file (type 
+png)
 <use Images/03_30_PlatformDesignerSystemView_FinalDMAC.png>
-Package pdftex.def Info: Images/03_30_PlatformDesignerSystemView_FinalDMAC.png  used on input line 82.
+Package pdftex.def Info: Images/03_30_PlatformDesignerSystemView_FinalDMAC.png 
+ used on input line 80.
 (pdftex.def)             Requested size: 469.47049pt x 301.91295pt.
-<Images/03_31_NiosVVectorConfig.png, id=3135, 2041.6275pt x 1268.74pt>
+<Images/03_31_NiosVVectorConfig.png, id=3117, 2041.6275pt x 1268.74pt>
 File: Images/03_31_NiosVVectorConfig.png Graphic file (type png)
 <use Images/03_31_NiosVVectorConfig.png>
-Package pdftex.def Info: Images/03_31_NiosVVectorConfig.png  used on input line 84.
+Package pdftex.def Info: Images/03_31_NiosVVectorConfig.png  used on input line
+ 82.
 (pdftex.def)             Requested size: 469.47049pt x 291.74599pt.
-<Images/03_34_PlatformDesignerGenerateHDL.png, id=3136, 884.30376pt x 637.38126pt>
+<Images/03_34_PlatformDesignerGenerateHDL.png, id=3118, 884.30376pt x 637.38126
+pt>
 File: Images/03_34_PlatformDesignerGenerateHDL.png Graphic file (type png)
 <use Images/03_34_PlatformDesignerGenerateHDL.png>
-Package pdftex.def Info: Images/03_34_PlatformDesignerGenerateHDL.png  used on input line 87.
+Package pdftex.def Info: Images/03_34_PlatformDesignerGenerateHDL.png  used on 
+input line 85.
 (pdftex.def)             Requested size: 328.6279pt x 236.86801pt.
-<Images/03_37_QuartusAddFilesToProjectMenu.png, id=3137, 808.01875pt x 161.60374pt>
+<Images/03_37_QuartusAddFilesToProjectMenu.png, id=3119, 808.01875pt x 161.6037
+4pt>
 File: Images/03_37_QuartusAddFilesToProjectMenu.png Graphic file (type png)
 <use Images/03_37_QuartusAddFilesToProjectMenu.png>
-Package pdftex.def Info: Images/03_37_QuartusAddFilesToProjectMenu.png  used on input line 90.
+Package pdftex.def Info: Images/03_37_QuartusAddFilesToProjectMenu.png  used on
+ input line 88.
 (pdftex.def)             Requested size: 375.57782pt x 75.11537pt.
-<Images/03_38_QuartusProjectFilesSettings.png, id=3138, 1190.4475pt x 1020.81375pt>
+<Images/03_38_QuartusProjectFilesSettings.png, id=3120, 1190.4475pt x 1020.8137
+5pt>
 File: Images/03_38_QuartusProjectFilesSettings.png Graphic file (type png)
 <use Images/03_38_QuartusProjectFilesSettings.png>
-Package pdftex.def Info: Images/03_38_QuartusProjectFilesSettings.png  used on input line 91.
+Package pdftex.def Info: Images/03_38_QuartusProjectFilesSettings.png  used on 
+input line 89.
 (pdftex.def)             Requested size: 328.6279pt x 281.79163pt.
-<Images/03_39_QuartusImportAssignmentsMenu.png, id=3139, 507.8975pt x 401.5pt>
+<Images/03_39_QuartusImportAssignmentsMenu.png, id=3121, 507.8975pt x 401.5pt>
 File: Images/03_39_QuartusImportAssignmentsMenu.png Graphic file (type png)
 <use Images/03_39_QuartusImportAssignmentsMenu.png>
-Package pdftex.def Info: Images/03_39_QuartusImportAssignmentsMenu.png  used on input line 92.
+Package pdftex.def Info: Images/03_39_QuartusImportAssignmentsMenu.png  used on
+ input line 90.
 (pdftex.def)             Requested size: 234.73524pt x 185.56218pt.
-<Images/03_40_QuartusImportAssignmentsDialog.png, id=3140, 724.7075pt x 234.8775pt>
+<Images/03_40_QuartusImportAssignmentsDialog.png, id=3122, 724.7075pt x 234.877
+5pt>
 File: Images/03_40_QuartusImportAssignmentsDialog.png Graphic file (type png)
 <use Images/03_40_QuartusImportAssignmentsDialog.png>
-Package pdftex.def Info: Images/03_40_QuartusImportAssignmentsDialog.png  used on input line 93.
+Package pdftex.def Info: Images/03_40_QuartusImportAssignmentsDialog.png  used 
+on input line 91.
 (pdftex.def)             Requested size: 234.73524pt x 76.07623pt.
-<Images/03_41_QuartusCompilationTasks.png, id=3141, 620.3175pt x 326.21875pt>
+<Images/03_41_QuartusCompilationTasks.png, id=3123, 620.3175pt x 326.21875pt>
 File: Images/03_41_QuartusCompilationTasks.png Graphic file (type png)
 <use Images/03_41_QuartusCompilationTasks.png>
-Package pdftex.def Info: Images/03_41_QuartusCompilationTasks.png  used on input line 94.
+Package pdftex.def Info: Images/03_41_QuartusCompilationTasks.png  used on inpu
+t line 92.
 (pdftex.def)             Requested size: 281.68515pt x 148.13606pt.
-<Images/03_42_QuartusAssignmentEditor.png, id=3142, 930.47626pt x 227.34938pt>
+<Images/03_42_QuartusAssignmentEditor.png, id=3124, 930.47626pt x 227.34938pt>
 File: Images/03_42_QuartusAssignmentEditor.png Graphic file (type png)
 <use Images/03_42_QuartusAssignmentEditor.png>
-Package pdftex.def Info: Images/03_42_QuartusAssignmentEditor.png  used on input line 95.
+Package pdftex.def Info: Images/03_42_QuartusAssignmentEditor.png  used on inpu
+t line 93.
 (pdftex.def)             Requested size: 469.47049pt x 114.70818pt.
 
 
 [19]
 
-[20 <./Images/03_11_QuartusNewProjectWizard1.png (PNG copy)> <./Images/03_12_QuartusNewProjectWizard2.png (PNG copy)>]
+[20 <./Images/03_11_QuartusNewProjectWizard1.png (PNG copy)> <./Images/03_12_Qu
+artusNewProjectWizard2.png (PNG copy)>]
 
-[21 <./Images/03_13_ProjectFilesDMA.png (PNG copy)> <./Images/03_15_NiosVIPConfig1.png (PNG copy)>]
+[21 <./Images/03_13_ProjectFilesDMA.png (PNG copy)> <./Images/03_15_NiosVIPConf
+ig1.png (PNG copy)>]
 
 [22 <./Images/03_16_OnChipMemoryIPConfig.png (PNG copy)>]
 
@@ -1802,158 +2144,203 @@ Package pdftex.def Info: Images/03_42_QuartusAssignmentEditor.png  used on input
 
 [25 <./Images/03_23_ComponentEditorSignals_DMAC.png>]
 
-[26 <./Images/03_26_ComponentEditorInterfaces3.png (PNG copy)> <./Images/03_27_ComponentEditorInterfaces4.png (PNG copy)>]
+[26 <./Images/03_26_ComponentEditorInterfaces3.png (PNG copy)> <./Images/03_27_
+ComponentEditorInterfaces4.png (PNG copy)>]
 
-[27 <./Images/03_28_PlatformDesignerSystemView1.png (PNG copy)> <./Images/03_29_PlatformDesignerAssignBaseAddr.png (PNG copy)>]
+[27 <./Images/03_28_PlatformDesignerSystemView1.png (PNG copy)> <./Images/03_29
+_PlatformDesignerAssignBaseAddr.png (PNG copy)>]
 
-[28 <./Images/03_30_PlatformDesignerSystemView_FinalDMAC.png (PNG copy)> <./Images/03_31_NiosVVectorConfig.png (PNG copy)>]
+[28 <./Images/03_30_PlatformDesignerSystemView_FinalDMAC.png (PNG copy)> <./Ima
+ges/03_31_NiosVVectorConfig.png (PNG copy)>]
 
-[29 <./Images/03_34_PlatformDesignerGenerateHDL.png (PNG copy)> <./Images/03_37_QuartusAddFilesToProjectMenu.png (PNG copy)>]
+[29 <./Images/03_34_PlatformDesignerGenerateHDL.png (PNG copy)> <./Images/03_37
+_QuartusAddFilesToProjectMenu.png (PNG copy)>]
 
-[30 <./Images/03_38_QuartusProjectFilesSettings.png (PNG copy)> <./Images/03_39_QuartusImportAssignmentsMenu.png (PNG copy)> <./Images/03_40_QuartusImportAssignmentsDialog.png (PNG copy)>] (D:\Program Files\MikTex\texmfs\install\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/listings\lstlang1.sty
+[30 <./Images/03_38_QuartusProjectFilesSettings.png (PNG copy)> <./Images/03_39
+_QuartusImportAssignmentsMenu.png (PNG copy)> <./Images/03_40_QuartusImportAssi
+gnmentsDialog.png (PNG copy)>]
+(D:\Program Files\MikTex\texmfs\install\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 110.
+(D:\Program Files\MikTex\texmfs\install\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 108.
 
 
-[31 <./Images/03_41_QuartusCompilationTasks.png (PNG copy)> <./Images/03_42_QuartusAssignmentEditor.png>]
+[31 <./Images/03_41_QuartusCompilationTasks.png (PNG copy)> <./Images/03_42_Qua
+rtusAssignmentEditor.png>]
 
 LaTeX Font Warning: Font shape `TS1/cmr/bx/n' in size <13> not available
-(Font)              size <12> substituted on input line 122.
+(Font)              size <12> substituted on input line 120.
 
 
 
 [32]
-<Images/03_43_SoftwareFoldersAppBSP.png, id=3256, 1050.92625pt x 276.03125pt>
+<Images/03_43_SoftwareFoldersAppBSP.png, id=3239, 1050.92625pt x 276.03125pt>
 File: Images/03_43_SoftwareFoldersAppBSP.png Graphic file (type png)
 <use Images/03_43_SoftwareFoldersAppBSP.png>
-Package pdftex.def Info: Images/03_43_SoftwareFoldersAppBSP.png  used on input line 144.
+Package pdftex.def Info: Images/03_43_SoftwareFoldersAppBSP.png  used on input 
+line 142.
 (pdftex.def)             Requested size: 375.57782pt x 98.64671pt.
-<Images/03_45_SoftwareAppFolderSourceC.png, id=3257, 1064.97874pt x 245.91875pt>
+<Images/03_45_SoftwareAppFolderSourceC.png, id=3240, 1064.97874pt x 245.91875pt
+>
 File: Images/03_45_SoftwareAppFolderSourceC.png Graphic file (type png)
 <use Images/03_45_SoftwareAppFolderSourceC.png>
-Package pdftex.def Info: Images/03_45_SoftwareAppFolderSourceC.png  used on input line 145.
+Package pdftex.def Info: Images/03_45_SoftwareAppFolderSourceC.png  used on inp
+ut line 143.
 (pdftex.def)             Requested size: 375.57782pt x 86.72575pt.
-<Images/03_46_NiosVShellLocation.png, id=3258, 1073.00874pt x 750.805pt>
+<Images/03_46_NiosVShellLocation.png, id=3241, 1073.00874pt x 750.805pt>
 File: Images/03_46_NiosVShellLocation.png Graphic file (type png)
 <use Images/03_46_NiosVShellLocation.png>
-Package pdftex.def Info: Images/03_46_NiosVShellLocation.png  used on input line 146.
+Package pdftex.def Info: Images/03_46_NiosVShellLocation.png  used on input lin
+e 144.
 (pdftex.def)             Requested size: 375.57782pt x 262.79713pt.
-<Images/03_47_NiosVShellCommands.png, id=3259, 1302.36563pt x 203.25937pt>
+<Images/03_47_NiosVShellCommands.png, id=3242, 1302.36563pt x 203.25937pt>
 File: Images/03_47_NiosVShellCommands.png Graphic file (type png)
 <use Images/03_47_NiosVShellCommands.png>
-Package pdftex.def Info: Images/03_47_NiosVShellCommands.png  used on input line 147.
+Package pdftex.def Info: Images/03_47_NiosVShellCommands.png  used on input lin
+e 145.
 (pdftex.def)             Requested size: 469.47049pt x 73.26945pt.
-<Images/03_48_NiosVShellBSPOutput.png, id=3260, 1871.99374pt x 868.24374pt>
+<Images/03_48_NiosVShellBSPOutput.png, id=3243, 1871.99374pt x 868.24374pt>
 File: Images/03_48_NiosVShellBSPOutput.png Graphic file (type png)
 <use Images/03_48_NiosVShellBSPOutput.png>
-Package pdftex.def Info: Images/03_48_NiosVShellBSPOutput.png  used on input line 148.
+Package pdftex.def Info: Images/03_48_NiosVShellBSPOutput.png  used on input li
+ne 146.
 (pdftex.def)             Requested size: 469.47049pt x 217.73607pt.
-<Images/03_49_NiosVShellAppOutput.png, id=3261, 1560.83125pt x 106.3975pt>
+<Images/03_49_NiosVShellAppOutput.png, id=3244, 1560.83125pt x 106.3975pt>
 File: Images/03_49_NiosVShellAppOutput.png Graphic file (type png)
 <use Images/03_49_NiosVShellAppOutput.png>
-Package pdftex.def Info: Images/03_49_NiosVShellAppOutput.png  used on input line 148.
+Package pdftex.def Info: Images/03_49_NiosVShellAppOutput.png  used on input li
+ne 146.
 (pdftex.def)             Requested size: 422.52057pt x 28.80075pt.
-<Images/03_50_AshlingRiscFreefromNiosVShell.png, id=3262, 870.25125pt x 366.36874pt>
+<Images/03_50_AshlingRiscFreefromNiosVShell.png, id=3245, 870.25125pt x 366.368
+74pt>
 File: Images/03_50_AshlingRiscFreefromNiosVShell.png Graphic file (type png)
 <use Images/03_50_AshlingRiscFreefromNiosVShell.png>
-Package pdftex.def Info: Images/03_50_AshlingRiscFreefromNiosVShell.png  used on input line 149.
+Package pdftex.def Info: Images/03_50_AshlingRiscFreefromNiosVShell.png  used o
+n input line 147.
 (pdftex.def)             Requested size: 469.47049pt x 197.6461pt.
-<Images/03_51_AshlingRiscFreeLauncher2.png, id=3263, 593.96906pt x 349.305pt>
+<Images/03_51_AshlingRiscFreeLauncher2.png, id=3246, 593.96906pt x 349.305pt>
 File: Images/03_51_AshlingRiscFreeLauncher2.png Graphic file (type png)
 <use Images/03_51_AshlingRiscFreeLauncher2.png>
-Package pdftex.def Info: Images/03_51_AshlingRiscFreeLauncher2.png  used on input line 150.
+Package pdftex.def Info: Images/03_51_AshlingRiscFreeLauncher2.png  used on inp
+ut line 148.
 (pdftex.def)             Requested size: 375.57782pt x 220.87878pt.
-<Images/03_52_AshlingIDEWelcome.png, id=3264, 850.17625pt x 613.29124pt>
+<Images/03_52_AshlingIDEWelcome.png, id=3247, 850.17625pt x 613.29124pt>
 File: Images/03_52_AshlingIDEWelcome.png Graphic file (type png)
 <use Images/03_52_AshlingIDEWelcome.png>
-Package pdftex.def Info: Images/03_52_AshlingIDEWelcome.png  used on input line 151.
+Package pdftex.def Info: Images/03_52_AshlingIDEWelcome.png  used on input line
+ 149.
 (pdftex.def)             Requested size: 375.57782pt x 270.93451pt.
-<Images/03_53_AshlingIDENewProjectWizard1.png, id=3265, 850.17625pt x 768.8725pt>
+<Images/03_53_AshlingIDENewProjectWizard1.png, id=3248, 850.17625pt x 768.8725p
+t>
 File: Images/03_53_AshlingIDENewProjectWizard1.png Graphic file (type png)
 <use Images/03_53_AshlingIDENewProjectWizard1.png>
-Package pdftex.def Info: Images/03_53_AshlingIDENewProjectWizard1.png  used on input line 152.
+Package pdftex.def Info: Images/03_53_AshlingIDENewProjectWizard1.png  used on 
+input line 150.
 (pdftex.def)             Requested size: 375.57782pt x 339.66586pt.
-<Images/03_54_AshlingIDENewProjectWizard2.png, id=3266, 636.12656pt x 252.945pt>
+<Images/03_54_AshlingIDENewProjectWizard2.png, id=3249, 636.12656pt x 252.945pt
+>
 File: Images/03_54_AshlingIDENewProjectWizard2.png Graphic file (type png)
 <use Images/03_54_AshlingIDENewProjectWizard2.png>
-Package pdftex.def Info: Images/03_54_AshlingIDENewProjectWizard2.png  used on input line 153.
+Package pdftex.def Info: Images/03_54_AshlingIDENewProjectWizard2.png  used on 
+input line 151.
 (pdftex.def)             Requested size: 375.57782pt x 149.34045pt.
-<Images/03_55_AshlingIDEProjectExplorer.png, id=3267, 512.91624pt x 1096.095pt>
+<Images/03_55_AshlingIDEProjectExplorer.png, id=3250, 512.91624pt x 1096.095pt>
+
 File: Images/03_55_AshlingIDEProjectExplorer.png Graphic file (type png)
 <use Images/03_55_AshlingIDEProjectExplorer.png>
-Package pdftex.def Info: Images/03_55_AshlingIDEProjectExplorer.png  used on input line 154.
+Package pdftex.def Info: Images/03_55_AshlingIDEProjectExplorer.png  used on in
+put line 152.
 (pdftex.def)             Requested size: 187.78532pt x 401.30064pt.
-<Images/03_56_AshlingIDEBuildMenu.png, id=3268, 1341.01pt x 397.485pt>
+<Images/03_56_AshlingIDEBuildMenu.png, id=3251, 1341.01pt x 397.485pt>
 File: Images/03_56_AshlingIDEBuildMenu.png Graphic file (type png)
 <use Images/03_56_AshlingIDEBuildMenu.png>
-Package pdftex.def Info: Images/03_56_AshlingIDEBuildMenu.png  used on input line 155.
+Package pdftex.def Info: Images/03_56_AshlingIDEBuildMenu.png  used on input li
+ne 153.
 (pdftex.def)             Requested size: 469.47049pt x 139.15215pt.
-<Images/03_59_QuartusProgrammerWindow.png, id=3269, 668.4975pt x 358.84062pt>
+<Images/03_59_QuartusProgrammerWindow.png, id=3252, 668.4975pt x 358.84062pt>
 File: Images/03_59_QuartusProgrammerWindow.png Graphic file (type png)
 <use Images/03_59_QuartusProgrammerWindow.png>
-Package pdftex.def Info: Images/03_59_QuartusProgrammerWindow.png  used on input line 158.
+Package pdftex.def Info: Images/03_59_QuartusProgrammerWindow.png  used on inpu
+t line 156.
 (pdftex.def)             Requested size: 328.6279pt x 176.40836pt.
-<Images/03_60_AshlingIDEDebugMenu.png, id=3270, 1098.1025pt x 1110.1475pt>
+<Images/03_60_AshlingIDEDebugMenu.png, id=3253, 1098.1025pt x 1110.1475pt>
 File: Images/03_60_AshlingIDEDebugMenu.png Graphic file (type png)
 <use Images/03_60_AshlingIDEDebugMenu.png>
-Package pdftex.def Info: Images/03_60_AshlingIDEDebugMenu.png  used on input line 159.
+Package pdftex.def Info: Images/03_60_AshlingIDEDebugMenu.png  used on input li
+ne 157.
 (pdftex.def)             Requested size: 375.57782pt x 379.6981pt.
-<Images/03_61_AshlingIDERunConfigELF.png, id=3271, 286.06876pt x 436.63126pt>
+<Images/03_61_AshlingIDERunConfigELF.png, id=3254, 286.06876pt x 436.63126pt>
 File: Images/03_61_AshlingIDERunConfigELF.png Graphic file (type png)
 <use Images/03_61_AshlingIDERunConfigELF.png>
-Package pdftex.def Info: Images/03_61_AshlingIDERunConfigELF.png  used on input line 160.
+Package pdftex.def Info: Images/03_61_AshlingIDERunConfigELF.png  used on input
+ line 158.
 (pdftex.def)             Requested size: 187.78532pt x 286.62517pt.
-<Images/03_62_AshlingIDEDebugConfig.png, id=3272, 1141.26375pt x 1075.01625pt>
+<Images/03_62_AshlingIDEDebugConfig.png, id=3255, 1141.26375pt x 1075.01625pt>
 File: Images/03_62_AshlingIDEDebugConfig.png Graphic file (type png)
 <use Images/03_62_AshlingIDEDebugConfig.png>
-Package pdftex.def Info: Images/03_62_AshlingIDEDebugConfig.png  used on input line 161.
+Package pdftex.def Info: Images/03_62_AshlingIDEDebugConfig.png  used on input 
+line 159.
 (pdftex.def)             Requested size: 469.47049pt x 442.21942pt.
-<Images/03_63_AshlingIDEDebugConsole.png, id=3273, 1585.925pt x 409.53pt>
+<Images/03_63_AshlingIDEDebugConsole.png, id=3256, 1585.925pt x 409.53pt>
 File: Images/03_63_AshlingIDEDebugConsole.png Graphic file (type png)
 <use Images/03_63_AshlingIDEDebugConsole.png>
-Package pdftex.def Info: Images/03_63_AshlingIDEDebugConsole.png  used on input line 162.
+Package pdftex.def Info: Images/03_63_AshlingIDEDebugConsole.png  used on input
+ line 160.
 (pdftex.def)             Requested size: 469.47049pt x 121.22897pt.
-<Images/03_64_JUARTTerminalOutput1.png, id=3274, 604.75937pt x 1047.915pt>
+<Images/03_64_JUARTTerminalOutput1.png, id=3257, 604.75937pt x 1047.915pt>
 File: Images/03_64_JUARTTerminalOutput1.png Graphic file (type png)
 <use Images/03_64_JUARTTerminalOutput1.png>
-Package pdftex.def Info: Images/03_64_JUARTTerminalOutput1.png  used on input line 163.
+Package pdftex.def Info: Images/03_64_JUARTTerminalOutput1.png  used on input l
+ine 161.
 (pdftex.def)             Requested size: 375.57782pt x 650.78789pt.
-<Images/03_65_JUARTTerminalOutput2.png, id=3275, 604.75937pt x 1047.915pt>
+<Images/03_65_JUARTTerminalOutput2.png, id=3258, 604.75937pt x 1047.915pt>
 File: Images/03_65_JUARTTerminalOutput2.png Graphic file (type png)
 <use Images/03_65_JUARTTerminalOutput2.png>
-Package pdftex.def Info: Images/03_65_JUARTTerminalOutput2.png  used on input line 164.
+Package pdftex.def Info: Images/03_65_JUARTTerminalOutput2.png  used on input l
+ine 162.
 (pdftex.def)             Requested size: 375.57782pt x 650.78789pt.
-<Images/03_66_JUARTTerminalOutput3.png, id=3276, 474.77374pt x 973.6375pt>
+<Images/03_66_JUARTTerminalOutput3.png, id=3259, 474.77374pt x 973.6375pt>
 File: Images/03_66_JUARTTerminalOutput3.png Graphic file (type png)
 <use Images/03_66_JUARTTerminalOutput3.png>
-Package pdftex.def Info: Images/03_66_JUARTTerminalOutput3.png  used on input line 165.
+Package pdftex.def Info: Images/03_66_JUARTTerminalOutput3.png  used on input l
+ine 163.
 (pdftex.def)             Requested size: 328.6279pt x 673.94994pt.
 
 
-LaTeX Warning: Float too large for page by 11.54475pt on input line 165.
+LaTeX Warning: Float too large for page by 11.54475pt on input line 163.
 
 
 
 [33]
 
-[34 <./Images/03_43_SoftwareFoldersAppBSP.png (PNG copy)> <./Images/03_45_SoftwareAppFolderSourceC.png (PNG copy)> <./Images/03_46_NiosVShellLocation.png (PNG copy)> <./Images/03_47_NiosVShellCommands.png>]
+[34 <./Images/03_43_SoftwareFoldersAppBSP.png (PNG copy)> <./Images/03_45_Softw
+areAppFolderSourceC.png (PNG copy)> <./Images/03_46_NiosVShellLocation.png (PNG
+ copy)> <./Images/03_47_NiosVShellCommands.png>]
 
-[35 <./Images/03_48_NiosVShellBSPOutput.png (PNG copy)> <./Images/03_49_NiosVShellAppOutput.png (PNG copy)> <./Images/03_50_AshlingRiscFreefromNiosVShell.png>]
+[35 <./Images/03_48_NiosVShellBSPOutput.png (PNG copy)> <./Images/03_49_NiosVSh
+ellAppOutput.png (PNG copy)> <./Images/03_50_AshlingRiscFreefromNiosVShell.png>
+]
 
-[36 <./Images/03_51_AshlingRiscFreeLauncher2.png> <./Images/03_52_AshlingIDEWelcome.png (PNG copy)>]
+[36 <./Images/03_51_AshlingRiscFreeLauncher2.png> <./Images/03_52_AshlingIDEWel
+come.png (PNG copy)>]
 
-[37 <./Images/03_53_AshlingIDENewProjectWizard1.png (PNG copy)> <./Images/03_54_AshlingIDENewProjectWizard2.png>]
+[37 <./Images/03_53_AshlingIDENewProjectWizard1.png (PNG copy)> <./Images/03_54
+_AshlingIDENewProjectWizard2.png>]
 
-[38 <./Images/03_55_AshlingIDEProjectExplorer.png (PNG copy)> <./Images/03_56_AshlingIDEBuildMenu.png (PNG copy)>]
+[38 <./Images/03_55_AshlingIDEProjectExplorer.png (PNG copy)> <./Images/03_56_A
+shlingIDEBuildMenu.png (PNG copy)>]
 
-[39 <./Images/03_59_QuartusProgrammerWindow.png> <./Images/03_60_AshlingIDEDebugMenu.png (PNG copy)>]
+[39 <./Images/03_59_QuartusProgrammerWindow.png> <./Images/03_60_AshlingIDEDebu
+gMenu.png (PNG copy)>]
 
 [40 <./Images/03_61_AshlingIDERunConfigELF.png>]
 
-[41 <./Images/03_62_AshlingIDEDebugConfig.png (PNG copy)> <./Images/03_63_AshlingIDEDebugConsole.png (PNG copy)>]
+[41 <./Images/03_62_AshlingIDEDebugConfig.png (PNG copy)> <./Images/03_63_Ashli
+ngIDEDebugConsole.png (PNG copy)>]
 
 [42 <./Images/03_64_JUARTTerminalOutput1.png>]
 
@@ -1963,11 +2350,12 @@ LaTeX Warning: Float too large for page by 11.54475pt on input line 165.
 \openout2 = `chapter4.aux'.
 
  (chapter4.tex
-CH∆Ø∆†NG 4.
-<Images/04_00_UbuntuGenerateTestbenchSystem.png, id=3346, 1927.2pt x 1084.05pt>
+<Images/04_00_UbuntuGenerateTestbenchSystem.png, id=3331, 1927.2pt x 1084.05pt>
+
 File: Images/04_00_UbuntuGenerateTestbenchSystem.png Graphic file (type png)
 <use Images/04_00_UbuntuGenerateTestbenchSystem.png>
-Package pdftex.def Info: Images/04_00_UbuntuGenerateTestbenchSystem.png  used on input line 19.
+Package pdftex.def Info: Images/04_00_UbuntuGenerateTestbenchSystem.png  used o
+n input line 17.
 (pdftex.def)             Requested size: 469.47049pt x 264.06451pt.
 
 
@@ -1976,55 +2364,61 @@ Package pdftex.def Info: Images/04_00_UbuntuGenerateTestbenchSystem.png  used on
 
 
 
-
-
 ]
 
 [46 <./Images/04_00_UbuntuGenerateTestbenchSystem.png (PNG copy)>]
-<Images/04_01_ControlSlave_Write_RM_startaddress.png, id=3385, 915.42pt x 550.055pt>
-File: Images/04_01_ControlSlave_Write_RM_startaddress.png Graphic file (type png)
+<Images/04_01_ControlSlave_Write_RM_startaddress.png, id=3369, 915.42pt x 550.0
+55pt>
+File: Images/04_01_ControlSlave_Write_RM_startaddress.png Graphic file (type pn
+g)
 <use Images/04_01_ControlSlave_Write_RM_startaddress.png>
-Package pdftex.def Info: Images/04_01_ControlSlave_Write_RM_startaddress.png  used on input line 58.
+Package pdftex.def Info: Images/04_01_ControlSlave_Write_RM_startaddress.png  u
+sed on input line 56.
 (pdftex.def)             Requested size: 328.6279pt x 197.4657pt.
-<Images/04_02_ControlSlave_Write_WM_startaddress.png, id=3386, 792.9625pt x 552.0625pt>
-File: Images/04_02_ControlSlave_Write_WM_startaddress.png Graphic file (type png)
+<Images/04_02_ControlSlave_Write_WM_startaddress.png, id=3370, 792.9625pt x 552
+.0625pt>
+File: Images/04_02_ControlSlave_Write_WM_startaddress.png Graphic file (type pn
+g)
 <use Images/04_02_ControlSlave_Write_WM_startaddress.png>
-Package pdftex.def Info: Images/04_02_ControlSlave_Write_WM_startaddress.png  used on input line 65.
+Package pdftex.def Info: Images/04_02_ControlSlave_Write_WM_startaddress.png  u
+sed on input line 63.
 (pdftex.def)             Requested size: 375.57782pt x 261.48268pt.
-<Images/04_03_ControlSlave_Write_Length.png, id=3387, 853.1875pt x 549.05125pt>
+<Images/04_03_ControlSlave_Write_Length.png, id=3371, 853.1875pt x 549.05125pt>
+
 File: Images/04_03_ControlSlave_Write_Length.png Graphic file (type png)
 <use Images/04_03_ControlSlave_Write_Length.png>
-Package pdftex.def Info: Images/04_03_ControlSlave_Write_Length.png  used on input line 72.
+Package pdftex.def Info: Images/04_03_ControlSlave_Write_Length.png  used on in
+put line 70.
 (pdftex.def)             Requested size: 375.57782pt x 241.70058pt.
-<Images/04_04_DMA_Start_control_go.png, id=3388, 1279.78125pt x 1687.30376pt>
+<Images/04_04_DMA_Start_control_go.png, id=3372, 1279.78125pt x 1687.30376pt>
 File: Images/04_04_DMA_Start_control_go.png Graphic file (type png)
 <use Images/04_04_DMA_Start_control_go.png>
-Package pdftex.def Info: Images/04_04_DMA_Start_control_go.png  used on input line 79.
+Package pdftex.def Info: Images/04_04_DMA_Start_control_go.png  used on input l
+ine 77.
 (pdftex.def)             Requested size: 469.47049pt x 618.96317pt.
-<Images/04_05_RM_Done.png, id=3389, 1020.06094pt x 871.75688pt>
+<Images/04_05_RM_Done.png, id=3373, 1020.06094pt x 871.75688pt>
 File: Images/04_05_RM_Done.png Graphic file (type png)
 <use Images/04_05_RM_Done.png>
-Package pdftex.def Info: Images/04_05_RM_Done.png  used on input line 86.
+Package pdftex.def Info: Images/04_05_RM_Done.png  used on input line 84.
 (pdftex.def)             Requested size: 469.47049pt x 401.22586pt.
-<Images/04_06_DMA_Done.png, id=3390, 840.13875pt x 1265.47781pt>
+<Images/04_06_DMA_Done.png, id=3374, 840.13875pt x 1265.47781pt>
 File: Images/04_06_DMA_Done.png Graphic file (type png)
 <use Images/04_06_DMA_Done.png>
-Package pdftex.def Info: Images/04_06_DMA_Done.png  used on input line 93.
-(pdftex.def)             Requested size: 469.47049pt x 707.1566pt.
-
-
-LaTeX Warning: Float too large for page by 60.35138pt on input line 96.
-
-<Images/04_07_TranscriptSimulationOutput.png, id=3391, 325.71687pt x 548.0475pt>
+Package pdftex.def Info: Images/04_06_DMA_Done.png  used on input line 91.
+(pdftex.def)             Requested size: 375.57782pt x 565.7137pt.
+<Images/04_07_TranscriptSimulationOutput.png, id=3375, 325.71687pt x 548.0475pt
+>
 File: Images/04_07_TranscriptSimulationOutput.png Graphic file (type png)
 <use Images/04_07_TranscriptSimulationOutput.png>
-Package pdftex.def Info: Images/04_07_TranscriptSimulationOutput.png  used on input line 100.
+Package pdftex.def Info: Images/04_07_TranscriptSimulationOutput.png  used on i
+nput line 98.
 (pdftex.def)             Requested size: 328.6279pt x 552.9884pt.
 
 
 [47]
 
-[48 <./Images/04_01_ControlSlave_Write_RM_startaddress.png> <./Images/04_02_ControlSlave_Write_WM_startaddress.png>]
+[48 <./Images/04_01_ControlSlave_Write_RM_startaddress.png> <./Images/04_02_Con
+trolSlave_Write_WM_startaddress.png>]
 
 [49 <./Images/04_03_ControlSlave_Write_Length.png>]
 
@@ -2042,32 +2436,7 @@ Package pdftex.def Info: Images/04_07_TranscriptSimulationOutput.png  used on in
 \openout2 = `chapter5.aux'.
 
  (chapter5.tex
-CH∆Ø∆†NG 5.
-LaTeX Font Info:    Calculating math sizes for size <10.83347> on input line 10.
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <7.58339> not available
-(Font)              size <8> substituted on input line 10.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.41673> not available
-(Font)              size <5> substituted on input line 10.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <7.58339> not available
-(Font)              size <8> substituted on input line 10.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.41673> not available
-(Font)              size <5> substituted on input line 10.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <7.58339> not available
-(Font)              size <8> substituted on input line 10.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.41673> not available
-(Font)              size <5> substituted on input line 10.
-
+CH∆Ø∆†NG 3.
 
 
 [55
@@ -2080,28 +2449,32 @@ LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.41673> not available
 
 [56]
 
-Package biblatex Warning: Keyword 'Viet' not found on input line 243.
+Package biblatex Warning: Keyword 'Viet' not found on input line 245.
 
 
-LaTeX Warning: Empty bibliography on input line 243.
+LaTeX Warning: Empty bibliography on input line 245.
 
 
 LaTeX Font Warning: Font shape `TS1/cmr/m/it' in size <13> not available
-(Font)              size <12> substituted on input line 248.
+(Font)              size <12> substituted on input line 250.
 
 
-Overfull \hbox (6.97418pt too wide) in paragraph at lines 248--248
-[]\T5/cmr/m/it/13 Embedded Mem-ory (RAM: 1-PORT, RAM: 2-PORT, ROM: 1-PORT, and ROM:
+Overfull \hbox (6.97418pt too wide) in paragraph at lines 250--250
+[]\T5/cmr/m/it/13 Embedded Mem-ory (RAM: 1-PORT, RAM: 2-PORT, ROM: 1-PORT, and 
+ROM:
  []
 
 
-Overfull \hbox (15.17659pt too wide) in paragraph at lines 248--248
-[]\T5/cmr/m/n/13 FPGAcademy. \T5/cmr/m/it/13 DE10-Standard Quar-tus Set-tings File\T5/cmr/m/n/13 . \T5/cmr/m/sc/13 url\T5/cmr/m/n/13 : []$\T5/cmtt/m/n/13 https : / / fpgacademy .
+Overfull \hbox (15.17659pt too wide) in paragraph at lines 250--250
+[]\T5/cmr/m/n/13 FPGAcademy. \T5/cmr/m/it/13 DE10-Standard Quar-tus Set-tings F
+ile\T5/cmr/m/n/13 . \T5/cmr/m/sc/13 url\T5/cmr/m/n/13 : []$\T5/cmtt/m/n/13 http
+s : / / fpgacademy .
  []
 
 
-Overfull \hbox (10.32959pt too wide) in paragraph at lines 248--248
-\T5/cmtt/m/n/13 Quartus -[] Prime -[] Software / Error -[] while -[] generating -[] Nios -[] V -[] g -[] simulation -[]
+Overfull \hbox (10.32959pt too wide) in paragraph at lines 250--250
+\T5/cmtt/m/n/13 Quartus -[] Prime -[] Software / Error -[] while -[] generating
+ -[] Nios -[] V -[] g -[] simulation -[]
  []
 
 
@@ -2124,9 +2497,11 @@ Overfull \hbox (10.32959pt too wide) in paragraph at lines 248--248
 PH·ª§ L·ª§C A.
 (D:\Program Files\MikTex\texmfs\install\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/listings\lstlang2.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/listings\lstlang2.sty
 File: lstlang2.sty 2024/09/23 1.10c listings language file
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/listings\lstlang3.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/listings\lstlang3.sty
 File: lstlang3.sty 2024/09/23 1.10c listings language file
 )
 
@@ -2187,7 +2562,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [71] (D:\Program Files\MikTex\texmfs\install\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/listings\lstmisc.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
 )
 
@@ -2235,59 +2611,73 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-pdfTeX warning (ext4): destination with the same identifier (name{appendix.A}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{appendix.A}) 
+has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.4 \chapter{M·ªòT S·ªê L·ªñI TH∆Ø·ªúNG G·∫∂P}
                                               
 PH·ª§ L·ª§C B.
 
-pdfTeX warning (ext4): destination with the same identifier (name{section.A.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{section.A.1})
+ has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.9 ...T·∫°o BSP ho·∫∑c Bi√™n d·ªãch ·ª®ng d·ª•ng}
                                                   
 Overfull \hbox (23.95296pt too wide) in paragraph at lines 15--16
-[]\T5/cmr/bx/n/13 Kh≠c phˆc: \T5/cmr/m/n/13 ^^^£m b£o ^^_¢ \T5/cmtt/m/n/13 cd \T5/cmr/m/n/13 v†o th˜ mˆc gËc cıa d¸ °n Quar-tus (\T5/cmtt/m/n/13 DMANiosVIntern\T5/cmr/m/n/13 )
+[]\T5/cmr/bx/n/13 Kh≠c phˆc: \T5/cmr/m/n/13 ^^^£m b£o ^^_¢ \T5/cmtt/m/n/13 cd \
+T5/cmr/m/n/13 v†o th˜ mˆc gËc cıa d¸ °n Quar-tus (\T5/cmtt/m/n/13 DMANiosVInter
+n\T5/cmr/m/n/13 )
  []
 
 
 Overfull \hbox (32.73874pt too wide) in paragraph at lines 15--16
-\T5/cmr/m/n/13 tr˜Óc khi ch§y lªnh \T5/cmtt/m/n/13 niosv-app\T5/cmr/m/n/13 . Ki∫m tra l§i c°c ^^_˜Ìng d®n t˜Ïng ^^_Ëi (\T5/cmtt/m/n/13 software/app\T5/cmr/m/n/13 ,
+\T5/cmr/m/n/13 tr˜Óc khi ch§y lªnh \T5/cmtt/m/n/13 niosv-app\T5/cmr/m/n/13 . Ki
+∫m tra l§i c°c ^^_˜Ìng d®n t˜Ïng ^^_Ëi (\T5/cmtt/m/n/13 software/app\T5/cmr/m/n
+/13 ,
  []
 
-<Images/03_67_AppendixTroubleshootingBSPError.png, id=4383, 1570.86874pt x 65.24374pt>
+<Images/03_67_AppendixTroubleshootingBSPError.png, id=4364, 1570.86874pt x 65.2
+4374pt>
 File: Images/03_67_AppendixTroubleshootingBSPError.png Graphic file (type png)
 <use Images/03_67_AppendixTroubleshootingBSPError.png>
-Package pdftex.def Info: Images/03_67_AppendixTroubleshootingBSPError.png  used on input line 20.
+Package pdftex.def Info: Images/03_67_AppendixTroubleshootingBSPError.png  used
+ on input line 20.
 (pdftex.def)             Requested size: 469.47049pt x 19.4986pt.
 
-pdfTeX warning (ext4): destination with the same identifier (name{section.A.2}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{section.A.2})
+ has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.25 ...tion{S·ª± c·ªë K·∫øt n·ªëi JTAG v√† Debug}
                                                   
 
 [81 <./Images/03_67_AppendixTroubleshootingBSPError.png (PNG copy)>]
-<Images/03_69_AppendixRestartJTAGServer.png, id=4391, 781.92125pt x 474.27188pt>
+<Images/03_69_AppendixRestartJTAGServer.png, id=4371, 781.92125pt x 474.27188pt
+>
 File: Images/03_69_AppendixRestartJTAGServer.png Graphic file (type png)
 <use Images/03_69_AppendixRestartJTAGServer.png>
-Package pdftex.def Info: Images/03_69_AppendixRestartJTAGServer.png  used on input line 45.
+Package pdftex.def Info: Images/03_69_AppendixRestartJTAGServer.png  used on in
+put line 45.
 (pdftex.def)             Requested size: 469.47049pt x 284.75348pt.
 
-pdfTeX warning (ext4): destination with the same identifier (name{section.A.3}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{section.A.3})
+ has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.50 ...c√≥ file `.sof` ƒë·ªÉ n·∫°p xu·ªëng board}
                                                   
-pdfTeX warning (ext4): destination with the same identifier (name{section.A.4}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{section.A.4})
+ has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.53 ... n√†o khi x√¢y d·ª±ng h·ªá th·ªëng Nios V}
                                                   
 
 [82 <./Images/03_69_AppendixRestartJTAGServer.png>]
-pdfTeX warning (ext4): destination with the same identifier (name{section.A.5}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{section.A.5})
+ has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.65 ...exorpdfstring{\acrshort{niosv}}{Nios V}/m}
@@ -2295,58 +2685,75 @@ l.65 ...exorpdfstring{\acrshort{niosv}}{Nios V}/m}
 
 [83]
 Overfull \hbox (0.88359pt too wide) in paragraph at lines 76--77
-[]\T5/cmr/bx/n/13 Nh™n v† L˜u Gißy ph≤p: \T5/cmr/m/n/13 Tªp gißy ph≤p (vΩ dˆ: \T5/cmtt/m/n/13 LR-XXXXXXXX_License.dat\T5/cmr/m/n/13 )
+[]\T5/cmr/bx/n/13 Nh™n v† L˜u Gißy ph≤p: \T5/cmr/m/n/13 Tªp gißy ph≤p (vΩ dˆ: \
+T5/cmtt/m/n/13 LR-XXXXXXXX_License.dat\T5/cmr/m/n/13 )
  []
 
-<Images/03_01_IntelLicensingPortalSignIn.png, id=4428, 2211.26125pt x 1065.9825pt>
+<Images/03_01_IntelLicensingPortalSignIn.png, id=4407, 2211.26125pt x 1065.9825
+pt>
 File: Images/03_01_IntelLicensingPortalSignIn.png Graphic file (type png)
 <use Images/03_01_IntelLicensingPortalSignIn.png>
-Package pdftex.def Info: Images/03_01_IntelLicensingPortalSignIn.png  used on input line 81.
+Package pdftex.def Info: Images/03_01_IntelLicensingPortalSignIn.png  used on i
+nput line 81.
 (pdftex.def)             Requested size: 469.47049pt x 226.30276pt.
-<Images/03_02_IntelLicensingWelcome.png, id=4429, 1199.48125pt x 1249.66875pt>
+<Images/03_02_IntelLicensingWelcome.png, id=4408, 1199.48125pt x 1249.66875pt>
 File: Images/03_02_IntelLicensingWelcome.png Graphic file (type png)
 <use Images/03_02_IntelLicensingWelcome.png>
-Package pdftex.def Info: Images/03_02_IntelLicensingWelcome.png  used on input line 82.
+Package pdftex.def Info: Images/03_02_IntelLicensingWelcome.png  used on input 
+line 82.
 (pdftex.def)             Requested size: 469.47049pt x 489.10408pt.
-<Images/03_03_IntelLicensingEvalSelection.png, id=4430, 2204.235pt x 1219.55624pt>
+<Images/03_03_IntelLicensingEvalSelection.png, id=4409, 2204.235pt x 1219.55624
+pt>
 File: Images/03_03_IntelLicensingEvalSelection.png Graphic file (type png)
 <use Images/03_03_IntelLicensingEvalSelection.png>
-Package pdftex.def Info: Images/03_03_IntelLicensingEvalSelection.png  used on input line 83.
+Package pdftex.def Info: Images/03_03_IntelLicensingEvalSelection.png  used on 
+input line 83.
 (pdftex.def)             Requested size: 422.52057pt x 233.76508pt.
-<Images/03_04_IntelLicensingNiosVSelection.png, id=4431, 2121.9275pt x 1708.3825pt>
+<Images/03_04_IntelLicensingNiosVSelection.png, id=4410, 2121.9275pt x 1708.382
+5pt>
 File: Images/03_04_IntelLicensingNiosVSelection.png Graphic file (type png)
 <use Images/03_04_IntelLicensingNiosVSelection.png>
-Package pdftex.def Info: Images/03_04_IntelLicensingNiosVSelection.png  used on input line 84.
+Package pdftex.def Info: Images/03_04_IntelLicensingNiosVSelection.png  used on
+ input line 84.
 (pdftex.def)             Requested size: 469.47049pt x 377.9568pt.
-<Images/03_05_IntelLicensingNICConfig.png, id=4432, 1268.74pt x 477.785pt>
+<Images/03_05_IntelLicensingNICConfig.png, id=4411, 1268.74pt x 477.785pt>
 File: Images/03_05_IntelLicensingNICConfig.png Graphic file (type png)
 <use Images/03_05_IntelLicensingNICConfig.png>
-Package pdftex.def Info: Images/03_05_IntelLicensingNICConfig.png  used on input line 85.
+Package pdftex.def Info: Images/03_05_IntelLicensingNICConfig.png  used on inpu
+t line 85.
 (pdftex.def)             Requested size: 375.57782pt x 141.4338pt.
-<Images/03_06_IntelLicensingComputerInfo.png, id=4433, 1516.66624pt x 640.3925pt>
+<Images/03_06_IntelLicensingComputerInfo.png, id=4412, 1516.66624pt x 640.3925p
+t>
 File: Images/03_06_IntelLicensingComputerInfo.png Graphic file (type png)
 <use Images/03_06_IntelLicensingComputerInfo.png>
-Package pdftex.def Info: Images/03_06_IntelLicensingComputerInfo.png  used on input line 86.
+Package pdftex.def Info: Images/03_06_IntelLicensingComputerInfo.png  used on i
+nput line 86.
 (pdftex.def)             Requested size: 375.57782pt x 158.58313pt.
-<Images/03_07_IntelLicensingGenerate.png, id=4434, 1667.22874pt x 1179.40625pt>
+<Images/03_07_IntelLicensingGenerate.png, id=4413, 1667.22874pt x 1179.40625pt>
+
 File: Images/03_07_IntelLicensingGenerate.png Graphic file (type png)
 <use Images/03_07_IntelLicensingGenerate.png>
-Package pdftex.def Info: Images/03_07_IntelLicensingGenerate.png  used on input line 87.
+Package pdftex.def Info: Images/03_07_IntelLicensingGenerate.png  used on input
+ line 87.
 (pdftex.def)             Requested size: 375.57782pt x 265.6789pt.
-<Images/03_08_IntelLicenseEmailConfirmation.png, id=4435, 1720.4275pt x 1589.94pt>
+<Images/03_08_IntelLicenseEmailConfirmation.png, id=4414, 1720.4275pt x 1589.94
+pt>
 File: Images/03_08_IntelLicenseEmailConfirmation.png Graphic file (type png)
 <use Images/03_08_IntelLicenseEmailConfirmation.png>
-Package pdftex.def Info: Images/03_08_IntelLicenseEmailConfirmation.png  used on input line 88.
+Package pdftex.def Info: Images/03_08_IntelLicenseEmailConfirmation.png  used o
+n input line 88.
 (pdftex.def)             Requested size: 469.47049pt x 433.85051pt.
-<Images/03_09_QuartusToolsMenu.png, id=4436, 907.39pt x 889.3225pt>
+<Images/03_09_QuartusToolsMenu.png, id=4415, 907.39pt x 889.3225pt>
 File: Images/03_09_QuartusToolsMenu.png Graphic file (type png)
 <use Images/03_09_QuartusToolsMenu.png>
-Package pdftex.def Info: Images/03_09_QuartusToolsMenu.png  used on input line 89.
+Package pdftex.def Info: Images/03_09_QuartusToolsMenu.png  used on input line 
+89.
 (pdftex.def)             Requested size: 305.15294pt x 299.06815pt.
-<Images/03_10_QuartusLicenseSetup.png, id=4437, 1029.8475pt x 982.67125pt>
+<Images/03_10_QuartusLicenseSetup.png, id=4416, 1029.8475pt x 982.67125pt>
 File: Images/03_10_QuartusLicenseSetup.png Graphic file (type png)
 <use Images/03_10_QuartusLicenseSetup.png>
-Package pdftex.def Info: Images/03_10_QuartusLicenseSetup.png  used on input line 90.
+Package pdftex.def Info: Images/03_10_QuartusLicenseSetup.png  used on input li
+ne 90.
 (pdftex.def)             Requested size: 305.15294pt x 291.16002pt.
 
 
@@ -2356,93 +2763,118 @@ Package pdftex.def Info: Images/03_10_QuartusLicenseSetup.png  used on input lin
 
 [86 <./Images/03_02_IntelLicensingWelcome.png (PNG copy)>]
 
-[87 <./Images/03_03_IntelLicensingEvalSelection.png (PNG copy)> <./Images/03_04_IntelLicensingNiosVSelection.png (PNG copy)>]
+[87 <./Images/03_03_IntelLicensingEvalSelection.png (PNG copy)> <./Images/03_04
+_IntelLicensingNiosVSelection.png (PNG copy)>]
 
-[88 <./Images/03_05_IntelLicensingNICConfig.png (PNG copy)> <./Images/03_06_IntelLicensingComputerInfo.png (PNG copy)> <./Images/03_07_IntelLicensingGenerate.png (PNG copy)>]
+[88 <./Images/03_05_IntelLicensingNICConfig.png (PNG copy)> <./Images/03_06_Int
+elLicensingComputerInfo.png (PNG copy)> <./Images/03_07_IntelLicensingGenerate.
+png (PNG copy)>]
 
 [89 <./Images/03_08_IntelLicenseEmailConfirmation.png (PNG copy)>]
 
-[90 <./Images/03_09_QuartusToolsMenu.png (PNG copy)> <./Images/03_10_QuartusLicenseSetup.png (PNG copy)>]
-pdfTeX warning (ext4): destination with the same identifier (name{section.A.6}) has been already used, duplicate ignored
+[90 <./Images/03_09_QuartusToolsMenu.png (PNG copy)> <./Images/03_10_QuartusLic
+enseSetup.png (PNG copy)>]
+pdfTeX warning (ext4): destination with the same identifier (name{section.A.6})
+ has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.94 ...èng Nios V d√πng Questa Sim tr√™n Windows}
-                                                   (D:\Program Files\MikTex\texmfs\install\tex/latex/listings\lstlang1.sty
+                                                  
+(D:\Program Files\MikTex\texmfs\install\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
-) (D:\Program Files\MikTex\texmfs\install\tex/latex/listings\lstlang2.sty
+)
+(D:\Program Files\MikTex\texmfs\install\tex/latex/listings\lstlang2.sty
 File: lstlang2.sty 2024/09/23 1.10c listings language file
 )
-pdfTeX warning (ext4): destination with the same identifier (name{lstlisting.A.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstlisting.A.
+1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.101 ...ëc}, label={lst:msim_setup_tcl_original}]
                                                   
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.1.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.1
+.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.102 if 
          ![info exists QUARTUS_INSTALL_DIR] {
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.1.2}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.1
+.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.103  
           set QUARTUS_INSTALL_DIR "/home/btdat/intelFPGA_lite/24.1std/quartus/"
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.1.3}) has been already used, duplicate ignored
+
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.1
+.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.104 } 
         \end{lstlisting}
-pdfTeX warning (ext4): destination with the same identifier (name{lstlisting.A.2}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstlisting.A.
+2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.106 ...}, label={lst:msim_setup_tcl_changepath}]
                                                   
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.2.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.2
+.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.107 if 
          ![info exists QUARTUS_INSTALL_DIR] {
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.2.2}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.2
+.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.108  
           set QUARTUS_INSTALL_DIR "D:/FETEL_WorkSoft/intelFPGA_lite/24.1std/...
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.2.3}) has been already used, duplicate ignored
+
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.2
+.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.109 } 
         \end{lstlisting}
-pdfTeX warning (ext4): destination with the same identifier (name{lstlisting.A.3}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstlisting.A.
+3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.112 ...e cho 2 Memory}, label={lst:cmake_build}]
                                                   
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.3.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.3
+.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.113 cd 
          D:\FETEL_WorkDir\Y4S2_DMANiosVIntern_Ubuntu\software\app\build\Debug
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.3.2}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.3
+.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.114 cmake 
             --build . \end{lstlisting}
-pdfTeX warning (ext4): destination with the same identifier (name{lstlisting.A.4}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstlisting.A.
+4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.116 ....txt}, label={lst:CMakeLists_create-hex}]
                                                   
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4
+.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.117 #
         Generate HEX file(s) from app.elf using elf2hex tool.
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4.2}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4
+.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.118 #
         Note : If ECC Full is enabled, width of 39 is set for NiosV TCM. Oth...
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4.3}) has been already used, duplicate ignored
+
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4
+.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.119 add_custom_command(
@@ -2451,192 +2883,236 @@ l.119 add_custom_command(
 [91
 
 ]
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4.4}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4
+.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.120  
           OUTPUT "onchip_memory2_1.hex"
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4.5}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4
+.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.121  
           DEPENDS app.elf
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4.6}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4
+.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.122  
           COMMAND elf2hex app.elf -o onchip_memory2_1.hex -b 0x00000000 -w 3...
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4.7}) has been already used, duplicate ignored
+
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4
+.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.123  
           COMMENT "Creating onchip_memory2_1.hex."
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4.8}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4
+.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.124  
           VERBATIM
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4.9}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4
+.9}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.125 )
        
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4.10}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4
+.10}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.126 add_custom_command(
                          
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4.11}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4
+.11}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.127  
           OUTPUT "onchip_memory2_0.hex"
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4.12}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4
+.12}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.128  
           DEPENDS app.elf
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4.13}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4
+.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.129  
           COMMAND elf2hex app.elf -o onchip_memory2_0.hex -b 0x00020000 -w 3...
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4.14}) has been already used, duplicate ignored
+
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4
+.14}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.130  
           COMMENT "Creating onchip_memory2_0.hex."
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4.15}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4
+.15}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.131  
           VERBATIM
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4.16}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4
+.16}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.132 )
        
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4.17}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.4
+.17}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.133 add_custom_target(
                         create-hex ALL DEPENDS "onchip_memory2_0.hex" "onchi...
+
 Overfull \hbox (228.87566pt too wide) in paragraph at lines 142--143
-[]\T5/cmr/m/n/13 Sao ch≤p hai tªp HEX v∑ th˜ mˆc \T5/cmtt/m/n/13 D:/FETEL_WorkDir/Y4S2_DMANiosVIntern_Ubuntu/system/testbench/mentor 
+[]\T5/cmr/m/n/13 Sao ch≤p hai tªp HEX v∑ th˜ mˆc \T5/cmtt/m/n/13 D:/FETEL_WorkD
+ir/Y4S2_DMANiosVIntern_Ubuntu/system/testbench/mentor 
  []
 
 
 Overfull \hbox (54.27446pt too wide) in paragraph at lines 143--144
-[]\T5/cmr/m/n/13 ^^^Íi t∂n th†nh \T5/cmtt/m/n/13 system_onchip_memory2_0.hex \T5/cmr/m/n/13 v† \T5/cmtt/m/n/13 system_onchip_memory2_1.hex 
+[]\T5/cmr/m/n/13 ^^^Íi t∂n th†nh \T5/cmtt/m/n/13 system_onchip_memory2_0.hex \T
+5/cmr/m/n/13 v† \T5/cmtt/m/n/13 system_onchip_memory2_1.hex 
  []
 
 
 
 [92]
 Overfull \hbox (41.3694pt too wide) in paragraph at lines 160--161
-[]\T5/cmr/m/n/13 X‚a hai tªp \T5/cmtt/m/n/13 system_onchip_memory2_0.hex \T5/cmr/m/n/13 v† \T5/cmtt/m/n/13 system_onchip_memory2_1.hex
+[]\T5/cmr/m/n/13 X‚a hai tªp \T5/cmtt/m/n/13 system_onchip_memory2_0.hex \T5/cm
+r/m/n/13 v† \T5/cmtt/m/n/13 system_onchip_memory2_1.hex
  []
 
 
 Overfull \hbox (13.00813pt too wide) in paragraph at lines 167--168
-[]\T5/cmr/m/n/13 Trong c˚a sÍ Tran-script, thay ^^_Íi th˜ mˆc l†m viªc ^^_∏n th˜ mˆc \T5/cmtt/m/n/13 simulation
+[]\T5/cmr/m/n/13 Trong c˚a sÍ Tran-script, thay ^^_Íi th˜ mˆc l†m viªc ^^_∏n th
+˜ mˆc \T5/cmtt/m/n/13 simulation
  []
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{lstlisting.A.5}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstlisting.A.
+5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.168 ...}, label={lst:msim_setup_tcl_changepath}]
                                                   
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.5.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.5
+.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.169 cd 
          D:/FETEL_WorkDir/Y4S2_DMANiosVIntern_Ubuntu/system/testbench/mentor
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.5.2}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.5
+.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.170 do 
          msim_setup.tcl \end{lstlisting}
-pdfTeX warning (ext4): destination with the same identifier (name{lstlisting.A.6}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstlisting.A.
+6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.173 ...√¥ ph·ªèng}, label={lst:msim_simulation}]
                                                   
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.6.1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.6
+.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.174 ld_debug
               
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.6.2}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.6
+.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.176 add 
           wave -divider "Control Slave"
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.6.3}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.6
+.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.176 add 
           wave -divider "Control Slave"
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.6.4}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.6
+.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.177 add 
           wave -position end sim:/system_tb/system_inst/dma_controller/u_CON...
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.6.5}) has been already used, duplicate ignored
+
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.6
+.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.178 add 
           wave -divider "READ_MASTER"
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.6.6}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.6
+.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.179 add 
           wave -position end sim:/system_tb/system_inst/dma_controller/u_REA...
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.6.7}) has been already used, duplicate ignored
+
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.6
+.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.180 add 
           wave -divider "WRITE_MASTER"
 
 [93]
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.6.8}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.6
+.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.181 add 
           wave -position end sim:/system_tb/system_inst/dma_controller/u_WRI...
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.6.9}) has been already used, duplicate ignored
+
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.6
+.9}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.182 add 
           wave -divider "FIFO"
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.6.10}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.6
+.10}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.183 add 
           wave -position end sim:/system_tb/system_inst/dma_controller/FIFO_...
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.6.11}) has been already used, duplicate ignored
+
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.6
+.11}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.184 add 
           wave -divider "onchip_memory2_1"
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.6.12}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.6
+.12}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.185 add 
           wave -position end sim:/system_tb/system_inst/onchip_memory2_1/*
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.6.13}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.6
+.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.187 run 
           7 ms \end{lstlisting}
-pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.6.14}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.A.6
+.14}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.187 run 
           7 ms \end{lstlisting})
 
-[94] (main.aux (chapter1.aux) (chapter2.aux) (chapter3.aux) (chapter4.aux) (chapter5.aux) (Appendix/appendix1.aux) (Appendix/appendix2.aux))
+[94] (main.aux (chapter1.aux) (chapter2.aux) (chapter3.aux) (chapter4.aux)
+(chapter5.aux) (Appendix/appendix1.aux) (Appendix/appendix2.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -2650,26 +3126,36 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 337E4C8CE391A0D32B66EAE558A76DD9;11756.
+(rerunfilecheck)             Checksum: 932C0539FB48E2B9CF52B32296B10798;10163.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 47073 strings out of 473523
- 928278 string characters out of 5717480
- 2217381 words of memory out of 5000000
- 68473 multiletter control sequences out of 15000+600000
- 581239 words of font info for 79 fonts, out of 8000000 for 9000
+ 47046 strings out of 473523
+ 927951 string characters out of 5717480
+ 2218601 words of memory out of 5000000
+ 68452 multiletter control sequences out of 15000+600000
+ 576780 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,12n,107p,2402b,2242s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
-
- <D:\Program Files\MikTex\texmfs/data\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1200.pk> <D:\Program Files\MikTex\texmfs/data\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1200.pk> <D:\Program Files\MikTex\texmfs/data\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <D:\Program Files\MikTex\texmfs/data\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><D:/Program Files/MikTex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files/MikTex/texmfs/install/fonts/type1/vntex/vnr/vnbx12.pfb><D:/Program Files/MikTex/texmfs/install/fonts/type1/vntex/vnr/vnbx9.pfb><D:/Program Files/MikTex/texmfs/install/fonts/type1/vntex/vnr/vnbxti10.pfb><D:/Program Files/MikTex/texmfs/install/fonts/type1/vntex/vnr/vncsc10.pfb><D:/Program Files/MikTex/texmfs/install/fonts/type1/vntex/vnr/vnr10.pfb><D:/Program Files/MikTex/texmfs/install/fonts/type1/vntex/vnr/vnr12.pfb><D:/Program Files/MikTex/texmfs/install/fonts/type1/vntex/vnr/vnr17.pfb><D:/Program Files/MikTex/texmfs/install/fonts/type1/vntex/vnr/vnr7.pfb><D:/Program Files/MikTex/texmfs/install/fonts/type1/vntex/vnr/vnr8.pfb><D:/Program Files/MikTex/texmfs/install/fonts/type1/vntex/vnr/vnti12.pfb><D:/Program Files/MikTex/texmfs/install/fonts/type1/vntex/vnr/vntt12.pfb>
-Output written on main.pdf (108 pages, 10162318 bytes).
+ 108i,12n,107p,2368b,2242s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <D:\Program Files\MikTex\texmfs/data\fonts/pk/ljfour/jknappen/ec/dpi600\tcti
+1200.pk> <D:\Program Files\MikTex\texmfs/data\fonts/pk/ljfour/jknappen/ec/dpi60
+0\tcbx1200.pk> <D:\Program Files\MikTex\texmfs/data\fonts/pk/ljfour/jknappen/ec
+/dpi600\tcrm1095.pk> <D:\Program Files\MikTex\texmfs/data\fonts/pk/ljfour/jknap
+pen/ec/dpi600\tcrm1200.pk><D:/Program Files/MikTex/texmfs/install/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb><D:/Program Files/MikTex/texmfs/install/fonts/type
+1/vntex/vnr/vnbx12.pfb><D:/Program Files/MikTex/texmfs/install/fonts/type1/vnte
+x/vnr/vnbxti10.pfb><D:/Program Files/MikTex/texmfs/install/fonts/type1/vntex/vn
+r/vncsc10.pfb><D:/Program Files/MikTex/texmfs/install/fonts/type1/vntex/vnr/vnr
+10.pfb><D:/Program Files/MikTex/texmfs/install/fonts/type1/vntex/vnr/vnr12.pfb>
+<D:/Program Files/MikTex/texmfs/install/fonts/type1/vntex/vnr/vnr17.pfb><D:/Pro
+gram Files/MikTex/texmfs/install/fonts/type1/vntex/vnr/vnr7.pfb><D:/Program Fil
+es/MikTex/texmfs/install/fonts/type1/vntex/vnr/vnti12.pfb><D:/Program Files/Mik
+Tex/texmfs/install/fonts/type1/vntex/vnr/vntt12.pfb>
+Output written on main.pdf (108 pages, 10147824 bytes).
 PDF statistics:
- 4806 PDF objects out of 5155 (max. 8388607)
- 1107 named destinations out of 1200 (max. 500000)
- 769 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4779 PDF objects out of 5155 (max. 8388607)
+ 1108 named destinations out of 1200 (max. 500000)
+ 737 words of extra memory for PDF output out of 10000 (max. 10000000)
 

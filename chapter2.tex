@@ -1,10 +1,11 @@
 % Lưu ý: Đảm bảo đã thêm \usepackage{booktabs} và \usepackage{subcaption} vào main.tex
 % Lưu ý: Cần chuẩn bị các file ảnh từ PDF và thêm các môi trường \begin{figure}...\end{figure} tương ứng.
-\chapter{KIẾN TRÚC HỆ THỐNG VÀ LÝ THUYẾT CƠ SỞ} % Revised Title
-\label{Chapter2}
-Chương \ref{Chapter2} trình bày các khái niệm lý thuyết cơ bản liên quan đến hệ thống được triển khai trong báo cáo này, bao gồm Hệ thống trên Chip (\acrshort{soc}), bộ xử lý mềm Nios V, Truy cập Bộ nhớ Trực tiếp (\acrshort{dma}), chuẩn giao tiếp Avalon, và cuối cùng là thiết kế và kiến trúc cụ thể của bộ điều khiển DMA tùy chỉnh được sử dụng.
+\chapter{NỘI DUNG CÔNG VIỆC THỰC TẬP}\label{chap:noi_dung_cong_viec}
+\section{KIẾN TRÚC HỆ THỐNG VÀ LÝ THUYẾT CƠ SỞ} % Revised Title
+\label{sec:chapter2_content} % Changed label from Chapter2
+Phần \ref{sec:chapter2_content} trình bày các khái niệm lý thuyết cơ bản liên quan đến hệ thống được triển khai trong báo cáo này, bao gồm Hệ thống trên Chip (\acrshort{soc}), bộ xử lý mềm Nios V, Truy cập Bộ nhớ Trực tiếp (\acrshort{dma}), chuẩn giao tiếp Avalon, và cuối cùng là thiết kế và kiến trúc cụ thể của bộ điều khiển DMA tùy chỉnh được sử dụng.
 
-\section{Tổng quan về Hệ thống trên Chip (SoC)}
+\subsection{Tổng quan về Hệ thống trên Chip (SoC)}
 \acrfull{soc} là một vi mạch (\acrshort{ic}) tích hợp hầu hết hoặc tất cả các thành phần của một máy tính hoặc hệ thống điện tử khác vào một chip duy nhất. Nó có thể chứa các thành phần kỹ thuật số, tương tự, tín hiệu hỗn hợp và thường cả tần số vô tuyến - tất cả trên một đế chip. Một \acrshort{soc} điển hình bao gồm:
 \begin{itemize}
     \item Một hoặc nhiều lõi vi xử lý (Microprocessor cores) hoặc vi điều khiển (Microcontroller cores).
@@ -18,7 +19,7 @@ Chương \ref{Chapter2} trình bày các khái niệm lý thuyết cơ bản li�
 
 Trong bối cảnh \acrshort{fpga}, \acrshort{soc} thường đề cập đến việc tích hợp một hoặc nhiều lõi xử lý mềm (soft-core) hoặc cứng (hard-core) cùng với các ngoại vi và bộ nhớ trên cùng một cấu trúc \acrshort{fpga}, sử dụng các công cụ như Intel Platform Designer.
 
-\section{Bộ xử lý mềm Intel Nios V/m}
+\subsection{Bộ xử lý mềm Intel Nios V/m}
 Nios V là thế hệ bộ xử lý mềm (soft-core processor) mới nhất của Intel dựa trên kiến trúc tập lệnh (ISA) RISC-V mã nguồn mở \cite{intelNiosVHandbook, niosv-reference-manual, altera_nios_v_2024}. Là một bộ xử lý mềm, Nios V được triển khai hoàn toàn bằng logic \acrshort{fpga}, mang lại sự linh hoạt cao trong việc cấu hình và tích hợp vào các thiết kế \acrshort{soc}.
 
 Phiên bản được sử dụng trong báo cáo này là \acrlong{niosv} (RV32IMAZicsr), được tối ưu hóa cho các ứng dụng vi điều khiển. Nó phù hợp cho các nhiệm vụ điều khiển, quản lý ngoại vi và xử lý cũng như nhu cầu debug cơ bản trong hệ thống nhúng, đáp ứng nhu cầu của một bộ vi xử lý cơ bản. \acrlong{niosv} có thể được cấu hình với pipeline 5-stage kinh điển (Fetch, Decode, Execute, Memory, Write back) để tăng hiệu suất (hoặc non-pipelined để tối ưu diện tích) \cite{niosv-reference-manual}.
@@ -30,7 +31,7 @@ Phiên bản được sử dụng trong báo cáo này là \acrlong{niosv} (RV32
     \label{fig:02_00_NiosVm_Architecture}
 \end{figure}
 
-\section{Truy cập Bộ nhớ Trực tiếp (DMA)}
+\subsection{Truy cập Bộ nhớ Trực tiếp (DMA)}
 
 \acrfull{dma} thường được biết đến là một phần cứng của hệ thống máy tính cho phép một số hệ thống con phần cứng nhất định truy cập bộ nhớ hệ thống chính (\acrshort{ram}) để đọc và/hoặc ghi một cách độc lập với bộ xử lý trung tâm (CPU).
 
@@ -41,7 +42,7 @@ Phiên bản được sử dụng trong báo cáo này là \acrlong{niosv} (RV32
 \end{itemize}
 
 % --- Section 4: Avalon Bus (Đã di chuyển từ Section 6 cũ) ---
-\section{Giao tiếp Hệ thống: Bus Avalon}
+\subsection{Giao tiếp Hệ thống: Bus Avalon}
 \label{sec:avalon_bus}
 Trong các hệ thống SoC được thiết kế trên nền tảng FPGA của Intel bằng công cụ Platform Designer, Giao tiếp Bus Avalon đóng vai trò là chuẩn kết nối (interconnect) nền tảng \cite{avalon_mm_transfer}. 
 
@@ -54,10 +55,10 @@ Trong các hệ thống SoC được thiết kế trên nền tảng FPGA của 
     \label{fig:02_01_avalon_mm_transfer}
 \end{figure}
 
-\subsection{Giao tiếp Bus Avalon Memory Mapped Interface (Avalon-MM)}
+\subsubsection{Giao tiếp Bus Avalon Memory Mapped Interface (Avalon-MM)}
 Avalon-MM là một giao diện dựa trên địa chỉ, được thiết kế theo kiến trúc Master-Slave cho các giao dịch truy cập vào không gian bộ nhớ hoặc thanh ghi \cite{avalon_mm_transfer}.
 
-\subsubsection{Đặc tả và Yêu cầu Giao thức}
+\paragraph{Đặc tả và Yêu cầu Giao thức}
 \begin{itemize}
     \item \textbf{Vai trò Master/Slave:}
     \begin{itemize}
@@ -149,19 +150,19 @@ Avalon-MM là một giao diện dựa trên địa chỉ, được thiết kế 
 Việc hiểu rõ và tuân thủ các yêu cầu về thời gian và hành vi của các tín hiệu này là cực kỳ quan trọng khi thiết kế một thành phần IP tương thích Avalon-MM.
 
 % --- Section 5: Thiết kế và Kiến trúc DMA (Gộp từ Section 4, 5 cũ) ---
-\section{Thiết kế và Kiến trúc Bộ điều khiển DMA Tùy chỉnh}
+\subsection{Thiết kế và Kiến trúc Bộ điều khiển DMA Tùy chỉnh}
 \label{sec:dma_design_and_architecture} % Label mới cho section gộp
 Mục tiêu chính của việc thiết kế bộ điều khiển DMA này là tạo ra một thành phần phần cứng có khả năng truyền dữ liệu hiệu quả giữa các vùng nhớ trong hệ thống SoC trên FPGA, qua đó giảm tải cho bộ xử lý trung tâm Nios V/m. Để đạt được mục tiêu này, việc thiết kế phải tuân thủ các đặc tả giao tiếp của hệ thống bus Avalon-MM đã được trình bày ở Mục \ref{sec:avalon_bus}, đồng thời đảm bảo tính đúng đắn và hiệu quả của quá trình truyền dữ liệu.
 
 Dựa trên yêu cầu về khả năng truyền dữ liệu tốc độ cao và độc lập với CPU, cũng như đặc tả của bus Avalon-MM, bộ điều khiển DMA tùy chỉnh được thiết kế với kiến trúc và các lựa chọn sau:
 
-\subsection{Mục tiêu và Bối cảnh: Truyền dữ liệu giữa Bộ nhớ On-Chip}
+\subsubsection{Mục tiêu và Bối cảnh: Truyền dữ liệu giữa Bộ nhớ On-Chip}
 \label{subsec:dma_context_onchip}
 Một trong những ứng dụng ban đầu và quan trọng thúc đẩy việc thiết kế bộ điều khiển DMA này là nhu cầu truyền dữ liệu nhanh chóng và hiệu quả giữa các khối bộ nhớ trong chip (On-chip Memory - OCM) trên FPGA. Bộ nhớ on-chip, thường được hiện thực hóa bằng các khối RAM tích hợp sẵn trong cấu trúc FPGA \cite{memory_byteenable}, cung cấp tốc độ truy cập rất cao so với bộ nhớ ngoài (off-chip). Việc sử dụng DMA để di chuyển dữ liệu giữa các khối OCM (ví dụ: từ một vùng RAM chứa dữ liệu thô sang một vùng RAM khác để xử lý) giúp giải phóng CPU Nios V/m khỏi các vòng lặp sao chép bộ nhớ (\texttt{memcpy}) tốn thời gian, cho phép CPU tập trung vào các nhiệm vụ tính toán hoặc điều khiển khác.
 
 Do đó, các giao diện Avalon-MM Master của \texttt{READ\_MASTER} và \texttt{WRITE\_MASTER} được thiết kế với giả định ban đầu là tương tác với các Slave là bộ nhớ on-chip. Điều này có nghĩa là chúng được tối ưu cho các giao dịch truy cập bộ nhớ có độ trễ tương đối thấp và ổn định \cite{memory_byteenable}, như được minh họa trong các giản đồ sóng đọc/ghi bộ nhớ (Hình \ref{fig:memory_waveforms}). Mặc dù vậy, thiết kế vẫn tuân thủ đầy đủ đặc tả Avalon-MM \cite{avalon_mm_transfer}, cho phép DMA hoạt động với các loại bộ nhớ hoặc ngoại vi khác có hành vi thời gian khác nhau, miễn là chúng cũng tuân thủ chuẩn Avalon-MM.
 
-\subsection{Kiến trúc Tổng thể và Luồng Dữ liệu}
+\subsubsection{Kiến trúc Tổng thể và Luồng Dữ liệu}
 Kiến trúc DMA được chọn dựa trên mô hình tách biệt luồng đọc và ghi dữ liệu để tối đa hóa thông lượng, bao gồm các khối chính sau:
 \begin{itemize}
     \item \textbf{CONTROL\_SLAVE (`CONTROL\_SLAVE.v`):} Hoạt động như giao diện điều khiển Avalon-MM Slave cho CPU.
@@ -179,7 +180,7 @@ Kiến trúc DMA được chọn dựa trên mô hình tách biệt luồng đ�
 
 Luồng dữ liệu cơ bản diễn ra như sau: CPU cấu hình DMA thông qua \texttt{CONTROL\_SLAVE} (ghi địa chỉ nguồn, đích, độ dài). CPU kích hoạt DMA bằng cách ghi vào thanh ghi điều khiển. Khi được kích hoạt (\texttt{Start=1}), \texttt{READ\_MASTER} bắt đầu đọc dữ liệu từ bộ nhớ nguồn theo địa chỉ và độ dài đã cấu hình, đẩy dữ liệu vào FIFO. Đồng thời, \texttt{WRITE\_MASTER} đọc dữ liệu từ FIFO (khi FIFO không rỗng - \texttt{FF\_empty=0}) và ghi vào bộ nhớ đích theo cấu hình. \texttt{WRITE\_MASTER} báo hiệu hoàn thành (\texttt{WM\_done=1}) khi ghi xong từ cuối cùng, tín hiệu này được \texttt{CONTROL\_SLAVE} sử dụng để cập nhật thanh ghi trạng thái và tự động xóa bit Go.
 
-\subsection{Thiết kế Module Điều khiển (`CONTROL\_SLAVE`)}
+\subsubsection{Thiết kế Module Điều khiển (\texttt{CONTROL\_SLAVE})}
 \begin{itemize}
     \item \textbf{Yêu cầu:} Cung cấp giao diện để CPU cấu hình (địa chỉ nguồn/đích, độ dài), khởi động và kiểm tra trạng thái DMA.
     
@@ -224,12 +225,12 @@ Luồng dữ liệu cơ bản diễn ra như sau: CPU cấu hình DMA thông qua
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.5\linewidth]{Images/02_11_StateDiagram_ControlSlave}
+    \includegraphics[width=0.7\linewidth]{Images/02_11_StateDiagram_ControlSlave}
     \caption{Sơ đồ trạng thái của module \texttt{CONTROL\_SLAVE}.}
     \label{fig:02_11_StateDiagram_ControlSlave}
 \end{figure}
 
-\subsection{Thiết kế Module Master Đọc (\texttt{READ\_MASTER})}
+\subsubsection{Thiết kế Module Master Đọc (\texttt{READ\_MASTER})}
 \begin{itemize}
     \item \textbf{Yêu cầu:} Đọc tuần tự dữ liệu từ bộ nhớ nguồn theo cấu hình và đẩy vào FIFO, tuân thủ giao thức Avalon-MM Read Master và xử lý điều khiển luồng từ FIFO.
     \item \textbf{Giải pháp thiết kế (Dựa trên Avalon-MM Master và FSM):}
@@ -246,7 +247,7 @@ Luồng dữ liệu cơ bản diễn ra như sau: CPU cấu hình DMA thông qua
     \item \textbf{Mã nguồn tham khảo:} Phụ lục \ref{app:verilog_read_master}.
 \end{itemize}
 
-\subsection{Thiết kế Module Master Ghi (\texttt{WRITE\_MASTER})}
+\subsubsection{Thiết kế Module Master Ghi (\texttt{WRITE\_MASTER})}
 \begin{itemize}
     \item \textbf{Yêu cầu:} Đọc dữ liệu từ FIFO (khi \texttt{FF\_empty=0}) và ghi tuần tự vào bộ nhớ đích theo cấu hình (\texttt{WM\_startaddress}, \texttt{Length}) khi \texttt{Start=1}, tuân thủ giao thức Avalon-MM Write Master (xử lý \texttt{iWM\_waitrequest}) và báo hiệu hoàn thành (\texttt{WM\_done=1}).
     \item \textbf{Giải pháp thiết kế (Dựa trên Avalon-MM Master và FSM):}
@@ -288,7 +289,7 @@ Việc thiết kế các giao diện \acrshort{dma} dựa trên và tuân thủ 
 
 \FloatBarrier
 
-\subsection{Tích hợp và Tín hiệu Giao tiếp}
+\subsubsection{Tích hợp và Tín hiệu Giao tiếp}
 \label{subsec:integration_signals} % Added label
 Module \texttt{DMAController.v} (Phụ lục \ref{app:verilog_dmac}) đóng vai trò kết nối các module con (\texttt{CONTROL\_SLAVE}, \texttt{READ\_MASTER}, \texttt{WRITE\_MASTER}, \texttt{FIFO\_IP}) lại với nhau và cung cấp giao diện mức cao cho hệ thống. Bảng \ref{tab:dma_signals} liệt kê chi tiết các tín hiệu vào/ra của module này, thể hiện giao tiếp với CPU (qua Avalon Slave) và với bộ nhớ (qua Avalon-MM Master). Hình \ref{fig:02_10_SystemSequenceDiagram} mô tả luồng hoạt động tuần tự của \acrshort{dma}.
 

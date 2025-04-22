@@ -1,9 +1,7 @@
-\chapter{TRIỂN KHAI VÀ KIỂM THỬ HỆ THỐNG NIOS V VỚI DMA}
-\label{Chapter3} % Keep label consistent if referenced elsewhere
-
-Chương này trình bày chi tiết quy trình từng bước được thực hiện để triển khai và kiểm thử một Hệ thống trên Chip (\acrshort{soc}) dựa trên bộ xử lý mềm (soft-core processor) Nios V/m của Intel, tích hợp một bộ điều khiển Truy cập Bộ nhớ Trực tiếp (\acrfull{dma}) tùy chỉnh. Nền tảng phần cứng mục tiêu là bo mạch phát triển (development board) Terasic DE10-Standard \cite{terasicDE10Std} trang bị \acrshort{fpga} Intel Cyclone V \acrshort{soc}. Việc triển khai sử dụng Phần mềm Quartus Prime Lite Edition của Intel, Platform Designer (trước đây là Qsys), và \acrshort{ide} Ashling RiscFree™ \cite{ashling_riscfree_guide} cho việc phát triển và gỡ lỗi (debug) phần mềm.
-
-\section{Xây dựng Hệ thống Phần cứng trên Quartus Prime}
+\section{TRIỂN KHAI VÀ KIỂM THỬ HỆ THỐNG NIOS V VỚI DMA}
+\label{sec:chapter3_content} % Changed label from Chapter3
+Phần \ref{sec:chapter3_content} trình bày chi tiết quy trình từng bước được thực hiện để triển khai và kiểm thử một Hệ thống trên Chip (\acrshort{soc}) dựa trên bộ xử lý mềm (soft-core processor) Nios V/m của Intel, tích hợp một bộ điều khiển Truy cập Bộ nhớ Trực tiếp (\acrfull{dma}) tùy chỉnh. Nền tảng phần cứng mục tiêu là bo mạch phát triển (development board) Terasic DE10-Standard \cite{terasicDE10Std} trang bị \acrshort{fpga} Intel Cyclone V \acrshort{soc}. Việc triển khai sử dụng Phần mềm Quartus Prime Lite Edition của Intel, Platform Designer (trước đây là Qsys), và \acrshort{ide} Ashling RiscFree™ \cite{ashling_riscfree_guide} cho việc phát triển và gỡ lỗi (debug) phần mềm.
+\subsection{Xây dựng Hệ thống Phần cứng trên Quartus Prime}
 \label{sec:build_hardware}
 
 Phần này bao gồm việc tạo dự án Quartus và thiết kế hệ thống phần cứng bằng Platform Designer.
@@ -96,7 +94,7 @@ Phần này bao gồm việc tạo dự án Quartus và thiết kế hệ thốn
 
 \FloatBarrier
 
-\section{Phát triển Ứng dụng Phần mềm Nios V}
+\subsection{Phát triển Ứng dụng Phần mềm Nios V}
 \label{sec:develop_software}
 
 Phần này mô tả việc tạo Gói Hỗ trợ Bo mạch (Board Support Package - \acrshort{bsp}) và mã ứng dụng C, sau đó biên dịch và gỡ lỗi (debug) nó bằng \acrshort{ide} Ashling RiscFree.
