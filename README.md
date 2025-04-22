@@ -40,8 +40,8 @@ This project details the design, implementation, simulation, and testing of a cu
 
 This project utilizes two main branches:
 
-1.  **`main`**: Contains the original chapter layout.
-2.  **`HCMUS-FETEL-Intern-Chapter-Layout`**: Contains the chapter layout specific to the HCMUS FETEL Internship requirements (currently active).
+1.  **`Thesis-Format`**: Contains the Undergraduate Thesis chapter layout.
+2.  **`FETEL-Intern-Format`** (currently here): Contains the chapter layout specific to the HCMUS FETEL Internship requirements.
 
 ## Compilation
 
