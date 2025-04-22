@@ -405,27 +405,6 @@ INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\caption\subcaption.sty
 INPUT .\main.aux
 INPUT .\main.aux
 INPUT main.aux
-INPUT .\chapter1.aux
-INPUT .\chapter1.aux
-INPUT chapter1.aux
-INPUT .\chapter2.aux
-INPUT .\chapter2.aux
-INPUT chapter2.aux
-INPUT .\chapter3.aux
-INPUT .\chapter3.aux
-INPUT chapter3.aux
-INPUT .\chapter4.aux
-INPUT .\chapter4.aux
-INPUT chapter4.aux
-INPUT .\chapter5.aux
-INPUT .\chapter5.aux
-INPUT chapter5.aux
-INPUT .\Appendix\appendix1.aux
-INPUT .\Appendix\appendix1.aux
-INPUT Appendix\appendix1.aux
-INPUT .\Appendix\appendix2.aux
-INPUT .\Appendix\appendix2.aux
-INPUT Appendix\appendix2.aux
 OUTPUT main.aux
 INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\biblatex\lbx\english.lbx
 INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\biblatex\lbx\english.lbx
@@ -440,10 +419,10 @@ INPUT .\main.out
 INPUT .\main.out
 INPUT main.out
 INPUT main.out
-OUTPUT main.pdf
 INPUT .\main.out
 INPUT .\main.out
 OUTPUT main.out
+OUTPUT main.pdf
 INPUT D:\Program Files\MikTex\texmfs\install\tex\context\base\mkii\supp-pdf.mkii
 INPUT D:\Program Files\MikTex\texmfs\install\tex\context\base\mkii\supp-pdf.mkii
 INPUT D:\Program Files\MikTex\texmfs\install\tex\context\base\mkii\supp-pdf.mkii
@@ -467,30 +446,15 @@ INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vnbx12.tfm
 INPUT .\main.toc
 INPUT .\main.toc
 INPUT main.toc
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmr9.tfm
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmr6.tfm
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmmi12.tfm
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmmi9.tfm
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmmi6.tfm
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmsy10.tfm
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmsy9.tfm
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmsy6.tfm
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmex10.tfm
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\amsfonts\cmextra\cmex9.tfm
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vnr12.tfm
 OUTPUT main.toc
 INPUT .\main.acr
 INPUT .\main.acr
 INPUT main.acr
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vnr12.tfm
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\jknappen\ec\tcrm1200.tfm
 INPUT .\main.lof
 INPUT .\main.lof
 INPUT main.lof
-INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\vntex\t5cmtt.fd
-INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\vntex\t5cmtt.fd
-INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\vntex\t5cmtt.fd
-INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vntt12.tfm
 OUTPUT main.lof
 INPUT .\main.lot
 INPUT .\main.lot
@@ -502,6 +466,21 @@ OUTPUT chapter1.aux
 INPUT .\chapter1.tex
 INPUT .\chapter1.tex
 INPUT chapter1.tex
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\vntex\t5cmtt.fd
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\vntex\t5cmtt.fd
+INPUT D:\Program Files\MikTex\texmfs\install\tex\latex\vntex\t5cmtt.fd
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vntt12.tfm
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmr9.tfm
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmr6.tfm
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmmi12.tfm
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmmi9.tfm
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmmi6.tfm
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmsy10.tfm
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmsy9.tfm
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmsy6.tfm
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\cm\cmex10.tfm
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\amsfonts\cmextra\cmex9.tfm
+INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT D:\Program Files\MikTex\texmfs\install\fonts\tfm\vntex\vnr\vnbxti10.tfm
 INPUT .\chapter2.tex
 INPUT .\chapter2.tex
